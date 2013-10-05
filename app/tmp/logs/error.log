@@ -1,0 +1,240 @@
+2013-09-17 22:46:45 Error: [MissingControllerException] Controller class ~clin1uController could not be found.
+Exception Attributes: array (
+  'class' => '~clin1uController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/test/index.php/~clin1u/test/
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/test/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/test/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-09-17 22:47:01 Error: [MissingControllerException] Controller class ~clin1uController could not be found.
+Exception Attributes: array (
+  'class' => '~clin1uController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/test/index.php/~clin1u/test/
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/test/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/test/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-09-17 22:47:03 Error: [MissingControllerException] Controller class ~clin1uController could not be found.
+Exception Attributes: array (
+  'class' => '~clin1uController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/test/index.php/~clin1u/test/
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/test/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/test/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-09-17 22:49:30 Error: [MissingControllerException] Controller class ~clin1uController could not be found.
+Exception Attributes: array (
+  'class' => '~clin1uController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/test/index.php/~clin1u/test/
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/test/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/test/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-09-17 22:49:35 Error: [MissingControllerException] Controller class ~clin1uController could not be found.
+Exception Attributes: array (
+  'class' => '~clin1uController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/test/index.php/~clin1u/test/
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/test/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/test/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-09-17 22:53:56 Error: [MissingControllerException] Controller class ~clin1uController could not be found.
+Exception Attributes: array (
+  'class' => '~clin1uController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/test/index.php/~clin1u/test/
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/test/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/test/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-09-17 22:59:15 Error: [MissingControllerException] Controller class ~clin1uController could not be found.
+Exception Attributes: array (
+  'class' => '~clin1uController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/test/index.php/~clin1u/test/
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/test/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/test/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-09-17 22:59:40 Error: [MissingControllerException] Controller class ~clin1uController could not be found.
+Exception Attributes: array (
+  'class' => '~clin1uController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/test/index.php/~clin1u/test/
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/test/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/test/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-09-17 23:01:36 Error: [MissingControllerException] Controller class ~clin1uController could not be found.
+Exception Attributes: array (
+  'class' => '~clin1uController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/test/index.php/~clin1u/test/
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/test/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/test/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-09-17 23:02:42 Error: [MissingControllerException] Controller class ~clin1uController could not be found.
+Exception Attributes: array (
+  'class' => '~clin1uController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/test/index.php/~clin1u/test/
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/test/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/test/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-09-17 23:02:56 Error: [MissingControllerException] Controller class ~clin1uController could not be found.
+Exception Attributes: array (
+  'class' => '~clin1uController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/test/index.php/~clin1u/test/
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/test/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/test/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-09-17 23:05:05 Error: [MissingControllerException] Controller class ~clin1uController could not be found.
+Exception Attributes: array (
+  'class' => '~clin1uController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/test/index.php/~clin1u/test/
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/test/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/test/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-09-20 14:23:22 Error: [MissingControllerException] Controller class ~clin1uController could not be found.
+Exception Attributes: array (
+  'class' => '~clin1uController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/test/index.php/~clin1u/test/
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/test/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/test/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-09-26 13:07:17 Error: [MissingControllerException] Controller class ~clin1uController could not be found.
+Exception Attributes: array (
+  'class' => '~clin1uController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/test/index.php/~clin1u/test/
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/test/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/test/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-10-04 17:11:47 Error: [MissingControllerException] Controller class DepartmentsController could not be found.
+Exception Attributes: array (
+  'class' => 'DepartmentsController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/lblblt/projet/index.php/departments
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/lblblt/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/lblblt/projet/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-10-04 17:12:47 Error: [MissingControllerException] Controller class DepartmentsController could not be found.
+Exception Attributes: array (
+  'class' => 'DepartmentsController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/lblblt/projet/index.php/departments
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/lblblt/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/lblblt/projet/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-10-04 17:12:49 Error: [MissingControllerException] Controller class DepartmentsController could not be found.
+Exception Attributes: array (
+  'class' => 'DepartmentsController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/lblblt/projet/index.php/departments
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/lblblt/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/lblblt/projet/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-10-04 17:13:09 Error: [MissingControllerException] Controller class DepartmentsController could not be found.
+Exception Attributes: array (
+  'class' => 'DepartmentsController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/lblblt/projet/index.php/departments
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/lblblt/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/lblblt/projet/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-10-04 17:13:11 Error: [MissingControllerException] Controller class DepartmentsController could not be found.
+Exception Attributes: array (
+  'class' => 'DepartmentsController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/lblblt/projet/index.php/departments
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/lblblt/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/lblblt/projet/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-10-04 17:13:27 Error: [MissingControllerException] Controller class DepartmentsController could not be found.
+Exception Attributes: array (
+  'class' => 'DepartmentsController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/lblblt/projet/index.php/departments
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/lblblt/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/lblblt/projet/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-10-04 17:13:28 Error: [MissingControllerException] Controller class DepartmentsController could not be found.
+Exception Attributes: array (
+  'class' => 'DepartmentsController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/lblblt/projet/index.php/departments
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/lblblt/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/lblblt/projet/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-10-04 17:13:31 Error: [MissingControllerException] Controller class DepartmentsController could not be found.
+Exception Attributes: array (
+  'class' => 'DepartmentsController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/lblblt/projet/index.php/departments/
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/lblblt/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/lblblt/projet/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-10-04 17:13:38 Error: [MissingControllerException] Controller class DepartmentsController could not be found.
+Exception Attributes: array (
+  'class' => 'DepartmentsController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/lblblt/projet/index.php/departments/
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/lblblt/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/lblblt/projet/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
+2013-10-04 17:19:52 Error: [MissingControllerException] Controller class RoomdController could not be found.
+Exception Attributes: array (
+  'class' => 'RoomdController',
+  'plugin' => NULL,
+)
+Request URL: /~clin1u/lblblt/projet/index.php/roomd
+Stack Trace:
+#0 /home/WWW/gga_etudiants/clin1u/www/lblblt/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/WWW/gga_etudiants/clin1u/www/lblblt/projet/index.php(43): require('/home/WWW/gga_e...')
+#2 {main}
