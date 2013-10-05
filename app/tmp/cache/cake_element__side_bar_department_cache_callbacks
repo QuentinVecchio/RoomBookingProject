@@ -1,0 +1,19 @@
+1381008333
+s:596:"
+<aside class="side-bar">
+	<nav>
+		<ul>
+			<li><a href="/CakePHP/projet-web/index.php/admin/departments/management">Gestion département</a></li>
+			<li class="titre">Les départements:</li>
+							<li><a href="/CakePHP/projet-web/index.php/admin/departments/view/3">GEA</a></li>
+
+							<li><a href="/CakePHP/projet-web/index.php/admin/departments/view/2">GMP</a></li>
+
+							<li><a href="/CakePHP/projet-web/index.php/admin/departments/view/1">INFO</a></li>
+
+							<li><a href="/CakePHP/projet-web/index.php/admin/departments/view/4">TC</a></li>
+
+			
+		</ul>
+	</nav>
+</aside>";
