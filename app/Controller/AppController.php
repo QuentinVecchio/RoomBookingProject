@@ -32,4 +32,33 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+
+	public $components = array('Session', 'Auth');
+
+	public function beforeRender()
+	{
+	    // only compile it on development mode
+	    if (Configure::read('debug') > 0)
+	    {
+	        // import the file to application
+	        App::import('Vendor', 'lessc');
+	 
+	 		$less_repertory = ROOT . DS . APP_DIR . DS . 'webroot' . DS . 'less';
+	 		$css_repertory = ROOT . DS . APP_DIR . DS . 'webroot' . DS . 'css';
+	        if(file_exists($less_repertory) && is_dir($less_repertory)){
+	        	$dir = opendir($less_repertory);
+
+	        	while($file = readdir($dir)){
+	        		if(!is_dir($file)){
+	        			if(strtolower(pathinfo($file, PATHINFO_EXTENSION)) ==="less"){
+	        				$name = $less_repertory. DS. $file;
+	        				$nameOut = $css_repertory. DS. pathinfo($file, PATHINFO_FILENAME). '.css';
+	        				lessc::ccompile($name, $nameOut);
+	        			}
+	        		}
+	        	}
+	        }
+	    }
+	    parent::beforeRender();
+	}
 }

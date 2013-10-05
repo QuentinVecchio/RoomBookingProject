@@ -238,3 +238,1058 @@ Stack Trace:
 #0 /home/WWW/gga_etudiants/clin1u/www/lblblt/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 /home/WWW/gga_etudiants/clin1u/www/lblblt/projet/index.php(43): require('/home/WWW/gga_e...')
 #2 {main}
+2013-10-05 14:53:21 Error: [MissingControllerException] Controller class CakePHPController could not be found.
+Exception Attributes: array (
+  'class' => 'CakePHPController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/CakePHP/projet-web/
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#2 {main}
+2013-10-05 14:57:23 Error: [MissingTableException] Table departements for model Departement was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'departements',
+  'class' => 'Departement',
+  'ds' => 'default',
+)
+Request URL: /CakePHP/projet-web/index.php/rooms/
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(3310): Model->setSource('departements')
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(1401): Model->schema()
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(1389): Model->hasField('title', false)
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(878): Model->hasField(Array)
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Scaffold.php(429): Model->__get('displayField')
+#6 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Scaffold.php(139): Scaffold->_associations()
+#7 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(RoomsController), Object(CakeRequest))
+#8 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#9 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#13 {main}
+2013-10-05 14:58:00 Error: [MissingTableException] Table departements for model Departement was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'departements',
+  'class' => 'Departement',
+  'ds' => 'default',
+)
+Request URL: /CakePHP/projet-web/index.php/rooms/
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(3310): Model->setSource('departements')
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(1401): Model->schema()
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(1389): Model->hasField('title', false)
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(878): Model->hasField(Array)
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Scaffold.php(429): Model->__get('displayField')
+#6 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Scaffold.php(139): Scaffold->_associations()
+#7 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(RoomsController), Object(CakeRequest))
+#8 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#9 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#13 {main}
+2013-10-05 14:58:12 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Room.department_id' in 'on clause'
+Request URL: /CakePHP/projet-web/index.php/rooms/
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Room`.`...', Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Room`.`...', Array, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Room`.`...', false)
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(2750): DboSource->read(Object(Room), Array)
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#6 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#7 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate(NULL, Array, Array)
+#8 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Scaffold.php(192): Controller->paginate()
+#9 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Scaffold.php(386): Scaffold->_scaffoldIndex(Object(CakeRequest))
+#10 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#11 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(RoomsController), Object(CakeRequest))
+#12 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#13 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#14 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#17 {main}
+2013-10-05 15:07:14 Error: [MissingControllerException] Controller class ProfessorController could not be found.
+Exception Attributes: array (
+  'class' => 'ProfessorController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/professor
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#2 {main}
+2013-10-05 15:23:10 Error: [MissingTableException] Table statuses for model Status was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'statuses',
+  'class' => 'Status',
+  'ds' => 'default',
+)
+Request URL: /CakePHP/projet-web/index.php/loans/add
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(3310): Model->setSource('statuses')
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(1401): Model->schema()
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(1389): Model->hasField('title', false)
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(878): Model->hasField(Array)
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Scaffold.php(429): Model->__get('displayField')
+#6 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Scaffold.php(139): Scaffold->_associations()
+#7 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(LoansController), Object(CakeRequest))
+#8 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#9 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#13 {main}
+2013-10-05 15:25:15 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Professor.roles_id' in 'on clause'
+Request URL: /CakePHP/projet-web/index.php/professors
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Profess...', Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Profess...', Array, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Profess...', false)
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(2750): DboSource->read(Object(Professor), Array)
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#6 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#7 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate(NULL, Array, Array)
+#8 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Scaffold.php(192): Controller->paginate()
+#9 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Scaffold.php(386): Scaffold->_scaffoldIndex(Object(CakeRequest))
+#10 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#11 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ProfessorsController), Object(CakeRequest))
+#12 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#13 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#14 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(ProfessorsController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#17 {main}
+2013-10-05 15:31:48 Error: [MissingControllerException] Controller class RolesController could not be found.
+Exception Attributes: array (
+  'class' => 'RolesController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/roles/view/2
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#2 {main}
+2013-10-05 15:57:24 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/user
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#2 {main}
+2013-10-05 15:58:04 Error: [MissingActionException] Action Users::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'login',
+)
+Request URL: /CakePHP/projet-web/index.php/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#7 {main}
+2013-10-05 16:04:08 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /CakePHP/projet-web/index.php/users
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#4 {main}
+2013-10-05 16:04:15 Error: [MissingControllerException] Controller class DepartmentController could not be found.
+Exception Attributes: array (
+  'class' => 'DepartmentController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/department
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#2 {main}
+2013-10-05 16:07:44 Error: Fatal Error (1): Call to a member function login() on a non-object in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\UsersController.php, line 7]
+2013-10-05 16:07:44 Error: [FatalErrorException] Call to a member function login() on a non-object
+Request URL: /CakePHP/projet-web/index.php/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Nouveau\htdo...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Nouveau\htdo...', 7, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Nouveau\htdo...', 7, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 16:38:04 Error: [Exception] variable @color_neutre_1 is undefined: failed at `border: 1px solid @color_neutre_1;` E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\less\style.less on line 30
+Request URL: /CakePHP/projet-web/index.php/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(2008): lessc_parser->throwError('variable @color...', 449)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1763): lessc->throwError('variable @color...')
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1387): lessc->get('@color_neutre_1')
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1392): lessc->reduce(Array, false)
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(651): lessc->reduce(Array)
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(282): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#6 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(220): lessc->compileProps(Object(stdClass), Object(stdClass))
+#7 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(194): lessc->compileCSSBlock(Object(stdClass))
+#8 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(656): lessc->compileBlock(Object(stdClass))
+#9 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(282): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#10 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(276): lessc->compileProps(Object(stdClass), Object(stdClass))
+#11 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(191): lessc->compileRoot(Object(stdClass))
+#12 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1810): lessc->compileBlock(Object(stdClass))
+#13 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1833): lessc->compile('@import url('co...', 'E:\Nouveau\htdo...')
+#14 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1847): lessc->compileFile('E:\Nouveau\htdo...', 'E:\Nouveau\htdo...')
+#15 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(2019): lessc->checkedCompile('E:\Nouveau\htdo...', 'E:\Nouveau\htdo...')
+#16 E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\AppController.php(56): lessc::ccompile('E:\Nouveau\htdo...', 'E:\Nouveau\htdo...')
+#17 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#18 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#19 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#20 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#21 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#22 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#23 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#24 {main}
+2013-10-05 16:55:40 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Users\login.ctp, line 6]
+2013-10-05 16:55:40 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /CakePHP/projet-web/index.php/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 6, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Nouveau\htdo...', 6, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 17:03:00 Error: [MissingViewException] View file "E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Users\logout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Nouveau\\htdocs\\CakePHP\\projet-web\\app\\View\\Users\\logout.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/users/logout
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#6 {main}
+2013-10-05 17:04:35 Error: [MissingViewException] View file "E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Users\logout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Nouveau\\htdocs\\CakePHP\\projet-web\\app\\View\\Users\\logout.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/users/logout
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#6 {main}
+2013-10-05 17:31:49 Error: Fatal Error (1): Call to undefined method View::elmement() in [E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Layouts\default.ctp, line 21]
+2013-10-05 17:31:49 Error: [FatalErrorException] Call to undefined method View::elmement()
+Request URL: /CakePHP/projet-web/index.php/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Nouveau\htdo...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Nouveau\htdo...', 21, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Nouveau\htdo...', 21, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 17:37:29 Error: [Exception] variable @color_impact is undefined: failed at `background-color: @color_impact;` E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\less\menu.less on line 66
+Request URL: /CakePHP/projet-web/index.php/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(2008): lessc_parser->throwError('variable @color...', 852)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1763): lessc->throwError('variable @color...')
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1387): lessc->get('@color_impact')
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(651): lessc->reduce(Array)
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(282): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(220): lessc->compileProps(Object(stdClass), Object(stdClass))
+#6 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(194): lessc->compileCSSBlock(Object(stdClass))
+#7 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(656): lessc->compileBlock(Object(stdClass))
+#8 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(282): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#9 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(276): lessc->compileProps(Object(stdClass), Object(stdClass))
+#10 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(191): lessc->compileRoot(Object(stdClass))
+#11 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1810): lessc->compileBlock(Object(stdClass))
+#12 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1833): lessc->compile('#menu-principal...', 'E:\Nouveau\htdo...')
+#13 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1847): lessc->compileFile('E:\Nouveau\htdo...', 'E:\Nouveau\htdo...')
+#14 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(2019): lessc->checkedCompile('E:\Nouveau\htdo...', 'E:\Nouveau\htdo...')
+#15 E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\AppController.php(56): lessc::ccompile('E:\Nouveau\htdo...', 'E:\Nouveau\htdo...')
+#16 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#17 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#18 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#19 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#20 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#21 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#22 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#23 {main}
+2013-10-05 17:42:17 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /CakePHP/projet-web/index.php/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Auth')
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(820): HelperCollection->__isset('Auth')
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Elements\menu.ctp(2): View->__get('Auth')
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Nouveau\htdo...')
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Nouveau\htdo...', Array)
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(1191): View->_render('E:\Nouveau\htdo...', Array)
+#6 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(408): View->_renderElement('E:\Nouveau\htdo...', Array, Array)
+#7 E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Layouts\default.ctp(22): View->element('menu')
+#8 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Nouveau\htdo...')
+#9 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Nouveau\htdo...', Array)
+#10 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(525): View->_render('E:\Nouveau\htdo...')
+#11 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(470): View->renderLayout('', 'default')
+#12 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#17 {main}
+2013-10-05 17:52:53 Error: [MissingComponentException] Component class AppAuthComponent could not be found.
+Exception Attributes: array (
+  'class' => 'AppAuthComponent',
+  'plugin' => false,
+)
+Request URL: /CakePHP/projet-web/index.php/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('AppAuth', Array)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(183): Controller->constructClasses()
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#6 {main}
+2013-10-05 17:53:21 Error: [MissingComponentException] Component class AppAuthComponent could not be found.
+Exception Attributes: array (
+  'class' => 'AppAuthComponent',
+  'plugin' => false,
+)
+Request URL: /CakePHP/projet-web/index.php/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('AppAuth', Array)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(183): Controller->constructClasses()
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#6 {main}
+2013-10-05 17:53:47 Error: Fatal Error (1): Call to undefined method AppAuthComponent::_setup() in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\Component\AppAuthComponent.php, line 43]
+2013-10-05 17:53:47 Error: [FatalErrorException] Call to undefined method AppAuthComponent::_setup()
+Request URL: /CakePHP/projet-web/index.php/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Nouveau\htdo...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Nouveau\htdo...', 43, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Nouveau\htdo...', 43, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 17:56:27 Error: Fatal Error (1): Call to undefined method AppAuthComponent::_setup() in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\Component\AppAuthComponent.php, line 43]
+2013-10-05 17:56:27 Error: [FatalErrorException] Call to undefined method AppAuthComponent::_setup()
+Request URL: /CakePHP/projet-web/index.php/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Nouveau\htdo...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Nouveau\htdo...', 43, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Nouveau\htdo...', 43, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 17:56:33 Error: Fatal Error (1): Call to a member function login() on a non-object in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\UsersController.php, line 7]
+2013-10-05 17:56:33 Error: [FatalErrorException] Call to a member function login() on a non-object
+Request URL: /CakePHP/projet-web/index.php/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Nouveau\htdo...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Nouveau\htdo...', 7, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Nouveau\htdo...', 7, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 17:57:06 Error: Fatal Error (1): Call to a member function login() on a non-object in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\UsersController.php, line 7]
+2013-10-05 17:57:06 Error: [FatalErrorException] Call to a member function login() on a non-object
+Request URL: /CakePHP/projet-web/index.php/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Nouveau\htdo...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Nouveau\htdo...', 7, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Nouveau\htdo...', 7, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 17:58:41 Error: Fatal Error (1): Call to a member function logout() on a non-object in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\UsersController.php, line 14]
+2013-10-05 17:58:41 Error: [FatalErrorException] Call to a member function logout() on a non-object
+Request URL: /CakePHP/projet-web/index.php/users/logout
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Nouveau\htdo...', 14)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Nouveau\htdo...', 14, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Nouveau\htdo...', 14, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 17:59:08 Error: [MissingViewException] View file "E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Users\logout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Nouveau\\htdocs\\CakePHP\\projet-web\\app\\View\\Users\\logout.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/users/logout
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#6 {main}
+2013-10-05 18:04:49 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/admin/
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#2 {main}
+2013-10-05 18:05:04 Error: [MissingActionException] Action Departments::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'Departments',
+  'action' => 'admin_index',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/departments/
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(DepartmentsController), Object(CakeRequest))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#7 {main}
+2013-10-05 18:06:50 Error: [MissingViewException] View file "E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Users\logout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Nouveau\\htdocs\\CakePHP\\projet-web\\app\\View\\Users\\logout.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/users/logout
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#6 {main}
+2013-10-05 18:14:15 Error: [MissingComponentException] Component class AppAuthComponent could not be found.
+Exception Attributes: array (
+  'class' => 'AppAuthComponent',
+  'plugin' => false,
+)
+Request URL: /CakePHP/projet-web/index.php/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('AppAuth', Array)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(183): Controller->constructClasses()
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#6 {main}
+2013-10-05 18:14:30 Error: [MissingComponentException] Component class AppAuthComponent could not be found.
+Exception Attributes: array (
+  'class' => 'AppAuthComponent',
+  'plugin' => false,
+)
+Request URL: /CakePHP/projet-web/index.php/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('AppAuth', Array)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(183): Controller->constructClasses()
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#6 {main}
+2013-10-05 18:17:06 Error: [MissingActionException] Action DepartmentsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'index',
+)
+Request URL: /CakePHP/projet-web/index.php/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#4 {main}
+2013-10-05 18:17:32 Error: [MissingActionException] Action DepartmentsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'index',
+)
+Request URL: /CakePHP/projet-web/index.php/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#4 {main}
+2013-10-05 18:23:02 Error: [MissingViewException] View file "E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Users\logout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Nouveau\\htdocs\\CakePHP\\projet-web\\app\\View\\Users\\logout.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/users/logout
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#6 {main}
+2013-10-05 18:23:42 Error: [MissingControllerException] Controller class DepartmentController could not be found.
+Exception Attributes: array (
+  'class' => 'DepartmentController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/root/department
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#2 {main}
+2013-10-05 18:23:46 Error: [MissingActionException] Action DepartmentsController::root_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'root_index',
+)
+Request URL: /CakePHP/projet-web/index.php/root/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#4 {main}
+2013-10-05 18:24:04 Error: [MissingViewException] View file "E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Users\logout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Nouveau\\htdocs\\CakePHP\\projet-web\\app\\View\\Users\\logout.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/users/logout
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#6 {main}
+2013-10-05 18:24:11 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_login',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#4 {main}
+2013-10-05 18:24:31 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_login',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#4 {main}
+2013-10-05 18:24:59 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_login',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#4 {main}
+2013-10-05 18:26:53 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_login',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#4 {main}
+2013-10-05 18:28:55 Error: Fatal Error (1): Call to undefined method DepartmentsController::find() in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\DepartmentsController.php, line 9]
+2013-10-05 18:28:55 Error: [FatalErrorException] Call to undefined method DepartmentsController::find()
+Request URL: /CakePHP/projet-web/index.php/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Nouveau\htdo...', 9)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Nouveau\htdo...', 9, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Nouveau\htdo...', 9, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 18:32:40 Error: Fatal Error (4): syntax error, unexpected ')' in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\DepartmentsController.php, line 10]
+2013-10-05 18:32:40 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /CakePHP/projet-web/index.php/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 10, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Nouveau\htdo...', 10, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 18:37:23 Error: [MissingControllerException] Controller class DepartmentController could not be found.
+Exception Attributes: array (
+  'class' => 'DepartmentController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/department
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#2 {main}
+2013-10-05 18:37:32 Error: [MissingControllerException] Controller class DepartmentController could not be found.
+Exception Attributes: array (
+  'class' => 'DepartmentController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/department
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#2 {main}
+2013-10-05 18:53:13 Error: [Exception] variable @color_neutral_5 is undefined: failed at `color: @color_neutral_5;` E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\less\admin.less on line 33
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(2008): lessc_parser->throwError('variable @color...', 509)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1763): lessc->throwError('variable @color...')
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1387): lessc->get('@color_neutral_...')
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(651): lessc->reduce(Array)
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(282): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(220): lessc->compileProps(Object(stdClass), Object(stdClass))
+#6 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(194): lessc->compileCSSBlock(Object(stdClass))
+#7 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(656): lessc->compileBlock(Object(stdClass))
+#8 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(282): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#9 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(276): lessc->compileProps(Object(stdClass), Object(stdClass))
+#10 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(191): lessc->compileRoot(Object(stdClass))
+#11 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1810): lessc->compileBlock(Object(stdClass))
+#12 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1833): lessc->compile('@import url('co...', 'E:\Nouveau\htdo...')
+#13 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1847): lessc->compileFile('E:\Nouveau\htdo...', 'E:\Nouveau\htdo...')
+#14 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(2019): lessc->checkedCompile('E:\Nouveau\htdo...', 'E:\Nouveau\htdo...')
+#15 E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\AppController.php(56): lessc::ccompile('E:\Nouveau\htdo...', 'E:\Nouveau\htdo...')
+#16 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#17 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#18 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#19 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#20 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#21 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#22 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#23 {main}
+2013-10-05 19:02:06 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/user/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#2 {main}
+2013-10-05 19:05:50 Error: [Exception] variable @color_neutral_4 is undefined: failed at `border: 1px solid @color_neutral_4;` E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\less\tableau.less on line 9
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(2008): lessc_parser->throwError('variable @color...', 131)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1763): lessc->throwError('variable @color...')
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1387): lessc->get('@color_neutral_...')
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1392): lessc->reduce(Array, false)
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(651): lessc->reduce(Array)
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(282): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#6 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(220): lessc->compileProps(Object(stdClass), Object(stdClass))
+#7 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(194): lessc->compileCSSBlock(Object(stdClass))
+#8 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(656): lessc->compileBlock(Object(stdClass))
+#9 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(282): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#10 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(276): lessc->compileProps(Object(stdClass), Object(stdClass))
+#11 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(191): lessc->compileRoot(Object(stdClass))
+#12 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1810): lessc->compileBlock(Object(stdClass))
+#13 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1833): lessc->compile('@width_cell: 15...', 'E:\Nouveau\htdo...')
+#14 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1847): lessc->compileFile('E:\Nouveau\htdo...', 'E:\Nouveau\htdo...')
+#15 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(2019): lessc->checkedCompile('E:\Nouveau\htdo...', 'E:\Nouveau\htdo...')
+#16 E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\AppController.php(56): lessc::ccompile('E:\Nouveau\htdo...', 'E:\Nouveau\htdo...')
+#17 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#18 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#19 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#20 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#21 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#22 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#23 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#24 {main}
+2013-10-05 19:09:57 Error: [MissingActionException] Action DepartmentsController::admin_view() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'admin_view',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/departments/view
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#4 {main}
+2013-10-05 19:09:58 Error: [MissingActionException] Action DepartmentsController::admin_view() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'admin_view',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/departments/view
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#4 {main}
+2013-10-05 19:22:28 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\DepartmentsController.php, line 11]
+2013-10-05 19:22:28 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 11, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Nouveau\htdo...', 11, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 19:23:03 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\DepartmentsController.php, line 11]
+2013-10-05 19:23:03 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 11, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Nouveau\htdo...', 11, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 19:25:04 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\DepartmentsController.php, line 10]
+2013-10-05 19:25:04 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 10, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Nouveau\htdo...', 10, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 19:25:21 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'room.department_id' in 'where clause'
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Departm...', Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Departm...', Array, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Departm...', false)
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(2750): DboSource->read(Object(Department), Array)
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#6 E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\DepartmentsController.php(12): Model->find('all', Array)
+#7 [internal function]: DepartmentsController->admin_index()
+#8 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DepartmentsController), Array)
+#9 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#13 {main}
+2013-10-05 19:28:23 Error: [MissingActionException] Action DepartmentsController::admin_view() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'admin_view',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/departments/view
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#4 {main}
+2013-10-05 19:32:57 Error: Fatal Error (4): syntax error, unexpected end of file in [E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Departments\admin_index.ctp, line 73]
+2013-10-05 19:32:57 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 73)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 73, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Nouveau\htdo...', 73, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 20:42:09 Error: Fatal Error (1): Call to a member function input() on a non-object in [E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Helper\RoomHelper.php, line 9]
+2013-10-05 20:42:09 Error: [FatalErrorException] Call to a member function input() on a non-object
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Nouveau\htdo...', 9)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Nouveau\htdo...', 9, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Nouveau\htdo...', 9, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 20:42:48 Error: Fatal Error (1): Call to a member function input() on a non-object in [E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Helper\RoomHelper.php, line 9]
+2013-10-05 20:42:48 Error: [FatalErrorException] Call to a member function input() on a non-object
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Nouveau\htdo...', 9)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Nouveau\htdo...', 9, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Nouveau\htdo...', 9, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 21:30:42 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Helper\RoomHelper.php, line 40]
+2013-10-05 21:30:42 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 40, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Nouveau\htdo...', 40, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 21:31:18 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Helper\RoomHelper.php, line 40]
+2013-10-05 21:31:18 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 40, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Nouveau\htdo...', 40, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 21:33:52 Error: [MissingActionException] Action DepartmentsController::admin_view() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'admin_view',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/departments/view
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#4 {main}
+2013-10-05 21:37:54 Error: Fatal Error (4): syntax error, unexpected '=' in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\DepartmentsController.php, line 16]
+2013-10-05 21:37:54 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 16, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Nouveau\htdo...', 16, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 21:38:03 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\DepartmentsController.php, line 16]
+2013-10-05 21:38:03 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 16, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Nouveau\htdo...', 16, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 21:38:27 Error: [MissingControllerException] Controller class DepartmentController could not be found.
+Exception Attributes: array (
+  'class' => 'DepartmentController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/admin/Department
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#2 {main}
+2013-10-05 21:38:40 Error: [MissingControllerException] Controller class DepartmentController could not be found.
+Exception Attributes: array (
+  'class' => 'DepartmentController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/admin/Department/view
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#2 {main}
+2013-10-05 21:38:50 Error: [MissingControllerException] Controller class DepartmentController could not be found.
+Exception Attributes: array (
+  'class' => 'DepartmentController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/admin/Department
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#2 {main}
+2013-10-05 21:39:09 Error: [MissingControllerException] Controller class DepartmentController could not be found.
+Exception Attributes: array (
+  'class' => 'DepartmentController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/admin/department
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#2 {main}
+2013-10-05 21:43:07 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'room.name' in 'order clause'
+Request URL: /CakePHP/projet-web/index.php/admin/departments/view/1
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Departm...', Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Departm...', Array, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Departm...', false)
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(2750): DboSource->read(Object(Department), Array)
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#6 E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\DepartmentsController.php(24): Model->find('all', Array)
+#7 [internal function]: DepartmentsController->admin_view('1')
+#8 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DepartmentsController), Array)
+#9 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#13 {main}
+2013-10-05 21:44:27 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'room.name' in 'order clause'
+Request URL: /CakePHP/projet-web/index.php/admin/departments/view/1
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Departm...', Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Departm...', Array, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Departm...', false)
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(2750): DboSource->read(Object(Department), Array)
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#6 E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\DepartmentsController.php(24): Model->find('all', Array)
+#7 [internal function]: DepartmentsController->admin_view('1')
+#8 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DepartmentsController), Array)
+#9 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#13 {main}
+2013-10-05 21:54:17 Error: [MissingActionException] Action DepartmentsController::admin_getDepartments() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'admin_getDepartments',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Elements\side_bar_department.ctp(1): Object->requestAction(Array)
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Nouveau\htdo...')
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Nouveau\htdo...', Array)
+#6 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(1191): View->_render('E:\Nouveau\htdo...', Array)
+#7 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(408): View->_renderElement('E:\Nouveau\htdo...', Array, Array)
+#8 E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Departments\admin_index.ctp(2): View->element('side_bar_depart...')
+#9 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Nouveau\htdo...')
+#10 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Nouveau\htdo...', Array)
+#11 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Nouveau\htdo...')
+#12 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#17 {main}
+2013-10-05 21:54:34 Error: [MissingActionException] Action DepartmentsController::getDepartments() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'getDepartments',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Elements\side_bar_department.ctp(1): Object->requestAction(Array)
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Nouveau\htdo...')
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Nouveau\htdo...', Array)
+#6 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(1191): View->_render('E:\Nouveau\htdo...', Array)
+#7 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(408): View->_renderElement('E:\Nouveau\htdo...', Array, Array)
+#8 E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Departments\admin_index.ctp(2): View->element('side_bar_depart...')
+#9 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Nouveau\htdo...')
+#10 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Nouveau\htdo...', Array)
+#11 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Nouveau\htdo...')
+#12 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#17 {main}
+2013-10-05 22:00:23 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Departments\admin_index.ctp, line 5]
+2013-10-05 22:00:23 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 5, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Nouveau\htdo...', 5, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 22:00:35 Error: Fatal Error (4): syntax error, unexpected ')' in [E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Elements\side_bar_department.ctp, line 1]
+2013-10-05 22:00:35 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 1)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 1, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Nouveau\htdo...', 1, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 22:00:52 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Departments\admin_view.ctp, line 5]
+2013-10-05 22:00:52 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /CakePHP/projet-web/index.php/admin/departments/view/3
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 5, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Nouveau\htdo...', 5, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 22:24:59 Error: Fatal Error (4): syntax error, unexpected '?>' in [E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Elements\side_bar_department.ctp, line 7]
+2013-10-05 22:24:59 Error: [FatalErrorException] syntax error, unexpected '?>'
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 7, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Nouveau\htdo...', 7, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-05 22:26:32 Error: [MissingViewException] View file "E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Departments\admin_management.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Nouveau\\htdocs\\CakePHP\\projet-web\\app\\View\\Departments\\admin_management.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/departments/management
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#6 {main}
+2013-10-05 22:40:54 Error: Fatal Error (1): Call to a member function login() on a non-object in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\UsersController.php, line 7]
+2013-10-05 22:40:54 Error: [FatalErrorException] Call to a member function login() on a non-object
+Request URL: /CakePHP/projet-web/index.php/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Nouveau\htdo...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Nouveau\htdo...', 7, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Nouveau\htdo...', 7, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

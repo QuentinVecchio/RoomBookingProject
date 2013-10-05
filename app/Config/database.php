@@ -64,7 +64,7 @@ class DATABASE_CONFIG {
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'infodb2.iut.univ-metz.fr',
+		'host' => 'localhost',
 		'login' => 'root',
 		'password' => '',
 		'database' => 'projet_web',

@@ -1,0 +1,79 @@
+@import url('config.less');
+
+@width_cell: 150px;
+@height_cell: 50px;
+
+@neutral: #2CA2F5;
+
+.grille-gestion{
+	padding: 10px;
+	border-collapse: collapse;
+	border: 1px solid @color_neutral_4;
+	color: #222;
+}
+	.grille-gestion thead tr th{
+		font-size: 1.2em;
+		background-color: @color_neutral_3;
+		color: @color_neutral_1;
+	}
+
+
+	.grille-gestion thead tr th, .grille-gestion tbody tr td{
+		width: @width_cell;
+		height: @height_cell;
+		text-align: center;
+	}
+
+	.grille-gestion thead tr th:last-child{
+		border-right: 1px solid @color_neutral_4;
+	}
+
+	.grille-gestion tbody tr:nth-child(even) {
+		background-color: @color_neutral_2;
+	}
+
+input[type="checkbox"]{
+	display: none;
+}
+
+input[type="checkbox"] + label{
+	position :relative;
+	display: block;
+	margin: 0 auto;
+	width: 15px;
+	height: 15px;
+	border-radius: 0px;
+	border: 2px solid #999;
+	background-color: #E82D21;	
+}
+
+input[type="checkbox"]:checked + label:after
+{
+	position: absolute;
+	font-family: 'fontello';
+	content: '\2713';
+	display: block;
+	color: #48FF2B ;
+	font-size: 40px;
+	font-weight: bold;
+	width: 30px;   
+	height: 30px;
+	line-height: 30px;
+	top: -16px;
+	left: -6px;
+	z-index: 1000;
+}
+
+input:checked + label
+{
+	background-color: #6872FF ;
+}
+
+
+@font-face {
+	font-family: 'fontello';
+	src: url("/font/fontello.eot");
+	src: url("/font/fontello.eot?#iefix") format('embedded-opentype'), url("/font/fontello.woff") format('woff'), url("/font/fontello.ttf") format('truetype'), url("/font/fontello.svg#fontello") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
