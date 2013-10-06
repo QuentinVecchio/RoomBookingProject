@@ -1293,3 +1293,131 @@ Stack Trace:
 #3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-10-06 12:23:01 Error: [MissingControllerException] Controller class DepartmentController could not be found.
+Exception Attributes: array (
+  'class' => 'DepartmentController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/department
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#2 {main}
+2013-10-06 12:24:03 Error: Fatal Error (4): syntax error, unexpected '}' in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\UsersController.php, line 9]
+2013-10-06 12:24:03 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /CakePHP/projet-web/index.php/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 9, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Nouveau\htdo...', 9, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-06 12:29:18 Error: Fatal Error (1): Call to a member function read() on a non-object in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\AppController.php, line 39]
+2013-10-06 12:29:18 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /CakePHP/projet-web/index.php/
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Nouveau\htdo...', 39)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Nouveau\htdo...', 39, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Nouveau\htdo...', 39, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-06 12:39:29 Error: Fatal Error (64): Can't use method return value in write context in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\AppController.php, line 39]
+2013-10-06 12:39:29 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Can't use metho...', 'E:\Nouveau\htdo...', 39)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', 'E:\Nouveau\htdo...', 39, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', 'E:\Nouveau\htdo...', 39, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-06 12:39:50 Error: Fatal Error (64): Can't use method return value in write context in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\AppController.php, line 39]
+2013-10-06 12:39:50 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Can't use metho...', 'E:\Nouveau\htdo...', 39)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', 'E:\Nouveau\htdo...', 39, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', 'E:\Nouveau\htdo...', 39, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-06 12:52:48 Error: Fatal Error (1): Call to undefined method AuthComponent::read() in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\UsersController.php, line 8]
+2013-10-06 12:52:48 Error: [FatalErrorException] Call to undefined method AuthComponent::read()
+Request URL: /CakePHP/projet-web/index.php/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Nouveau\htdo...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Nouveau\htdo...', 8, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Nouveau\htdo...', 8, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-06 12:53:07 Error: Fatal Error (1): Call to a member function read() on a non-object in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\UsersController.php, line 8]
+2013-10-06 12:53:07 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /CakePHP/projet-web/index.php/users/login
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Nouveau\htdo...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Nouveau\htdo...', 8, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Nouveau\htdo...', 8, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-06 12:54:06 Error: [MissingActionException] Action UsersController::admin_logout() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_logout',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/users/logout
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#4 {main}
+2013-10-06 13:13:14 Error: Fatal Error (4): syntax error, unexpected '==' (T_IS_EQUAL) in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\DepartmentsController.php, line 10]
+2013-10-06 13:13:14 Error: [FatalErrorException] syntax error, unexpected '==' (T_IS_EQUAL)
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 10, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Nouveau\htdo...', 10, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-06 13:38:58 Error: [MissingViewException] View file "E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Departments\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Nouveau\\htdocs\\CakePHP\\projet-web\\app\\View\\Departments\\index.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/departments/index/manager:1
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#6 {main}
+2013-10-06 13:40:40 Error: [MissingViewException] View file "E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Departments\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Nouveau\\htdocs\\CakePHP\\projet-web\\app\\View\\Departments\\index.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#6 {main}
+2013-10-06 13:40:51 Error: [MissingControllerException] Controller class ManagersController could not be found.
+Exception Attributes: array (
+  'class' => 'ManagersController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/managers/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#2 {main}

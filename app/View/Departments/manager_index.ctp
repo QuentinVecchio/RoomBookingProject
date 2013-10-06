@@ -1,0 +1,2 @@
+<h1>Les départements:</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam illum est vitae qui fuga debitis! Ipsa, libero, laborum, officia, necessitatibus quibusdam praesentium vel magni iste accusamus modi rerum dolorem!</p>
