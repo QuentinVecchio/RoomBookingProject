@@ -33,7 +33,16 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
-	public $components = array('Session', 'Auth');
+	public $components = array(
+		'Session',
+		'Auth' => array(
+			'authorize' => array('Controller'))
+		);
+
+	public function isAuthorized($user = null){
+		return true;
+	}
+
 
 	public function beforeRender()
 	{
