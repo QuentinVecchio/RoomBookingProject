@@ -13,9 +13,13 @@
 		echo $this->Html->css('menu_top');
 		echo $this->Html->css('form');
 		echo $this->Html->css('fontello');
-
+		echo $this->Html->css('manager');
+		
 		echo $this->fetch('css');
 		echo $this->fetch('script');
+
+		echo $this->Html->script('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js');
+		echo $this->Html->script('charge');			
 	?>
 </head>
 <body>

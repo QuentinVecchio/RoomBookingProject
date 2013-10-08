@@ -25,3 +25,17 @@ footer {
   display: table;
   margin: 0 auto;
 }
+.profils {
+  padding: 0 1.5em;
+}
+.list-info {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding: 1.5em;
+}
+.list-info li {
+  font-size: 18px;
+  height: 36px;
+  line-height: 36px;
+}

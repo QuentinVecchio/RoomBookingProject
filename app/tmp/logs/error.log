@@ -1725,3 +1725,113 @@ Stack Trace:
 #0 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
 #2 {main}
+2013-10-08 21:20:43 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /CakePHP/projet-web/index.php/users
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#4 {main}
+2013-10-08 21:22:27 Error: [MissingViewException] View file "E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Users\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Nouveau\\htdocs\\CakePHP\\projet-web\\app\\View\\Users\\index.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/users
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#6 {main}
+2013-10-08 21:22:49 Error: [MissingViewException] View file "E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Users\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Nouveau\\htdocs\\CakePHP\\projet-web\\app\\View\\Users\\index.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/users
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#6 {main}
+2013-10-08 21:23:07 Error: [MissingViewException] View file "E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Users\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Nouveau\\htdocs\\CakePHP\\projet-web\\app\\View\\Users\\index.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/users
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#6 {main}
+2013-10-08 21:23:47 Error: [MissingViewException] View file "E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Users\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Nouveau\\htdocs\\CakePHP\\projet-web\\app\\View\\Users\\index.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/users
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#6 {main}
+2013-10-08 21:25:12 Error: Fatal Error (1): Call to undefined function compect() in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\UsersController.php, line 7]
+2013-10-08 21:25:12 Error: [FatalErrorException] Call to undefined function compect()
+Request URL: /CakePHP/projet-web/index.php/users
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Nouveau\htdo...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Nouveau\htdo...', 7, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Nouveau\htdo...', 7, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-08 21:40:28 Error: [MissingActionException] Action UsersController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'edit',
+)
+Request URL: /CakePHP/projet-web/index.php/users/edit
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#4 {main}
+2013-10-08 21:45:50 Error: [MissingActionException] Action RoomsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'RoomsController',
+  'action' => 'index',
+)
+Request URL: /CakePHP/projet-web/index.php/rooms
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#4 {main}
+2013-10-08 21:46:27 Error: [MissingActionException] Action RoomsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'RoomsController',
+  'action' => 'index',
+)
+Request URL: /CakePHP/projet-web/index.php/rooms
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#4 {main}
