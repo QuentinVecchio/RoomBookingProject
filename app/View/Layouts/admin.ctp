@@ -9,15 +9,17 @@
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('foundation');
-		echo $this->Html->css('default');
-		echo $this->Html->css('style');
-		echo $this->Html->css('menu');
-		echo $this->Html->css('admin');
-		echo $this->Html->css('tableau');
+		echo $this->Html->css('global');
+		echo $this->Html->css('menu_top');
+		echo $this->Html->css('form');
 		echo $this->Html->css('fontello');
-
+		echo $this->Html->css('manager');
+		echo $this->Html->css('table');
+		echo $this->Html->script('script');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
+		echo $this->Html->script('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js');
+		echo $this->Html->script('charge');		
 	?>
 </head>
 <body>
