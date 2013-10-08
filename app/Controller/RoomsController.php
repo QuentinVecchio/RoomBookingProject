@@ -34,6 +34,24 @@ class RoomsController extends AppController{
 		$this->set('rooms', $rooms);
 		$this->set('name_department', $name_department);
 	}
+
+	public function admin_add(){
+		if(!empty($this->request->data)){
+			debug($this->request->data);
+			die();
+		}
+
+		if($this->request->is('Ajax')){
+			$this->layout = null;
+		}else{
+			$this->layout = 'admin';
+			$this->set('title_for_layout', 'Modification:');
+		}
+
+		$list = $this->Room->Department->find('list', array('recursive' => -1));
+		debug($list);
+		$this->set('list', $list);
+	}
 }
 
  ?>
