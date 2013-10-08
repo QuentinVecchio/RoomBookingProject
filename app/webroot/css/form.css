@@ -41,15 +41,15 @@ form div label {
 form div input:focus + label {
   color: black;
 }
-form div.small input,
+form input.small,
 form div.small textarea {
   width: 120px;
 }
-form div.medium input,
+form input.medium,
 form div.medium textarea {
   width: 180px;
 }
-form div.high input,
+form input.high,
 form div.high textarea {
   width: 250px;
 }
