@@ -9,11 +9,9 @@
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('foundation');
-		echo $this->Html->css('default');
-		echo $this->Html->css('style');
-		echo $this->Html->css('menu');
-		echo $this->Html->css('admin');
-		echo $this->Html->css('tableau');
+		echo $this->Html->css('global');
+		echo $this->Html->css('menu_top');
+		echo $this->Html->css('form');
 		echo $this->Html->css('fontello');
 
 		echo $this->fetch('css');
