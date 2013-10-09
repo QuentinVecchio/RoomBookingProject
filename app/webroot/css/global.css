@@ -19,9 +19,8 @@ footer {
   overflow: auto;
   background-color: #FFFFFA;
 }
-#formLog {
-  padding: 1.5em;
-  border: 1px solid #5B605F;
+#formLog,
+ul.button-group {
   display: table;
   margin: 0 auto;
 }

@@ -11,6 +11,8 @@
 @width_medium: 180px;
 @width_high: 220px;
 
+@height_elt: 30px;
+
 form{
 	display:table;
 }
@@ -24,12 +26,22 @@ form, input, textarea{
 	color : @color_neutral_4;
 
 }
+
+input, label{
+	height: @height_elt;
+}
+
 input{
 	padding: 4px;
 }
 
+
+input[type="text"], input[type="password"]{
+		margin: 0px;
+}
+
 label{
-	line-height: 30px;
+	line-height: @height_elt;
 }
 
 input, textarea{
@@ -198,4 +210,15 @@ input:checked + .petit.checkbox:after
 ul.options{
 	display:table;
 	float:right;
+}
+
+label + span{
+	float: left;
+	height: @height_elt;
+	width: @height_elt;
+
+	line-height: @height_elt;
+	text-align: center;
+	color: @color_neutral_1;
+	background-color: @color_neutral_4;
 }
