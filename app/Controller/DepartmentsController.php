@@ -96,8 +96,6 @@ class DepartmentsController  extends AppController{
 
 	}
 
-
-
 	/**
 	*	Permet à un manager de voir les salles de son département
 	*/

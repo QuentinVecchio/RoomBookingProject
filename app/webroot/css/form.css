@@ -1,3 +1,9 @@
+form {
+  display: table;
+}
+fieldset {
+  padding: 1.5em;
+}
 form,
 input,
 textarea {
@@ -41,17 +47,17 @@ form div label {
 form div input:focus + label {
   color: black;
 }
-form input.small,
+form div.small label,
 form div.small textarea {
   width: 120px;
 }
-form input.medium,
+form div.medium label,
 form div.medium textarea {
   width: 180px;
 }
-form input.high,
+form div.high label,
 form div.high textarea {
-  width: 250px;
+  width: 220px;
 }
 #checkbox1,
 #checkbox2 {
@@ -131,4 +137,16 @@ input:checked + .petit.checkbox:after {
 .submit {
   display: table;
   margin: 0 auto;
+}
+.error-message {
+  font-size: 22px;
+  color: red;
+  font-weight: bold;
+  border: 5px solid #464646;
+  display: table;
+  padding: 10px;
+}
+ul.options {
+  display: table;
+  float: right;
 }

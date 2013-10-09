@@ -9,7 +9,15 @@
 
 @width_small: 120px;
 @width_medium: 180px;
-@width_high: 250px;
+@width_high: 220px;
+
+form{
+	display:table;
+}
+
+fieldset{
+	padding: @default_padding;
+}
 
 form, input, textarea{
 	font-size: 18px;
@@ -58,15 +66,15 @@ form div{
 		color: black;
 	}
 
-	form input.small , form div.small textarea{
+	form div.small label , form div.small textarea{
 		width: @width_small;
 	}
 
-	form input.medium, form div.medium textarea{
+	form div.medium label, form div.medium textarea{
 		width: @width_medium;
 	}
 
-	form input.high , form div.high textarea{
+	form div.high label , form div.high textarea{
 		width: @width_high;
 	}
 
@@ -175,4 +183,19 @@ input:checked + .petit.checkbox:after
 .submit{
 	display: table;
 	margin: 0 auto;
+}
+
+
+.error-message{
+  font-size: 22px;
+  color: red;
+  font-weight: bold;
+  border: 5px solid @color_neutral_4;
+  display: table;
+  padding: 10px;
+}
+
+ul.options{
+	display:table;
+	float:right;
 }

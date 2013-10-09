@@ -1858,3 +1858,98 @@ Stack Trace:
 #4 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
 #6 {main}
+2013-10-09 12:39:05 Error: [MissingActionException] Action UsersController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_index',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/users/
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#4 {main}
+2013-10-09 13:00:11 Error: Fatal Error (4): syntax error, unexpected ')' in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Model\User.php, line 11]
+2013-10-09 13:00:11 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /CakePHP/projet-web/index.php/users/edit
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 11, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Nouveau\htdo...', 11, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-09 13:22:19 Error: Fatal Error (1): Call to undefined method UsersController::layout() in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\UsersController.php, line 23]
+2013-10-09 13:22:19 Error: [FatalErrorException] Call to undefined method UsersController::layout()
+Request URL: /CakePHP/projet-web/index.php/users/edit
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Nouveau\htdo...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Nouveau\htdo...', 23, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Nouveau\htdo...', 23, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-09 14:20:24 Error: [MissingActionException] Action DepartmentsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'index',
+)
+Request URL: /CakePHP/projet-web/index.php/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#4 {main}
+2013-10-09 14:47:25 Error: [MissingActionException] Action UsersController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_index',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/users
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#4 {main}
+2013-10-09 14:54:20 Error: [Exception] variable @padding_default is undefined: failed at `padding: @padding_default;` E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\less\form.less on line 19
+Request URL: /CakePHP/projet-web/index.php/users
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(2008): lessc_parser->throwError('variable @paddi...', 297)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1763): lessc->throwError('variable @paddi...')
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1387): lessc->get('@padding_defaul...')
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(651): lessc->reduce(Array)
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(282): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(220): lessc->compileProps(Object(stdClass), Object(stdClass))
+#6 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(194): lessc->compileCSSBlock(Object(stdClass))
+#7 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(656): lessc->compileBlock(Object(stdClass))
+#8 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(282): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#9 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(276): lessc->compileProps(Object(stdClass), Object(stdClass))
+#10 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(191): lessc->compileRoot(Object(stdClass))
+#11 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1810): lessc->compileBlock(Object(stdClass))
+#12 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1833): lessc->compile('@import url('co...', 'E:\Nouveau\htdo...')
+#13 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(1847): lessc->compileFile('E:\Nouveau\htdo...', 'E:\Nouveau\htdo...')
+#14 E:\Nouveau\htdocs\CakePHP\projet-web\vendors\lessc.php(2019): lessc->checkedCompile('E:\Nouveau\htdo...', 'E:\Nouveau\htdo...')
+#15 E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\AppController.php(65): lessc::ccompile('E:\Nouveau\htdo...', 'E:\Nouveau\htdo...')
+#16 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#17 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#18 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#19 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#20 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#21 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#22 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#23 {main}
+2013-10-09 14:57:16 Error: [MissingActionException] Action DepartmentsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'index',
+)
+Request URL: /CakePHP/projet-web/index.php/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#4 {main}

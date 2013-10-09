@@ -10,8 +10,10 @@ class UsersController extends AppController{
 	public function edit(){
 		if(!empty($this->request->data)){
 			$this->User->id = $this->Auth->user('id');
-			$this->User->save($this->request->data);
-			$this->redirect(array('controller'=>'users', 'action' =>'index'));
+			$updated = $this->User->save($this->request->data);
+			if($updated){
+				$this->redirect(array('controller'=>'users', 'action' =>'index'));	
+			}
 		}
 
 
