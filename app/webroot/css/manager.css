@@ -19,7 +19,7 @@
   height: 80px;
   line-height: 80px;
 }
-.side-bar nav ul li:hover {
+.side-bar nav ul li:hover a {
   background-color: #FF7A00;
 }
 .side-bar nav ul li:hover a {

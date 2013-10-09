@@ -1,12 +1,4 @@
  <h1>Gestion des salles:</h1>
-
-<p>Dans cette page vous pourrez:</p>
-<ul>
-	<li>Ajouter des départements</li>
-	<li>Modifier le nom d'un département</li>
-	<li>Supprimer un département</li>
-</ul>
-
 <aside class="side-bar">
 	<nav>
 		<ul>
