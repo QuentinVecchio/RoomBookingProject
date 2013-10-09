@@ -10,8 +10,16 @@ textarea {
   font-size: 18px;
   color: #464646;
 }
+input,
+label {
+  height: 30px;
+}
 input {
   padding: 4px;
+}
+input[type="text"],
+input[type="password"] {
+  margin: 0px;
 }
 label {
   line-height: 30px;
@@ -149,4 +157,13 @@ input:checked + .petit.checkbox:after {
 ul.options {
   display: table;
   float: right;
+}
+label + span {
+  float: left;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFA;
+  background-color: #464646;
 }

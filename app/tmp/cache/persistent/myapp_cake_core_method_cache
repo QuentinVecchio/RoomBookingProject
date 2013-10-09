@@ -1,2 +1,2 @@
-1381324174
-a:2:{s:4:"name";a:6:{s:32:"b537e7fe37fff32f2dbaccfcf5b3f451";s:12:"`projet_web`";s:32:"15a87c9edc770cf89d38b781abebce9f";s:13:"`departments`";s:32:"eae30c741a421c75b620900ae90963c5";s:17:"`Department`.`id`";s:32:"3cd89b52da0c84dae98d5cfc98c8c40d";s:19:"`Department`.`name`";s:32:"aee2509c323502ab25e7ba6a1db0e5a7";s:22:"`Department`.`created`";s:32:"9632107959d073825a4ef917a69d7652";s:12:"`Department`";}s:6:"fields";a:1:{s:32:"2ab1c9ad4db2a9072aab49f10411244f";a:3:{i:0;s:17:"`Department`.`id`";i:1;s:19:"`Department`.`name`";i:2;s:22:"`Department`.`created`";}}}
+1381326667
+a:1:{s:4:"name";a:2:{s:32:"b537e7fe37fff32f2dbaccfcf5b3f451";s:12:"`projet_web`";s:32:"f94a437fb7858e092079378f93ef2c71";s:7:"`users`";}}
