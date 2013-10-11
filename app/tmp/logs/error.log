@@ -1974,3 +1974,13 @@ Stack Trace:
 #15 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #16 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
 #17 {main}
+2013-10-09 15:57:02 Error: Fatal Error (4): syntax error, unexpected '{', expecting ')' in [E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Helper\RoomHelper.php, line 11]
+2013-10-09 15:57:02 Error: [FatalErrorException] syntax error, unexpected '{', expecting ')'
+Request URL: /CakePHP/projet-web/index.php/manager/departments
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 11, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Nouveau\htdo...', 11, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

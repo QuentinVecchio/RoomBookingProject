@@ -8,6 +8,20 @@ class RoomHelper extends AppHelper{
     	parent::__construct($view, $settings);
    }
 
+   public function getViewManager($value = array(), $department){
+   		ob_start(); ?>
+		<tr>
+			<td><?php echo $department; ?></td>
+			<td><?php echo $value['name']; ?></td>
+			<td><input type="checkbox" id="projecteur-1" <?php echo ($value['projector']==1)?'checked':''; ?> disabled></input><label for="projecteur-1"></label></td>
+			<td><input type="checkbox" id="pc-1" <?php echo ($value['has_PC']==1)?'checked':''; ?> disabled></input><label for="pc-1"></label></td>
+			<td><?php echo $value['capacity']; ?></td>
+		</tr>	
+
+		<?php 
+		return ob_get_clean();
+   }
+
 
    	public function getView($value = array(), $department = array()){
 
