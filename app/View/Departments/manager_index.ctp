@@ -8,13 +8,12 @@
 			<th>Projecteur</th>
 			<th>PC</th>
 			<th>Capacité</th>
-			<th><span class="icon-cog"></span></th>
 		</tr>
 	</thead>
 	<tbody>
 		<?php 
 			foreach ($rooms[0]['Room'] as $k => $v) {
-				echo $this->Room->getView($v, $rooms[0]['Department']);
+				echo $this->Room->getViewManager($v, $rooms[0]['Department']['name']);
 			}
 		 ?>
 
