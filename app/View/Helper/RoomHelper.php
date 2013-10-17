@@ -45,13 +45,13 @@ class RoomHelper extends AppHelper{
 		return ob_get_clean();
    	}
 
-   	public function getEdit($value = array()){
+   	public function getEdit($value = array(), $department_id){
    		$list = $this->getListOptions($value);
 
    		ob_start(); ?>
 		<tr>
 			<td><?php   echo $this->Form->create('Room', array('controller' => 'rooms', 'action' => 'edit')); 
-						echo $this->Form->select('department_id', $list); ?></td>
+						echo $this->Form->select('department_id', $list, array('value' => $department_id)); ?></td>
 			<td><?php echo $this->Form->input('name', array('label'=>'', 'type'=>'text')) ?></td>
 			<td><?php echo $this->Form->checkbox('projector').  $this->Form->label('projector',''); ?></td>
 			<td><?php echo $this->Form->checkbox('has_PC'). $this->Form->label('has_PC',''); ?></td>
