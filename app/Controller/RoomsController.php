@@ -56,12 +56,6 @@ class RoomsController extends AppController{
 
 	}
 
-	public function manager_answer() {
-		$this->layout = 'manager';
-	}
-
-
-
 
 	public function admin_add(){
 		if(!empty($this->request->data)){

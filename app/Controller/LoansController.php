@@ -1,4 +1,14 @@
 <?php 
 class LoansController extends AppController{
-	public $scaffold;
+
+
+	public function manager_answer() {
+		$this->layout = 'manager';
+
+		$res = $this->Loan->find('all', array('conditions' => array('Room.department_id' =>$this->Auth->User('department_id'))));
+		$this->set('res', $res);
+
+	}
+
+
 } ?>

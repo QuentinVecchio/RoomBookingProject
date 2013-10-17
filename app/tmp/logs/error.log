@@ -2109,3 +2109,23 @@ Stack Trace:
 #3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-10-17 21:51:08 Error: Fatal Error (1): Call to a member function findByDepartmentId() on a non-object in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\LoansController.php, line 8]
+2013-10-17 21:51:08 Error: [FatalErrorException] Call to a member function findByDepartmentId() on a non-object
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answer
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Nouveau\htdo...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Nouveau\htdo...', 8, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Nouveau\htdo...', 8, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-17 21:56:05 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [E:\Nouveau\htdocs\CakePHP\projet-web\app\Controller\LoansController.php, line 8]
+2013-10-17 21:56:05 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answer
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 8, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Nouveau\htdo...', 8, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
