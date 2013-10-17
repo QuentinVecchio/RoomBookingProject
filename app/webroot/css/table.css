@@ -21,6 +21,23 @@
 .grille-gestion tbody tr:nth-child(even) {
   background-color: #A1A194;
 }
+
+.grille-gestion input[type="text"],
+.grille-gestion input[type="number"]{
+    width: 60px;
+
+}
+
+.grille-gestion form{
+  display:block;
+}
+
+.grille-gestion select{
+  width: 70px;
+  margin: 0 auto;
+}
+
+
 input[type="checkbox"] {
   display: none;
 }

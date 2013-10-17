@@ -27,7 +27,7 @@ class RoomHelper extends AppHelper{
 
 
    		ob_start(); ?>
-		<tr>
+		<tr roomId="<?php echo $value['id'] ?>">
 			<td><?php echo $department['name']; ?></td>
 			<td><?php echo $value['name']; ?></td>
 			<td><input type="checkbox" id="projecteur-1" <?php echo ($value['projector']==1)?'checked':''; ?> disabled></input><label for="projecteur-1"></label></td>
@@ -35,7 +35,7 @@ class RoomHelper extends AppHelper{
 			<td><?php echo $value['capacity']; ?></td>
 			<td>
 				<?php 
-					echo $this->Form->button('', array('class'=>'icon-pencil tiny'));
+					echo $this->Form->button('', array('class'=>'icon-pencil tiny grille-edit'));
 					echo $this->Form->button('', array('class'=>'icon-trash tiny'));
 				 ?>
 			</td>
@@ -50,8 +50,8 @@ class RoomHelper extends AppHelper{
 
    		ob_start(); ?>
 		<tr>
-			<?php echo $this->Form->create('Room', array('default'=>false)); ?>
-			<td><?php echo $this->Form->select('department_id', $list); ?></td>
+			<td><?php   echo $this->Form->create('Room', array('controller' => 'rooms', 'action' => 'edit')); 
+						echo $this->Form->select('department_id', $list); ?></td>
 			<td><?php echo $this->Form->input('name', array('label'=>'', 'type'=>'text')) ?></td>
 			<td><?php echo $this->Form->checkbox('projector').  $this->Form->label('projector',''); ?></td>
 			<td><?php echo $this->Form->checkbox('has_PC'). $this->Form->label('has_PC',''); ?></td>
@@ -59,7 +59,7 @@ class RoomHelper extends AppHelper{
 			<td>
 				<?php 
 					echo $this->Form->button('', array('class'=>'icon-ok tiny', 'type'=>'submit'));
-					echo $this->Form->button('', array('class'=>'icon-cancel tiny'));
+					echo $this->Form->button('', array('class'=>'icon-cancel tiny ', 'type'=>'reset'));
 
 					echo $this->Form->end();
 				?>

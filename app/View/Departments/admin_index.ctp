@@ -1,4 +1,4 @@
- <h1>Gestion des salles:</h1>
+ <h1>Gestion des départements:</h1>
 <aside class="side-bar">
 	<nav>
 		<ul>
