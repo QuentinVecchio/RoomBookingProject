@@ -124,7 +124,7 @@ class DepartmentsController  extends AppController{
 			$this->redirect(array('controller' =>'departments', 'action' =>'index','admin' => true));
 		}
 		$departments = $this->Department->find('all', array(
-		'order' =>'department.name',
+		'order' =>'Department.name',
 		'recursive' => '-1'));
 
 		$rooms = $this->Department->find('all', array(
@@ -139,7 +139,7 @@ class DepartmentsController  extends AppController{
 	*/
 	public function getDepartments(){
 		$departments = $this->Department->find('all', array(
-				'order' =>'department.name',
+				'order' =>'Department.name',
 				'recursive' => '-1'));
 		return $departments;
 	}

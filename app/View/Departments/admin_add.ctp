@@ -7,7 +7,7 @@
 			echo $this->Form->input('name', array('label' => 'Nom', 'div' => array('class' => 'small')));
 		?>
 			<ul class="button-group options">
-				<li><?php echo $this->Form->button('Ajouter', array('class' => 'tiny icon-ok')); ?>
+				<li><?php echo $this->Form->button('Ajouter', array('class' => 'tiny icon-ok success')); ?>
 				</li>
 
 			</ul>

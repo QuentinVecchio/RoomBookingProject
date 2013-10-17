@@ -18,7 +18,7 @@ class RoomsController extends AppController{
 			$this->redirect(array('controller' =>'departments', 'action' =>'index','admin' => true));
 		}
 		$departments = $this->Room->Department->find('all', array(
-		'order' =>'department.name',
+		'order' =>'Department.name',
 		'recursive' => '-1'));
 
 		$rooms = $this->Room->find('all', array(
@@ -35,6 +35,28 @@ class RoomsController extends AppController{
 		$this->set('name_department', $name_department);
 	}
 
+	public function admin_edit($index = null){
+		if($this->request->is('Ajax')){
+			$this->set('index', $index);
+			$room = $this->Room->findById($index);
+			$this->request->data = $room;
+			$this->layout = null;
+			$list = $this->Room->Department->find('list', array('recursive' => -1));
+			$this->set('list', $list);		
+		}else{
+			if(isset($this->request->data)){
+				$this->Room->id = $index;
+				$this->Room->save($this->request->data);
+				$this->redirect(array('controller' =>'rooms', 'action' => 'view', $this->request->data['Room']['department_id'], 'admin' => true));
+			}
+		}
+
+
+
+
+	}
+
+
 	public function admin_add(){
 		if(!empty($this->request->data)){
 			debug($this->request->data);
@@ -49,7 +71,6 @@ class RoomsController extends AppController{
 		}
 
 		$list = $this->Room->Department->find('list', array('recursive' => -1));
-		debug($list);
 		$this->set('list', $list);
 	}
 }

@@ -10,7 +10,7 @@
 
 	?>
 	<ul class="button-group options">
-		<li><?php echo $this->Form->button('Mettre à jour', array('class' =>'tiny icon-ok')); ?>
+		<li><?php echo $this->Form->button('Mettre à jour', array('class' =>'tiny icon-ok success')); ?>
 		</li>
 	</ul>
 </fieldset>

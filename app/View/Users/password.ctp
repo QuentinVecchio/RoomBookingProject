@@ -11,7 +11,7 @@
 												   'class' => 'high', 'div' => array('class' => 'high')));
 		?>
 		<ul class="button-group options">
-			<li><?php echo $this->Form->button('Mettre à jour', array('class' => 'tiny icon-ok')); ?></li>
+			<li><?php echo $this->Form->button('Mettre à jour', array('class' => 'tiny icon-ok success')); ?></li>
 		</ul>
 	</fieldset>
 <?php

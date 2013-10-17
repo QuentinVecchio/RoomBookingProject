@@ -32,3 +32,8 @@
 	</tbody>
 </table>
 </section>
+<?php 
+
+$this->start('script');
+	echo $this->Html->script('gestion_salle');
+$this->end(); ?>
