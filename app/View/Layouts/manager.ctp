@@ -7,7 +7,6 @@
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
-
 		echo $this->Html->css('foundation');
 		echo $this->Html->css('global');
 		echo $this->Html->css('menu_top');
@@ -16,6 +15,8 @@
 		echo $this->Html->css('manager');
 		echo $this->Html->css('table');		
 
+
+		echo $this->Html->script('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js');		
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>

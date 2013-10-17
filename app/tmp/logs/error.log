@@ -2014,3 +2014,98 @@ Stack Trace:
 #3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-10-17 21:14:03 Error: [MissingActionException] Action RoomsController::manager_answer() could not be found.
+Exception Attributes: array (
+  'controller' => 'RoomsController',
+  'action' => 'manager_answer',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/rooms/answer
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#4 {main}
+2013-10-17 21:14:32 Error: [MissingViewException] View file "E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Rooms\manager_answer.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Nouveau\\htdocs\\CakePHP\\projet-web\\app\\View\\Rooms\\manager_answer.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/rooms/answer
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Nouveau\htdocs\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Nouveau\htdocs\CakePHP\projet-web\index.php(43): require('E:\Nouveau\htdo...')
+#6 {main}
+2013-10-17 21:18:20 Error: Fatal Error (1): Class 'Calendrier' not found in [E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Rooms\manager_answer.ctp, line 3]
+2013-10-17 21:18:20 Error: [FatalErrorException] Class 'Calendrier' not found
+Request URL: /CakePHP/projet-web/index.php/manager/rooms/answer
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'Calendri...', 'E:\Nouveau\htdo...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Calendri...', 'E:\Nouveau\htdo...', 3, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Calendri...', 'E:\Nouveau\htdo...', 3, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-17 21:19:11 Error: Fatal Error (1): Class 'Calendrier' not found in [E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Rooms\manager_answer.ctp, line 3]
+2013-10-17 21:19:11 Error: [FatalErrorException] Class 'Calendrier' not found
+Request URL: /CakePHP/projet-web/index.php/manager/rooms/answer
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'Calendri...', 'E:\Nouveau\htdo...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Calendri...', 'E:\Nouveau\htdo...', 3, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Calendri...', 'E:\Nouveau\htdo...', 3, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-17 21:19:13 Error: Fatal Error (1): Class 'Calendrier' not found in [E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Rooms\manager_answer.ctp, line 3]
+2013-10-17 21:19:13 Error: [FatalErrorException] Class 'Calendrier' not found
+Request URL: /CakePHP/projet-web/index.php/manager/rooms/answer
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'Calendri...', 'E:\Nouveau\htdo...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Calendri...', 'E:\Nouveau\htdo...', 3, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Calendri...', 'E:\Nouveau\htdo...', 3, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-17 21:20:50 Error: Fatal Error (1): Class 'Calendrier' not found in [E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Rooms\manager_answer.ctp, line 3]
+2013-10-17 21:20:50 Error: [FatalErrorException] Class 'Calendrier' not found
+Request URL: /CakePHP/projet-web/index.php/manager/rooms/answer
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'Calendri...', 'E:\Nouveau\htdo...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Calendri...', 'E:\Nouveau\htdo...', 3, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Calendri...', 'E:\Nouveau\htdo...', 3, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-17 21:20:51 Error: Fatal Error (1): Class 'Calendrier' not found in [E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Rooms\manager_answer.ctp, line 3]
+2013-10-17 21:20:51 Error: [FatalErrorException] Class 'Calendrier' not found
+Request URL: /CakePHP/projet-web/index.php/manager/rooms/answer
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'Calendri...', 'E:\Nouveau\htdo...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Calendri...', 'E:\Nouveau\htdo...', 3, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Calendri...', 'E:\Nouveau\htdo...', 3, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-17 21:21:14 Error: Fatal Error (1): Class 'Calendrier' not found in [E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Rooms\manager_answer.ctp, line 7]
+2013-10-17 21:21:14 Error: [FatalErrorException] Class 'Calendrier' not found
+Request URL: /CakePHP/projet-web/index.php/manager/rooms/answer
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'Calendri...', 'E:\Nouveau\htdo...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Calendri...', 'E:\Nouveau\htdo...', 7, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Calendri...', 'E:\Nouveau\htdo...', 7, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-17 21:25:58 Error: Fatal Error (4): syntax error, unexpected ')' in [E:\Nouveau\htdocs\CakePHP\projet-web\app\View\Rooms\manager_answer.ctp, line 2]
+2013-10-17 21:25:58 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /CakePHP/projet-web/index.php/manager/rooms/answer
+Stack Trace:
+#0 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Nouveau\htdo...', 2, Array)
+#2 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Nouveau\htdo...', 2, Array)
+#3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
