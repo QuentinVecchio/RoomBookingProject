@@ -25,7 +25,7 @@
 				}
 			}
 
-			echo $this->Room->getEdit($departments);
+			echo $this->Room->getEdit($departments, $id);
 		 ?>
 
 

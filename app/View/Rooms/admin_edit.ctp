@@ -1,6 +1,6 @@
 <tr>
 	<?php echo $this->Form->create('Room'); ?>
-	<td><?php echo $this->Form->select('department_id', $list); ?></td>
+	<td><?php echo $this->Form->select('department_id', $list, $index); ?></td>
 	<td><?php echo $this->Form->input('name', array('label'=>'', 'type'=>'text')) ?></td>
 	<td><?php echo $this->Form->checkbox('projector').  $this->Form->label('projector',''); ?></td>
 	<td><?php echo $this->Form->checkbox('has_PC'). $this->Form->label('has_PC',''); ?></td>

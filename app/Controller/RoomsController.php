@@ -33,6 +33,7 @@ class RoomsController extends AppController{
 		$this->set('departments', $departments);
 		$this->set('rooms', $rooms);
 		$this->set('name_department', $name_department);
+		$this->set('id', $index);
 	}
 
 	public function admin_edit($index = null){
