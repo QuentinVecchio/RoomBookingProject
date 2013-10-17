@@ -38,6 +38,7 @@ class RoomsController extends AppController{
 
 	public function admin_edit($index = null){
 		if($this->request->is('Ajax')){
+			echo 'oui';
 			$this->set('index', $index);
 			$room = $this->Room->findById($index);
 			$this->request->data = $room;
