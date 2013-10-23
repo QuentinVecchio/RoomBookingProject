@@ -71,7 +71,7 @@ $(function(){
 						nbMois = 12;
 						nbAnnee -= 1;
 						$('#titreAnnee').attr('val',nbAnnee);
-						$('#anneeBouge').animate({ marginTop: '+='+74}, 800);
+						$('#anneeBouge').animate({ marginTop: '+='+62}, 800);
 					}
 					else
 					{
@@ -79,14 +79,14 @@ $(function(){
 					}
 					$('#titreMois').attr('val',nbMois);
 				//On met a jour le mois dans la vue
-					$('#moisBouge').animate({ marginTop: '+='+37}, 800);
+					$('#moisBouge').animate({ marginTop: '+='+32}, 800);
 				//Gestion de l'affichage du calendrier	
 					$('#month' + nbMois).addClass('affiche');
 					spanNbLigne = $('#nbLigne'+nbMois).html();
 					nbLigne = parseInt(spanNbLigne);
 					nbLigne += 1;
-					nbLigne *= 58;
-					nbLigne -= 3;
+					nbLigne *= 63;
+					nbLigne -= 2;
 					$('#month9').animate({ marginTop: '+='+nbLigne}, 800, function(){
 						$('#month' + nbMoisAv).removeClass('affiche');	
 					});	
@@ -113,7 +113,7 @@ $(function(){
 						nbMois = 1;
 						nbAnnee += 1;
 						$('#titreAnnee').attr('val',nbAnnee);
-						$('#anneeBouge').animate({ marginTop: '-='+74}, 800);
+						$('#anneeBouge').animate({ marginTop: '-='+63}, 800);
 					}
 					else
 					{
@@ -121,16 +121,16 @@ $(function(){
 					}
 				$('#titreMois').attr('val',nbMois);
 			//On met a jour le mois dans la vue
-				$('#moisBouge').animate({ marginTop: '-='+37}, 800);	
+				$('#moisBouge').animate({ marginTop: '-='+32}, 800);	
 			//Gestion de l'affichage du calendrier	
 				$('#month' + nbMois).addClass('affiche');
 				spanNbLigne = $('#nbLigne'+nbMoisAv).html();
 				nbLigne = parseInt(spanNbLigne);
 				nbLigne += 1;
-				nbLigne *= 58;
-				nbLigne -= 3;
+				nbLigne *= 63;
+				nbLigne -=2;
 				$('#month9').animate({ marginTop: '-='+nbLigne}, 800, function(){
-					$('#month' + nbMoisAv).removeClass('affiche');	
+					$('#month' + nbMoisAv).removeClass('affiche');		
 				});	
 			//Gestion du bas de calendrier
 				gereBasCalendrier(nbMois);	

@@ -2229,3 +2229,97 @@ Stack Trace:
 #3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-10-18 13:37:55 Error: [MissingControllerException] Controller class ProjetController could not be found.
+Exception Attributes: array (
+  'class' => 'ProjetController',
+  'plugin' => NULL,
+)
+Request URL: /projet/index.php/projet/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#2 {main}
+2013-10-18 13:38:16 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: NO)',
+  'enabled' => true,
+)
+Request URL: /projet/index.php/users/login
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Datasource/DboSource.php(262): Mysql->connect()
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/ConnectionManager.php(107): DboSource->__construct(Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Model.php(3288): ConnectionManager::getDataSource('default')
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Model.php(1107): Model->setDataSource('default')
+#4 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Model.php(3310): Model->setSource('users')
+#5 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Model.php(1318): Model->getDataSource()
+#6 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/View/Helper/FormHelper.php(199): Model->schema()
+#7 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/View/Helper/FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/View/Users/login.ctp(3): FormHelper->create('User')
+#9 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/View/View.php(931): include('/Users/quentin....')
+#10 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/View/View.php(893): View->_evaluate('/Users/quentin....', Array)
+#11 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/View/View.php(462): View->_render('/Users/quentin....')
+#12 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#13 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#14 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#17 {main}
+2013-10-18 16:06:27 Error: [MissingControllerException] Controller class ProjetController could not be found.
+Exception Attributes: array (
+  'class' => 'ProjetController',
+  'plugin' => NULL,
+)
+Request URL: /projet/index.php/projet/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#2 {main}
+2013-10-18 22:51:32 Error: [MissingActionException] Action UsersController::manager_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'manager_login',
+)
+Request URL: /projet/index.php/manager/users/login
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#4 {main}
+2013-10-19 20:29:00 Error: [MissingActionException] Action UsersController::manager_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'manager_login',
+)
+Request URL: /projet/index.php/manager/users/login
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#4 {main}
+2013-10-20 11:27:03 Error: [MissingActionException] Action UsersController::manager_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'manager_login',
+)
+Request URL: /projet/index.php/manager/users/login
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#4 {main}
+2013-10-20 11:28:07 Error: [MissingActionException] Action UsersController::manager_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'manager_login',
+)
+Request URL: /projet/index.php/manager/users/login
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#4 {main}
