@@ -114,8 +114,8 @@ class Calendrier
 							
 							<?php //Définition des commandes de gestion des mois?>
 							<div id="controleMois">
-								<div class="button icon-down-open" id="btnH"></div>
-								<div class="button icon-up-open" id="btnB"></div>
+								<div class="btn icon-up-open" id="btnH"></div>
+								<div class="btn icon-down-open" id="btnB"></div>
 							</div>
 						</div>
 						<div id="basCalendrier">

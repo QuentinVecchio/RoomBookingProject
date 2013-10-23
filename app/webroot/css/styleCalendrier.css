@@ -1,142 +1,136 @@
-.calendrier
-{
-	background: #DDDDDD;
-	letter-spacing: 1px;
-	font-family: Helvetica;
-	padding: 10px;
+.calendrier {
+  background: #DDDDDD;
+  letter-spacing: 1px;
+  font-family: Helvetica;
+  padding: 10px;
+  overflow: hidden;
+  clear: both;
 }
-.calendrier 
-{
-	overflow: hidden;
-	clear: both;
+#hautCalendrier {
+  border-top: 1px solid #363636;
+  border-left: 1px solid #363636;
+  border-right: 1px solid #363636;
+  background: #5B605F;
+  width: 540px;
+  z-index: 1000;
 }
-#hautCalendrier
-{
-	border-top: 1px solid rgba(54,54,54,1);
-	border-left: 1px solid rgba(54,54,54,1);
-	border-right: 1px solid rgba(54,54,54,1);
-	background: rgba(54,54,54,0.4);
-	width: 560px;
-	z-index: 1000;
+#calendrierTitre {
+  color: rgba(54,54,54,0.8);
+  font-size: 2em;
+  padding: 5px;
 }
-	#calendrierTitre
-	{
-		color: rgba(54,54,54,0.8);;
-		font-size: 2em;
-		padding: 5px;
-	}
-	#calendrierTitre, #controleMois
-	{
-		display: inline-block;
-		vertical-align: top;
-	}
-	#controleMois
-	{
-		margin-left: 300px;	
-		margin-top: 3px;
-	}
-	.button
-	{
-		border: 1px solid black;
-		border-radius: 5px;
-		width: 20px;
-		height: 20px;
-		margin-bottom: 2px;
-		cursor: pointer;
-		z-index: 100;
-	}
-#basCalendrier
-{
-	
-	border-bottom: 1px solid rgba(54,54,54,1);
-	border-left: 1px solid rgba(54,54,54,1);
-	border-right: 1px solid rgba(54,54,54,1);
-	background: #B0B0B0;
-	width: 540px;
-	height: 400px;
-	padding: 10px;
-	position: relative;
+#calendrierTitre,
+#controleMois {
+  display: inline-block;
+  vertical-align: top;
 }
-#titreMois, #titreAnnee
-{
-	height: 120px;
-	width : 60px;
-	height: 38px;
-	display: inline-block;
-	vertical-align: top;
-	text-align: center;
-	overflow: hidden;
+#controleMois {
+  margin-left: 300px;
+  margin-top: 3px;
 }
-#titreMois
-{
-	margin-left: 20px;
+.calendrier .btn {
+  color: #464646;
+  cursor: pointer;
+  transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  font-size: 1.1em;
 }
-.scrollMA
-{
-	display: block;
+.calendrier .btn:hover {
+  color: #FF7A00;
 }
-#titreAnnee
-{
-	width : 90px;
+#basCalendrier {
+  border-bottom: 1px solid #363636;
+  border-left: 1px solid #363636;
+  border-right: 1px solid #363636;
+  background: #B0B0B0;
+  width: 540px;
+  height: 400px;
+  padding: 10px;
+  position: relative;
 }
-	#moisChange
-	{
-		border: 1px solid #B0B0B0;
-	}
-	table 
-	{
-		margin-left: 54px;
-		visibility: hidden;
-		z-index: 10;
-	}
- 	table td 
-	{
-		border : 1px solid #A3A3A3;
-		width: 55px;
-		height: 48px;
-		padding-top: 7px;
-		text-align: center;
-	}
- 	table td:hover
-	{
-		background: #FF7400;
-	}
-	table td.padding
-	{
-		border : none;
-	}
-	table th 
-	{
-		font-weight: normal;
-		color: #A8A8A8;
-	}
-.nomJours
-{
-	color : rgba(0,0,255,0.7);
+#titreMois,
+#titreAnnee {
+  width: 60px;
+  height: 35px;
+  padding-bottom: 1px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  overflow: hidden;
+  color: #FFFFFA;
 }
-.days
-{
-	margin-top: 20px;
+#titreMois {
+  margin-left: 20px;
 }
-.days:hover
-{
-	
+.scrollMA {
+  display: block;
 }
-.focus
-{
-	background: red;
+#titreAnnee {
+  width: 90px;
 }
-.affiche
-{
-	visibility: visible;
+.mois {
+  margin-top: 35px;
 }
-.event
-{
-	margin-left: 40px;
-	margin-top : -10px;
-	background: rgba(255,0,0,0.5);
-	border-radius: 50%;
-	width: 17px;
-	height: 17px;
-	text-align: center;
+#month9 {
+  margin-top: 0px;
+}
+#moisChange {
+  border: 1px solid #B0B0B0;
+}
+#basCalendrier table {
+  margin-left: 54px;
+  border: 1px solid #B0B0B0;
+  background: #B0B0B0;
+  visibility: hidden;
+  z-index: 10;
+}
+#basCalendrier td {
+  border: 1px solid #A3A3A3;
+  width: 55px;
+  height: 52px;
+  padding-top: 7px;
+  text-align: center;
+  background: #B0B0B0;
+  transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+}
+#basCalendrier td:hover {
+  background: #FF7A00;
+  color: #FFFFFA;
+}
+#basCalendrier  td.padding {
+  border: none;
+}
+#basCalendrier  th {
+  font-weight: normal;
+  color: #A8A8A8;
+  background: #B0B0B0;
+}
+#basCalendrier .nomJours {
+  color: rgba(0,0,255,0.7);
+}
+#basCalendrier .days {
+  margin-top: 20px;
+}
+#basCalendrier .focus {
+  background: red;
+}
+#basCalendrier .affiche {
+  visibility: visible;
+}
+#basCalendrier .event {
+  margin-left: 40px;
+  margin-top: -10px;
+  background: rgba(255,0,0,0.5);
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  text-align: center;
+}
+#basCalendrier .padding {
+  visibility: hidden;
 }
