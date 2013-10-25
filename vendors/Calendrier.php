@@ -5,8 +5,9 @@
 * Octobre 2013
 */
 require('Date.class.php');
-class Calendrier
+class Calendrier extends AppHelper
 {
+	public $helpers = array('Html','link');
 	//Variables
 		private $_date1;
 		private $_date2;
@@ -59,6 +60,18 @@ class Calendrier
 			public function Cible()
 			{
 				return $this->_cibleAjax;
+			}
+
+			private function evenement($date,$tabEvent)
+			{
+				$nbEvent = 0;
+				foreach ($tabEvent as $i => $value) {
+					if($value["Loan"]["date"] == $date)
+					{
+						$nbEvent++;
+					}
+				}
+				return $nbEvent;
 			}
 			public function getCalendrier($event,Date $focus = null)
 			{
@@ -154,9 +167,19 @@ class Calendrier
 														<td colspan="<?php echo $w-1;?>" class="padding"></td>
 													<?php
 													}
+													$dateTraite = $this->_date1->Annee() . '-' . $m . '-' . $d;
+													$nbEvent = $this->evenement($dateTraite,$event);
+													if($nbEvent != 0)
+													{
 													?>
-													<td class="days" info="<?php echo $w;?>" id="days<?php echo $d;?>"><?php echo $d;?></td>
+													<td class="days" info="<?php echo $w;?>" id="days<?php echo $d;?>"> <div class="notifEvent"><?php echo $nbEvent ?></div><a href="view/<?php echo $dateTraite ?>" class="ajax"><?php echo $d; ?></a></td>
 													<?php
+													}
+													else
+													{?>
+														<td class="days" info="<?php echo $w;?>" id="days<?php echo $d;?>"><a href="#"><?php echo $d;?></a></td>
+													<?php
+													}
 													if($w == 7)
 													{
 														$nbLigne++;?>
@@ -230,7 +253,11 @@ class Calendrier
 											</tr>
 										</tbody>
 									</table>
+									<?php if($m1 == 8){?>
+									<span id="nbLigne<?php echo $m1;?>" style="visibility : hidden;"><?php echo ($nbLigne1-1);?></span>
+									<?php }else{?>
 									<span id="nbLigne<?php echo $m1;?>" style="visibility : hidden;"><?php echo $nbLigne1;?></span>
+									<?php }?>
 								<?php 
 									}
 								}

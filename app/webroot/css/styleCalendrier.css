@@ -1,10 +1,18 @@
+@font-face {
+  font-family: 'policeNotif';
+  src: url('font/police.otf') format('truetype');
+}
 .calendrier {
-  background: #DDDDDD;
   letter-spacing: 1px;
   font-family: Helvetica;
-  padding: 10px;
   overflow: hidden;
   clear: both;
+  width: 540px;
+}
+#calendrier,
+#gestion {
+  display: inline-block;
+  vertical-align: top;
 }
 #hautCalendrier {
   border-top: 1px solid #363636;
@@ -54,7 +62,6 @@
 #titreAnnee {
   width: 60px;
   height: 35px;
-  padding-bottom: 1px;
   display: inline-block;
   vertical-align: top;
   text-align: center;
@@ -98,8 +105,16 @@
   -webkit-transition: all .2s ease-in;
   -o-transition: all .2s ease-in;
 }
+#basCalendrier td a {
+  color: #5B605F;
+  display: block;
+  width: 100%;
+  heigth: 100%;
+}
 #basCalendrier td:hover {
   background: #FF7A00;
+}
+#basCalendrier td:hover a {
   color: #FFFFFA;
 }
 #basCalendrier  td.padding {
@@ -117,20 +132,26 @@
   margin-top: 20px;
 }
 #basCalendrier .focus {
-  background: red;
+  background: #464646;
 }
 #basCalendrier .affiche {
   visibility: visible;
 }
-#basCalendrier .event {
-  margin-left: 40px;
-  margin-top: -10px;
-  background: rgba(255,0,0,0.5);
-  border-radius: 50%;
-  width: 17px;
-  height: 17px;
-  text-align: center;
-}
 #basCalendrier .padding {
   visibility: hidden;
+}
+.notifEvent {
+  font-family: 'policeNotif', Arial, serif;
+  font-size: 0.5;
+  padding-top: 4px;
+  padding-left: 1px;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  border-radius: 9px;
+  background: #ff0000;
+  position: absolute;
+  margin-left: 33px;
+  margin-top: -20px;
+  color: #FFFFFA;
 }

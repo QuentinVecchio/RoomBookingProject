@@ -31,7 +31,6 @@ $(function(){
 	}
 	function gereBasCalendrier(nMois)
 	{
-
 		spanNbLigne = $('#nbLigne'+nMois).html();
 		nbLigne = parseInt(spanNbLigne);
 		he = $('#basCalendrier').css('height');
@@ -121,7 +120,8 @@ $(function(){
 					}
 				$('#titreMois').attr('val',nbMois);
 			//On met a jour le mois dans la vue
-				$('#moisBouge').animate({ marginTop: '-='+32}, 800);	
+				$('#moisBouge').animate({ marginTop: '-='+32}, 800);
+
 			//Gestion de l'affichage du calendrier	
 				$('#month' + nbMois).addClass('affiche');
 				spanNbLigne = $('#nbLigne'+nbMoisAv).html();
