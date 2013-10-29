@@ -5,6 +5,8 @@
 			echo $this->Form->checkbox('projector', array('hiddenField' => false)).  $this->Form->label('projector','Projecteur');
 			echo $this->Form->checkbox('has_PC', array('hiddenField' => false)).  $this->Form->label('has_PC','PC');
 			echo $this->Form->select('department_id', $listDepartment, array('hiddenField' => false)); 
+			echo $this->Form->input('min_capacity', array('label' => 'Minimum', 'type'=> 'number', 'min' => 0, 'max' =>200, 'step' => 5 ));
+			echo $this->Form->input('max_capacity', array('label' => 'Maximum', 'type'=> 'number', 'min' => 0, 'max' =>200, 'step' => 5 ));
 		echo $this->Form->end('Rechercher');
 	 ?>
 	<table class="grille-gestion">
