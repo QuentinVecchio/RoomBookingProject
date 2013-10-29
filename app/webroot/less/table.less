@@ -32,11 +32,11 @@
 		background-color: @color_neutral_2;
 	}
 
-input[type="checkbox"]{
+.grille-gestion input[type="checkbox"]{
 	display: none;
 }
 
-input[type="checkbox"] + label{
+.grille-gestion input[type="checkbox"] + label{
 	position :relative;
 	display: block;
 	margin: 0 auto;
@@ -47,7 +47,7 @@ input[type="checkbox"] + label{
 	background-color: #E82D21;	
 }
 
-input[type="checkbox"]:checked + label:after
+.grille-gestion input[type="checkbox"]:checked + label:after
 {
 	position: absolute;
 	font-family: 'fontello';
@@ -64,7 +64,7 @@ input[type="checkbox"]:checked + label:after
 	z-index: 1000;
 }
 
-input:checked + label
+.grille-gestion input:checked + label
 {
 	background-color: #6872FF ;
 }

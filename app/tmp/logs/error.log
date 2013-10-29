@@ -2229,404 +2229,559 @@ Stack Trace:
 #3 E:\Nouveau\htdocs\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
-2013-10-18 13:37:55 Error: [MissingControllerException] Controller class ProjetController could not be found.
+2013-10-19 15:59:03 Error: [MissingControllerException] Controller class CakePHPController could not be found.
 Exception Attributes: array (
-  'class' => 'ProjetController',
+  'class' => 'CakePHPController',
   'plugin' => NULL,
 )
-Request URL: /projet/index.php/projet/
+Request URL: /CakePHP/projet-web/index.php/CakePHP/projet-web/
 Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
 #2 {main}
-2013-10-18 13:38:16 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+2013-10-19 15:59:12 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
 Exception Attributes: array (
   'class' => 'Mysql',
-  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: NO)',
+  'message' => 'SQLSTATE[HY000] [1049] Unknown database \'projet_web\'',
   'enabled' => true,
 )
-Request URL: /projet/index.php/users/login
+Request URL: /CakePHP/projet-web/index.php/users/login
 Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Datasource/DboSource.php(262): Mysql->connect()
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/ConnectionManager.php(107): DboSource->__construct(Array)
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Model.php(3288): ConnectionManager::getDataSource('default')
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Model.php(1107): Model->setDataSource('default')
-#4 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Model.php(3310): Model->setSource('users')
-#5 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Model.php(1318): Model->getDataSource()
-#6 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/View/Helper/FormHelper.php(199): Model->schema()
-#7 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/View/Helper/FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
-#8 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/View/Users/login.ctp(3): FormHelper->create('User')
-#9 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/View/View.php(931): include('/Users/quentin....')
-#10 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/View/View.php(893): View->_evaluate('/Users/quentin....', Array)
-#11 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/View/View.php(462): View->_render('/Users/quentin....')
-#12 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
-#13 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
-#14 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#15 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#16 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Matthieu\My ...')
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
 #17 {main}
-2013-10-18 16:06:27 Error: [MissingControllerException] Controller class ProjetController could not be found.
-Exception Attributes: array (
-  'class' => 'ProjetController',
-  'plugin' => NULL,
-)
-Request URL: /projet/index.php/projet/
-Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
-#2 {main}
-2013-10-18 22:51:32 Error: [MissingActionException] Action UsersController::manager_login() could not be found.
+2013-10-19 16:03:28 Error: [MissingActionException] Action UsersController::manager_login() could not be found.
 Exception Attributes: array (
   'controller' => 'UsersController',
   'action' => 'manager_login',
 )
-Request URL: /projet/index.php/manager/users/login
+Request URL: /CakePHP/projet-web/index.php/manager/users/login
 Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
 #4 {main}
-2013-10-19 20:29:00 Error: [MissingActionException] Action UsersController::manager_login() could not be found.
+2013-10-19 16:03:37 Error: [MissingActionException] Action UsersController::manager_login() could not be found.
 Exception Attributes: array (
   'controller' => 'UsersController',
   'action' => 'manager_login',
 )
-Request URL: /projet/index.php/manager/users/login
+Request URL: /CakePHP/projet-web/index.php/manager/users/login
 Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
 #4 {main}
-2013-10-20 11:27:03 Error: [MissingActionException] Action UsersController::manager_login() could not be found.
+2013-10-29 13:41:26 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
 Exception Attributes: array (
-  'controller' => 'UsersController',
-  'action' => 'manager_login',
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
 )
-Request URL: /projet/index.php/manager/users/login
+Request URL: /CakePHP/projet-web/index.php/users/login
 Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
-#4 {main}
-2013-10-20 11:28:07 Error: [MissingActionException] Action UsersController::manager_login() could not be found.
-Exception Attributes: array (
-  'controller' => 'UsersController',
-  'action' => 'manager_login',
-)
-Request URL: /projet/index.php/manager/users/login
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Matthieu\My ...')
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#17 {main}
+2013-10-29 13:42:15 Error: Fatal Error (1): Unsupported operand types in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php, line 1973]
+2013-10-29 13:42:15 Error: [FatalErrorException] Unsupported operand types
+Request URL: /CakePHP/projet-web/index.php/admin/rooms/edit/9
 Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
-#4 {main}
-2013-10-23 12:22:29 Error: [MissingActionException] Action UsersController::manager_login() could not be found.
-Exception Attributes: array (
-  'controller' => 'UsersController',
-  'action' => 'manager_login',
-)
-Request URL: /projet/index.php/manager/users/login
-Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
-#4 {main}
-2013-10-23 12:27:51 Error: [MissingActionException] Action UsersController::manager_login() could not be found.
-Exception Attributes: array (
-  'controller' => 'UsersController',
-  'action' => 'manager_login',
-)
-Request URL: /projet/index.php/manager/users/login
-Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
-#4 {main}
-2013-10-23 12:27:51 Error: [MissingActionException] Action UsersController::manager_login() could not be found.
-Exception Attributes: array (
-  'controller' => 'UsersController',
-  'action' => 'manager_login',
-)
-Request URL: /projet/index.php/manager/users/login
-Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
-#4 {main}
-2013-10-23 12:27:51 Error: [MissingActionException] Action UsersController::manager_index() could not be found.
-Exception Attributes: array (
-  'controller' => 'UsersController',
-  'action' => 'manager_index',
-)
-Request URL: /projet/index.php/manager/users/
-Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
-#4 {main}
-2013-10-23 13:40:09 Error: [MissingActionException] Action LoansController::manager_view() could not be found.
-Exception Attributes: array (
-  'controller' => 'LoansController',
-  'action' => 'manager_view',
-)
-Request URL: /projet/index.php/manager/loans/view/2013-10-23
-Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
-#4 {main}
-2013-10-23 13:56:16 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/Calendrier.php, line 162]
-2013-10-23 13:56:16 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
-Request URL: /projet/index.php/manager/loans/answer
-Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/quentin....', 162)
-#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/quentin....', 162, Array)
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/quentin....', 162, Array)
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
-2013-10-23 13:56:39 Error: Fatal Error (1): Call to undefined function evenement() in [/Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/Calendrier.php, line 157]
-2013-10-23 13:56:39 Error: [FatalErrorException] Call to undefined function evenement()
-Request URL: /projet/index.php/manager/loans/answer
-Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/quentin....', 157)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/quentin....', 157, Array)
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/quentin....', 157, Array)
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-23 13:57:24 Error: Fatal Error (1): Call to undefined function evenement() in [/Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/Calendrier.php, line 168]
-2013-10-23 13:57:24 Error: [FatalErrorException] Call to undefined function evenement()
-Request URL: /projet/index.php/manager/loans/answer
-Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/quentin....', 168)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/quentin....', 168, Array)
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/quentin....', 168, Array)
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-23 13:58:19 Error: Fatal Error (1): Call to undefined function evenement() in [/Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/Calendrier.php, line 168]
-2013-10-23 13:58:19 Error: [FatalErrorException] Call to undefined function evenement()
-Request URL: /projet/index.php/manager/loans/answer
-Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/quentin....', 168)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/quentin....', 168, Array)
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/quentin....', 168, Array)
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-23 13:58:57 Error: Fatal Error (1): Call to undefined function evenement() in [/Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/Calendrier.php, line 168]
-2013-10-23 13:58:57 Error: [FatalErrorException] Call to undefined function evenement()
-Request URL: /projet/index.php/manager/loans/answer
-Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/quentin....', 168)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/quentin....', 168, Array)
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/quentin....', 168, Array)
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-23 14:02:44 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Loan.id' in 'field list'
-Request URL: /projet/index.php/manager/loans/answer
-Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Loan`.`...', Array)
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Loan`.`...', Array, Array)
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Loan`.`...', false)
-#4 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Model.php(2750): DboSource->read(Object(Loan), Array)
-#5 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Model.php(2722): Model->_readDataSource('list', Array)
-#6 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/Controller/LoansController.php(8): Model->find('list', Array)
-#7 [internal function]: LoansController->manager_answer()
-#8 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
-#9 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#10 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
-#11 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#12 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
-#13 {main}
-2013-10-23 14:31:28 Error: Fatal Error (4): syntax error, unexpected 'return' (T_RETURN), expecting ',' or ';' in [/Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/Calendrier.php, line 70]
-2013-10-23 14:31:28 Error: [FatalErrorException] syntax error, unexpected 'return' (T_RETURN), expecting ',' or ';'
-Request URL: /projet/index.php/manager/loans/answer
-Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/quentin....', 70)
-#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/quentin....', 70, Array)
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/quentin....', 70, Array)
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-23 14:39:43 Error: Fatal Error (1): Call to a member function Link() on a non-object in [/Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/Calendrier.php, line 175]
-2013-10-23 14:39:43 Error: [FatalErrorException] Call to a member function Link() on a non-object
-Request URL: /projet/index.php/manager/loans/answer
-Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/quentin....', 175)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/quentin....', 175, Array)
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/quentin....', 175, Array)
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-23 14:40:33 Error: Fatal Error (1): Call to a member function Link() on a non-object in [/Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/Calendrier.php, line 175]
-2013-10-23 14:40:33 Error: [FatalErrorException] Call to a member function Link() on a non-object
-Request URL: /projet/index.php/manager/loans/answer
-Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/quentin....', 175)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/quentin....', 175, Array)
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/quentin....', 175, Array)
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-23 14:42:40 Error: Fatal Error (1): Call to a member function link() on a non-object in [/Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/Calendrier.php, line 175]
-2013-10-23 14:42:40 Error: [FatalErrorException] Call to a member function link() on a non-object
-Request URL: /projet/index.php/manager/loans/answer
-Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/quentin....', 175)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/quentin....', 175, Array)
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/quentin....', 175, Array)
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-23 14:50:03 Error: [MissingActionException] Action AppController::manager_index.php() could not be found.
+2013-10-29 13:42:43 Error: [MissingViewException] View file "E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Loans\manager_view.ctp" is missing.
 Exception Attributes: array (
-  'controller' => 'AppController',
-  'action' => 'manager_index.php',
+  'file' => 'E:\\Matthieu\\My Documents\\Projects\\Web\\www\\CakePHP\\projet-web\\app\\View\\Loans\\manager_view.ctp',
 )
-Request URL: /projet/index.php/manager/app/index.php/manager/loans/loans/view/2013-10-16
+Request URL: /CakePHP/projet-web/index.php/manager/loans/view/2013-10-16
 Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
-#4 {main}
-2013-10-23 14:50:34 Error: [MissingActionException] Action AppController::manager_index.php() could not be found.
-Exception Attributes: array (
-  'controller' => 'AppController',
-  'action' => 'manager_index.php',
-)
-Request URL: /projet/index.php/manager/app/index.php/manager/loans/loans/view/2013-10-16
-Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
-#4 {main}
-2013-10-23 14:50:59 Error: [MissingActionException] Action LoansController::manager_index.php() could not be found.
-Exception Attributes: array (
-  'controller' => 'LoansController',
-  'action' => 'manager_index.php',
-)
-Request URL: /projet/index.php/manager/loans/index.php/manager/loans/view/2013-10-16
-Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
-#4 {main}
-2013-10-23 14:51:24 Error: [MissingActionException] Action LoansController::manager_loans() could not be found.
-Exception Attributes: array (
-  'controller' => 'LoansController',
-  'action' => 'manager_loans',
-)
-Request URL: /projet/index.php/manager/loans/loans/view/2013-10-16
-Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
-#4 {main}
-2013-10-23 14:51:42 Error: [MissingActionException] Action LoansController::manager_view() could not be found.
-Exception Attributes: array (
-  'controller' => 'LoansController',
-  'action' => 'manager_view',
-)
-Request URL: /projet/index.php/manager/loans/view/2013-10-16
-Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
-#4 {main}
-2013-10-23 14:52:49 Error: [MissingViewException] View file "/Users/quentin.vecchio/Desktop/Programmation Web/projet/app/View/Loans/manager_view.ctp" is missing.
-Exception Attributes: array (
-  'file' => '/Users/quentin.vecchio/Desktop/Programmation Web/projet/app/View/Loans/manager_view.ctp',
-)
-Request URL: /projet/index.php/manager/loans/view/2013-10-16
-Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
-#4 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#5 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
 #6 {main}
-2013-10-23 14:57:59 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Loans.date' in 'where clause'
-Request URL: /projet/index.php/manager/loans/view/2013-10-16
+2013-10-29 13:42:47 Error: [MissingViewException] View file "E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Loans\manager_view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Matthieu\\My Documents\\Projects\\Web\\www\\CakePHP\\projet-web\\app\\View\\Loans\\manager_view.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/loans/view/2013-10-16
 Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Loan`.`...', Array)
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Loan`.`...', Array, Array)
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Loan`.`...', false)
-#4 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Model.php(2750): DboSource->read(Object(Loan), Array)
-#5 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
-#6 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/Controller/LoansController.php(14): Model->find('all', Array)
-#7 [internal function]: LoansController->manager_view('2013-10-16')
-#8 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
-#9 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#10 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
-#11 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#12 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#6 {main}
+2013-10-29 13:43:05 Error: [MissingViewException] View file "E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Loans\manager_view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Matthieu\\My Documents\\Projects\\Web\\www\\CakePHP\\projet-web\\app\\View\\Loans\\manager_view.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/loans/view/2013-10-16
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#6 {main}
+2013-10-29 13:45:11 Error: [MissingViewException] View file "E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Loans\manager_view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Matthieu\\My Documents\\Projects\\Web\\www\\CakePHP\\projet-web\\app\\View\\Loans\\manager_view.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/loans/view/2013-10-16
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#6 {main}
+2013-10-29 13:47:30 Error: [MissingActionException] Action LoansController::manager_ask() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoansController',
+  'action' => 'manager_ask',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#4 {main}
+2013-10-29 13:47:50 Error: [MissingViewException] View file "E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Loans\manager_ask.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Matthieu\\My Documents\\Projects\\Web\\www\\CakePHP\\projet-web\\app\\View\\Loans\\manager_ask.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#6 {main}
+2013-10-29 13:48:11 Error: [MissingViewException] View file "E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Loans\manager_ask.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Matthieu\\My Documents\\Projects\\Web\\www\\CakePHP\\projet-web\\app\\View\\Loans\\manager_ask.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#6 {main}
+2013-10-29 13:48:21 Error: [MissingViewException] View file "E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Loans\manager_ask.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Matthieu\\My Documents\\Projects\\Web\\www\\CakePHP\\projet-web\\app\\View\\Loans\\manager_ask.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#6 {main}
+2013-10-29 13:49:44 Error: Fatal Error (1): Call to a member function find() on a non-object in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php, line 23]
+2013-10-29 13:49:44 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Matthieu\My ...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Matthieu\My ...', 23, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Matthieu\My ...', 23, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-29 13:56:28 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php, line 9]
+2013-10-29 13:56:28 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 9, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 9, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-29 13:58:32 Error: [MissingModelException] Recipe
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(31): PaginatorComponent->paginate('Recipe')
+#1 [internal function]: LoansController->manager_ask()
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#7 {main}
+2013-10-29 14:09:59 Error: Fatal Error (1): Unsupported operand types in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php, line 1396]
+2013-10-29 14:09:59 Error: [FatalErrorException] Unsupported operand types
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1396)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1396, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1396, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-29 14:10:08 Error: Fatal Error (1): Unsupported operand types in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php, line 1396]
+2013-10-29 14:10:08 Error: [FatalErrorException] Unsupported operand types
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1396)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1396, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1396, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-29 14:15:17 Error: Fatal Error (1): Call to a member function find() on a non-object in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php, line 33]
+2013-10-29 14:15:17 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask/page:2
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Matthieu\My ...', 33)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Matthieu\My ...', 33, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Matthieu\My ...', 33, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-29 14:15:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Loan.projector' in 'where clause'
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask/page:2
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Room`.`...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Room`.`...', Array, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Room`.`...', false)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(2750): DboSource->read(Object(Room), Array)
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(34): PaginatorComponent->paginate('Room', Array)
+#8 [internal function]: LoansController->manager_ask()
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#14 {main}
+2013-10-29 14:15:56 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Loan.projector' in 'where clause'
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask/page:2
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Room`.`...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Room`.`...', Array, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Room`.`...', false)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(2750): DboSource->read(Object(Room), Array)
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(34): PaginatorComponent->paginate('Room', Array)
+#8 [internal function]: LoansController->manager_ask()
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#14 {main}
+2013-10-29 14:16:50 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Loan.projector' in 'where clause'
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask/page:2
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Room`.`...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Room`.`...', Array, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Room`.`...', false)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(2750): DboSource->read(Object(Room), Array)
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(34): PaginatorComponent->paginate('Room', Array)
+#8 [internal function]: LoansController->manager_ask()
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#14 {main}
+2013-10-29 14:16:55 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Loan.projector' in 'where clause'
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask/page:2
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Room`.`...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Room`.`...', Array, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Room`.`...', false)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(2750): DboSource->read(Object(Room), Array)
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(34): PaginatorComponent->paginate('Room', Array)
+#8 [internal function]: LoansController->manager_ask()
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#14 {main}
+2013-10-29 14:27:09 Error: [NotFoundException] Not Found
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask/page:2
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(33): PaginatorComponent->paginate('Room', Array)
+#1 [internal function]: LoansController->manager_ask()
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#7 {main}
+2013-10-29 14:27:23 Error: [NotFoundException] Not Found
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask/page:2
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(33): PaginatorComponent->paginate('Room', Array)
+#1 [internal function]: LoansController->manager_ask()
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#7 {main}
+2013-10-29 14:28:26 Error: [NotFoundException] Not Found
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask/page:2
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(33): PaginatorComponent->paginate('Room', Array)
+#1 [internal function]: LoansController->manager_ask()
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#7 {main}
+2013-10-29 14:29:16 Error: [NotFoundException] Not Found
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask/page:2
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(33): PaginatorComponent->paginate('Room', Array)
+#1 [internal function]: LoansController->manager_ask()
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#7 {main}
+2013-10-29 14:30:14 Error: [NotFoundException] Not Found
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask/page:2
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(33): PaginatorComponent->paginate('Room', Array)
+#1 [internal function]: LoansController->manager_ask()
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#7 {main}
+2013-10-29 14:48:37 Error: Fatal Error (64): Can't use method return value in write context in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php, line 32]
+2013-10-29 14:48:37 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask?page=2
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Can't use metho...', 'E:\Matthieu\My ...', 32)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', 'E:\Matthieu\My ...', 32, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', 'E:\Matthieu\My ...', 32, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-29 14:48:54 Error: Fatal Error (64): Can't use method return value in write context in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php, line 32]
+2013-10-29 14:48:54 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask?page=2
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Can't use metho...', 'E:\Matthieu\My ...', 32)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', 'E:\Matthieu\My ...', 32, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', 'E:\Matthieu\My ...', 32, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-29 14:52:32 Error: Fatal Error (4): syntax error, unexpected ')', expecting ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php, line 34]
+2013-10-29 14:52:32 Error: [FatalErrorException] syntax error, unexpected ')', expecting ';'
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask?has_PC=1&department_id=
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 34)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 34, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 34, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-29 14:53:05 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Room.page' in 'where clause'
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask?projector=1&page=2
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Room`.`...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Room`.`...', Array, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Room`.`...', false)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(2750): DboSource->read(Object(Room), Array)
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(43): PaginatorComponent->paginate('Room', Array)
+#8 [internal function]: LoansController->manager_ask()
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#14 {main}
+2013-10-29 14:53:38 Error: [NotFoundException] Not Found
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask/page:2?projector=1&department_id=1
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(42): PaginatorComponent->paginate('Room', Array)
+#1 [internal function]: LoansController->manager_ask()
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#7 {main}
+2013-10-29 14:56:13 Error: [MissingActionException] Action RoomsController::manager_ask() could not be found.
+Exception Attributes: array (
+  'controller' => 'RoomsController',
+  'action' => 'manager_ask',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/rooms/ask?projector=1&has_PC=1&department_id=1
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#4 {main}
+2013-10-29 14:56:42 Error: [MissingActionException] Action RoomsController::manager_ask() could not be found.
+Exception Attributes: array (
+  'controller' => 'RoomsController',
+  'action' => 'manager_ask',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/rooms/ask?projector=1&department_id=
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#4 {main}
+2013-10-29 14:57:02 Error: [MissingActionException] Action RoomsController::manager_ask() could not be found.
+Exception Attributes: array (
+  'controller' => 'RoomsController',
+  'action' => 'manager_ask',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/rooms/ask?projector=1&department_id=
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#4 {main}
+2013-10-29 14:57:09 Error: [MissingActionException] Action RoomsController::manager_ask() could not be found.
+Exception Attributes: array (
+  'controller' => 'RoomsController',
+  'action' => 'manager_ask',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/rooms/ask?has_PC=1&department_id=1
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#4 {main}
+2013-10-29 15:02:41 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php, line 42]
+2013-10-29 15:02:41 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 42)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 42, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 42, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-29 15:02:51 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '! '1'' at line 1
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Departm...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Departm...', Array, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Departm...', false)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(2750): DboSource->read(Object(Department), Array)
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(2722): Model->_readDataSource('list', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(42): Model->find('list', Array)
+#7 [internal function]: LoansController->manager_ask()
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
 #13 {main}
-2013-10-23 16:16:06 Error: [Exception] heigth is undefined: failed at `heigth 20p;` /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/less/styleCalendrier.less on line 180
-Request URL: /projet/index.php/manager/loans/answer
+2013-10-29 15:03:14 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'department_id' in 'where clause'
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask
 Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(2008): lessc_parser->throwError('heigth is undef...', 2852)
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(685): lessc->throwError('heigth is undef...')
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(282): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(220): lessc->compileProps(Object(stdClass), Object(stdClass))
-#4 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(194): lessc->compileCSSBlock(Object(stdClass))
-#5 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(656): lessc->compileBlock(Object(stdClass))
-#6 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(282): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
-#7 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(276): lessc->compileProps(Object(stdClass), Object(stdClass))
-#8 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(191): lessc->compileRoot(Object(stdClass))
-#9 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(1810): lessc->compileBlock(Object(stdClass))
-#10 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(1833): lessc->compile('@import url('co...', '/Users/quentin....')
-#11 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(1847): lessc->compileFile('/Users/quentin....', '/Users/quentin....')
-#12 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(2019): lessc->checkedCompile('/Users/quentin....', '/Users/quentin....')
-#13 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/Controller/AppController.php(65): lessc::ccompile('/Users/quentin....', '/Users/quentin....')
-#14 [internal function]: AppController->beforeRender(Object(CakeEvent))
-#15 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
-#16 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
-#17 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
-#18 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
-#19 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#20 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
-#21 {main}
-2013-10-23 16:16:11 Error: [Exception] heigth is undefined: failed at `heigth 20p;` /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/less/styleCalendrier.less on line 180
-Request URL: /projet/index.php/manager/loans/answer
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Departm...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Departm...', Array, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Departm...', false)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(2750): DboSource->read(Object(Department), Array)
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(2722): Model->_readDataSource('list', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(42): Model->find('list', Array)
+#7 [internal function]: LoansController->manager_ask()
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#13 {main}
+2013-10-29 15:05:48 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Room.department_id<>' in 'where clause'
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask
 Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(2008): lessc_parser->throwError('heigth is undef...', 2852)
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(685): lessc->throwError('heigth is undef...')
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(282): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(220): lessc->compileProps(Object(stdClass), Object(stdClass))
-#4 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(194): lessc->compileCSSBlock(Object(stdClass))
-#5 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(656): lessc->compileBlock(Object(stdClass))
-#6 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(282): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
-#7 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(276): lessc->compileProps(Object(stdClass), Object(stdClass))
-#8 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(191): lessc->compileRoot(Object(stdClass))
-#9 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(1810): lessc->compileBlock(Object(stdClass))
-#10 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(1833): lessc->compile('@import url('co...', '/Users/quentin....')
-#11 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(1847): lessc->compileFile('/Users/quentin....', '/Users/quentin....')
-#12 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(2019): lessc->checkedCompile('/Users/quentin....', '/Users/quentin....')
-#13 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/Controller/AppController.php(65): lessc::ccompile('/Users/quentin....', '/Users/quentin....')
-#14 [internal function]: AppController->beforeRender(Object(CakeEvent))
-#15 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
-#16 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
-#17 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
-#18 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
-#19 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#20 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
-#21 {main}
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Room`.`...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Room`.`...', Array, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Room`.`...', false)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(2750): DboSource->read(Object(Room), Array)
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(42): PaginatorComponent->paginate('Room', Array)
+#8 [internal function]: LoansController->manager_ask()
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#14 {main}
