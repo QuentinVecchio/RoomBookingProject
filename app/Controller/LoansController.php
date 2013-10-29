@@ -31,7 +31,20 @@ class LoansController extends AppController{
 		// Retransmettre les variables dans le formulaire
 		$this->request->data['Room']= $this->request->query;
 
-		$conditions = $this->postConditions($this->request->data);
+		// Conversion de min_capacity et max_capacity vers equivalent pour postConditions
+		$cond = $this->request->data;
+		if(isset($cond['Room']['min_capacity']) && !empty($cond['Room']['min_capacity'])){
+			$cond['Room']['capacity >='] =$cond['Room']['min_capacity']; 
+		}
+			unset($cond['Room']['min_capacity']);
+
+
+		if(isset($cond['Room']['max_capacity']) && !empty($cond['Room']['max_capacity'])){
+			$cond['Room']['capacity <='] = $cond['Room']['max_capacity'];
+		}
+			unset($cond['Room']['max_capacity']);
+
+		$conditions = $this->postConditions($cond);
 
 		// Enleve le département de l'utilisateur des choix
 		if(empty($conditions) || !isset($conditions['Room.department_id'])
@@ -42,7 +55,7 @@ class LoansController extends AppController{
 
 		$res = $this->Paginator->paginate('Room', $conditions);
 		$this->set('res', $res);
-		
+
 		// Pour le menu déroulant du formulaire
 		$listDepartment = $this->Loan->Department->find('list', array('conditions' => array('id <>' => $this->Auth->User('department_id'))));
 		$this->set('listDepartment', $listDepartment);
