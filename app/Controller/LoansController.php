@@ -8,6 +8,7 @@ class LoansController extends AppController{
 	);
 
 	public function manager_answer() {
+		$this->set('title_for_layout', 'Les demandes');
 		$this->layout = 'manager';
 
 		$res = $this->Loan->find('all', array('fields'=>array('date'),'conditions' => array('Room.department_id' =>$this->Auth->User('department_id'))));
@@ -25,6 +26,7 @@ class LoansController extends AppController{
 
 
 	public function manager_ask(){
+		$this->set('title_for_layout', 'Demander une salle');
 		$this->layout = 'manager';
 		$this->Paginator->settings = $this->paginate;
 

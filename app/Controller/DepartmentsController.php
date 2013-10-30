@@ -28,7 +28,7 @@ class DepartmentsController  extends AppController{
 	*/
 	public function admin_index(){
 		$this->layout = 'admin';
-		$this->set('title_for_layout', 'Gestion des salles:');
+		$this->set('title_for_layout', 'Gestion des départements:');
 
 		$departments = $this->Department->find('all',array(
 			'recursive' => -1));
@@ -100,6 +100,7 @@ class DepartmentsController  extends AppController{
 	*	Permet à un manager de voir les salles de son département
 	*/
 	public function manager_index(){
+		$this->set('title_for_layout', 'Les salles');
 		$this->layout = 'manager';
 		$rooms = $this->Department->find('all',array(
 			'conditions' => array('id' => $this->Auth->user('department_id')),

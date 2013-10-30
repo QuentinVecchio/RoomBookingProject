@@ -2,6 +2,7 @@
 class UsersController extends AppController{
 	
 	public function index(){		
+		$this->set('title_for_layout', 'Votre profil');
 		$user = $this->User->findById($this->Auth->user('id'));
 		$this->set('user',$user);
 	}
@@ -44,6 +45,7 @@ class UsersController extends AppController{
 
 
 	public function login(){
+		$this->set('title_for_layout', 'Connexion');
 		if(!empty($this->request->data)){
 			if($this->Auth->login()){
 				if($this->Auth->user('Role.name') == 'administrators'){

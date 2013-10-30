@@ -9,6 +9,7 @@ class RoomsController extends AppController{
 		);
 
 	public function admin_index(){
+		$this->set('title_for_layout', 'Gestion des salles');
 		$this->layout = 'admin';
 	}
 
