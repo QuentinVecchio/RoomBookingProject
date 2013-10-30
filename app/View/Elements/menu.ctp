@@ -20,7 +20,6 @@
 <nav id="menu-principal">
 	<ul>
 		<li><?php echo $profil; ?></li>
-		<li><?php echo $co; ?></li>
 		<li><?php if(isset($lienAdmin)) echo $lienAdmin ?></li>
 		<li><?php if(isset($lienManag)) echo $lienManag ?></li>
 		<li><?php echo $co; ?></li>
