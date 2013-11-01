@@ -1,7 +1,7 @@
 <?php 
 class RoomHelper extends AppHelper{
 
-	public $helpers = array('Form');
+	public $helpers = array('Form', 'Html');
 
 
     public function __construct(View $view, $settings = array()) {
@@ -21,6 +21,23 @@ class RoomHelper extends AppHelper{
 		<?php 
 		return ob_get_clean();
    }
+
+   public function getViewManagerAsk($value = array(), $department){
+   		ob_start(); ?>
+		<tr>
+			<td><?php echo $department; ?></td>
+			<td><?php echo $value['name']; ?></td>
+			<td><input type="checkbox" id="projecteur-1" <?php echo ($value['projector']==1)?'checked':''; ?> disabled></input><label for="projecteur-1"></label></td>
+			<td><input type="checkbox" id="pc-1" <?php echo ($value['has_PC']==1)?'checked':''; ?> disabled></input><label for="pc-1"></label></td>
+			<td><?php echo $value['capacity']; ?></td>
+			<td><?php echo $this->Html->Link('Réserver', array('controller'=>'loans', 'action' => 'askRoom', $value['id']),array('class'=>'button tiny')); ?></td>
+		</tr>	
+
+		<?php 
+		return ob_get_clean();
+   }
+
+
 
 
    	public function getView($value = array(), $department = array()){
