@@ -2978,3 +2978,85 @@ Stack Trace:
 #3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-11-01 12:57:43 Error: [MissingActionException] Action LoansController::manager_askRoom() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoansController',
+  'action' => 'manager_askRoom',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/loans/askRoom/4
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#4 {main}
+2013-11-01 12:58:32 Error: [MissingViewException] View file "E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Loans\manager_ask_room.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Matthieu\\My Documents\\Projects\\Web\\www\\CakePHP\\projet-web\\app\\View\\Loans\\manager_ask_room.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/loans/askRoom/4
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#6 {main}
+2013-11-01 12:58:58 Error: [MissingViewException] View file "E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Loans\manager_ask_room.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Matthieu\\My Documents\\Projects\\Web\\www\\CakePHP\\projet-web\\app\\View\\Loans\\manager_ask_room.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/loans/askRoom/4
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#6 {main}
+2013-11-01 13:18:50 Error: Fatal Error (1): Call to undefined function day() in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Loans\manager_ask_room.ctp, line 19]
+2013-11-01 13:18:50 Error: [FatalErrorException] Call to undefined function day()
+Request URL: /CakePHP/projet-web/index.php/manager/loans/askRoom/4
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 19)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 19, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Matthieu\My ...', 19, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-01 13:20:27 Error: Fatal Error (1): Call to undefined function timestamp() in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Loans\manager_ask_room.ctp, line 19]
+2013-11-01 13:20:27 Error: [FatalErrorException] Call to undefined function timestamp()
+Request URL: /CakePHP/projet-web/index.php/manager/loans/askRoom/4
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 19)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 19, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Matthieu\My ...', 19, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-01 13:38:25 Error: [MissingActionException] Action UsersController::manager_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'manager_login',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/users/login
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#4 {main}
+2013-11-01 13:40:02 Error: [MissingActionException] Action UsersController::manager_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'manager_login',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/users/login
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#4 {main}

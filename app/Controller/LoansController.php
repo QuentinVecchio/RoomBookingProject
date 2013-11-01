@@ -65,4 +65,16 @@ class LoansController extends AppController{
 	}
 
 
+	public function manager_askRoom($id = null){
+		$this->layout = 'manager';
+		if(!empty($this->request->data)){
+			debug($this->request->data);
+			die();
+
+		}
+		$room = $this->Loan->Room->findById($id);
+		$this->set('room', $room);
+	}
+
+
 } ?>

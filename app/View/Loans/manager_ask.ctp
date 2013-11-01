@@ -50,12 +50,13 @@
 			<th>Projecteur</th>
 			<th>PC</th>
 			<th>Capacité</th>
+			<th>Options</th>
 		</tr>
 	</thead>
 	<tbody>
 		<?php 
 			foreach ($res as $k => $v) {
-				echo $this->Room->getViewManager($v['Room'], $v['Department']['name']);
+				echo $this->Room->getViewManagerAsk($v['Room'], $v['Department']['name']);
 			}
 		 ?>
 
