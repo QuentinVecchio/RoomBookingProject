@@ -12,12 +12,14 @@
 				<li><?php echo $this->Html->Link('', array('controller'=>'', 'action'=>''),array('class'=>'button icon-ok tiny', 'onclick'=>'form.submit(); return false;')); ?>
 				</li>
 
-				<li><?php echo $this->Html->Link('',array('controller' =>'rooms', 'action' => 'view', $id_dept), array('class'=>'button icon-cancel tiny')); ?>
+				<li><?php echo $this->Html->Link('',array('controller' =>'rooms', 'action' => 'view', $id_dept),
+													 array('class'=>'button icon-cancel tiny', 
+														   'confirm' => 'Etes vous sûr de vouloir abandonner les modifications?')); ?>
 				</li>
-
-		<?php 
-			echo $this->Form->end();
-		?>
 			</ul>
 	</td>
+
+	<?php 
+		echo $this->Form->end();
+	?>
 </tr>	

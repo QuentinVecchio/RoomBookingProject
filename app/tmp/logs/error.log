@@ -3215,3 +3215,109 @@ Stack Trace:
 #19 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #20 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
 #21 {main}
+2013-11-04 22:16:51 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Departments\admin_edit.ctp, line 14]
+2013-11-04 22:16:51 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /CakePHP/projet-web/index.php/admin/departments/edit/1
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 14, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 14, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 22:16:54 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Departments\admin_edit.ctp, line 14]
+2013-11-04 22:16:54 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /CakePHP/projet-web/index.php/admin/departments/edit/2
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 14, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 14, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 22:17:02 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Departments\admin_edit.ctp, line 14]
+2013-11-04 22:17:02 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /CakePHP/projet-web/index.php/admin/departments/edit/8
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 14, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 14, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 22:17:15 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Departments\admin_edit.ctp, line 14]
+2013-11-04 22:17:15 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /CakePHP/projet-web/index.php/admin/departments/edit/8
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 14, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 14, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 22:17:21 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Departments\admin_edit.ctp, line 14]
+2013-11-04 22:17:21 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /CakePHP/projet-web/index.php/admin/departments/edit/8
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 14, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 14, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 22:18:13 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Rooms\admin_edit.ctp, line 17]
+2013-11-04 22:18:13 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /CakePHP/projet-web/index.php/admin/rooms/edit/17
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 17, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 17, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 22:18:21 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Rooms\admin_edit.ctp, line 17]
+2013-11-04 22:18:21 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /CakePHP/projet-web/index.php/admin/rooms/edit/26
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 17, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 17, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 22:18:30 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Rooms\admin_edit.ctp, line 17]
+2013-11-04 22:18:30 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /CakePHP/projet-web/index.php/admin/rooms/edit/26
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 17, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 17, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 22:22:01 Error: [MissingViewException] View file "E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Loans\manager_view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Matthieu\\My Documents\\Projects\\Web\\www\\CakePHP\\projet-web\\app\\View\\Loans\\manager_view.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/loans/view/2013-10-16
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#6 {main}
+2013-11-04 22:22:12 Error: [MissingViewException] View file "E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Loans\manager_view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Matthieu\\My Documents\\Projects\\Web\\www\\CakePHP\\projet-web\\app\\View\\Loans\\manager_view.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/loans/view/2013-10-16
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#6 {main}
