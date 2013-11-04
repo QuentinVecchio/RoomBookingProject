@@ -1,0 +1,18 @@
+1383604609
+s:465:"
+<aside class="side-bar">
+	<nav>
+		<ul>
+			<li class="titre">Les départements:</li>
+							<li><a href="/CakePHP/projet-web/index.php/admin/rooms/view/3">GEA</a></li>
+
+							<li><a href="/CakePHP/projet-web/index.php/admin/rooms/view/2">GMP</a></li>
+
+							<li><a href="/CakePHP/projet-web/index.php/admin/rooms/view/1">INFO</a></li>
+
+							<li><a href="/CakePHP/projet-web/index.php/admin/rooms/view/4">TC</a></li>
+
+			
+		</ul>
+	</nav>
+</aside>";

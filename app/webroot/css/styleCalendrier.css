@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'policeNotif';
+  src: url('font/police.otf') format('truetype');
+}
+.calendrier {
+  letter-spacing: 1px;
+  font-family: Helvetica;
+  overflow: hidden;
+  clear: both;
+  width: 540px;
+}
+#calendrier,
+#gestion {
+  display: inline-block;
+  vertical-align: top;
+}
+#hautCalendrier {
+  border-top: 1px solid #363636;
+  border-left: 1px solid #363636;
+  border-right: 1px solid #363636;
+  background: #5B605F;
+  width: 540px;
+  z-index: 1000;
+}
+#calendrierTitre {
+  color: rgba(54,54,54,0.8);
+  font-size: 2em;
+  padding: 5px;
+}
+#calendrierTitre,
+#controleMois {
+  display: inline-block;
+  vertical-align: top;
+}
+#controleMois {
+  margin-left: 300px;
+  margin-top: 3px;
+}
+.calendrier .btn {
+  color: #464646;
+  cursor: pointer;
+  transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  font-size: 1.1em;
+}
+.calendrier .btn:hover {
+  color: #FF7A00;
+}
+#basCalendrier {
+  border-bottom: 1px solid #363636;
+  border-left: 1px solid #363636;
+  border-right: 1px solid #363636;
+  background: #B0B0B0;
+  width: 540px;
+  height: 400px;
+  padding: 10px;
+  position: relative;
+}
+#titreMois,
+#titreAnnee {
+  width: 60px;
+  height: 35px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  overflow: hidden;
+  color: #FFFFFA;
+}
+#titreMois {
+  margin-left: 20px;
+}
+.scrollMA {
+  display: block;
+}
+#titreAnnee {
+  width: 90px;
+}
+.mois {
+  margin-top: 35px;
+}
+#month9 {
+  margin-top: 0px;
+}
+#moisChange {
+  border: 1px solid #B0B0B0;
+}
+#basCalendrier table {
+  margin-left: 54px;
+  border: 1px solid #B0B0B0;
+  background: #B0B0B0;
+  visibility: hidden;
+  z-index: 10;
+}
+#basCalendrier td {
+  border: 1px solid #A3A3A3;
+  width: 55px;
+  height: 52px;
+  padding-top: 7px;
+  text-align: center;
+  background: #B0B0B0;
+  transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+}
+#basCalendrier td a {
+  color: #5B605F;
+  display: block;
+  width: 100%;
+  heigth: 100%;
+}
+#basCalendrier td:hover {
+  background: #FF7A00;
+}
+#basCalendrier td:hover a {
+  color: #FFFFFA;
+}
+#basCalendrier  td.padding {
+  border: none;
+}
+#basCalendrier  th {
+  font-weight: normal;
+  color: #A8A8A8;
+  background: #B0B0B0;
+}
+#basCalendrier .nomJours {
+  color: rgba(0,0,255,0.7);
+}
+#basCalendrier .days {
+  margin-top: 20px;
+}
+#basCalendrier .focus {
+  background: #464646;
+}
+#basCalendrier .affiche {
+  visibility: visible;
+}
+#basCalendrier .padding {
+  visibility: hidden;
+}
+.notifEvent {
+  font-family: 'policeNotif', Arial, serif;
+  font-size: 0.5;
+  padding-top: 4px;
+  padding-left: 1px;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  border-radius: 9px;
+  background: #ff0000;
+  position: absolute;
+  margin-left: 33px;
+  margin-top: -20px;
+  color: #FFFFFA;
+}
