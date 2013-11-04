@@ -10,7 +10,8 @@
 
 	<ul class="button-group options">
 		<li><?php echo $this->Html->Link('Supprimer', array('controller' => 'departments', 'action' => 'delete', $id),
-													  array('class' => 'button tiny icon-cancel-circled alert')); ?>
+													  array('class' => 'button tiny icon-cancel-circled alert', 
+													  		'confirm' => 'Etes vous sûr de vouloir supprimer ce département ?')); ?>
 		</li>
 
 		<li><?php echo $this->Form->button('Mettre à jour', array('class' => 'button tiny icon-ok success')); ?>
