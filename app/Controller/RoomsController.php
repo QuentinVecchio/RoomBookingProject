@@ -50,20 +50,18 @@ class RoomsController extends AppController{
 			if(isset($this->request->data)){
 				$this->Room->id = $index;
 				$this->Room->save($this->request->data);
+				$this->Session->setFlash('Mise à jour des informations de la salle <strong>'.$this->request->data['Room']['name'].'</strong>', 'flash_message', array('type'=>'success'));
 				$this->redirect(array('controller' =>'rooms', 'action' => 'view', $this->request->data['Room']['department_id'], 'admin' => true));
 			}
 		}
-
-
-
-
 	}
 
 
 	public function admin_add(){
 		if(!empty($this->request->data)){
-			debug($this->request->data);
-			die();
+			$this->Room->save($this->request->data);
+				$this->Session->setFlash('Ajout de la salle <strong>'.$this->request->data['Room']['name'].'</strong>', 'flash_message', array('type'=>'success'));
+				$this->redirect(array('controller' =>'rooms', 'action' => 'view', $this->request->data['Room']['department_id'], 'admin' => true));
 		}
 
 		if($this->request->is('Ajax')){

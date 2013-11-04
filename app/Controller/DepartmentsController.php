@@ -51,6 +51,7 @@ class DepartmentsController  extends AppController{
 		if(!empty($this->request->data)){
 			$this->Department->id = $index;
 			$this->Department->save($this->request->data);
+			$this->Session->setFlash('Mise à jour du département <strong>'.$this->request->data['Department']['name'].'</strong>', 'flash_message', array('type'=>'success'));
 			$this->redirect(array('controller' => 'departments', 'action' => 'index'));
 		}
 
@@ -81,6 +82,8 @@ class DepartmentsController  extends AppController{
 		if(!empty($this->request->data)){
 			$this->Department->create();
 			$this->Department->save($this->request->data);
+			$this->Session->setFlash('Département <strong>'.$this->request->data['Department']['name'].'</strong> ajouté avec succès !', 'flash_message', array('type'=>'success'));
+
 			$this->redirect(array('controller' => 'departments', 'action' => 'index'));
 		}
 	}
@@ -91,7 +94,8 @@ class DepartmentsController  extends AppController{
 		}
 
 		$this->Department->delete($index);
-
+		$this->Session->setFlash('Département supprimé de la liste', 'flash_message', array('type'=>'secondary'));
+			
 		$this->redirect(array('controller' => 'departments', 'action' => 'index'));
 
 	}
