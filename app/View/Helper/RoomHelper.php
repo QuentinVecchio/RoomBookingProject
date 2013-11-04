@@ -58,11 +58,6 @@ class RoomHelper extends AppHelper{
 					<li><?php echo $this->Html->Link('',array('controller' =>'rooms', 'action' => 'delete', $value['id']), array('class'=>'button icon-trash tiny', 'confirm' => 'Etes vous sûr de vouloir supprimer cette salle ?')); ?>
 					</li>
 				</ul>
-
-				<?php 
-					//echo $this->Form->button('', array('class'=>'icon-pencil tiny grille-edit'));
-					//echo $this->Form->button('', array('class'=>'icon-trash tiny'));
-				 ?>
 			</td>
 		</tr>	
 
