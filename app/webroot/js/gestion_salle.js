@@ -4,10 +4,9 @@ $(document).ready(function() {
 	$('.grille-edit').on('click',function(){
 		if(!estActif){
 			estActif = true;
-			$contenu = $(this).parent().parent();
-			$cible = $contenu.addClass('cible');
-
-			$.get('/CakePHP/projet-web/index.php/admin/rooms/edit/' + $cible.attr('roomId'), function(data){
+			$contenu = $(this).parent().parent().parent().parent();
+			$contenu.addClass('cible');
+			$.get($(this).attr('href'), function(data){
 				$('.cible').after(data);
 				$('.cible').remove();
 				

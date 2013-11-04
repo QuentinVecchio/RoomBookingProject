@@ -51,9 +51,17 @@ class RoomHelper extends AppHelper{
 			<td><input type="checkbox" id="pc-1" <?php echo ($value['has_PC']==1)?'checked':''; ?> disabled></input><label for="pc-1"></label></td>
 			<td><?php echo $value['capacity']; ?></td>
 			<td>
+				<ul class="button-group">
+					<li><?php echo $this->Html->Link('', array('controller'=>'rooms', 'action'=>'edit', $value['id']),array('class'=>'button icon-pencil tiny grille-edit')); ?>
+					</li>
+
+					<li><?php echo $this->Html->Link('',array('controller' =>'rooms', 'action' => 'delete', $value['id']), array('class'=>'button icon-trash tiny', 'confirm' => 'Etes vous sûr de vouloir supprimer cette salle ?')); ?>
+					</li>
+				</ul>
+
 				<?php 
-					echo $this->Form->button('', array('class'=>'icon-pencil tiny grille-edit'));
-					echo $this->Form->button('', array('class'=>'icon-trash tiny'));
+					//echo $this->Form->button('', array('class'=>'icon-pencil tiny grille-edit'));
+					//echo $this->Form->button('', array('class'=>'icon-trash tiny'));
 				 ?>
 			</td>
 		</tr>	
