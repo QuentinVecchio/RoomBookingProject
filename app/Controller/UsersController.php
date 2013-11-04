@@ -13,6 +13,7 @@ class UsersController extends AppController{
 			$this->User->id = $this->Auth->user('id');
 			$updated = $this->User->save($this->request->data);
 			if($updated){
+				$this->Session->setFlash('Mise à jour de vos données personnels', 'flash_message', array('type'=>'success'));
 				$this->redirect(array('controller'=>'users', 'action' =>'index'));	
 			}
 		}

@@ -3180,3 +3180,38 @@ Stack Trace:
 #0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
 #2 {main}
+2013-11-04 21:15:05 Error: Fatal Error (1): Call to undefined method SessionComponent::flash() in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php, line 16]
+2013-11-04 21:15:05 Error: [FatalErrorException] Call to undefined method SessionComponent::flash()
+Request URL: /CakePHP/projet-web/index.php/users/edit
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 16, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Matthieu\My ...', 16, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 21:16:55 Error: [Exception] height is undefined: failed at `height 150px;` E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\less\global.less on line 57
+Request URL: /CakePHP/projet-web/index.php/users
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(2008): lessc_parser->throwError('height is undef...', 828)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(685): lessc->throwError('height is undef...')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(282): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(220): lessc->compileProps(Object(stdClass), Object(stdClass))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(194): lessc->compileCSSBlock(Object(stdClass))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(656): lessc->compileBlock(Object(stdClass))
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(282): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(276): lessc->compileProps(Object(stdClass), Object(stdClass))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(191): lessc->compileRoot(Object(stdClass))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(1810): lessc->compileBlock(Object(stdClass))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(1833): lessc->compile('@import url('co...', 'E:\Matthieu\My ...')
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(1847): lessc->compileFile('E:\Matthieu\My ...', 'E:\Matthieu\My ...')
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(2019): lessc->checkedCompile('E:\Matthieu\My ...', 'E:\Matthieu\My ...')
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\AppController.php(65): lessc::ccompile('E:\Matthieu\My ...', 'E:\Matthieu\My ...')
+#14 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#16 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#17 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#18 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#19 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#21 {main}
