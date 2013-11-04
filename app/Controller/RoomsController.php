@@ -47,7 +47,7 @@ class RoomsController extends AppController{
 			$list = $this->Room->Department->find('list', array('recursive' => -1));
 			$this->set('list', $list);		
 		}else{
-			if(isset($this->request->data)){
+			if(!empty($this->request->data)){
 				$this->Room->id = $index;
 				$this->Room->save($this->request->data);
 				$this->Session->setFlash('Mise à jour des informations de la salle <strong>'.$this->request->data['Room']['name'].'</strong>', 'flash_message', array('type'=>'success'));
@@ -74,6 +74,18 @@ class RoomsController extends AppController{
 		$list = $this->Room->Department->find('list', array('recursive' => -1));
 		$this->set('list', $list);
 	}
+
+	public function admin_delete($index = null){
+		if(!isset($index) || !is_numeric($index)){
+			$this->redirect(array('controller' => 'departments', 'action' => 'index'));
+		}
+
+		$this->Room->delete($index);
+		$this->Session->setFlash('Salle supprimée de la liste', 'flash_message', array('type'=>'secondary'));
+			
+		$this->redirect(array('controller' => 'rooms', 'action' => 'index'));
+
+	}	
 }
 
  ?>
