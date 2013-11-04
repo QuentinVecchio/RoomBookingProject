@@ -39,10 +39,10 @@ class RoomsController extends AppController{
 
 	public function admin_edit($index = null){
 		if($this->request->is('Ajax')){
-			echo 'oui';
 			$this->set('index', $index);
 			$room = $this->Room->findById($index);
 			$this->request->data = $room;
+			$this->set('id_dept',$room['Room']['department_id']);
 			$this->layout = null;
 			$list = $this->Room->Department->find('list', array('recursive' => -1));
 			$this->set('list', $list);		

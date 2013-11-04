@@ -3060,3 +3060,113 @@ Stack Trace:
 #2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
 #4 {main}
+2013-11-04 17:49:59 Error: Fatal Error (1): Unsupported operand types in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php, line 1973]
+2013-11-04 17:49:59 Error: [FatalErrorException] Unsupported operand types
+Request URL: /CakePHP/projet-web/index.php/admin/rooms/edit/2
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 17:53:31 Error: Fatal Error (1): Unsupported operand types in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php, line 1973]
+2013-11-04 17:53:31 Error: [FatalErrorException] Unsupported operand types
+Request URL: /CakePHP/projet-web/index.php/admin/rooms/edit/10
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 17:54:07 Error: Fatal Error (1): Unsupported operand types in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php, line 1973]
+2013-11-04 17:54:07 Error: [FatalErrorException] Unsupported operand types
+Request URL: /CakePHP/projet-web/index.php/admin/rooms/edit/9
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 17:54:30 Error: Fatal Error (1): Unsupported operand types in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php, line 1973]
+2013-11-04 17:54:30 Error: [FatalErrorException] Unsupported operand types
+Request URL: /CakePHP/projet-web/index.php/admin/rooms/edit/9
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 17:54:47 Error: Fatal Error (1): Unsupported operand types in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php, line 1973]
+2013-11-04 17:54:47 Error: [FatalErrorException] Unsupported operand types
+Request URL: /CakePHP/projet-web/index.php/admin/rooms/edit/9
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 17:55:38 Error: Fatal Error (1): Unsupported operand types in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php, line 1973]
+2013-11-04 17:55:38 Error: [FatalErrorException] Unsupported operand types
+Request URL: /CakePHP/projet-web/index.php/admin/rooms/edit/9
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 17:57:45 Error: Fatal Error (1): Unsupported operand types in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php, line 1973]
+2013-11-04 17:57:45 Error: [FatalErrorException] Unsupported operand types
+Request URL: /CakePHP/projet-web/index.php/admin/rooms/edit/10
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 17:59:44 Error: Fatal Error (64): Can't use method return value in write context in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\RoomsController.php, line 45]
+2013-11-04 17:59:44 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /CakePHP/projet-web/index.php/admin/rooms/view/3
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Can't use metho...', 'E:\Matthieu\My ...', 45)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', 'E:\Matthieu\My ...', 45, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', 'E:\Matthieu\My ...', 45, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 18:00:22 Error: Fatal Error (1): Unsupported operand types in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php, line 1973]
+2013-11-04 18:00:22 Error: [FatalErrorException] Unsupported operand types
+Request URL: /CakePHP/projet-web/index.php/admin/rooms/edit/10
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 18:02:21 Error: Fatal Error (1): Unsupported operand types in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php, line 1973]
+2013-11-04 18:02:21 Error: [FatalErrorException] Unsupported operand types
+Request URL: /CakePHP/projet-web/index.php/admin/rooms/edit/2
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 18:02:32 Error: Fatal Error (1): Unsupported operand types in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php, line 1973]
+2013-11-04 18:02:32 Error: [FatalErrorException] Unsupported operand types
+Request URL: /CakePHP/projet-web/index.php/admin/rooms/edit/5
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'E:\Matthieu\My ...', 1973, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

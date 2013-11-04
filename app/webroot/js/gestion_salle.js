@@ -8,7 +8,6 @@ $(document).ready(function() {
 			$cible = $contenu.addClass('cible');
 
 			$.get('/CakePHP/projet-web/index.php/admin/rooms/edit/' + $cible.attr('roomId'), function(data){
-				alert(data);
 				$('.cible').after(data);
 				$('.cible').remove();
 				
