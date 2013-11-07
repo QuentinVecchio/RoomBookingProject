@@ -22,6 +22,8 @@ class LoansController extends AppController{
 		}
 		$res = $this->Loan->find('all', array('conditions' => array('Room.department_id' =>$this->Auth->User('department_id'),'Loan.date' => $date)));
 		$this->set('res', $res);
+		$list = $this->Loan->Status->find('list');
+		$this->set('list', $list);
 	}
 
 
@@ -76,5 +78,7 @@ class LoansController extends AppController{
 		$this->set('room', $room);
 	}
 
+	public function manager_answerRoom() {
+	}
 
 } ?>

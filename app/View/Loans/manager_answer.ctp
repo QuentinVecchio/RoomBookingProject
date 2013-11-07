@@ -13,7 +13,8 @@
 <?php 
 $this->start('script');
 	echo $this->Html->script('scriptCalendrier');
-		echo $this->Html->script('charge');
+	echo $this->Html->script('charge');
+	echo $this->Html->script('modifDemandeSalle');
 $this->end(); 
 $this->start('css');
 	echo $this->Html->css('styleCalendrier');
