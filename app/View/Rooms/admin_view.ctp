@@ -36,4 +36,10 @@
 
 $this->start('script');
 	echo $this->Html->script('gestion_salle');
-$this->end(); ?>
+$this->end(); 
+
+$this->start('css');
+	echo $this->Html->css('table');
+$this->end();
+
+?>
