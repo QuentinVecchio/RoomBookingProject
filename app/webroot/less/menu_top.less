@@ -15,6 +15,7 @@
 	width: 100%;
 	height: 50px;
 	background-color: @color_neutral_4;
+  	position: relative;	
 }
 
 
@@ -28,12 +29,11 @@
 
 
 #menu-principal li
-{	width: 12.5%;
+{	width: 25%;
 	line-height: 50px;
 	list-style: none;
 	float: left;
 	background-color: @color_neutral_4;
-	position: relative;
 }
 
 
@@ -54,21 +54,25 @@
 	display: none;
 	position: absolute;
 	z-index: 10;
+	left: 0;
+	background-color: @color_neutral_4;
+	border-top: 5px solid @color_impact;
+
 }
 
-/**Remet taille à 100% sinon 25% du parent déjà à 25% */
-#menu-principal li ul li
-{
-	width: 100%;
-}
-
-#menu-principal a:hover, #menu-principal li:hover
+#menu-principal a:hover,
+#menu-principal .active,
+#menu-principal li:hover
 {
 	background-color: @color_impact;
 }
 
 
-#menu-principal .sous-menu:hover ul
-{
-	display: block;
+#menu-principal .sous-menu:hover ul {
+  display: block;
+}
+
+#menu-principal .active.sous-menu ul{
+  display:block;
+  z-index:5;
 }
