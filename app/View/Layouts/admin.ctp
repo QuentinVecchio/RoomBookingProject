@@ -14,13 +14,11 @@
 		echo $this->Html->css('form');
 		echo $this->Html->css('fontello');
 		echo $this->Html->css('manager');
-		echo $this->Html->css('table');
-	
-		echo $this->Html->script('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js');
-		echo $this->Html->script('charge');			
+		
 
 		echo $this->fetch('css');
-		echo $this->fetch('script');		
+	
+
 	?>
 </head>
 <body>
@@ -37,5 +35,10 @@
 	<footer>
 		<?php echo $this->element('sql_dump'); ?>
 	</footer>
+	<?php 
+		echo $this->Html->script('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js');
+		echo $this->Html->script('charge');			
+		echo $this->fetch('script');		
+	 ?>
 </body>
 </html>
