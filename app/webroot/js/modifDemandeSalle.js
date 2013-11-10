@@ -9,15 +9,21 @@ function modifSalle(e)
 
 function valideModifSalle(e)
 {
-	valeur = $(e).parent().parent().parent().parent().find('.formStatus').attr('value');
-	$.get("answerRoom/",function(){
-		$(e).parent().parent().parent().parent().find('.status').attr('value',valeur);
+	$options = $(e).parent().parent().parent().parent().find('#LoanStatusId option:selected');
+	valeur = $options.attr('value');
+	libelle = $options.html();
+	url = $(e).attr('href')+'?status_id='+valeur;
+
+	$.get(url,function(data){
+		$('#container').prepend(data);
+		init();
+		$(e).parent().parent().parent().parent().find('.status').html(libelle);
 	});
 	$(e).parent().parent().css('display','none');
 	$(e).parent().parent().parent().find(".btnModif").css('display','block');
 	$(e).parent().parent().parent().parent().find('.status').css('display', 'block');
 	$(e).parent().parent().parent().parent().find('.formStatus').css('display', 'none');
-	return true;
+	return false;
 }
 
 function annuleModifSalle(e)

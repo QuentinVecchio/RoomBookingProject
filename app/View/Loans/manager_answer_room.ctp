@@ -1,3 +1,3 @@
-<?php echo $this->Session->flash(); 
-debug($room);
+<?php 
+	echo $this->Session->flash(); 
 ?>
