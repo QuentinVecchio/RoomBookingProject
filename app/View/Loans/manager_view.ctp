@@ -27,8 +27,8 @@
 					</div></td>
 					<td><?php echo $this->Html->Link('', array('controller'=>'loans', 'action' => 'answerRoom','?' =>array('idRoom' => $value["Room"]["id"], 'idDepartement' =>$value["Department"]["id"], 'date' =>$value["Loan"]["date"], 'startTime'=>$value["Loan"]["start_time"])),array('class'=>'button tiny icon-pencil btnModif', 'onClick' => 'return modifSalle(this);')); ?>
 						<ul class="button-group options" style="display : none">
-							<li><?php echo $this->Html->Link('', array('controller'=>'loans', 'action' => 'answerRoom'), array('class' => 'button tiny icon-ok success'), array('onClick' => 'return valideModifSalle(this);')); ?></li>
-							<li><?php echo $this->Html->Link('', array('controller'=>'loans', 'action' => 'answerRoom'),  array('class' => 'button tiny icon-cancel-circled alert'), array('onClick' => 'return annuleModifSalle(this);')); ?></li>
+							<li><a><?php echo $this->Html->Link('', array('controller'=>'loans', 'action' => 'answerRoom'), array('class' => 'button tiny icon-ok success','onClick' => 'return valideModifSalle(this);')); ?></a></li>
+							<li><?php echo $this->Html->Link('', array('controller'=>'loans', 'action' => 'answerRoom'),  array('class' => 'button tiny icon-cancel-circled alert','onClick' => 'return annuleModifSalle(this);')); ?></li>
 						</ul>
 					</td>
 				</tr>

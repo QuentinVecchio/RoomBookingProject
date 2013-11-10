@@ -16,7 +16,14 @@ class Date
 		//Constructeur
 			function __construct()
 			{
-				$this->_annee = date('Y');
+				if(date('n') > 1 && date('n') < 9)
+				{
+					$this->_annee = date('Y')-1;				
+				}
+				else 
+				{
+					$this->_annee = date('Y');
+				}
 				$this->_mois = date('n');
 				$this->_jour = date('j');
 			}
