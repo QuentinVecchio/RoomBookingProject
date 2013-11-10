@@ -10,6 +10,10 @@ class RoomsController extends AppController{
 
 	public function admin_index(){
 		$this->set('title_for_layout', 'Gestion des salles');
+
+		$this->set('side_department',$this->Room->Department->find('all', array(
+				'order' =>'Department.name',
+				'recursive' => '-1')));
 	}
 
 	public function admin_view($index = null){		
@@ -33,6 +37,9 @@ class RoomsController extends AppController{
 		$this->set('rooms', $rooms);
 		$this->set('name_department', $name_department);
 		$this->set('id', $index);
+		$this->set('side_department',$this->Room->Department->find('all', array(
+				'order' =>'Department.name',
+				'recursive' => '-1')));
 	}
 
 	public function admin_edit($index = null){
