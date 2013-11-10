@@ -73,6 +73,7 @@ class Calendrier extends AppHelper
 				}
 				return $nbEvent;
 			}
+
 			public function getCalendrier($event,Date $focus = null)
 			{
 				if($focus != null)
@@ -172,7 +173,7 @@ class Calendrier extends AppHelper
 													if($nbEvent != 0)
 													{
 													?>
-													<td class="days" info="<?php echo $w;?>" id="days<?php echo $d;?>"> <div class="notifEvent"><?php echo $nbEvent ?></div><a href="view/<?php echo $dateTraite ?>" class="ajax"><?php echo $d; ?></a></td>
+													<td class="days event" info="<?php echo $w;?>" id="days<?php echo $d;?>"><a href="view/<?php echo $dateTraite ?>" class="ajax"><?php echo $d; ?></a></td>
 													<?php
 													}
 													else
