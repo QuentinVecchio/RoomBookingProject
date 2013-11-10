@@ -76,13 +76,11 @@ class LoansController extends AppController{
 	}
 
 	public function manager_answerRoom($id = null) {
-		if(!empty($this->request->data)){
-			debug($this->request->data);
-			die();
+		$this->layout= null;
+		$res =$this->Loan->id =$id;
+		$this->Loan->saveField('status_id',$this->request->query['status_id']);
+		$this->Session->setFlash('Mise a jour de votre réponse !', 'flash_message', array('type'=>'success'));
 
-		}
-		$room = $this->Loan->Room->findById($id);
-		$this->set('room', $room);
 	}
 
 } ?>

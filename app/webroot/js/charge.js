@@ -8,6 +8,13 @@ $(document).ready(function() {
 		return false;
 	});
 
+	init();
+
+
+
+});
+
+function init(){
 	$('.close').on('click', function(){
 		$(this).parent().slideUp();
 		return false;
@@ -19,4 +26,4 @@ $(document).ready(function() {
 	});
 
 	setTimeout(function(){$(".message").slideUp();}, 5000);
-});
+}
