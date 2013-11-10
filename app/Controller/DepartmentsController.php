@@ -27,7 +27,6 @@ class DepartmentsController  extends AppController{
 	*	Affiche un menu listant les départents
 	*/
 	public function admin_index(){
-		$this->layout = 'admin';
 		$this->set('title_for_layout', 'Gestion des départements:');
 
 		$departments = $this->Department->find('all',array(
@@ -59,7 +58,6 @@ class DepartmentsController  extends AppController{
 		if($this->request->is('Ajax')){
 			$this->layout = null;
 		}else{
-			$this->layout = 'admin';
 			$this->set('title_for_layout', 'Modification:');
 		}
 
@@ -75,7 +73,6 @@ class DepartmentsController  extends AppController{
 		if($this->request->is('Ajax')){
 			$this->layout = null;
 		}else{
-			$this->layout = 'admin';
 			$this->set('title_for_layout', 'Ajout d\' département:');
 		}
 		
@@ -105,7 +102,7 @@ class DepartmentsController  extends AppController{
 	*/
 	public function manager_index(){
 		$this->set('title_for_layout', 'Les salles');
-		$this->layout = 'manager';
+
 		$rooms = $this->Department->find('all',array(
 			'conditions' => array('id' => $this->Auth->user('department_id')),
 			'limit' => 10
@@ -116,15 +113,14 @@ class DepartmentsController  extends AppController{
 
 
 	public function admin_management(){
-		$this->layout = 'admin';
+
 	}
 
 
 	/**
 	*	Permet de gérer les salles d'un département précis.
 	*/
-	public function admin_view($index = null){	
-			$this->layout = 'admin';		
+	public function admin_view($index = null){			
 		if(!isset($index) || empty($index) || !is_numeric($index)){
 			$this->redirect(array('controller' =>'departments', 'action' =>'index','admin' => true));
 		}

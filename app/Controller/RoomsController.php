@@ -10,11 +10,9 @@ class RoomsController extends AppController{
 
 	public function admin_index(){
 		$this->set('title_for_layout', 'Gestion des salles');
-		$this->layout = 'admin';
 	}
 
-	public function admin_view($index = null){	
-		$this->layout = 'admin';		
+	public function admin_view($index = null){		
 		if(!isset($index) || empty($index) || !is_numeric($index)){
 			$this->redirect(array('controller' =>'departments', 'action' =>'index','admin' => true));
 		}
@@ -67,7 +65,6 @@ class RoomsController extends AppController{
 		if($this->request->is('Ajax')){
 			$this->layout = null;
 		}else{
-			$this->layout = 'admin';
 			$this->set('title_for_layout', 'Modification:');
 		}
 
