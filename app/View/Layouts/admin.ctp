@@ -25,7 +25,7 @@
 </head>
 <body>
 	<header>
-		<?php echo $this->element('admin_menu'); ?>
+		<?php echo $this->element('menu'); ?>
 	</header>
 	<div id="container">
 

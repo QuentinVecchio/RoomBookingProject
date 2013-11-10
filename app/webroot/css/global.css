@@ -20,6 +20,9 @@ footer {
   width: 1200px;
   background-color: #FFFFFA;
 }
+header {
+  margin-bottom: 55px;
+}
 #container {
   width: 1200px;
   padding: 1.5em;

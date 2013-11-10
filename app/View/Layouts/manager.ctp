@@ -23,7 +23,7 @@
 </head>
 <body>
 	<header>
-		<?php echo $this->element('manager_menu'); ?>
+		<?php echo $this->element('menu'); ?>
 	</header>
 	<div id="container">
 
