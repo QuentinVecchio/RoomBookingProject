@@ -3612,3 +3612,215 @@ Stack Trace:
 #2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
 #4 {main}
+2013-11-10 19:47:20 Error: [MissingActionException] Action DepartmentsController::getDepartments() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'getDepartments',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/rooms
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\side_bar_department.ctp(1): Object->requestAction(Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(1191): View->_render('E:\Matthieu\My ...', Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(408): View->_renderElement('E:\Matthieu\My ...', Array, Array)
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Rooms\admin_index.ctp(7): View->element('side_bar_depart...', Array, Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Matthieu\My ...')
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#17 {main}
+2013-11-10 19:52:21 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getDepartment' at line 1
+Request URL: /CakePHP/projet-web/index.php/admin/rooms
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('getDepartment', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('getDepartment', Array, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('getDepartment', Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(799): DboSource->query('getDepartment', Array, Object(Department))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\RoomsController.php(14): Model->__call('getDepartment', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\RoomsController.php(14): Department->getDepartment()
+#7 [internal function]: RoomsController->admin_index()
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(RoomsController), Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#13 {main}
+2013-11-10 19:55:51 Error: [MissingActionException] Action DepartmentsController::getDepartments() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'getDepartments',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/rooms
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\side_bar_department.ctp(1): Object->requestAction(Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(1191): View->_render('E:\Matthieu\My ...', Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(408): View->_renderElement('E:\Matthieu\My ...', Array, Array)
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Rooms\admin_index.ctp(5): View->element('side_bar_depart...', Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Matthieu\My ...')
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#17 {main}
+2013-11-10 19:57:05 Error: [MissingActionException] Action DepartmentsController::getDepartments() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'getDepartments',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/rooms/index
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\side_bar_department.ctp(1): Object->requestAction(Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(1191): View->_render('E:\Matthieu\My ...', Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(408): View->_renderElement('E:\Matthieu\My ...', Array, Array)
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Rooms\admin_index.ctp(5): View->element('side_bar_depart...', Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Matthieu\My ...')
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#17 {main}
+2013-11-10 19:57:15 Error: [MissingActionException] Action DepartmentsController::getDepartments() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'getDepartments',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/rooms
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\side_bar_department.ctp(1): Object->requestAction(Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(1191): View->_render('E:\Matthieu\My ...', Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(408): View->_renderElement('E:\Matthieu\My ...', Array, Array)
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Rooms\admin_index.ctp(5): View->element('side_bar_depart...', Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Matthieu\My ...')
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#17 {main}
+2013-11-10 19:57:24 Error: [MissingActionException] Action DepartmentsController::getDepartments() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'getDepartments',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/rooms
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\side_bar_department.ctp(1): Object->requestAction(Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(1191): View->_render('E:\Matthieu\My ...', Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(408): View->_renderElement('E:\Matthieu\My ...', Array, Array)
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Rooms\admin_index.ctp(5): View->element('side_bar_depart...', Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Matthieu\My ...')
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#17 {main}
+2013-11-10 19:57:50 Error: [MissingActionException] Action DepartmentsController::getDepartments() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'getDepartments',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/rooms
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\side_bar_department.ctp(1): Object->requestAction(Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(1191): View->_render('E:\Matthieu\My ...', Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(408): View->_renderElement('E:\Matthieu\My ...', Array, Array)
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Rooms\admin_index.ctp(5): View->element('side_bar_depart...', Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Matthieu\My ...')
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#17 {main}
+2013-11-10 19:59:39 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\RoomsController.php, line 16]
+2013-11-10 19:59:39 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /CakePHP/projet-web/index.php/admin/rooms
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 16, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 16, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 20:00:00 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\RoomsController.php, line 16]
+2013-11-10 20:00:00 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /CakePHP/projet-web/index.php/admin/rooms
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 16, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 16, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 20:00:56 Error: [MissingActionException] Action DepartmentsController::getDepartments() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'getDepartments',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/rooms
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\side_bar_department.ctp(1): Object->requestAction(Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(1191): View->_render('E:\Matthieu\My ...', Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(408): View->_renderElement('E:\Matthieu\My ...', Array, Array)
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Rooms\admin_index.ctp(5): View->element('side_bar_depart...', Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Matthieu\My ...')
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#17 {main}

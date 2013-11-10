@@ -133,16 +133,5 @@ class DepartmentsController  extends AppController{
 		$this->set('departments', $departments);
 		$this->set('rooms', $rooms);
 	}
-
-	/**
-	*	Fonction appelé par la vue pour générer la liste des départements.
-	*
-	*/
-	public function getDepartments(){
-		$departments = $this->Department->find('all', array(
-				'order' =>'Department.name',
-				'recursive' => '-1'));
-		return $departments;
-	}
 }
 ?>
