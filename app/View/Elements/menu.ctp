@@ -3,16 +3,25 @@
 		$manager = ($this->Session->Read('Auth.User.Role.name')==="managers");
 		$connecte = $this->Session->Read('Auth.User.Role.name');
 		if(!$connecte){
-			$co = $this->Html->Link('Connexion', array('controller' => 'users', 'action' => 'login', 'admin' => false, 'manager'=>true));
+			$co = $this->Html->Link('Connexion', array('controller' => 'users', 'action' => 'login', 'admin' => false, 'manager'=>false));
 		}else{
-			$co = $this->Html->Link('Déconnexion', array('controller' => 'users', 'action' => 'logout', 'admin' => false, 'manager'=>true));
+			$co = $this->Html->Link('Déconnexion', array('controller' => 'users', 'action' => 'logout', 'admin' => false, 'manager'=>false));
 		}
+
+		$action = $this->params['action'];
+		$controller = $this->params['controller'];
+
+		$Administration =(in_array($controller, array('rooms', 'departments')) && in_array($action, array('admin_index')));
+		$PretSalle =(in_array($controller, array('loans', 'departments')) && in_array($action, array('manager_index', 'manager_ask','manager_answer')));
+
+
+
  ?>
 
 <nav id="menu-principal">
 	<ul>
 		<?php if($admin):?>
-			<li class="sous-menu"><a href="#">Administration</a>
+			<li class="sous-menu <?php if($Administration) echo 'active';?>"><a href="#">Administration</a>
 				<ul>
 					<li><?php echo $this->Html->Link('Gestion des salles', array('controller'=> 'rooms','action' => 'index', 'admin'=>true)) ?></li>
 					<li><?php echo $this->Html->Link('Gestion des départements', array('controller'=> 'departments','action' => 'index', 'admin'=>true)) ?></li>
@@ -20,7 +29,7 @@
 			</li>
 		<?php endif; ?>
 		<?php if($admin || $manager): ?>
-		<li class="sous-menu"><a href="#">Prêts de salle</a>
+		<li class="sous-menu <?php if($PretSalle) echo 'active';?>"><a href="#">Prêts de salle</a>
 			<ul>
 				<li><?php echo $this->Html->Link('Vos salles', array('controller'=> 'departments','action' => 'index', 'manager'=>true)) ?></li>
 				<li><?php echo $this->Html->Link('Gestion des demandes', array('controller'=> 'loans','action' => 'answer', 'manager'=>true)) ?></li>		
