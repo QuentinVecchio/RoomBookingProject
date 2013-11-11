@@ -4446,3 +4446,29 @@ Stack Trace:
 #2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
 #4 {main}
+2013-11-11 19:32:11 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /CakePHP/projet-web/index.php/users/login
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Matthieu\My ...')
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#17 {main}

@@ -127,8 +127,8 @@ class Calendrier extends AppHelper
 							
 							<?php //Définition des commandes de gestion des mois?>
 							<div id="controleMois">
-								<div class="btn icon-up-open" id="btnH"></div>
-								<div class="btn icon-down-open" id="btnB"></div>
+								<span class="btn icon-up-open" id="btnH"></span>
+								<span class="btn icon-down-open" id="btnB"></span>
 							</div>
 						</div>
 						<div id="basCalendrier">
