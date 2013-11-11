@@ -4,20 +4,13 @@ $(function(){
 	var annee = date.getFullYear();
 	var mois = date.getMonth()+1;
 	var jour = date.getDate();
-	init(3,9,2013);
+	init(jour,9,annee);
 	parcour = 402;
+	initFocus(jour,mois,annee);
 	//Initialisation des calendriers
 //Initialisation de l'interfaces en mettant le focus sur la date d'aujourd'hui
 	function init(j,m,a)
 	{
-		if(a == annee)
-		{
-			$('#month' + m +' #days'+j).addClass('focus');
-		}
-		else
-		{
-			$('#month1' + m +' #days'+j).addClass('focus');
-		}
 		$('#titreAnnee').attr('val',a);
 		$('#titreMois').attr('val',m);
 		if(a == annee)
@@ -27,7 +20,33 @@ $(function(){
 		else
 		{
 			$('#month1' + m).addClass('affiche');
-		}	
+		}
+	}
+	function change()
+	{
+		$("#btnB").trigger('click');
+	}
+	function initFocus(j,m,a)
+	{
+		
+		var dif = m - 9;
+		var n = 9 + dif;
+		if(dif < 0)
+		{
+			dif = 9 - m;
+		}
+		for(i=0;i<dif;i++)
+		{
+ 			setTimeout(change, i*1000);
+		}
+		if(a == annee)
+		{
+			$('#month' + m +' #days'+j).addClass('focus');
+		}
+		else
+		{
+			$('#month1' + m +' #days'+j).addClass('focus');
+		}			
 	}
 	function gereBasCalendrier(nMois)
 	{
@@ -70,7 +89,7 @@ $(function(){
 						nbMois = 12;
 						nbAnnee -= 1;
 						$('#titreAnnee').attr('val',nbAnnee);
-						$('#anneeBouge').animate({ marginTop: '+='+62}, 800);
+						$('#anneeBouge').animate({ marginTop: '+='+63}, 800);
 					}
 					else
 					{
@@ -78,14 +97,14 @@ $(function(){
 					}
 					$('#titreMois').attr('val',nbMois);
 				//On met a jour le mois dans la vue
-					$('#moisBouge').animate({ marginTop: '+='+32}, 800);
+					$('#moisBouge').animate({ marginTop: '+='+30}, 800);
 				//Gestion de l'affichage du calendrier	
 					$('#month' + nbMois).addClass('affiche');
 					spanNbLigne = $('#nbLigne'+nbMois).html();
 					nbLigne = parseInt(spanNbLigne);
 					nbLigne += 1;
-					nbLigne *= 63;
-					nbLigne -= 2;
+					nbLigne *= 60;
+					nbLigne -= 4;
 					$('#month9').animate({ marginTop: '+='+nbLigne}, 800, function(){
 						$('#month' + nbMoisAv).removeClass('affiche');	
 					});	
@@ -120,15 +139,15 @@ $(function(){
 					}
 				$('#titreMois').attr('val',nbMois);
 			//On met a jour le mois dans la vue
-				$('#moisBouge').animate({ marginTop: '-='+32}, 800);
+				$('#moisBouge').animate({ marginTop: '-='+30}, 800);
 
 			//Gestion de l'affichage du calendrier	
 				$('#month' + nbMois).addClass('affiche');
 				spanNbLigne = $('#nbLigne'+nbMoisAv).html();
 				nbLigne = parseInt(spanNbLigne);
 				nbLigne += 1;
-				nbLigne *= 63;
-				nbLigne -=2;
+				nbLigne *= 60;
+				nbLigne -=4;
 				$('#month9').animate({ marginTop: '-='+nbLigne}, 800, function(){
 					$('#month' + nbMoisAv).removeClass('affiche');		
 				});	
@@ -136,4 +155,27 @@ $(function(){
 				gereBasCalendrier(nbMois);	
 			}
 		});
+	//Fonction de gestion des touches du claviers
+		$('body').keydown(function(e){
+			if(e.which == 38)
+			{
+				$("#btnH").trigger('click');
+			}
+			else if(e.which == 40)
+			{
+				$("#btnB").trigger('click');
+			}
+     	});
+     //Fonction permettant de dormir
+     	function sleep(milliseconds,n) 
+     	{
+	  		var start = new Date().getTime();
+	  		for (var i = 0; i < 1e7; i++) 
+	  		{
+		    	if ((new Date().getTime() - start) > milliseconds)
+		    	{
+		      		break;
+		    	}
+  			}
+		}
 });

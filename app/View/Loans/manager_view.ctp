@@ -2,7 +2,7 @@
 	<table>
 		<thead>
 			<tr>
-				<td>Dpt</td>
+				<td>Département</td>
 				<td>Salle</td>
 				<td>Heure Début</td>
 				<td>Heure Fin</td>

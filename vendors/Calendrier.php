@@ -90,7 +90,6 @@ class Calendrier extends AppHelper
 				}
 				ob_start();
 				?>
-					<script type="text/javascript">$(function(){init(<?php echo $jour;?>,<?php echo $mois;?>,<?php echo $annee;?>);});</script>
 					<?php
 					if($this->Ajax() == true)
 					{?>
@@ -173,7 +172,7 @@ class Calendrier extends AppHelper
 													if($nbEvent != 0)
 													{
 													?>
-													<td class="days event" info="<?php echo $w;?>" id="days<?php echo $d;?>"><a href="view/<?php echo $dateTraite ?>" class="ajax"><?php echo $d; ?></a></td>
+													<td class="evenement" info="<?php echo $w;?>" id="days<?php echo $d;?>"><a href="view/<?php echo $dateTraite ?>" class="ajax"><?php echo $d; ?></a></td>
 													<?php
 													}
 													else
