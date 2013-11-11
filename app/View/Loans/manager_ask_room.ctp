@@ -20,12 +20,22 @@
 			echo $this->Form->date('loan.0.date');
 
 			echo $this->Form->label('start_time','Heure début');
-			echo $this->Form->time('loan.0.start_time',array('min'=>'07:00', 'step' =>'900'));
+			echo $this->Form->input('loan.0.start_time',array('type' => 'text', 'class' => 'datepair'));
 			echo $this->Form->label('end_time','Heure de fin');			
-			echo $this->Form->time('loan.0.end_time',array('min'=>'07:00', 'step' =>'900'));
+			echo $this->Form->input('loan.0.end_time',array('type' => 'text', 'class' => 'datepair'));
 			echo $this->Form->label('remark','Votre remarque: ');
 			echo $this->Form->textarea('loan.0.remark');
 		echo $this->Form->end('Soumettre');
 
 	 ?>
 </section>
+
+<?php 
+$this->start('script');
+	echo $this->Html->script('jquery_timepicker_min');
+	echo $this->Html->script('gestion_demande_salle');
+$this->end(); 
+$this->start('css');
+	echo $this->Html->css('jquery_timepicker');
+$this->end(); 
+ ?>
