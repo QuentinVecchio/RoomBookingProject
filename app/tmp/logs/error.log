@@ -4357,3 +4357,92 @@ Stack Trace:
 #10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
 #12 {main}
+2013-11-11 10:07:44 Error: [MissingControllerException] Controller class ProjetController could not be found.
+Exception Attributes: array (
+  'class' => 'ProjetController',
+  'plugin' => NULL,
+)
+Request URL: /projet/index.php/projet/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#2 {main}
+2013-11-11 10:07:46 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: NO)',
+  'enabled' => true,
+)
+Request URL: /projet/index.php/users/login
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Datasource/DboSource.php(262): Mysql->connect()
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/ConnectionManager.php(107): DboSource->__construct(Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Model.php(3288): ConnectionManager::getDataSource('default')
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Model.php(1107): Model->setDataSource('default')
+#4 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Model.php(3310): Model->setSource('users')
+#5 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Model.php(1318): Model->getDataSource()
+#6 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/View/Helper/FormHelper.php(199): Model->schema()
+#7 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/View/Helper/FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/View/Users/login.ctp(3): FormHelper->create('User')
+#9 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/View/View.php(931): include('/Users/quentin....')
+#10 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/View/View.php(893): View->_evaluate('/Users/quentin....', Array)
+#11 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/View/View.php(462): View->_render('/Users/quentin....')
+#12 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#13 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#14 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#17 {main}
+2013-11-11 10:07:56 Error: [MissingActionException] Action UsersController::manager_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'manager_login',
+)
+Request URL: /projet/index.php/manager/users/login
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#4 {main}
+2013-11-11 10:39:00 Error: [MissingActionException] Action LoansController::manager_blank.gif() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoansController',
+  'action' => 'manager_blank.gif',
+)
+Request URL: /projet/index.php/manager/loans/blank.gif
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#4 {main}
+2013-11-11 10:48:15 Error: [Exception] parse error: failed at `border : 1px solid #white;` /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/less/styleCalendrier.less on line 102
+Request URL: /projet/index.php/manager/loans/answer
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(2276): lessc_parser->throwError()
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(1798): lessc_parser->parse('@import url('co...')
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(1833): lessc->compile('@import url('co...', '/Users/quentin....')
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(1847): lessc->compileFile('/Users/quentin....', '/Users/quentin....')
+#4 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(2019): lessc->checkedCompile('/Users/quentin....', '/Users/quentin....')
+#5 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/Controller/AppController.php(66): lessc::ccompile('/Users/quentin....', '/Users/quentin....')
+#6 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#7 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#8 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#10 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#13 {main}
+2013-11-11 14:11:02 Error: [MissingActionException] Action UsersController::manager_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'manager_login',
+)
+Request URL: /projet/index.php/manager/users/login
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#4 {main}

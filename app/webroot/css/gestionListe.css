@@ -1,23 +1,35 @@
+@font-face {
+  font-family: 'policeNotif';
+  src: url('font/police.otf') format('truetype');
+}
 #gestion table {
   margin-left: 10px;
-  border: 1px solid #363636;
+  color: #6A737B;
+  font-family: policeNotif;
+  border: 1px solid #A8B3C5;
   border-collapse: collapse;
 }
 #gestion thead {
   width: 540px;
 }
 #gestion tbody {
-  background: #B0B0B0;
+  background: #E4E6ED;
   width: 540px;
   z-index: 1000;
 }
 #gestion thead td {
-  background: #5B605F;
+  background: #E4E6ED;
 }
 #gestion tbody td {
-  background: #B0B0B0;
+  background: white;
 }
 #gestion td {
-  border: 1px solid #363636;
+  border: 1px solid #A8B3C5;
   text-align: center;
+}
+.button {
+  margin-top: 5px;
+}
+.formStatus {
+  margin-top: -8px;
 }
