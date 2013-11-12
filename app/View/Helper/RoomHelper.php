@@ -30,7 +30,10 @@ class RoomHelper extends AppHelper{
 			<td><input type="checkbox" id="projecteur-1" <?php echo ($value['projector']==1)?'checked':''; ?> disabled></input><label for="projecteur-1"></label></td>
 			<td><input type="checkbox" id="pc-1" <?php echo ($value['has_PC']==1)?'checked':''; ?> disabled></input><label for="pc-1"></label></td>
 			<td><?php echo $value['capacity']; ?></td>
-			<td><?php echo $this->Html->Link('Réserver', array('controller'=>'loans', 'action' => 'askRoom', $value['id']),array('class'=>'button tiny')); ?></td>
+			<td>
+				<ul class="button-group">
+					<li><?php echo $this->Html->Link('Réserver', array('controller'=>'loans', 'action' => 'askRoom', $value['id']),array('class'=>'button tiny')); ?></td></li>
+				</ul>
 		</tr>	
 
 		<?php 
@@ -73,17 +76,18 @@ class RoomHelper extends AppHelper{
 			<?php echo $this->Form->create('Room', array('controller' => 'rooms', 'action' => 'add', 'style'=>'display:none;'));  ?>
 			<td><?php   
 						echo $this->Form->select('department_id', $list, array('value' => $department_id)); ?></td>
-			<td><?php echo $this->Form->input('name', array('label'=>'', 'type'=>'text')) ?></td>
+			<td><?php echo $this->Form->input('name', array('label'=>'', 'type'=>'text', 'label'=> array('style'=> 'display:none;'))) ?></td>
 			<td><?php echo $this->Form->checkbox('projector').  $this->Form->label('projector',''); ?></td>
 			<td><?php echo $this->Form->checkbox('has_PC'). $this->Form->label('has_PC',''); ?></td>
-			<td><?php echo $this->Form->input('capacity', array('label'=>'', 'type'=>'number')) ?></td>
+			<td><?php echo $this->Form->input('capacity', array('label'=>'', 'type'=>'number', 'label'=> array('style'=> 'display:none;'))) ?></td>
 			<td>
-				<?php 
-					echo $this->Form->button('', array('class'=>'icon-ok tiny', 'type'=>'submit'));
-					echo $this->Form->button('', array('class'=>'icon-cancel tiny ', 'type'=>'reset'));
-
-					echo $this->Form->end();
-				?>
+				<ul class="button-group">
+					<li><?php echo $this->Form->button('', array('class'=>'icon-ok tiny', 'type'=>'submit')); ?></li>
+					<li><?php echo $this->Form->button('', array('class'=>'icon-cancel tiny ', 'type'=>'reset')); ?></li>
+					<?php 
+						echo $this->Form->end();
+					?>
+				</ul>
 			</td>
 		</tr>	
 
