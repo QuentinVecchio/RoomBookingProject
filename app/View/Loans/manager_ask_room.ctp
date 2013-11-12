@@ -27,9 +27,9 @@
 		</thead>
 		<tbody>
 				<tr>
-					<td><?php echo $this->Form->input('loan.0.date',array('label' => array('style'=>'display:none;'), 'type' => 'text')); ?></td>
-					<td><?php echo $this->Form->input('loan.0.start_time',array('label' => array('style'=>'display:none;'), 'type' => 'text', 'class' => 'datepair')); ?></td>
-					<td><?php echo $this->Form->input('loan.0.end_time',array('label'  => array('style'=>'display:none;'), 'type' => 'text', 'class' => 'datepair')); ?></td>
+					<td><?php echo $this->Form->input('loan.0.date',array('label' => array('style'=>'display:none;'), 'type' => 'text', 'class' => 'date start ', 'div' => array('class' => ''))); ?></td>
+					<td><?php echo $this->Form->input('loan.0.start_time',array('label' => array('style'=>'display:none;'), 'type' => 'text', 'class' => 'time start', 'div' => array('class' => 'datepair'))); ?></td>
+					<td><?php echo $this->Form->input('loan.0.end_time',array('label'  => array('style'=>'display:none;'), 'type' => 'text', 'class' => 'time end', 'div' => array('class' => 'datepair'))); ?></td>
 					<td><?php echo $this->Form->textarea('loan.0.remark'); ?></td>
 					<td></td>
 				</tr>
