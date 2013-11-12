@@ -19,10 +19,8 @@
 			echo $this->Form->label('date','La date: ');		
 			echo $this->Form->date('loan.0.date');
 
-			echo $this->Form->label('start_time','Heure début');
-			echo $this->Form->input('loan.0.start_time',array('type' => 'text', 'class' => 'datepair'));
-			echo $this->Form->label('end_time','Heure de fin');			
-			echo $this->Form->input('loan.0.end_time',array('type' => 'text', 'class' => 'datepair'));
+			echo $this->Form->input('loan.0.start_time',array('label' => 'Heure début', 'type' => 'text', 'class' => 'datepair'));	
+			echo $this->Form->input('loan.0.end_time',array('label' => 'Heure de fin', 'type' => 'text', 'class' => 'datepair'));
 			echo $this->Form->label('remark','Votre remarque: ');
 			echo $this->Form->textarea('loan.0.remark');
 		echo $this->Form->end('Soumettre');
