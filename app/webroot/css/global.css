@@ -85,3 +85,7 @@ ul.button-group {
   top: 0px;
   line-height: 50px;
 }
+td .button-group a,
+td .button-group button {
+  margin: 0;
+}
