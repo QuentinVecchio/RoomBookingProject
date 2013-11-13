@@ -1,1 +1,2 @@
-^./app/cache/models/*$
+^test.md$
+^app/tmp/cache/.*$
