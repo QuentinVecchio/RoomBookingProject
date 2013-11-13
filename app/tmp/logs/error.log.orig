@@ -3180,7 +3180,148 @@ Stack Trace:
 #0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
 #2 {main}
-2013-11-05 16:25:52 Error: [MissingControllerException] Controller class ProjetController could not be found.
+2013-11-04 21:15:05 Error: Fatal Error (1): Call to undefined method SessionComponent::flash() in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php, line 16]
+2013-11-04 21:15:05 Error: [FatalErrorException] Call to undefined method SessionComponent::flash()
+Request URL: /CakePHP/projet-web/index.php/users/edit
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 16, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Matthieu\My ...', 16, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 21:16:55 Error: [Exception] height is undefined: failed at `height 150px;` E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\less\global.less on line 57
+Request URL: /CakePHP/projet-web/index.php/users
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(2008): lessc_parser->throwError('height is undef...', 828)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(685): lessc->throwError('height is undef...')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(282): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(220): lessc->compileProps(Object(stdClass), Object(stdClass))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(194): lessc->compileCSSBlock(Object(stdClass))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(656): lessc->compileBlock(Object(stdClass))
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(282): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(276): lessc->compileProps(Object(stdClass), Object(stdClass))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(191): lessc->compileRoot(Object(stdClass))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(1810): lessc->compileBlock(Object(stdClass))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(1833): lessc->compile('@import url('co...', 'E:\Matthieu\My ...')
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(1847): lessc->compileFile('E:\Matthieu\My ...', 'E:\Matthieu\My ...')
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(2019): lessc->checkedCompile('E:\Matthieu\My ...', 'E:\Matthieu\My ...')
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\AppController.php(65): lessc::ccompile('E:\Matthieu\My ...', 'E:\Matthieu\My ...')
+#14 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#16 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#17 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#18 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#19 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#21 {main}
+2013-11-04 22:16:51 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Departments\admin_edit.ctp, line 14]
+2013-11-04 22:16:51 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /CakePHP/projet-web/index.php/admin/departments/edit/1
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 14, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 14, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 22:16:54 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Departments\admin_edit.ctp, line 14]
+2013-11-04 22:16:54 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /CakePHP/projet-web/index.php/admin/departments/edit/2
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 14, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 14, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 22:17:02 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Departments\admin_edit.ctp, line 14]
+2013-11-04 22:17:02 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /CakePHP/projet-web/index.php/admin/departments/edit/8
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 14, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 14, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 22:17:15 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Departments\admin_edit.ctp, line 14]
+2013-11-04 22:17:15 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /CakePHP/projet-web/index.php/admin/departments/edit/8
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 14, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 14, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 22:17:21 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Departments\admin_edit.ctp, line 14]
+2013-11-04 22:17:21 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /CakePHP/projet-web/index.php/admin/departments/edit/8
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 14, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 14, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 22:18:13 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Rooms\admin_edit.ctp, line 17]
+2013-11-04 22:18:13 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /CakePHP/projet-web/index.php/admin/rooms/edit/17
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 17, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 17, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 22:18:21 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Rooms\admin_edit.ctp, line 17]
+2013-11-04 22:18:21 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /CakePHP/projet-web/index.php/admin/rooms/edit/26
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 17, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 17, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 22:18:30 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Rooms\admin_edit.ctp, line 17]
+2013-11-04 22:18:30 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /CakePHP/projet-web/index.php/admin/rooms/edit/26
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 17, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 17, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-04 22:22:01 Error: [MissingViewException] View file "E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Loans\manager_view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Matthieu\\My Documents\\Projects\\Web\\www\\CakePHP\\projet-web\\app\\View\\Loans\\manager_view.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/loans/view/2013-10-16
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#6 {main}
+2013-11-04 22:22:12 Error: [MissingViewException] View file "E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Loans\manager_view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Matthieu\\My Documents\\Projects\\Web\\www\\CakePHP\\projet-web\\app\\View\\Loans\\manager_view.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/loans/view/2013-10-16
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#6 {main}
+2013-11-06 13:30:47 Error: [MissingControllerException] Controller class ProjetController could not be found.
 Exception Attributes: array (
   'class' => 'ProjetController',
   'plugin' => NULL,
@@ -3190,7 +3331,1043 @@ Stack Trace:
 #0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
 #2 {main}
-2013-11-05 16:25:54 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+2013-11-06 14:07:58 Error: [MissingActionException] Action LoansController::manager_answerRoom() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoansController',
+  'action' => 'manager_answerRoom',
+)
+Request URL: /projet/index.php/manager/loans/answerRoom/1/2/2013-10-16/08:00:00
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#4 {main}
+2013-11-06 15:14:05 Error: [MissingActionException] Action UsersController::manager_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'manager_login',
+)
+Request URL: /projet/index.php/manager/users/login
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#4 {main}
+2013-11-06 16:19:40 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/quentin.vecchio/Desktop/Programmation Web/projet/app/View/Loans/manager_view.ctp, line 30]
+2013-11-06 16:19:40 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /projet/index.php/manager/loans/view/2013-10-16
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/quentin....', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-06 16:19:42 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/quentin.vecchio/Desktop/Programmation Web/projet/app/View/Loans/manager_view.ctp, line 30]
+2013-11-06 16:19:42 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /projet/index.php/manager/loans/view/2013-10-16
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/quentin....', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-06 16:19:42 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/quentin.vecchio/Desktop/Programmation Web/projet/app/View/Loans/manager_view.ctp, line 30]
+2013-11-06 16:19:42 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /projet/index.php/manager/loans/view/2013-10-16
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/quentin....', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-06 16:19:42 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/quentin.vecchio/Desktop/Programmation Web/projet/app/View/Loans/manager_view.ctp, line 30]
+2013-11-06 16:19:42 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /projet/index.php/manager/loans/view/2013-10-16
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/quentin....', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-06 16:19:43 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/quentin.vecchio/Desktop/Programmation Web/projet/app/View/Loans/manager_view.ctp, line 30]
+2013-11-06 16:19:43 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /projet/index.php/manager/loans/view/2013-10-16
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/quentin....', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-06 16:19:44 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/quentin.vecchio/Desktop/Programmation Web/projet/app/View/Loans/manager_view.ctp, line 30]
+2013-11-06 16:19:44 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /projet/index.php/manager/loans/view/2013-10-23
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/quentin....', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-06 16:19:45 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/quentin.vecchio/Desktop/Programmation Web/projet/app/View/Loans/manager_view.ctp, line 30]
+2013-11-06 16:19:45 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /projet/index.php/manager/loans/view/2013-10-16
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/quentin....', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 15:00:07 Error: [MissingControllerException] Controller class ProjetController could not be found.
+Exception Attributes: array (
+  'class' => 'ProjetController',
+  'plugin' => NULL,
+)
+Request URL: /projet/index.php/projet/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#2 {main}
+2013-11-10 16:19:40 Error: Fatal Error (4): syntax error, unexpected '?>', expecting ')' in [/Users/quentin.vecchio/Desktop/Programmation Web/projet/app/View/Loans/manager_view.ctp, line 30]
+2013-11-10 16:19:40 Error: [FatalErrorException] syntax error, unexpected '?>', expecting ')'
+Request URL: /projet/index.php/manager/loans/view/2013-10-16
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/quentin....', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 16:19:42 Error: Fatal Error (4): syntax error, unexpected '?>', expecting ')' in [/Users/quentin.vecchio/Desktop/Programmation Web/projet/app/View/Loans/manager_view.ctp, line 30]
+2013-11-10 16:19:42 Error: [FatalErrorException] syntax error, unexpected '?>', expecting ')'
+Request URL: /projet/index.php/manager/loans/view/2013-10-16
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/quentin....', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 16:19:42 Error: Fatal Error (4): syntax error, unexpected '?>', expecting ')' in [/Users/quentin.vecchio/Desktop/Programmation Web/projet/app/View/Loans/manager_view.ctp, line 30]
+2013-11-10 16:19:42 Error: [FatalErrorException] syntax error, unexpected '?>', expecting ')'
+Request URL: /projet/index.php/manager/loans/view/2013-10-23
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/quentin....', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 16:19:43 Error: Fatal Error (4): syntax error, unexpected '?>', expecting ')' in [/Users/quentin.vecchio/Desktop/Programmation Web/projet/app/View/Loans/manager_view.ctp, line 30]
+2013-11-10 16:19:43 Error: [FatalErrorException] syntax error, unexpected '?>', expecting ')'
+Request URL: /projet/index.php/manager/loans/view/2013-10-23
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/quentin....', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 16:19:43 Error: Fatal Error (4): syntax error, unexpected '?>', expecting ')' in [/Users/quentin.vecchio/Desktop/Programmation Web/projet/app/View/Loans/manager_view.ctp, line 30]
+2013-11-10 16:19:43 Error: [FatalErrorException] syntax error, unexpected '?>', expecting ')'
+Request URL: /projet/index.php/manager/loans/view/2013-10-16
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/quentin....', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 16:19:44 Error: Fatal Error (4): syntax error, unexpected '?>', expecting ')' in [/Users/quentin.vecchio/Desktop/Programmation Web/projet/app/View/Loans/manager_view.ctp, line 30]
+2013-11-10 16:19:44 Error: [FatalErrorException] syntax error, unexpected '?>', expecting ')'
+Request URL: /projet/index.php/manager/loans/view/2013-10-16
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/quentin....', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/quentin....', 30, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 17:12:54 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /CakePHP/projet-web/index.php/users/login
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Matthieu\My ...')
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#17 {main}
+2013-11-10 18:42:42 Error: Fatal Error (64): Can't use method return value in write context in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\admin_menu.ctp, line 5]
+2013-11-10 18:42:42 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Can't use metho...', 'E:\Matthieu\My ...', 5)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', 'E:\Matthieu\My ...', 5, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', 'E:\Matthieu\My ...', 5, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 18:45:46 Error: Fatal Error (4): syntax error, unexpected '{' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\admin_menu.ctp, line 4]
+2013-11-10 18:45:46 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /CakePHP/projet-web/index.php/admin/departments
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 4, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 4, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 18:47:41 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF) in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\menu.ctp, line 5]
+2013-11-10 18:47:41 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF)
+Request URL: /CakePHP/projet-web/index.php/users/login
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 5, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 5, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 18:50:42 Error: [MissingActionException] Action LoansController::admin_answer() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoansController',
+  'action' => 'admin_answer',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/loans/answer
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#4 {main}
+2013-11-10 18:52:45 Error: [MissingHelperException] Helper class RequestHelper could not be found.
+Exception Attributes: array (
+  'class' => 'RequestHelper',
+  'plugin' => false,
+)
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answer
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Request')
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(820): HelperCollection->__isset('Request')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\menu.ctp(10): View->__get('Request')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(1191): View->_render('E:\Matthieu\My ...', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(408): View->_renderElement('E:\Matthieu\My ...', Array, Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Layouts\manager.ctp(26): View->element('menu')
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(525): View->_render('E:\Matthieu\My ...')
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(470): View->renderLayout('', 'manager')
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#17 {main}
+2013-11-10 19:15:24 Error: [MissingActionException] Action UsersController::manager_logout() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'manager_logout',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/users/logout
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#4 {main}
+2013-11-10 19:15:40 Error: [MissingActionException] Action UsersController::manager_logout() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'manager_logout',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/users/logout
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#4 {main}
+2013-11-10 19:47:20 Error: [MissingActionException] Action DepartmentsController::getDepartments() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'getDepartments',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/rooms
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\side_bar_department.ctp(1): Object->requestAction(Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(1191): View->_render('E:\Matthieu\My ...', Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(408): View->_renderElement('E:\Matthieu\My ...', Array, Array)
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Rooms\admin_index.ctp(7): View->element('side_bar_depart...', Array, Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Matthieu\My ...')
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#17 {main}
+2013-11-10 19:52:21 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getDepartment' at line 1
+Request URL: /CakePHP/projet-web/index.php/admin/rooms
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('getDepartment', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('getDepartment', Array, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('getDepartment', Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(799): DboSource->query('getDepartment', Array, Object(Department))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\RoomsController.php(14): Model->__call('getDepartment', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\RoomsController.php(14): Department->getDepartment()
+#7 [internal function]: RoomsController->admin_index()
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(RoomsController), Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#13 {main}
+2013-11-10 19:55:51 Error: [MissingActionException] Action DepartmentsController::getDepartments() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'getDepartments',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/rooms
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\side_bar_department.ctp(1): Object->requestAction(Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(1191): View->_render('E:\Matthieu\My ...', Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(408): View->_renderElement('E:\Matthieu\My ...', Array, Array)
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Rooms\admin_index.ctp(5): View->element('side_bar_depart...', Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Matthieu\My ...')
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#17 {main}
+2013-11-10 19:57:05 Error: [MissingActionException] Action DepartmentsController::getDepartments() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'getDepartments',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/rooms/index
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\side_bar_department.ctp(1): Object->requestAction(Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(1191): View->_render('E:\Matthieu\My ...', Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(408): View->_renderElement('E:\Matthieu\My ...', Array, Array)
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Rooms\admin_index.ctp(5): View->element('side_bar_depart...', Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Matthieu\My ...')
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#17 {main}
+2013-11-10 19:57:15 Error: [MissingActionException] Action DepartmentsController::getDepartments() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'getDepartments',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/rooms
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\side_bar_department.ctp(1): Object->requestAction(Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(1191): View->_render('E:\Matthieu\My ...', Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(408): View->_renderElement('E:\Matthieu\My ...', Array, Array)
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Rooms\admin_index.ctp(5): View->element('side_bar_depart...', Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Matthieu\My ...')
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#17 {main}
+2013-11-10 19:57:24 Error: [MissingActionException] Action DepartmentsController::getDepartments() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'getDepartments',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/rooms
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\side_bar_department.ctp(1): Object->requestAction(Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(1191): View->_render('E:\Matthieu\My ...', Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(408): View->_renderElement('E:\Matthieu\My ...', Array, Array)
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Rooms\admin_index.ctp(5): View->element('side_bar_depart...', Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Matthieu\My ...')
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#17 {main}
+2013-11-10 19:57:50 Error: [MissingActionException] Action DepartmentsController::getDepartments() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'getDepartments',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/rooms
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\side_bar_department.ctp(1): Object->requestAction(Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(1191): View->_render('E:\Matthieu\My ...', Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(408): View->_renderElement('E:\Matthieu\My ...', Array, Array)
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Rooms\admin_index.ctp(5): View->element('side_bar_depart...', Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Matthieu\My ...')
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#17 {main}
+2013-11-10 19:59:39 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\RoomsController.php, line 16]
+2013-11-10 19:59:39 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /CakePHP/projet-web/index.php/admin/rooms
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 16, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 16, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 20:00:00 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\RoomsController.php, line 16]
+2013-11-10 20:00:00 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /CakePHP/projet-web/index.php/admin/rooms
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 16, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 16, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 20:00:56 Error: [MissingActionException] Action DepartmentsController::getDepartments() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentsController',
+  'action' => 'getDepartments',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/rooms
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\side_bar_department.ctp(1): Object->requestAction(Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(1191): View->_render('E:\Matthieu\My ...', Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(408): View->_renderElement('E:\Matthieu\My ...', Array, Array)
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Rooms\admin_index.ctp(5): View->element('side_bar_depart...', Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Matthieu\My ...')
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(RoomsController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#17 {main}
+2013-11-10 20:14:56 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php, line 79]
+2013-11-10 20:14:56 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom?idRoom=1&idDepartement=4&date=2013-10-16&startTime=08%3A00%3A00
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 79)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 79, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 79, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 20:15:01 Error: [CakeException] Method params does not exist
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom?idRoom=1&idDepartement=4&date=2013-10-16&startTime=08%3A00%3A00
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(79): CakeRequest->__call('params', Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(79): CakeRequest->params('pass')
+#2 [internal function]: LoansController->manager_answerRoom()
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#8 {main}
+2013-11-10 20:15:07 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php, line 79]
+2013-11-10 20:15:07 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom?idRoom=1&idDepartement=4&date=2013-10-16&startTime=08%3A00%3A00
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 79)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 79, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 79, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 20:22:02 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projet_web`.`loans`, CONSTRAINT `loans_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`id`))
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom?idRoom=1&idDepartement=4&date=2013-10-16&startTime=08%3A00%3A00
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `pr...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1761): DboSource->create(Object(Loan), Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(79): Model->save(Array)
+#5 [internal function]: LoansController->manager_answerRoom()
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#11 {main}
+2013-11-10 20:23:13 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projet_web`.`loans`, CONSTRAINT `loans_ibfk_3` FOREIGN KEY (`status_id`) REFERENCES `status` (`id`))
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom?room_id=1&department_id=4&date=2013-10-16&startTime=08%3A00%3A00
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `pr...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1761): DboSource->create(Object(Loan), Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(79): Model->save(Array)
+#5 [internal function]: LoansController->manager_answerRoom()
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#11 {main}
+2013-11-10 20:24:24 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php, line 79]
+2013-11-10 20:24:24 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom?room_id=1&department_id=4&date=2013-10-16&startTime=08%3A00%3A00
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 79)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 79, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 79, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 20:24:31 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'department_id' in where clause is ambiguous
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom?room_id=1&department_id=4&date=2013-10-16&startTime=08%3A00%3A00
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Loan`.`...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Loan`.`...', Array, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Loan`.`...', false)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(2750): DboSource->read(Object(Loan), Array)
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(2722): Model->_readDataSource('first', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(79): Model->find('first', Array)
+#7 [internal function]: LoansController->manager_answerRoom()
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#13 {main}
+2013-11-10 20:25:05 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'startTime' in 'where clause'
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom?room_id=1&department_id=4&date=2013-10-16&startTime=08%3A00%3A00
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Loan`.`...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Loan`.`...', Array, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Loan`.`...', false)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(2750): DboSource->read(Object(Loan), Array)
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(2722): Model->_readDataSource('first', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(79): Model->find('first', Array)
+#7 [internal function]: LoansController->manager_answerRoom()
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#13 {main}
+2013-11-10 20:25:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'startTime' in 'where clause'
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom?room_id=1&department_id=4&date=2013-10-16&startTime=08%3A00%3A00
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Loan`.`...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Loan`.`...', Array, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Loan`.`...', false)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(2750): DboSource->read(Object(Loan), Array)
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(2722): Model->_readDataSource('first', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(79): Model->find('first', Array)
+#7 [internal function]: LoansController->manager_answerRoom()
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#13 {main}
+2013-11-10 21:56:00 Error: Fatal Error (1): Call to undefined method LoansController::save() in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php, line 81]
+2013-11-10 21:56:00 Error: [FatalErrorException] Call to undefined method LoansController::save()
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=3
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 81, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Matthieu\My ...', 81, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 21:56:53 Error: Fatal Error (1): Call to undefined method LoansController::save() in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php, line 81]
+2013-11-10 21:56:53 Error: [FatalErrorException] Call to undefined method LoansController::save()
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=1
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 81, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Matthieu\My ...', 81, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 21:56:58 Error: Fatal Error (1): Call to undefined method LoansController::save() in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php, line 81]
+2013-11-10 21:56:58 Error: [FatalErrorException] Call to undefined method LoansController::save()
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=3
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 81, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Matthieu\My ...', 81, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 21:57:33 Error: Fatal Error (1): Call to undefined method LoansController::save() in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php, line 81]
+2013-11-10 21:57:33 Error: [FatalErrorException] Call to undefined method LoansController::save()
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=2
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 81, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Matthieu\My ...', 81, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 21:57:33 Error: Fatal Error (1): Call to undefined method LoansController::save() in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php, line 81]
+2013-11-10 21:57:33 Error: [FatalErrorException] Call to undefined method LoansController::save()
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 81, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Matthieu\My ...', 81, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 21:59:53 Error: Fatal Error (4): syntax error, unexpected ',', expecting ']' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php, line 83]
+2013-11-10 21:59:53 Error: [FatalErrorException] syntax error, unexpected ',', expecting ']'
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=1
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 83)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 83, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 83, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 22:01:01 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projet_web`.`loans`, CONSTRAINT `loans_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`id`))
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=3
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `pr...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1761): DboSource->create(Object(Loan), Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(81): Model->save(Array)
+#5 [internal function]: LoansController->manager_answerRoom('1')
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#11 {main}
+2013-11-10 22:01:12 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projet_web`.`loans`, CONSTRAINT `loans_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`id`))
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=3
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `pr...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1761): DboSource->create(Object(Loan), Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(81): Model->save(Array)
+#5 [internal function]: LoansController->manager_answerRoom('1')
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#11 {main}
+2013-11-10 22:02:12 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projet_web`.`loans`, CONSTRAINT `loans_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`id`))
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=3
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `pr...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1761): DboSource->create(Object(Loan), Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(81): Model->save(Array)
+#5 [internal function]: LoansController->manager_answerRoom('1')
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#11 {main}
+2013-11-10 22:03:30 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projet_web`.`loans`, CONSTRAINT `loans_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`id`))
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=3
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `pr...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1761): DboSource->create(Object(Loan), Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(82): Model->save(Array)
+#5 [internal function]: LoansController->manager_answerRoom('1')
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#11 {main}
+2013-11-10 22:03:34 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projet_web`.`loans`, CONSTRAINT `loans_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`id`))
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=2
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `pr...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1761): DboSource->create(Object(Loan), Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(82): Model->save(Array)
+#5 [internal function]: LoansController->manager_answerRoom('1')
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#11 {main}
+2013-11-10 22:03:47 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projet_web`.`loans`, CONSTRAINT `loans_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`id`))
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=2
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `pr...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1761): DboSource->create(Object(Loan), Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(82): Model->save(Array)
+#5 [internal function]: LoansController->manager_answerRoom('1')
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#11 {main}
+2013-11-10 22:07:09 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projet_web`.`loans`, CONSTRAINT `loans_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`id`))
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=1
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `pr...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1761): DboSource->create(Object(Loan), Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(82): Model->save(Array)
+#5 [internal function]: LoansController->manager_answerRoom('1')
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#11 {main}
+2013-11-10 22:10:58 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projet_web`.`loans`, CONSTRAINT `loans_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`id`))
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=1
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `pr...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1761): DboSource->create(Object(Loan), Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(82): Model->save(Array)
+#5 [internal function]: LoansController->manager_answerRoom('1')
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#11 {main}
+2013-11-10 22:11:42 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projet_web`.`loans`, CONSTRAINT `loans_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`id`))
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=1
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `pr...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1761): DboSource->create(Object(Loan), Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(82): Model->save(Array)
+#5 [internal function]: LoansController->manager_answerRoom('1')
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#11 {main}
+2013-11-10 22:15:13 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projet_web`.`loans`, CONSTRAINT `loans_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`id`))
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=1
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `pr...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1761): DboSource->create(Object(Loan), Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(82): Model->save(Array)
+#5 [internal function]: LoansController->manager_answerRoom('1')
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#11 {main}
+2013-11-10 22:15:18 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projet_web`.`loans`, CONSTRAINT `loans_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`id`))
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=3
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `pr...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1761): DboSource->create(Object(Loan), Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(82): Model->save(Array)
+#5 [internal function]: LoansController->manager_answerRoom('1')
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#11 {main}
+2013-11-10 22:15:39 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projet_web`.`loans`, CONSTRAINT `loans_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`id`))
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=1
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `pr...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1761): DboSource->create(Object(Loan), Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(82): Model->save(Array)
+#5 [internal function]: LoansController->manager_answerRoom('1')
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#11 {main}
+2013-11-10 22:15:42 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projet_web`.`loans`, CONSTRAINT `loans_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`id`))
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=3
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `pr...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1761): DboSource->create(Object(Loan), Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(82): Model->save(Array)
+#5 [internal function]: LoansController->manager_answerRoom('1')
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#11 {main}
+2013-11-10 22:15:57 Error: Fatal Error (1): Unsupported operand types in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php, line 83]
+2013-11-10 22:15:57 Error: [FatalErrorException] Unsupported operand types
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=3
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 83)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 83, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'E:\Matthieu\My ...', 83, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 22:16:24 Error: Fatal Error (1): Unsupported operand types in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php, line 83]
+2013-11-10 22:16:24 Error: [FatalErrorException] Unsupported operand types
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=1
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 83)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 83, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'E:\Matthieu\My ...', 83, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 22:16:27 Error: Fatal Error (1): Unsupported operand types in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php, line 83]
+2013-11-10 22:16:27 Error: [FatalErrorException] Unsupported operand types
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=3
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 83)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 83, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'E:\Matthieu\My ...', 83, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 22:17:49 Error: Fatal Error (1): Unsupported operand types in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php, line 83]
+2013-11-10 22:17:49 Error: [FatalErrorException] Unsupported operand types
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 83)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 83, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'E:\Matthieu\My ...', 83, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 22:18:00 Error: Fatal Error (1): Unsupported operand types in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php, line 83]
+2013-11-10 22:18:00 Error: [FatalErrorException] Unsupported operand types
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=3
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 83)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'E:\Matthieu\My ...', 83, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'E:\Matthieu\My ...', 83, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 22:20:04 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projet_web`.`loans`, CONSTRAINT `loans_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`id`))
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=3
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `pr...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1761): DboSource->create(Object(Loan), Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(82): Model->save(Array)
+#5 [internal function]: LoansController->manager_answerRoom('1')
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#11 {main}
+2013-11-10 22:21:27 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projet_web`.`loans`, CONSTRAINT `loans_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`id`))
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=3
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `pr...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1761): DboSource->create(Object(Loan), Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1603): Model->save(Array, Array)
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(82): Model->saveField('status_id', '3')
+#6 [internal function]: LoansController->manager_answerRoom('1')
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#12 {main}
+2013-11-10 22:21:39 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projet_web`.`loans`, CONSTRAINT `loans_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`id`))
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=3
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `pr...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1761): DboSource->create(Object(Loan), Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1603): Model->save(Array, Array)
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(82): Model->saveField('status_id', '3')
+#6 [internal function]: LoansController->manager_answerRoom('1')
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#12 {main}
+2013-11-10 22:21:57 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'status_id' cannot be null
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `pr...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1761): DboSource->create(Object(Loan), Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1603): Model->save(Array, Array)
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(82): Model->saveField('status_id', NULL)
+#6 [internal function]: LoansController->manager_answerRoom('1')
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#12 {main}
+2013-11-10 22:22:03 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projet_web`.`loans`, CONSTRAINT `loans_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`id`))
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=3
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `pr...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1761): DboSource->create(Object(Loan), Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1603): Model->save(Array, Array)
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(82): Model->saveField('status_id', '3')
+#6 [internal function]: LoansController->manager_answerRoom('1')
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#12 {main}
+2013-11-10 22:23:09 Error: Fatal Error (1): Call to undefined method LoansController::id() in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php, line 80]
+2013-11-10 22:23:09 Error: [FatalErrorException] Call to undefined method LoansController::id()
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=3
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 80)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 80, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Matthieu\My ...', 80, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-10 22:23:19 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projet_web`.`loans`, CONSTRAINT `loans_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`id`))
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answerRoom/1?status_id=3
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `pr...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1761): DboSource->create(Object(Loan), Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1603): Model->save(Array, Array)
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\LoansController.php(82): Model->saveField('status_id', '3')
+#6 [internal function]: LoansController->manager_answerRoom('1')
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LoansController), Array)
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#12 {main}
+2013-11-11 10:07:44 Error: [MissingControllerException] Controller class ProjetController could not be found.
+Exception Attributes: array (
+  'class' => 'ProjetController',
+  'plugin' => NULL,
+)
+Request URL: /projet/index.php/projet/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#2 {main}
+2013-11-11 10:07:46 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
 Exception Attributes: array (
   'class' => 'Mysql',
   'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: NO)',
@@ -3216,29 +4393,92 @@ Stack Trace:
 #15 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #16 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
 #17 {main}
-2013-11-05 16:26:01 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+2013-11-11 10:07:56 Error: [MissingActionException] Action UsersController::manager_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'manager_login',
+)
+Request URL: /projet/index.php/manager/users/login
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#4 {main}
+2013-11-11 10:39:00 Error: [MissingActionException] Action LoansController::manager_blank.gif() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoansController',
+  'action' => 'manager_blank.gif',
+)
+Request URL: /projet/index.php/manager/loans/blank.gif
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#4 {main}
+2013-11-11 10:48:15 Error: [Exception] parse error: failed at `border : 1px solid #white;` /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/less/styleCalendrier.less on line 102
+Request URL: /projet/index.php/manager/loans/answer
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(2276): lessc_parser->throwError()
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(1798): lessc_parser->parse('@import url('co...')
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(1833): lessc->compile('@import url('co...', '/Users/quentin....')
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(1847): lessc->compileFile('/Users/quentin....', '/Users/quentin....')
+#4 /Users/quentin.vecchio/Desktop/Programmation Web/projet/vendors/lessc.php(2019): lessc->checkedCompile('/Users/quentin....', '/Users/quentin....')
+#5 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/Controller/AppController.php(66): lessc::ccompile('/Users/quentin....', '/Users/quentin....')
+#6 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#7 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#8 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#10 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#13 {main}
+2013-11-11 14:11:02 Error: [MissingActionException] Action UsersController::manager_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'manager_login',
+)
+Request URL: /projet/index.php/manager/users/login
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#4 {main}
+2013-11-11 19:32:11 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
 Exception Attributes: array (
   'class' => 'Mysql',
-  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: NO)',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
   'enabled' => true,
 )
-Request URL: /projet/index.php/users/login
+Request URL: /CakePHP/projet-web/index.php/users/login
 Stack Trace:
-#0 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Datasource/DboSource.php(262): Mysql->connect()
-#1 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/ConnectionManager.php(107): DboSource->__construct(Array)
-#2 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Model.php(3288): ConnectionManager::getDataSource('default')
-#3 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Model.php(1107): Model->setDataSource('default')
-#4 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Model.php(3310): Model->setSource('users')
-#5 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Model/Model.php(1318): Model->getDataSource()
-#6 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/View/Helper/FormHelper.php(199): Model->schema()
-#7 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/View/Helper/FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
-#8 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/View/Users/login.ctp(3): FormHelper->create('User')
-#9 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/View/View.php(931): include('/Users/quentin....')
-#10 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/View/View.php(893): View->_evaluate('/Users/quentin....', Array)
-#11 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/View/View.php(462): View->_render('/Users/quentin....')
-#12 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
-#13 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
-#14 /Users/quentin.vecchio/Desktop/Programmation Web/projet/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#15 /Users/quentin.vecchio/Desktop/Programmation Web/projet/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#16 /Users/quentin.vecchio/Desktop/Programmation Web/projet/index.php(43): require('/Users/quentin....')
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Matthieu\My ...')
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
 #17 {main}
+2013-11-12 22:26:01 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Loans\manager_ask_room.ctp, line 31]
+2013-11-12 22:26:01 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+Request URL: /CakePHP/projet-web/index.php/manager/loans/askRoom/5
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 31, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 31, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
