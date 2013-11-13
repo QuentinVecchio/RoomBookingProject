@@ -124,7 +124,7 @@ class DepartmentsController  extends AppController{
 		if(!isset($index) || empty($index) || !is_numeric($index)){
 			$this->redirect(array('controller' =>'departments', 'action' =>'index','admin' => true));
 		}
-		$departments = $this->Department->find('all', array(
+		$departments = $this->Department->find('list', array(
 		'order' =>'Department.name',
 		'recursive' => '-1'));
 
@@ -132,6 +132,11 @@ class DepartmentsController  extends AppController{
 		'conditions' => array('id' => $index)));
 		$this->set('departments', $departments);
 		$this->set('rooms', $rooms);
+
+		$this->set('side_department',$this->Department->find('all', array(
+				'order' =>'Department.name',
+				'recursive' => '-1')));
+
 	}
 }
 ?>
