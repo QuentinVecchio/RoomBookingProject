@@ -68,14 +68,13 @@ class RoomHelper extends AppHelper{
 		return ob_get_clean();
    	}
 
-   	public function getEdit($value = array(), $department_id){
-   		$list = $this->getListOptions($value);
+   	public function getEdit($listDepartment, $department_id){
 
    		ob_start(); ?>
 		<tr>
 			<?php echo $this->Form->create('Room', array('controller' => 'rooms', 'action' => 'add', 'style'=>'display:none;'));  ?>
 			<td><?php   
-						echo $this->Form->select('department_id', $list, array('value' => $department_id)); ?></td>
+						echo $this->Form->select('department_id', $listDepartment, array('value' => $department_id)); ?></td>
 			<td><?php echo $this->Form->input('name', array('label'=>'', 'type'=>'text', 'label'=> array('style'=> 'display:none;'))) ?></td>
 			<td><?php echo $this->Form->checkbox('projector').  $this->Form->label('projector',''); ?></td>
 			<td><?php echo $this->Form->checkbox('has_PC'). $this->Form->label('has_PC',''); ?></td>
@@ -102,9 +101,7 @@ class RoomHelper extends AppHelper{
    			$v = current($v);
    			$res[$v['id']] = $v['name'];
    		}
-
    		return $res;
    	}
-
 }
  ?>
