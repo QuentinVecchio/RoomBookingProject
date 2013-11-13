@@ -20,7 +20,7 @@ class RoomsController extends AppController{
 		if(!isset($index) || empty($index) || !is_numeric($index)){
 			$this->redirect(array('controller' =>'departments', 'action' =>'index','admin' => true));
 		}
-		$departments = $this->Room->Department->find('all', array(
+		$departments = $this->Room->Department->find('list', array(
 		'order' =>'Department.name',
 		'recursive' => '-1'));
 
