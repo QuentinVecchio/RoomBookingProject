@@ -5,7 +5,9 @@
 			<li><?php echo $this->Html->Link('Importer',
 								 array('controller' =>'users', 'action' => 'add', 'admin' => true)); ?></li>
 			<li><?php echo $this->Html->Link('Modification',
-								 array('controller' =>'users', 'action' => 'view', 'admin' => true)); ?></li>								 
+								 array('controller' =>'users', 'action' => 'view', 'admin' => true)); ?></li>
+			<li><?php echo $this->Html->Link('Ajouter',
+								 array('controller' =>'users', 'action' => 'addUser', 'admin' => true)); ?></li>								 
 		</ul>
 	</nav>
 </aside>
