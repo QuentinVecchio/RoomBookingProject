@@ -167,7 +167,7 @@ class Calendrier extends AppHelper
 														<td colspan="<?php echo $w-1;?>" class="padding"></td>
 													<?php
 													}
-													$dateTraite = $this->_date1->Annee() . '-' . $m . '-' . $d;
+													$dateTraite = $this->_date1->Annee() . '-' . $m . '-' . (($d < 10)? '0'.$d: $d);
 													$nbEvent = $this->evenement($dateTraite,$event);
 													if($nbEvent != 0)
 													{
