@@ -49,7 +49,9 @@ class UsersController extends AppController{
 	}
 
 	public function admin_add() {
-		$this->layout = null;
+		if($this->request->is('Ajax')){
+			$this->layout = null;
+		}
 		if(!empty($this->request->data)){
 
 			App::import('Vendor', 'ImportUtil');
@@ -61,7 +63,6 @@ class UsersController extends AppController{
 
 			$res = $ImportUtil->initUtil($newName, $listDpt);
 
-			debug($res);
 			$this->set('list', $res);
 			unlink($newName);
 		}

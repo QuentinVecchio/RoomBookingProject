@@ -11,7 +11,7 @@
 		$action = $this->params['action'];
 		$controller = $this->params['controller'];
 
-		$Administration =(in_array($controller, array('rooms', 'departments','users')) && in_array($action, array('admin_index','admin_view')));
+		$Administration =(in_array($controller, array('rooms', 'departments','users')) && in_array($action, array('admin_index','admin_view','admin_add')));
 		$PretSalle =(in_array($controller, array('loans', 'departments')) && in_array($action, array('manager_index', 'manager_ask','manager_answer','manager_askRoom')));
 
 

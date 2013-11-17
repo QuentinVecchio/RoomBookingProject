@@ -1,7 +1,8 @@
-	<?php 
-	 echo $this->Form->create('User', array('type' => 'file'));
+<?php if(!isset($list)): ?>
+<?php 
+ echo $this->Form->create('User', array('type' => 'file'));
 
-	 ?>
+ ?>
 <fieldset>
 	<legend>Importer le fichier:</legend>
 <?php 
@@ -20,4 +21,36 @@
 <?php 
 	echo $this->Form->end();
 
+ ?>
+
+ <?php else: ?>
+ <?php 	echo $this->Element('side_bar_gestion_utilisateur'); ?>
+	<table class="grille-gestion">
+		<thead>
+			<tr>
+				<th>Login</th>
+				<th>Nom</th>
+				<th>Prenom</th>
+				<th>Email</th>
+				<th>Mot de Passe</th>
+			</tr>
+		</thead>
+		<tbody>
+			<?php foreach ($list as $i => $l):	?>
+				<tr>
+					<td><?php echo $l["username"]; ?></td>
+					<td><?php echo $l["firstname"]; ?></td>
+					<td><?php echo $l["lastname"]; ?></td>
+					<td><?php echo $l["email"]; ?></td>
+					<td><?php echo $l["password"]; ?></td>
+			<?php endforeach; ?>
+		</tbody>
+	</table>
+
+ <?php endif; ?>
+
+ <?php 
+$this->start('css');
+	echo $this->Html->css('table');
+$this->end();
  ?>
