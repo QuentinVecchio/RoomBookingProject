@@ -1,8 +1,14 @@
 .gestion-demande-salle input,
 .gestion-demande-salle .input {
-  margin: 0;
+	margin : 0 auto;
   width: 100px;
 }
-.gestion-demande-salle thead tr td {
+.gestion-demande-salle thead tr th {
   text-align: center;
+  font-size: 15px;
+}
+
+
+.gestion-demande-salle thead tr th.colonne-options{
+	width: 80px;
 }
