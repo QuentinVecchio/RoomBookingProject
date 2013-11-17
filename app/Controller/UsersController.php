@@ -95,7 +95,10 @@ class UsersController extends AppController{
 	public function admin_addUser(){
 		if(!empty($this->request->data)){
 			$this->User->create();
+			$this->request->data['User']['password'] = $this->Auth->password($this->request->data['User']['password']);
 			$this->User->save($this->request->data);
+			$this->Session->setFlash('Ajout de l\'utilisateur effectué', 'flash_message', array('type'=>'success'));
+			$this->redirect(array('controller'=>'users', 'action' =>'view'));			
 		}
 		$this->set('list', $this->User->Department->find('list'));
 		$this->set('listRole', $this->User->Role->find('list'));

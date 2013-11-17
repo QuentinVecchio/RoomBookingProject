@@ -20,4 +20,5 @@ class User extends AppModel{
 				'message' => 'Renseigner une adresse mail valide'
 				)
 		);
+
 } ?>
