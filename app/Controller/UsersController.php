@@ -30,10 +30,11 @@ class UsersController extends AppController{
 
 	public function password(){
 		if(!empty($this->request->data)){
-			debug($this->request->data);
-			die();
+			//debug($this->request->data);
 			$this->User->id = $this->Auth->user('id');
+
 			$this->User->save($this->request->data);
+			die();
 		}
 
 
@@ -95,7 +96,6 @@ class UsersController extends AppController{
 	public function admin_addUser(){
 		if(!empty($this->request->data)){
 			$this->User->create();
-			$this->request->data['User']['password'] = $this->Auth->password($this->request->data['User']['password']);
 			$this->User->save($this->request->data);
 			$this->Session->setFlash('Ajout de l\'utilisateur effectué', 'flash_message', array('type'=>'success'));
 			$this->redirect(array('controller'=>'users', 'action' =>'view'));			
