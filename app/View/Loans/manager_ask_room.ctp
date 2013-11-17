@@ -37,7 +37,12 @@
 																			'ng-model' => 'endTime', 'type' => 'text')); ?></td>
 
 					<td><?php echo $this->Form->textarea('loan.0.remark', array('ng-model' => 'remark')); ?></td>
-					<td></td>
+					<td>
+						<ul class="button-group">
+							<li><a href="#" class="button tiny icon-cancel" onClick="";></a></li>
+						</ul>
+
+					</td>
 				</tr>
 				<tr  ng-repeat="id in getNumber(number)">
 
@@ -49,7 +54,12 @@
 																			'value' => '{{endTime}}', 'type' => 'text')); ?></td>
 
 					<td><?php echo $this->Form->textarea('loan.{{id}}.remark', array('value' => '{{remark}}')); ?></td>
-					<td></td>
+					<td>
+						<ul class="button-group">
+							<li><a href="#" class="button tiny icon-cancel" onClick="removeLine(this)";></a></li>
+						</ul>
+
+					</td>
 				</tr>
 
 
