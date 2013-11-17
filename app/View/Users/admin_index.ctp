@@ -2,7 +2,6 @@
 	echo $this->Element('side_bar_gestion_utilisateur');
  ?>
 
-
 <section id="gestion">
 	
 </section>
