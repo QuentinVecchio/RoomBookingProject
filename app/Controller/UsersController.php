@@ -44,6 +44,30 @@ class UsersController extends AppController{
 		}
 	}
 
+	public function admin_index() {
+
+	}
+
+	public function admin_add() {
+		$this->layout = null;
+		if(!empty($this->request->data)){
+			debug($this->request->data);
+
+			App::import('Vendor', 'ImportUtil');
+			$ImportUtil = new ImportUtil();
+			$newName = str_replace('.tmp', '.xlsx', $this->request->data['User']['fichier']['tmp_name']);
+			rename($this->request->data['User']['fichier']['tmp_name'], $newName);;
+			$ImportUtil->initUtil($newName);
+			unlink($newName);
+
+
+			die();
+		}
+
+	}
+
+
+
 
 	public function login(){
 		$this->set('title_for_layout', 'Connexion');
