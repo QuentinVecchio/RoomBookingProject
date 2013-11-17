@@ -66,11 +66,7 @@ class UsersController extends AppController{
 			$this->set('list', $res);
 			unlink($newName);
 		}
-
 	}
-
-
-
 
 	public function login(){
 		$this->set('title_for_layout', 'Connexion');
