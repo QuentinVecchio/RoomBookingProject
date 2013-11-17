@@ -10,3 +10,9 @@ $this->start('script');
 	echo $this->Html->script('charge');
 $this->end(); 
  ?>
+ 
+<?php 
+$this->start('css');
+	echo $this->Html->css('table');
+$this->end();
+?>	
