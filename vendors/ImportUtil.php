@@ -2,7 +2,7 @@
 
 	class ImportUtil{
 
-		function initUtil($lien)
+		function initUtil($lien, $listdpt)
 		{
 		// Ajout de fichiers
 			require('PHPExcel.php');
@@ -21,6 +21,8 @@
 		//Nombres de lignes
 		//	$nbLigne = $objReader->sheets[0]['numRows'];
 		//On part du principe que la colonne 1 est le nom la 2 le prénom et la 3 l'email
+
+			$res = array();
 			for($i=1;$i<4;$i++)
 			{
 				$prenom = $objPHPExcel->getActiveSheet()->getCellByColumnAndRow(1,$i)->getValue();
@@ -30,10 +32,20 @@
 				$util = new Utilisateur($nom,$prenom);
 				$pseudo = $util->genere();
 
+				$dpt = array_search($departement, $listdpt);
+
+
 				$mdp = $pass->genere();
-	
-				echo 'Nom : ' .  $nom .' Prenom : ' . $prenom . ' Email : ' . $email . ' Departement : ' . $departement. ' Pseudo : '. $util->pseudo() . ' Mdp : ' . $mdp .'</br>';
+				$res[]=array('username' => $util->pseudo(),
+							 'firstname' => $prenom,
+							 'lastname' => $nom,
+							 'email' => $email,
+							 'password' => $mdp,
+							 'department_id' =>$dpt,
+							 'role_id' => 1);
 			}
+
+			return $res;
 		}
 	}
 ?>

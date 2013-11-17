@@ -803,3 +803,13 @@ Stack Trace:
 #3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-11-17 12:03:29 Error: Fatal Error (4): syntax error, unexpected '$mdp' (T_VARIABLE) in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php, line 38]
+2013-11-17 12:03:29 Error: [FatalErrorException] syntax error, unexpected '$mdp' (T_VARIABLE)
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 38, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 38, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
