@@ -29,13 +29,16 @@ class UsersController extends AppController{
 	}
 
 	public function password(){
-		if(!empty($this->request->data)){
-			//debug($this->request->data);
-			$this->User->id = $this->Auth->user('id');
+		$this->User->id = AuthComponent::user('id');
 
-			$this->User->save($this->request->data);
-			die();
-		}
+		if (!empty($this->data)) {
+	        if ($this->User->save($this->data, false)) {
+	            $this->Session->setFlash('Password has been changed.');
+	            $this->redirect(array('controller' => 'Users', 'action' => 'index'));
+	        } else {
+	            $this->Session->setFlash('Password could not be changed.');
+	        }
+	    }
 
 
 		if($this->request->is('Ajax')){
