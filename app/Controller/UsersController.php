@@ -49,9 +49,6 @@ class UsersController extends AppController{
 	}
 
 	public function admin_add() {
-		if($this->request->is('Ajax')){
-			$this->layout = null;
-		}
 		if(!empty($this->request->data)){
 
 			App::import('Vendor', 'ImportUtil');
@@ -67,6 +64,28 @@ class UsersController extends AppController{
 			unlink($newName);
 		}
 	}
+
+	public function admin_edit($id) {
+		if($this->request->is('Ajax')){
+			$this->layout = null;
+			$user = $this->User->findById($id);
+			$this->set('user', $user);
+			$this->set('list', $this->User->Department->find('list'));
+			$this->set('listRole', $this->User->Role->find('list'));
+		}
+		if(!empty($this->request->data)){
+				$this->User->id = $id;
+				$this->User->updateAll(current($this->request->data), array('User.id' => $id));
+				$this->Session->setFlash('Mise à jour effectuée', 'flash_message', array('type'=>'success'));
+				$this->redirect(array('controller'=>'users', 'action' =>'view'));					
+		}
+	}
+
+	public function admin_view(){	
+		$listUtil = $this->User->find('all', array('order' => 'User.firstname'));
+		$this->set('listUtil',$listUtil);
+	}
+
 
 	public function login(){
 		$this->set('title_for_layout', 'Connexion');
