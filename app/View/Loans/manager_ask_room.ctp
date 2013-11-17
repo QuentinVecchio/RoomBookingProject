@@ -15,19 +15,21 @@
 <?php 	echo $this->Form->create('loan'); ?>
 
 <p>Le nombre de semaine:<input type="number" ng-model="number"></p>
-<table class="gestion-demande-salle">
+<table class="gestion-demande-salle  grille-gestion">
 		<thead>
 			<tr>
-				<td>Date</td>
-				<td>Heure début</td>
-				<td>Heure Fin</td>
-				<td>Commentaire</td>
-				<td><span class="icon-cog"></span></td>
+				<th>Date</th>
+				<th>Heure début</th>
+				<th>Heure Fin</th>
+				<th>Commentaire</th>
+				<th class="colonne-options"><span class="icon-cog"></span></th>
 			</tr>
 		</thead>
 		<tbody>
 				<tr>
-					<td><?php echo $this->Form->input('loan.0.date',array('label' => array('style'=>'display:none;'),'ng-model'=>"date",'type' => 'text','div' => array('class' => ''))); ?></td>
+					<td><?php echo $this->Form->input('loan.0.date',array('label' => array('style'=>'display:none;'),
+																		  'ng-model'=>"date",'type' => 'text')); ?></td>
+
 					<td><?php echo $this->Form->input('loan.0.start_time',array('label' => array('style'=>'display:none;'),
 																			'ng-model' => 'startTime', 'type' => 'text')); ?></td>
 
@@ -63,12 +65,11 @@
 <?php 
 $this->start('script');
 	echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular.min.js');
-	echo $this->Html->script('index_min');
 	echo $this->Html->script('gestion_demande_salle');
 	echo $this->Html->script('controllers');
 $this->end(); 
 $this->start('css');
+	echo $this->Html->css('table');
 	echo $this->Html->css('gestion_demande_salle');
-	echo $this->Html->css('index_min');
 $this->end(); 
  ?>
