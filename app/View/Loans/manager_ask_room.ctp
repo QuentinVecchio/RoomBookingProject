@@ -27,7 +27,20 @@
 		</thead>
 		<tbody>
 				<tr>
-					<td><?php echo $this->Form->input('loan.0.date',array('label' => array('style'=>'display:none;'),
+					<td><?php 
+								echo $this->Form->input('loan.0.room_id', array('label' => array('style' => 'display:none;'),
+																				'style'=> array('display:none;'), 'type' => 'text',
+																				'value' => $room['Room']['id']));
+
+								echo $this->Form->input('loan.0.status_id', array('label' => array('style' => 'display:none;'),
+																				'style'=> array('display:none;'), 'type' => 'text',
+																				'value' => 1));
+
+								echo $this->Form->input('loan.0.department_id', array('label' => array('style' => 'display:none;'),
+																				'style'=> array('display:none;'), 'type' => 'text',
+																				'value' => $department_id));
+
+								echo $this->Form->input('loan.0.date',array('label' => array('style'=>'display:none;'),
 																		  'ng-model'=>"date",'type' => 'text')); ?></td>
 
 					<td><?php echo $this->Form->input('loan.0.start_time',array('label' => array('style'=>'display:none;'),
@@ -46,7 +59,21 @@
 				</tr>
 				<tr  ng-repeat="id in getNumber(number)">
 
-					<td><?php echo $this->Form->input('loan.{{id}}.date',array('label' => array('style'=>'display:none;'),'value'=>"{{getDate(id,date)}}",'type' => 'text','div' => array('class' => ''))); ?></td>
+					<td><?php echo $this->Form->input('loan.{{id}}.room_id', array('label' => array('style' => 'display:none;'),
+																				'style'=> array('display:none;'), 'type' => 'text',
+																				 'value' => $room['Room']['id']));
+
+								echo $this->Form->input('loan.{{id}}.status_id', array('label' => array('style' => 'display:none;'),
+																				'style'=> array('display:none;'), 'type' => 'text',
+																				'value' => 1));
+
+								echo $this->Form->input('loan.{{id}}.department_id', array('label' => array('style' => 'display:none;'),
+																				'style'=> array('display:none;'), 'type' => 'text',
+																				'value' => $department_id));
+							echo $this->Form->input('loan.{{id}}.date',array('label' => array('style'=>'display:none;'),
+																			'value'=>"{{getDate(id,date)}}",'type' => 'text',
+																			'div' => array('class' => ''))); ?></td>
+
 					<td><?php echo $this->Form->input('loan.{{id}}.start_time',array('label' => array('style'=>'display:none;'),
 																			'value' => '{{startTime}}', 'type' => 'text')); ?></td>
 

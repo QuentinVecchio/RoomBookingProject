@@ -66,13 +66,16 @@ class LoansController extends AppController{
 
 
 	public function manager_askRoom($id = null){
+
 		if(!empty($this->request->data)){
-			debug($this->request->data);
-			die();
+
+			$this->Loan->saveMany(current($this->request->data));
+			$this->Session->setFlash('Vos demandes sont biens prises en compte', 'flash_message', array('type'=>'success'));
 
 		}
 		$room = $this->Loan->Room->findById($id);
 		$this->set('room', $room);
+		$this->set('department_id', $this->Auth->User('department_id'));
 	}
 
 	public function manager_answerRoom($id = null) {
