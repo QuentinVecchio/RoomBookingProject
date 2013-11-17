@@ -86,6 +86,21 @@ class UsersController extends AppController{
 		$this->set('listUtil',$listUtil);
 	}
 
+	public function admin_delete($id){
+		$this->User->delete($id);
+		$this->Session->setFlash('Supression effectuée', 'flash_message', array('type'=>'secondary'));
+		$this->redirect(array('controller'=>'users', 'action' =>'view'));			
+	}
+
+	public function admin_addUser(){
+		if(!empty($this->request->data)){
+			$this->User->create();
+			$this->User->save($this->request->data);
+		}
+		$this->set('list', $this->User->Department->find('list'));
+		$this->set('listRole', $this->User->Role->find('list'));
+	}
+
 
 	public function login(){
 		$this->set('title_for_layout', 'Connexion');

@@ -25,6 +25,7 @@
 				<td>
 					<ul class="button-group">
 						<li><a><?php echo $this->Html->Link('', array('controller'=>'users', 'action' => 'edit',$util['User']['id']), array('class' => 'button tiny icon-pencil grille-edit')); ?></a></li>
+						<li><a><?php echo $this->Html->Link('', array('controller'=>'users', 'action' => 'delete',$util['User']['id']), array('class' => 'button tiny icon-trash', 'confirm' => 'Etes-vous sûr de vouloir supprimer cet utilisateur ?')); ?></a></li>
 					</ul>					
 				</td>
 			</tr>
