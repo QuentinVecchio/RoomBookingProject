@@ -1148,3 +1148,13 @@ Stack Trace:
 #11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
 #13 {main}
+2013-11-17 14:32:52 Error: Fatal Error (1): Call to a member function password() on a non-object in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Model\User.php, line 26]
+2013-11-17 14:32:52 Error: [FatalErrorException] Call to a member function password() on a non-object
+Request URL: /CakePHP/projet-web/index.php/admin/users/addUser
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Matthieu\My ...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Matthieu\My ...', 26, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Matthieu\My ...', 26, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
