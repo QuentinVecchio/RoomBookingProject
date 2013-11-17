@@ -11,7 +11,7 @@
 		$action = $this->params['action'];
 		$controller = $this->params['controller'];
 
-		$Administration =(in_array($controller, array('rooms', 'departments')) && in_array($action, array('admin_index','admin_view')));
+		$Administration =(in_array($controller, array('rooms', 'departments','users')) && in_array($action, array('admin_index','admin_view')));
 		$PretSalle =(in_array($controller, array('loans', 'departments')) && in_array($action, array('manager_index', 'manager_ask','manager_answer','manager_askRoom')));
 
 
@@ -24,7 +24,10 @@
 			<li class="sous-menu <?php if($Administration) echo 'active';?>"><a href="#">Administration</a>
 				<ul>
 					<li><?php echo $this->Html->Link('Gestion des salles', array('controller'=> 'rooms','action' => 'index', 'admin'=>true)) ?></li>
-					<li><?php echo $this->Html->Link('Gestion des départements', array('controller'=> 'departments','action' => 'index', 'admin'=>true)) ?></li>
+					<li><?php echo $this->Html->Link('Gestion des départements',
+													 array('controller'=> 'departments','action' => 'index', 'admin'=>true)) ?></li>		
+					<li><?php echo $this->Html->Link('Gestion des utilisateurs',
+													 array('controller'=> 'users','action' => 'index', 'admin'=>true)) ?></li>
 				</ul>
 			</li>
 		<?php endif; ?>

@@ -8,9 +8,9 @@ class MotDePasse
 {
 	private $_mdp;
 	private $_nbLettre;
-	private $lettre ="abcdefghijklmnopqrstuvwxyz";
-	private $chiffre="0123456789";
-	private $spec="#@&%$€£";
+	private $_lettre ='abcdefghijklmnopqrstuvwxyz';
+	private $_chiffre='0123456789';
+	private $_spec = '#@&!?';
 
 	function __construct($nb = 8)
 	{
@@ -39,23 +39,23 @@ class MotDePasse
 
 	public function genere()
 	{
-		$i = O;
+		$i = 0;
 		$mdp = "";
 		$aleatoire;
-		while($i < $this->NbLettre())
+		while($i < $this->_nbLettre)
 		{
-			$aleatoire = rand(0,6)
-			if($i == 0)
+			$aleatoire = rand(0,6);
+			if($i === 0)
 			{
-				$caractere = substr($spec, mt_rand(0, strlen($spec)-1), 1);
+				$caractere = substr($this->_spec, mt_rand(0, strlen($this->_spec)-1), 1);
 			}
-			else if($i%2 == 0)
+			else if($i%2 === 0)
 			{
-				$caractere = substr($lettre, mt_rand(0, strlen($lettre)-1), 1);
+				$caractere = substr($this->_lettre, mt_rand(0, strlen($this->_lettre)-1), 1);
 			}
 			else
 			{
-				$caractere = substr($chiffre, mt_rand(0, strlen($chiffre)-1), 1);
+				$caractere = substr($this->_chiffre, mt_rand(0, strlen($this->_chiffre)-1), 1);
 			}
 			$mdp .= $caractere;
 			$i++;

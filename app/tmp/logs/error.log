@@ -80,3 +80,726 @@ Stack Trace:
 #3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-11-17 10:42:35 Error: [MissingActionException] Action UsersController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_index',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/users
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#4 {main}
+2013-11-17 10:43:10 Error: [MissingViewException] View file "E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Users\admin_index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Matthieu\\My Documents\\Projects\\Web\\www\\CakePHP\\projet-web\\app\\View\\Users\\admin_index.ctp',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/users
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#6 {main}
+2013-11-17 10:45:30 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/admin/user/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#2 {main}
+2013-11-17 10:45:41 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/admin/user/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#2 {main}
+2013-11-17 10:46:12 Error: [MissingActionException] Action UsersController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_add',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#4 {main}
+2013-11-17 10:47:37 Error: [MissingActionException] Action UsersController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_add',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#4 {main}
+2013-11-17 10:51:23 Error: Fatal Error (4): syntax error, unexpected '>' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Users\admin_add.ctp, line 5]
+2013-11-17 10:51:23 Error: [FatalErrorException] syntax error, unexpected '>'
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 5, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 5, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 10:51:25 Error: Fatal Error (4): syntax error, unexpected '>' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Users\admin_add.ctp, line 5]
+2013-11-17 10:51:25 Error: [FatalErrorException] syntax error, unexpected '>'
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 5, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 5, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 10:52:16 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Users\admin_add.ctp, line 5]
+2013-11-17 10:52:16 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 5, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 5, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 10:52:19 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Users\admin_add.ctp, line 5]
+2013-11-17 10:52:19 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 5, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 5, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:05:47 Error: Fatal Error (1): Call to undefined function uses() in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php, line 56]
+2013-11-17 11:05:47 Error: [FatalErrorException] Call to undefined function uses()
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 56)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 56, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Matthieu\My ...', 56, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:07:29 Error: Fatal Error (1): Call to undefined function initUtil() in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php, line 58]
+2013-11-17 11:07:29 Error: [FatalErrorException] Call to undefined function initUtil()
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 58, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Matthieu\My ...', 58, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:08:06 Error: Fatal Error (1): Call to undefined function initUtil() in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php, line 58]
+2013-11-17 11:08:06 Error: [FatalErrorException] Call to undefined function initUtil()
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 58, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Matthieu\My ...', 58, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:08:44 Error: Fatal Error (1): Call to a member function initUtil() on a non-object in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php, line 58]
+2013-11-17 11:08:44 Error: [FatalErrorException] Call to a member function initUtil() on a non-object
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Matthieu\My ...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Matthieu\My ...', 58, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Matthieu\My ...', 58, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:10:40 Error: Fatal Error (1): Class 'ImportUtil' not found in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php, line 58]
+2013-11-17 11:10:40 Error: [FatalErrorException] Class 'ImportUtil' not found
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'ImportUt...', 'E:\Matthieu\My ...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'ImportUt...', 'E:\Matthieu\My ...', 58, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'ImportUt...', 'E:\Matthieu\My ...', 58, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:11:00 Error: Fatal Error (1): Class 'ImportUtil' not found in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php, line 58]
+2013-11-17 11:11:00 Error: [FatalErrorException] Class 'ImportUtil' not found
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'ImportUt...', 'E:\Matthieu\My ...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'ImportUt...', 'E:\Matthieu\My ...', 58, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'ImportUt...', 'E:\Matthieu\My ...', 58, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:11:09 Error: Fatal Error (1): Class 'ImportUtil' not found in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php, line 58]
+2013-11-17 11:11:09 Error: [FatalErrorException] Class 'ImportUtil' not found
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'ImportUt...', 'E:\Matthieu\My ...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'ImportUt...', 'E:\Matthieu\My ...', 58, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'ImportUt...', 'E:\Matthieu\My ...', 58, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:11:29 Error: Fatal Error (1): Class 'ImportUtil' not found in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php, line 59]
+2013-11-17 11:11:29 Error: [FatalErrorException] Class 'ImportUtil' not found
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'ImportUt...', 'E:\Matthieu\My ...', 59)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'ImportUt...', 'E:\Matthieu\My ...', 59, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'ImportUt...', 'E:\Matthieu\My ...', 59, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:12:55 Error: Fatal Error (1): Class 'AppHelper' not found in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\Calendrier.php, line 9]
+2013-11-17 11:12:55 Error: [FatalErrorException] Class 'AppHelper' not found
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'AppHelpe...', 'E:\Matthieu\My ...', 9)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppHelpe...', 'E:\Matthieu\My ...', 9, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'AppHelpe...', 'E:\Matthieu\My ...', 9, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:14:20 Error: Fatal Error (64): require() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'Classes/PHPExcel.php' (include_path='.;C:\php\pear') in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php, line 8]
+2013-11-17 11:14:20 Error: [FatalErrorException] require() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'Classes/PHPExcel.php' (include_path='.;C:\php\pear')
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'require() [<a h...', 'E:\Matthieu\My ...', 8)
+#1 [internal function]: ErrorHandler::handleError(64, 'require() [<a h...', 'E:\Matthieu\My ...', 8, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'require() [<a h...', 'E:\Matthieu\My ...', 8, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:15:25 Error: Fatal Error (1): Class 'PHPExcel_Reader_Excel2007' not found in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php, line 10]
+2013-11-17 11:15:25 Error: [FatalErrorException] Class 'PHPExcel_Reader_Excel2007' not found
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PHPExcel...', 'E:\Matthieu\My ...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PHPExcel...', 'E:\Matthieu\My ...', 10, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PHPExcel...', 'E:\Matthieu\My ...', 10, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:16:13 Error: Fatal Error (1): Class 'PHPExcel_Reader_Excel2007' not found in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php, line 10]
+2013-11-17 11:16:13 Error: [FatalErrorException] Class 'PHPExcel_Reader_Excel2007' not found
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PHPExcel...', 'E:\Matthieu\My ...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PHPExcel...', 'E:\Matthieu\My ...', 10, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PHPExcel...', 'E:\Matthieu\My ...', 10, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:16:20 Error: Fatal Error (1): Class 'PHPExcel_Reader_Excel2007' not found in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php, line 10]
+2013-11-17 11:16:20 Error: [FatalErrorException] Class 'PHPExcel_Reader_Excel2007' not found
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PHPExcel...', 'E:\Matthieu\My ...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PHPExcel...', 'E:\Matthieu\My ...', 10, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PHPExcel...', 'E:\Matthieu\My ...', 10, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:16:43 Error: Fatal Error (64): require() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'generateurMdp.php' (include_path='.;C:\php\pear') in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php, line 9]
+2013-11-17 11:16:43 Error: [FatalErrorException] require() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'generateurMdp.php' (include_path='.;C:\php\pear')
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'require() [<a h...', 'E:\Matthieu\My ...', 9)
+#1 [internal function]: ErrorHandler::handleError(64, 'require() [<a h...', 'E:\Matthieu\My ...', 9, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'require() [<a h...', 'E:\Matthieu\My ...', 9, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:16:58 Error: [PHPExcel_Reader_Exception] Could not open test/test.xlsx for reading! File does not exist.
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(268): PHPExcel_Reader_Excel2007->canRead('test/test.xlsx')
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(191): PHPExcel_IOFactory::createReaderForFile('test/test.xlsx')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php(16): PHPExcel_IOFactory::load('test/test.xlsx')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(61): ImportUtil->initUtil()
+#4 [internal function]: UsersController->admin_add()
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#10 {main}
+2013-11-17 11:17:55 Error: [PHPExcel_Reader_Exception] Could not open $lien for reading! File does not exist.
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(280): PHPExcel_Reader_Excel2007->canRead('$lien')
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(191): PHPExcel_IOFactory::createReaderForFile('$lien')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php(16): PHPExcel_IOFactory::load('$lien')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(58): ImportUtil->initUtil()
+#4 [internal function]: UsersController->admin_add()
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#10 {main}
+2013-11-17 11:18:22 Error: [PHPExcel_Reader_Exception] Could not open $lien for reading! File does not exist.
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(280): PHPExcel_Reader_Excel2007->canRead('$lien')
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(191): PHPExcel_IOFactory::createReaderForFile('$lien')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php(16): PHPExcel_IOFactory::load('$lien')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(58): ImportUtil->initUtil()
+#4 [internal function]: UsersController->admin_add()
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#10 {main}
+2013-11-17 11:18:43 Error: [PHPExcel_Reader_Exception] Could not open $lien for reading! File does not exist.
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(280): PHPExcel_Reader_Excel2007->canRead('$lien')
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(191): PHPExcel_IOFactory::createReaderForFile('$lien')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php(16): PHPExcel_IOFactory::load('$lien')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(58): ImportUtil->initUtil(NULL)
+#4 [internal function]: UsersController->admin_add()
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#10 {main}
+2013-11-17 11:19:01 Error: [PHPExcel_Reader_Exception] Could not open $lien for reading! File does not exist.
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(280): PHPExcel_Reader_Excel2007->canRead('$lien')
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(191): PHPExcel_IOFactory::createReaderForFile('$lien')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php(16): PHPExcel_IOFactory::load('$lien')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(58): ImportUtil->initUtil('C:\wamp\tmp\php...')
+#4 [internal function]: UsersController->admin_add()
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#10 {main}
+2013-11-17 11:20:20 Error: [PHPExcel_Reader_Exception] Could not open $lien for reading! File does not exist.
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(280): PHPExcel_Reader_Excel2007->canRead('$lien')
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(191): PHPExcel_IOFactory::createReaderForFile('$lien')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php(16): PHPExcel_IOFactory::load('$lien')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(58): ImportUtil->initUtil('C:\wamp\tmp\php...')
+#4 [internal function]: UsersController->admin_add()
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#10 {main}
+2013-11-17 11:21:04 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php, line 58]
+2013-11-17 11:21:04 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 58)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 58, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 58, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:21:16 Error: [PHPExcel_Reader_Exception] Could not open $lien for reading! File does not exist.
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(280): PHPExcel_Reader_Excel2007->canRead('$lien')
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(191): PHPExcel_IOFactory::createReaderForFile('$lien')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php(16): PHPExcel_IOFactory::load('$lien')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(58): ImportUtil->initUtil('C:/wamp/tmp/php...')
+#4 [internal function]: UsersController->admin_add()
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#10 {main}
+2013-11-17 11:24:16 Error: [PHPExcel_Reader_Exception] Could not open $lien for reading! File does not exist.
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(280): PHPExcel_Reader_Excel2007->canRead('$lien')
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(191): PHPExcel_IOFactory::createReaderForFile('$lien')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php(16): PHPExcel_IOFactory::load('$lien')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(60): ImportUtil->initUtil('C:\wamp\tmp\php...')
+#4 [internal function]: UsersController->admin_add()
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#10 {main}
+2013-11-17 11:24:28 Error: [PHPExcel_Reader_Exception] Could not open $lien for reading! File does not exist.
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(280): PHPExcel_Reader_Excel2007->canRead('$lien')
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(191): PHPExcel_IOFactory::createReaderForFile('$lien')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php(16): PHPExcel_IOFactory::load('$lien')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(60): ImportUtil->initUtil('C:\wamp\tmp\php...')
+#4 [internal function]: UsersController->admin_add()
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#10 {main}
+2013-11-17 11:25:33 Error: [PHPExcel_Reader_Exception] Could not open $lien for reading! File does not exist.
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(280): PHPExcel_Reader_Excel2007->canRead('$lien')
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(191): PHPExcel_IOFactory::createReaderForFile('$lien')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php(16): PHPExcel_IOFactory::load('$lien')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(60): ImportUtil->initUtil('C:/wamp/tmp/php...')
+#4 [internal function]: UsersController->admin_add()
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#10 {main}
+2013-11-17 11:26:56 Error: [PHPExcel_Reader_Exception] Could not open $lien for reading! File does not exist.
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(280): PHPExcel_Reader_Excel2007->canRead('$lien')
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(191): PHPExcel_IOFactory::createReaderForFile('$lien')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php(16): PHPExcel_IOFactory::load('$lien')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(60): ImportUtil->initUtil('C::/wamp/tmp/ph...')
+#4 [internal function]: UsersController->admin_add()
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#10 {main}
+2013-11-17 11:28:03 Error: [PHPExcel_Reader_Exception] Could not open $lien for reading! File does not exist.
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(280): PHPExcel_Reader_Excel2007->canRead('$lien')
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(191): PHPExcel_IOFactory::createReaderForFile('$lien')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php(16): PHPExcel_IOFactory::load('$lien')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(60): ImportUtil->initUtil('C:\wamp\tmp\php...')
+#4 [internal function]: UsersController->admin_add()
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#10 {main}
+2013-11-17 11:28:27 Error: [PHPExcel_Reader_Exception] Could not open $lien for reading! File does not exist.
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(280): PHPExcel_Reader_Excel2007->canRead('$lien')
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(191): PHPExcel_IOFactory::createReaderForFile('$lien')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php(16): PHPExcel_IOFactory::load('$lien')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(60): ImportUtil->initUtil('UsersController...')
+#4 [internal function]: UsersController->admin_add()
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#10 {main}
+2013-11-17 11:30:28 Error: [PHPExcel_Reader_Exception] Could not open $lien for reading! File does not exist.
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(280): PHPExcel_Reader_Excel2007->canRead('$lien')
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(191): PHPExcel_IOFactory::createReaderForFile('$lien')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php(16): PHPExcel_IOFactory::load('$lien')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(60): ImportUtil->initUtil('php4A99.xlsx')
+#4 [internal function]: UsersController->admin_add()
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#10 {main}
+2013-11-17 11:30:38 Error: [PHPExcel_Reader_Exception] Could not open $lien for reading! File does not exist.
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(280): PHPExcel_Reader_Excel2007->canRead('$lien')
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(191): PHPExcel_IOFactory::createReaderForFile('$lien')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php(16): PHPExcel_IOFactory::load('$lien')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(60): ImportUtil->initUtil('./php4A99.xlsx')
+#4 [internal function]: UsersController->admin_add()
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#10 {main}
+2013-11-17 11:32:17 Error: Fatal Error (1): Call to undefined function generePseudo() in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php, line 26]
+2013-11-17 11:32:17 Error: [FatalErrorException] Call to undefined function generePseudo()
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 26, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Matthieu\My ...', 26, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:32:44 Error: [PHPExcel_Reader_Exception] Could not open C:\wamp\tmp\phpDBE8.tmp for reading! File does not exist.
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(280): PHPExcel_Reader_Excel2007->canRead('C:\wamp\tmp\php...')
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(191): PHPExcel_IOFactory::createReaderForFile('C:\wamp\tmp\php...')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php(16): PHPExcel_IOFactory::load('C:\wamp\tmp\php...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(60): ImportUtil->initUtil('C:\wamp\tmp\php...')
+#4 [internal function]: UsersController->admin_add()
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#10 {main}
+2013-11-17 11:32:57 Error: Fatal Error (1): Call to undefined function generePseudo() in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php, line 26]
+2013-11-17 11:32:57 Error: [FatalErrorException] Call to undefined function generePseudo()
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 26, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Matthieu\My ...', 26, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:33:51 Error: Fatal Error (4): syntax error, unexpected '"' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\MotDePasse.class.php, line 13]
+2013-11-17 11:33:51 Error: [FatalErrorException] syntax error, unexpected '"'
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 13, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 13, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:34:25 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF) in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\MotDePasse.class.php, line 48]
+2013-11-17 11:34:25 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF)
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 48)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 48, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 48, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:35:02 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF) in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\MotDePasse.class.php, line 48]
+2013-11-17 11:35:02 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF)
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 48)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 48, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 48, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:35:27 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF) in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\MotDePasse.class.php, line 48]
+2013-11-17 11:35:27 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF)
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 48)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 48, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 48, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:36:06 Error: Fatal Error (1): Call to undefined function generePseudo() in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php, line 28]
+2013-11-17 11:36:06 Error: [FatalErrorException] Call to undefined function generePseudo()
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 28)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 28, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Matthieu\My ...', 28, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:39:14 Error: Fatal Error (1): Class 'AnotherClass' not found in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\Utilisateur.class.php, line 8]
+2013-11-17 11:39:14 Error: [FatalErrorException] Class 'AnotherClass' not found
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'AnotherC...', 'E:\Matthieu\My ...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AnotherC...', 'E:\Matthieu\My ...', 8, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'AnotherC...', 'E:\Matthieu\My ...', 8, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:39:30 Error: Fatal Error (1): Cannot access empty property in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\Utilisateur.class.php, line 73]
+2013-11-17 11:39:30 Error: [FatalErrorException] Cannot access empty property
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'E:\Matthieu\My ...', 73)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'E:\Matthieu\My ...', 73, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'E:\Matthieu\My ...', 73, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:40:00 Error: Fatal Error (1): Cannot access empty property in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\Utilisateur.class.php, line 75]
+2013-11-17 11:40:00 Error: [FatalErrorException] Cannot access empty property
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'E:\Matthieu\My ...', 75)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'E:\Matthieu\My ...', 75, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'E:\Matthieu\My ...', 75, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:40:39 Error: Fatal Error (1): Cannot access empty property in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\Utilisateur.class.php, line 77]
+2013-11-17 11:40:39 Error: [FatalErrorException] Cannot access empty property
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'E:\Matthieu\My ...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'E:\Matthieu\My ...', 77, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'E:\Matthieu\My ...', 77, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:43:15 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Utility\String.php, line 243]
+2013-11-17 11:43:15 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\Matthieu\My ...', 243)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\Matthieu\My ...', 243, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\Matthieu\My ...', 243, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:43:49 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Utility\String.php, line 242]
+2013-11-17 11:43:49 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\Matthieu\My ...', 242)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\Matthieu\My ...', 242, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\Matthieu\My ...', 242, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:45:41 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Utility\String.php, line 237]
+2013-11-17 11:45:41 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\Matthieu\My ...', 237)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\Matthieu\My ...', 237, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\Matthieu\My ...', 237, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:46:21 Error: Fatal Error (1): Cannot access empty property in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\Utilisateur.class.php, line 77]
+2013-11-17 11:46:21 Error: [FatalErrorException] Cannot access empty property
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'E:\Matthieu\My ...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'E:\Matthieu\My ...', 77, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'E:\Matthieu\My ...', 77, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:47:03 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Utility\String.php, line 243]
+2013-11-17 11:47:03 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\Matthieu\My ...', 243)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\Matthieu\My ...', 243, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\Matthieu\My ...', 243, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:47:03 Error: Fatal Error (1): Cannot access empty property in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\Utilisateur.class.php, line 77]
+2013-11-17 11:47:03 Error: [FatalErrorException] Cannot access empty property
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'E:\Matthieu\My ...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'E:\Matthieu\My ...', 77, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'E:\Matthieu\My ...', 77, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:47:06 Error: Fatal Error (1): Cannot access empty property in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\Utilisateur.class.php, line 77]
+2013-11-17 11:47:06 Error: [FatalErrorException] Cannot access empty property
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'E:\Matthieu\My ...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'E:\Matthieu\My ...', 77, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'E:\Matthieu\My ...', 77, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:48:18 Error: Fatal Error (1): Call to a member function pseudo() on a non-object in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php, line 35]
+2013-11-17 11:48:18 Error: [FatalErrorException] Call to a member function pseudo() on a non-object
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Matthieu\My ...', 35)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Matthieu\My ...', 35, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Matthieu\My ...', 35, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:48:28 Error: Fatal Error (1): Cannot access empty property in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\Utilisateur.class.php, line 26]
+2013-11-17 11:48:28 Error: [FatalErrorException] Cannot access empty property
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'E:\Matthieu\My ...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'E:\Matthieu\My ...', 26, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'E:\Matthieu\My ...', 26, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:49:56 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Utility\Debugger.php, line 815]
+2013-11-17 11:49:56 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\Matthieu\My ...', 815)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\Matthieu\My ...', 815, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\Matthieu\My ...', 815, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:50:23 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Utility\String.php, line 238]
+2013-11-17 11:50:23 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\Matthieu\My ...', 238)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\Matthieu\My ...', 238, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\Matthieu\My ...', 238, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:51:10 Error: Fatal Error (4): syntax error, unexpected '"' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\MotDePasse.class.php, line 13]
+2013-11-17 11:51:10 Error: [FatalErrorException] syntax error, unexpected '"'
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 13, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 13, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-17 11:52:47 Error: Fatal Error (4): syntax error, unexpected '"' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\MotDePasse.class.php, line 13]
+2013-11-17 11:52:47 Error: [FatalErrorException] syntax error, unexpected '"'
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 13, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 13, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
