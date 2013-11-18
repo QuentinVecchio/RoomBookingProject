@@ -29,6 +29,7 @@ class LoansController extends AppController{
 	}
 
 	public function manager_viewAll() {
+		$this->set('title_for_layout', 'Visionner');
 		$res = $this->Loan->find('all', array('fields'=>array('date'),'conditions' => array('OR' => array('Room.department_id' =>$this->Auth->User('department_id'),
 																							'Loan.department_id' => $this->Auth->User('department_id')))));
 		$this->set('res', $res);
@@ -99,7 +100,7 @@ class LoansController extends AppController{
 
 
 	public function manager_askRoom($id = null){
-
+		$this->set('title_for_layout', 'Demander une salle');
 		if(!empty($this->request->data)){
 
 			$this->Loan->saveMany(current($this->request->data));
