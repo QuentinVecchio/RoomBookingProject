@@ -4,6 +4,22 @@ class Loan extends AppModel{
 	public $belongsTo = array('Department', 'Room', 'Status');
 
 
+
+	public $validate = array(
+		'department_id' => array(
+			 'required' => true
+		),
+		'start_time' => array(
+			 'required' => true
+		),
+		'end_time' => array(
+			 'required' => true
+		),
+		'date' => array(
+			 'required' => true
+		));
+
+
 	public function beforeSave($options = array()) {
 
 	    if (!empty($this->data['Loan']['date'])){
