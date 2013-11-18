@@ -1,11 +1,6 @@
-@font-face {
-  font-family: 'policeNotif';
-  src: url('font/police.otf') format('truetype');
-}
 #gestion table {
   margin-left: 10px;
   color: #6A737B;
-  font-family: policeNotif;
   border: 1px solid #A8B3C5;
   border-collapse: collapse;
 }
