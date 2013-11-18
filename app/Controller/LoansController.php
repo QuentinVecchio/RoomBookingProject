@@ -90,6 +90,13 @@ class LoansController extends AppController{
 
 	}
 
+	public function manager_delete($id = null){
+		$this->Loan->delete($id);
+		$this->Session->setFlash('Demande supprimée', 'flash_message', array('type'=>'secondary'));
+		$this->redirect(array('controller' => 'loans', 'action' => 'viewAll','manager' => true));
+	}
+
+
 
 	public function manager_askRoom($id = null){
 
