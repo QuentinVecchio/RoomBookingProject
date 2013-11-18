@@ -18,7 +18,8 @@
 #gestion tbody td {
   background: white;
 }
-#gestion td {
+#gestion td,
+#gestion th {
   border: 1px solid #A8B3C5;
   text-align: center;
 }

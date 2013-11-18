@@ -2,13 +2,13 @@
 	<table>
 		<thead>
 			<tr>
-				<td>Département</td>
-				<td>Salle</td>
-				<td>Heure Début</td>
-				<td>Heure Fin</td>
-				<td>Commentaire</td>
-				<td>Statut</td>
-				<td><span class="icon-cog"></span></td>
+				<th>Département</th>
+				<th>Salle</th>
+				<th>Heure Début</th>
+				<th>Heure Fin</th>
+				<th>Commentaire</th>
+				<th>Statut</th>
+				<th><span class="icon-cog"></span></th>
 			</tr>
 		</thead>
 		<tbody>

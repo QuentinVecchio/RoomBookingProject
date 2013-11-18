@@ -4,12 +4,12 @@
 	<table>
 		<thead>
 			<tr>
-				<td>Département</td>
-				<td>Salle</td>
-				<td>Heure Début</td>
-				<td>Heure Fin</td>
-				<td>Commentaire</td>
-				<td>Statut</td>
+				<th>Département</th>
+				<th>Salle</th>
+				<th>Heure Début</th>
+				<th>Heure Fin</th>
+				<th>Commentaire</th>
+				<th>Statut</th>
 				<th class="colonne-options"><span class="icon-cog"></span></th>
 			</tr>
 		</thead>
@@ -44,12 +44,12 @@
 	<table>
 		<thead>
 			<tr>
-				<td>Département</td>
-				<td>Salle</td>
-				<td>Heure Début</td>
-				<td>Heure Fin</td>
-				<td>Commentaire</td>
-				<td>Statut</td>
+				<th>Département</th>
+				<th>Salle</th>
+				<th>Heure Début</th>
+				<th>Heure Fin</th>
+				<th>Commentaire</th>
+				<th>Statut</th>
 			</tr>
 		</thead>
 		<tbody>
