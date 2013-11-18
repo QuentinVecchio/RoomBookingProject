@@ -1,3 +1,4 @@
+ <h1>Visionner les demandes et les prêts:</h1>
 <section id="calendrier">
 	<?php 
 			App::import('Vendor', 'Calendrier');
