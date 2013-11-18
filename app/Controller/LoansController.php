@@ -96,7 +96,8 @@ class LoansController extends AppController{
 		if(!empty($this->request->data)){
 
 			$this->Loan->saveMany(current($this->request->data));
-			$this->Session->setFlash('Vos demandes sont biens prises en compte', 'flash_message', array('type'=>'success'));
+			$this->Session->setFlash('Vos demandes sont bien prises en compte', 'flash_message', array('type'=>'success'));
+			$this->redirect(array('controller' => 'loans', 'action' => 'askRoom',$id, 'manager' => true));
 
 		}
 
