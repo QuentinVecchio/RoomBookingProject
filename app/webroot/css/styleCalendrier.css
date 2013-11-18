@@ -32,6 +32,7 @@
 }
 #controleMois {
   float: right;
+  margin-right: 1em;
 }
 .calendrier .btn {
   display: block;
@@ -43,6 +44,7 @@
   -webkit-transition: all .2s ease-in;
   -o-transition: all .2s ease-in;
   font-size: 1.1em;
+  height: 1.1em;
 }
 .calendrier .btn:hover {
   color: #FF7A00;
