@@ -10,7 +10,8 @@ class LoansController extends AppController{
 	public function manager_answer() {
 		$this->set('title_for_layout', 'Les demandes');
 
-		$res = $this->Loan->find('all', array('fields'=>array('date'),'conditions' => array('Room.department_id' =>$this->Auth->User('department_id'))));
+		$res = $this->Loan->find('all', array('fields'=>array('date'),'conditions' => array('Room.department_id' =>$this->Auth->User('department_id'),
+																							 'Status.name NOT LIKE' => 'Oui')));
 		$this->set('res', $res);
 
 	}
@@ -19,7 +20,9 @@ class LoansController extends AppController{
 		if($this->request->is('Ajax')){
 			$this->layout = null;
 		}
-		$res = $this->Loan->find('all', array('conditions' => array('Room.department_id' =>$this->Auth->User('department_id'),'Loan.date' => $date)));
+		$res = $this->Loan->find('all', array('conditions' => array('Room.department_id' =>$this->Auth->User('department_id'),
+																	'Loan.date' => $date,
+																	'Status.name NOT LIKE' => 'Oui')));
 		$this->set('res', $res);
 		$list = $this->Loan->Status->find('list');
 		$this->set('list', $list);
