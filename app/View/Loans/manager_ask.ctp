@@ -22,7 +22,6 @@
 				</div>
 			</div>					
 			<div class="row">
-
 					<?php  
 						echo $this->Form->input('min_capacity', array('label' => 'Minimum', 'type'=> 'number',
 																		 'min' => 0, 'max' =>200, 'step' => 5 ,
@@ -63,11 +62,14 @@
 
 	</tbody>
 </table>
-<?php echo $this->Paginator->numbers(); ?>
+<div class="pagination">
+	<?php echo $this->Paginator->numbers(); ?>
+</div>
 </section>
 
 <?php 
 $this->start('css');
 	echo $this->Html->css('table');
+	echo $this->Html->css('manager_ask');
 $this->end();
  ?>

@@ -1,0 +1,12 @@
+.pagination {
+  margin: 0 auto;
+  display: table;
+}
+form,
+table {
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+}
+form ul.button-group {
+  margin-top: 1.5em;
+}

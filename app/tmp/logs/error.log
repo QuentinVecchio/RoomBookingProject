@@ -1741,3 +1741,57 @@ Stack Trace:
 #3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-11-18 22:55:31 Error: [Exception] variable @default_padding is undefined: failed at `margin-bottom: @default_padding;` E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\less\manager_ask.less on line 8
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask/page:2
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(2008): lessc_parser->throwError('variable @defau...', 88)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(1763): lessc->throwError('variable @defau...')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(1387): lessc->get('@default_paddin...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(651): lessc->reduce(Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(282): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(220): lessc->compileProps(Object(stdClass), Object(stdClass))
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(194): lessc->compileCSSBlock(Object(stdClass))
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(656): lessc->compileBlock(Object(stdClass))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(282): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(276): lessc->compileProps(Object(stdClass), Object(stdClass))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(191): lessc->compileRoot(Object(stdClass))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(1810): lessc->compileBlock(Object(stdClass))
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(1833): lessc->compile('.pagination{???...', 'E:\Matthieu\My ...')
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(1847): lessc->compileFile('E:\Matthieu\My ...', 'E:\Matthieu\My ...')
+#14 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(2019): lessc->checkedCompile('E:\Matthieu\My ...', 'E:\Matthieu\My ...')
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\AppController.php(88): lessc::ccompile('E:\Matthieu\My ...', 'E:\Matthieu\My ...')
+#16 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#17 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#18 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#19 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#20 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#21 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#22 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#23 {main}
+2013-11-18 22:55:40 Error: [Exception] variable @padding-default is undefined: failed at `margin-bottom: @padding-default;` E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\less\manager_ask.less on line 8
+Request URL: /CakePHP/projet-web/index.php/manager/loans/ask/page:2
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(2008): lessc_parser->throwError('variable @paddi...', 88)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(1763): lessc->throwError('variable @paddi...')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(1387): lessc->get('@padding-defaul...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(651): lessc->reduce(Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(282): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(220): lessc->compileProps(Object(stdClass), Object(stdClass))
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(194): lessc->compileCSSBlock(Object(stdClass))
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(656): lessc->compileBlock(Object(stdClass))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(282): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(276): lessc->compileProps(Object(stdClass), Object(stdClass))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(191): lessc->compileRoot(Object(stdClass))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(1810): lessc->compileBlock(Object(stdClass))
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(1833): lessc->compile('.pagination{???...', 'E:\Matthieu\My ...')
+#13 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(1847): lessc->compileFile('E:\Matthieu\My ...', 'E:\Matthieu\My ...')
+#14 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\lessc.php(2019): lessc->checkedCompile('E:\Matthieu\My ...', 'E:\Matthieu\My ...')
+#15 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\AppController.php(88): lessc::ccompile('E:\Matthieu\My ...', 'E:\Matthieu\My ...')
+#16 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#17 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#18 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#19 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#20 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LoansController), Object(CakeRequest), Object(CakeResponse))
+#21 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#22 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#23 {main}
