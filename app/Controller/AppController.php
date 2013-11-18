@@ -40,7 +40,12 @@ class AppController extends Controller {
 							           'action' => 'login',
 							           'admin' => false,
 							           'manager' => false
-	        						   ),			
+	        						   ),
+				'unauthorizedRedirect' => array('controller' => 'users',
+							           'action' => 'index',
+							           'admin' => false,
+							           'manager' => false
+	        						   ),	        						   	
 			'authorize' => array('Controller'))
 		);
 
