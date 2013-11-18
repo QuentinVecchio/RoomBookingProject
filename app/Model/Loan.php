@@ -7,16 +7,20 @@ class Loan extends AppModel{
 
 	public $validate = array(
 		'department_id' => array(
-			 'required' => true
+			'rule' =>'alphaNumeric',
+			'required' => true
 		),
 		'start_time' => array(
-			 'required' => true
+			'rule' =>'alphaNumeric',
+			'required' => true
 		),
 		'end_time' => array(
-			 'required' => true
+			'rule' =>'alphaNumeric',
+			'required' => true
 		),
 		'date' => array(
-			 'required' => true
+			'rule' =>'alphaNumeric',
+			'required' => true
 		));
 
 
