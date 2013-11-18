@@ -10,6 +10,7 @@
 				<td>Heure Fin</td>
 				<td>Commentaire</td>
 				<td>Statut</td>
+				<th class="colonne-options"><span class="icon-cog"></span></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -24,6 +25,11 @@
 					<td><?php echo $courant["Loan"]["end_time"]; ?></td>
 					<td><?php echo $courant["Loan"]["remark"]; ?></td>
 					<td><div class="status"><?php echo $courant["Status"]["name"]; ?></div></td>
+					<td>
+						<ul class="button-group">
+							<li><a><?php echo $this->Html->Link('', array('controller'=>'loans', 'action' => 'delete',$courant['Loan']['id']), array('class' => 'button tiny icon-trash', 'confirm' => 'Etes-vous sûr de vouloir supprimer cet utilisateur ?')); ?></a></li>
+						</ul>					
+					</td>						
 				</tr>
 			<?php
 			}
