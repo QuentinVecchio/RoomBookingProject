@@ -34,7 +34,7 @@
 
 								echo $this->Form->input('loan.0.status_id', array('label' => array('style' => 'display:none;'),
 																				'style'=> array('display:none;'), 'type' => 'text',
-																				'value' => 1));
+																				'value' => $idEnAttente));
 
 								echo $this->Form->input('loan.0.department_id', array('label' => array('style' => 'display:none;'),
 																				'style'=> array('display:none;'), 'type' => 'text',
@@ -65,7 +65,7 @@
 
 								echo $this->Form->input('loan.{{id}}.status_id', array('label' => array('style' => 'display:none;'),
 																				'style'=> array('display:none;'), 'type' => 'text',
-																				'value' => 1));
+																				'value' => $idEnAttente));
 
 								echo $this->Form->input('loan.{{id}}.department_id', array('label' => array('style' => 'display:none;'),
 																				'style'=> array('display:none;'), 'type' => 'text',
