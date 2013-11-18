@@ -23,7 +23,8 @@
 <nav id="menu-principal">
 	<ul>
 		<?php if($admin):?>
-			<li class="sous-menu <?php if($Administration) echo 'active';?>"><a href="#">Administration</a>
+			<li class="sous-menu <?php if($Administration) echo 'active';?>">
+				<?php echo $this->Html->Link('Administration', array('controller'=> 'departments','action' => 'index', 'admin'=>true)) ?>
 				<ul>
 					<li><?php echo $this->Html->Link('Gestion des salles', array('controller'=> 'rooms','action' => 'index', 'admin'=>true)) ?></li>
 					<li><?php echo $this->Html->Link('Gestion des départements',
@@ -34,7 +35,8 @@
 			</li>
 		<?php endif; ?>
 		<?php if($admin || $manager): ?>
-		<li class="sous-menu <?php if($PretSalle) echo 'active';?>"><a href="#">Prêts de salle</a>
+		<li class="sous-menu <?php if($PretSalle) echo 'active';?>">
+			<?php echo $this->Html->Link('Prêts de salle', array('controller'=> 'departments','action' => 'index', 'manager'=>true)) ?>
 			<ul>
 				<li><?php echo $this->Html->Link('Vos salles', array('controller'=> 'departments','action' => 'index', 'manager'=>true)) ?></li>
 				<li><?php echo $this->Html->Link('Gestion des demandes', array('controller'=> 'loans','action' => 'answer', 'manager'=>true)) ?></li>		
