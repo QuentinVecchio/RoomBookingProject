@@ -1,6 +1,7 @@
 <section id="calendrier">
 	<?php 
 			App::import('Vendor', 'Calendrier');
+
 			$calendrier = new Calendrier(true,'test');
 			$test = $calendrier->getCalendrier($res,null,'view');
 			echo $test;
@@ -9,7 +10,6 @@
 <section id="gestion">
 
 </section>
-
 <?php 
 $this->start('script');
 	echo $this->Html->script('scriptCalendrier');

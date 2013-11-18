@@ -1691,3 +1691,53 @@ Stack Trace:
 #3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-11-18 22:08:30 Error: Fatal Error (4): syntax error, unexpected 'App' (T_STRING) in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Loans\manager_answer.ctp, line 4]
+2013-11-18 22:08:30 Error: [FatalErrorException] syntax error, unexpected 'App' (T_STRING)
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answer
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 4, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 4, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 22:10:21 Error: Fatal Error (64): Cannot redeclare class Date in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\Date.php, line 8]
+2013-11-18 22:10:21 Error: [FatalErrorException] Cannot redeclare class Date
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answer
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'E:\Matthieu\My ...', 8)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'E:\Matthieu\My ...', 8, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'E:\Matthieu\My ...', 8, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 22:10:47 Error: Fatal Error (64): Cannot redeclare class Date in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\DateD.php, line 8]
+2013-11-18 22:10:47 Error: [FatalErrorException] Cannot redeclare class Date
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answer
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'E:\Matthieu\My ...', 8)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'E:\Matthieu\My ...', 8, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'E:\Matthieu\My ...', 8, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 22:11:13 Error: Fatal Error (64): Cannot redeclare class DateD in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\DateD.php, line 8]
+2013-11-18 22:11:13 Error: [FatalErrorException] Cannot redeclare class DateD
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answer
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'E:\Matthieu\My ...', 8)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'E:\Matthieu\My ...', 8, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'E:\Matthieu\My ...', 8, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-18 22:12:27 Error: Fatal Error (1): Class 'DateD' not found in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Loans\manager_answer.ctp, line 4]
+2013-11-18 22:12:27 Error: [FatalErrorException] Class 'DateD' not found
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answer
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'DateD' n...', 'E:\Matthieu\My ...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'DateD' n...', 'E:\Matthieu\My ...', 4, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'DateD' n...', 'E:\Matthieu\My ...', 4, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
