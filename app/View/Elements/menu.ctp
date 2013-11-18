@@ -12,7 +12,9 @@
 		$controller = $this->params['controller'];
 
 		$Administration =(in_array($controller, array('rooms', 'departments','users')) && in_array($action, array('admin_index','admin_view','admin_add','admin_addUser')));
-		$PretSalle =(in_array($controller, array('loans', 'departments')) && in_array($action, array('manager_index', 'manager_ask','manager_answer','manager_askRoom')));
+		$PretSalle =(in_array($controller, array('loans', 'departments')) && in_array($action, array('manager_index', 'manager_ask',
+																									 'manager_answer','manager_askRoom',
+																									 'manager_viewAll')));
 
 
 
@@ -37,6 +39,7 @@
 				<li><?php echo $this->Html->Link('Vos salles', array('controller'=> 'departments','action' => 'index', 'manager'=>true)) ?></li>
 				<li><?php echo $this->Html->Link('Gestion des demandes', array('controller'=> 'loans','action' => 'answer', 'manager'=>true)) ?></li>		
 				<li><?php echo $this->Html->Link('Demander une salle', array('controller'=> 'loans','action' => 'ask', 'manager'=>true)) ?></li>		
+				<li><?php echo $this->Html->Link('Visionner', array('controller'=> 'loans','action' => 'viewAll', 'manager'=>true)) ?></li>		
 			</ul>
 		</li>
 		<?php endif; ?>

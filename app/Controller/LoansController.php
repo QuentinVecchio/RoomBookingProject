@@ -28,6 +28,29 @@ class LoansController extends AppController{
 		$this->set('list', $list);
 	}
 
+	public function manager_viewAll() {
+		$res = $this->Loan->find('all', array('fields'=>array('date'),'conditions' => array('OR' => array('Room.department_id' =>$this->Auth->User('department_id'),
+																							'Loan.department_id' => $this->Auth->User('department_id')))));
+		$this->set('res', $res);
+
+	}
+
+	public function manager_viewAllByDay($date) {
+		if($this->request->is('Ajax')){
+			$this->layout = null;
+		}
+		$demande = $this->Loan->find('all', array('conditions' => array('Loan.department_id' =>$this->Auth->User('department_id'),
+																		'Loan.date' => $date)));
+
+		$emprunt = $this->Loan->find('all', array('conditions' => array('Room.department_id' => $this->Auth->User('department_id'),
+																		'Loan.date' => $date)));
+
+		$this->set('demande', $demande);
+		$this->set('emprunt', $emprunt);
+
+	}
+
+
 
 	public function manager_ask(){
 		$this->set('title_for_layout', 'Demander une salle');
