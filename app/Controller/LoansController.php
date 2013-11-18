@@ -73,6 +73,10 @@ class LoansController extends AppController{
 			$this->Session->setFlash('Vos demandes sont biens prises en compte', 'flash_message', array('type'=>'success'));
 
 		}
+
+		$idEnAttente = current($this->Loan->Status->findByName('En attente'))['id'];
+		$this->set('idEnAttente', $idEnAttente);
+
 		$room = $this->Loan->Room->findById($id);
 		$this->set('room', $room);
 		$this->set('department_id', $this->Auth->User('department_id'));
