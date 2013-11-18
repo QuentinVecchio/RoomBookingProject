@@ -49,10 +49,11 @@ class UsersController extends AppController{
 	}
 
 	public function admin_index() {
-
+		$this->set('title_for_layout', 'Gestion des utilisateurs');
 	}
 
 	public function admin_add() {
+		$this->set('title_for_layout', 'Importer');
 		if(!empty($this->request->data)){
 
 			App::import('Vendor', 'ImportUtil');
@@ -86,6 +87,7 @@ class UsersController extends AppController{
 	}
 
 	public function admin_view(){	
+		$this->set('title_for_layout', 'Liste des utilisateurs');
 		$listUtil = $this->User->find('all', array('order' => 'User.firstname'));
 		$this->set('listUtil',$listUtil);
 	}
@@ -97,6 +99,7 @@ class UsersController extends AppController{
 	}
 
 	public function admin_addUser(){
+		$this->set('title_for_layout', 'Ajouter un utilisateur');
 		if(!empty($this->request->data)){
 			$this->User->create();
 			$this->User->save($this->request->data);
