@@ -45,7 +45,19 @@ class AppController extends Controller {
 		);
 
 	public function isAuthorized($user = null){
-		return true;
+		$res = true;
+		if(isset($this->request->params['prefix'])){
+			if($this->request->params['prefix'] == 'admin'){
+		  		$res = $user['Role']['name'] == 'administrators';
+			}else if($this->request->params['prefix'] == 'manager'){
+				$res = $user['Role']['name'] == 'managers' ||
+					   $user['Role']['name'] == 'administrators';
+			}else{
+				$res = false;
+			}
+		}
+
+		return $res;
 	}
 
 

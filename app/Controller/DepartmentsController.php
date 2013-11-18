@@ -4,26 +4,6 @@ class DepartmentsController  extends AppController{
 	public $helper = array('Room');
 
 	/**
-	*	fonction à adapter et à mettre dans AppController par la suite (gestion d'accès selon prefix)
-	*/
-	public function isAuthorized($user = null){
-		parent::isAuthorized();
-		$res = true;
-		if(isset($this->request->params['prefix'])){
-			if($this->request->params['prefix'] == 'admin'){
-		  		$res = $user['Role']['name'] == 'administrators';
-			}else if($this->request->params['prefix'] == 'manager'){
-				$res = $user['Role']['name'] == 'managers' ||
-					   $user['Role']['name'] == 'administrators';
-			}else{
-				$res = false;
-			}
-		}
-
-		return $res;
-	}
-
-	/**
 	*	Affiche un menu listant les départents
 	*/
 	public function admin_index(){
