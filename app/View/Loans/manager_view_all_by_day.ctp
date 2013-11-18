@@ -1,3 +1,4 @@
+ <?php if(!empty($demande)): ?>
  <section>
  	<h3>Vos demandes</h3> 	
 	<table>
@@ -30,6 +31,8 @@
 		</tbody>
 	</table>
 </section>
+<?php endif; ?>
+<?php if(!empty($emprunt)): ?>
  <section>
  	<h3>Les demandes des autres départements</h3>
 	<table>
@@ -62,4 +65,4 @@
 		</tbody>
 	</table>
 </section>
-
+<?php endif; ?>
