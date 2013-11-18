@@ -1,3 +1,4 @@
+ <h1>Ajouter un utilisateur</h1>
 <?php 
 	echo $this->Element('side_bar_gestion_utilisateur');
  ?>

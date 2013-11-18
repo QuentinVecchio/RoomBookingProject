@@ -1,4 +1,4 @@
-
+ <h1>Rechercher une salle:</h1>
 <section>
 		<?php 
 			echo $this->Form->create('Room', array('type'=>'get', 'url' =>array('controller' => 'loans', 'action' => 'ask')));

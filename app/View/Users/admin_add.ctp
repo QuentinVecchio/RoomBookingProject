@@ -1,3 +1,4 @@
+ <h1>Importer des utilisateurs:</h1>
 <?php 	echo $this->Element('side_bar_gestion_utilisateur'); ?>
  <section id="gestion">
 	<?php if(!isset($list)): ?>
