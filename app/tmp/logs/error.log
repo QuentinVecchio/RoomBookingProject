@@ -1795,3 +1795,265 @@ Stack Trace:
 #21 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #22 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
 #23 {main}
+2013-11-23 14:02:18 Error: Fatal Error (4): syntax error, unexpected 'app' (T_STRING) in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Users\admin_add.ctp, line 33]
+2013-11-23 14:02:18 Error: [FatalErrorException] syntax error, unexpected 'app' (T_STRING)
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 33)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 33, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 33, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-23 14:02:57 Error: Fatal Error (4): syntax error, unexpected 'app' (T_STRING) in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Users\admin_add.ctp, line 33]
+2013-11-23 14:02:57 Error: [FatalErrorException] syntax error, unexpected 'app' (T_STRING)
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 33)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 33, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 33, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-23 14:03:15 Error: Fatal Error (4): syntax error, unexpected 'App' (T_STRING) in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Users\admin_add.ctp, line 33]
+2013-11-23 14:03:15 Error: [FatalErrorException] syntax error, unexpected 'App' (T_STRING)
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 33)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 33, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 33, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-23 14:05:36 Error: [HTML2PDF_exception] ERREUR n°4 : Code HTML non valide, les balises ne sont pas fermées dans le bon ordre.Etat : Array
+(
+    [0] => table
+    [1] => tbody
+    [2] => tr
+    [3] => tr
+    [4] => tr
+)
+ HTML : ...<td>!3a0f0v3</td>
+							</tbody>
+		</table>...
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\html2pdf\html2pdf.php(407): HTML2PDF_parsingHtml->parse()
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Users\admin_add.ctp(57): HTML2PDF->writeHTML('??<table class=...')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Matthieu\My ...')
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#10 {main}
+2013-11-23 14:06:41 Error: [HTML2PDF_exception] ERREUR n°4 : Code HTML non valide, les balises ne sont pas fermées dans le bon ordre.Etat : Array
+(
+    [0] => table
+    [1] => tbody
+    [2] => tr
+    [3] => tr
+    [4] => tr
+)
+ HTML : ...<td>&3q4v5k6</td>
+							</tbody>
+		</table>...
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\html2pdf\html2pdf.php(407): HTML2PDF_parsingHtml->parse()
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Users\admin_add.ctp(57): HTML2PDF->writeHTML('??<table class=...')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(931): include('E:\Matthieu\My ...')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(893): View->_evaluate('E:\Matthieu\My ...', Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\View\View.php(462): View->_render('E:\Matthieu\My ...')
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#10 {main}
+2013-11-23 15:29:25 Error: [MissingActionException] Action UsersController::admin_E:() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_E:',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/users/E:/Matthieu/My Documents/Projects/Web/www/CakePHP/projet-web/app/webroot/pdf/listeUtilisateur.pdf
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#4 {main}
+2013-11-23 15:31:16 Error: [MissingControllerException] Controller class PdfController could not be found.
+Exception Attributes: array (
+  'class' => 'PdfController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/pdf/listeUtilisateur.pdf
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#2 {main}
+2013-11-23 15:33:07 Error: [PHPExcel_Reader_Exception] Could not open  for reading! File does not exist.
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(280): PHPExcel_Reader_Excel2007->canRead('')
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\PHPExcel\IOFactory.php(191): PHPExcel_IOFactory::createReaderForFile('')
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\vendors\ImportUtil.php(20): PHPExcel_IOFactory::load('')
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(66): ImportUtil->initUtil('', Array)
+#4 [internal function]: UsersController->admin_add()
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#10 {main}
+2013-11-23 15:34:15 Error: [MissingControllerException] Controller class PdfController could not be found.
+Exception Attributes: array (
+  'class' => 'PdfController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/pdf/listeUtilisateur.pdf
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#2 {main}
+2013-11-23 15:35:18 Error: Fatal Error (1): Call to undefined method View::webroot() in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Users\admin_add.ctp, line 103]
+2013-11-23 15:35:18 Error: [FatalErrorException] Call to undefined method View::webroot()
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 103)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 103, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Matthieu\My ...', 103, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-23 15:35:24 Error: Fatal Error (1): Call to undefined method View::webroot() in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Users\admin_add.ctp, line 103]
+2013-11-23 15:35:24 Error: [FatalErrorException] Call to undefined method View::webroot()
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 103)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 103, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Matthieu\My ...', 103, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-23 15:35:57 Error: Fatal Error (1): Call to undefined method View::url() in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Users\admin_add.ctp, line 103]
+2013-11-23 15:35:57 Error: [FatalErrorException] Call to undefined method View::url()
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 103)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Matthieu\My ...', 103, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Matthieu\My ...', 103, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-23 15:36:15 Error: [MissingControllerException] Controller class CakePHPController could not be found.
+Exception Attributes: array (
+  'class' => 'CakePHPController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/CakePHP/projet-web/index.php/admin/users/pdf/listeUtilisateur.pdf
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#2 {main}
+2013-11-23 15:38:50 Error: [MissingControllerException] Controller class CakePHPController could not be found.
+Exception Attributes: array (
+  'class' => 'CakePHPController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/CakePHP/projet-web/index.php/admin/users/pdf/listeUtilisateur.pdf
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#2 {main}
+2013-11-23 15:39:07 Error: [MissingActionException] Action UsersController::admin_pdf() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_pdf',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/users/pdf/listeUtilisateur.pdf
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#4 {main}
+2013-11-23 15:41:30 Error: [MissingControllerException] Controller class PdfController could not be found.
+Exception Attributes: array (
+  'class' => 'PdfController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/pdf/listeUtilisateur.pdf
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#2 {main}
+2013-11-23 15:56:34 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /CakePHP/projet-web/index.php/app/webroot/files/listeUtilisateur.pdf
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#4 {main}
+2013-11-23 15:56:41 Error: [MissingActionException] Action AppController::files() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'files',
+)
+Request URL: /CakePHP/projet-web/index.php/app/files/listeUtilisateur.pdf
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#4 {main}
+2013-11-23 16:02:26 Error: Fatal Error (1): Call to a member function link() on a non-object in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Users\admin_add.ctp, line 103]
+2013-11-23 16:02:26 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Matthieu\My ...', 103)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Matthieu\My ...', 103, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Matthieu\My ...', 103, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-23 16:02:35 Error: Fatal Error (1): Call to a member function Link() on a non-object in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Users\admin_add.ctp, line 103]
+2013-11-23 16:02:35 Error: [FatalErrorException] Call to a member function Link() on a non-object
+Request URL: /CakePHP/projet-web/index.php/admin/users/add
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Matthieu\My ...', 103)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Matthieu\My ...', 103, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Matthieu\My ...', 103, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-23 16:03:11 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/files/listeUtilisateur.pdf
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#2 {main}
+2013-11-23 16:04:57 Error: [MissingActionException] Action UsersController::admin_webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_webroot',
+)
+Request URL: /CakePHP/projet-web/index.php/admin/users/webroot/files/listeUtilisateur.pdf
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#4 {main}
