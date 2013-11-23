@@ -27,7 +27,7 @@
 	 ?>
 
 	 <?php else: ?>
- 
+
 		<table class="grille-gestion">
 			<thead>
 				<tr>
@@ -44,10 +44,61 @@
 						<td><?php echo $l["lastname"]; ?></td>
 						<td><?php echo $l["email"]; ?></td>
 						<td><?php echo $l["password"]; ?></td>
+					</tr>
 				<?php endforeach; ?>
 			</tbody>
 		</table>
 
+
+		<?php ob_start(); ?>
+		<style>
+			.grille-gestion{
+				font-size: 20px;
+				width: 100%;
+				border-collapse: collapse;
+			}
+
+			.grille-gestion thead th,
+			.grille-gestion tbody tr td{
+				border: 1px solid black;
+				padding: 10px;
+
+			}
+		</style>
+		<table class="grille-gestion">
+			<thead>
+				<tr>
+					<th>Login</th>
+					<th>Nom</th>
+					<th>Prenom</th>
+					<th>Email</th>
+					<th>Mot de Passe</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php foreach ($list as $i => $l):	?>
+					<tr>
+						<td><?php echo $l["username"]; ?></td>
+						<td><?php echo $l["firstname"]; ?></td>
+						<td><?php echo $l["lastname"]; ?></td>
+						<td><?php echo $l["email"]; ?></td>
+						<td><?php echo $l["password"]; ?></td>
+					</tr>
+				<?php endforeach; ?>
+			</tbody>
+		</table>
+	<?php $content = ob_get_clean(); ?>
+
+
+
+ 	<?php  
+		App::import("Vendor", "html2pdf/html2pdf");
+	    $pdf = new HTML2PDF('P','A4','fr');
+	    $pdf->pdf->SetDisplayMode('fullpage');
+	    $pdf->writeHTML($content);
+		$pdf->Output(WWW_ROOT.DS.'files'.DS.'listeUtilisateur.pdf', 'F');
+
+ 	?>
 	 <?php endif; ?>
  	
  </section>
