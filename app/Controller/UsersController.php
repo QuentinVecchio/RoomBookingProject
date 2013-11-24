@@ -16,16 +16,18 @@ class UsersController extends AppController{
 				$this->Session->setFlash('Mise à jour de vos données personnels', 'flash_message', array('type'=>'success'));
 				$this->redirect(array('controller'=>'users', 'action' =>'index'));	
 			}
+		}else{
+			$this->request->data = $this->User->findById($this->Auth->user('id'));
 		}
 
 
 		if($this->request->is('Ajax')){
 			$this->layout = null;
 		}else{
-			$this->set('title_for_layout', 'Edition du profils:');
+			$this->set('title_for_layout', 'Edition du profil:');
 		}
 
-		$this->request->data = $this->User->findById($this->Auth->user('id'));
+		
 	}
 
 	public function password(){
@@ -44,7 +46,7 @@ class UsersController extends AppController{
 		if($this->request->is('Ajax')){
 			$this->layout = null;
 		}else{
-			$this->set('title_for_layout', 'Edition du profils:');
+			$this->set('title_for_layout', 'Edition du profil:');
 		}
 	}
 

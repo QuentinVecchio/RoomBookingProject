@@ -148,9 +148,10 @@ input:checked + .petit.checkbox:after {
 }
 .error-message {
   font-size: 22px;
+  margin-top: 0.5em;
   color: red;
   font-weight: bold;
-  border: 5px solid #464646;
+  border: 1px solid #464646;
   display: table;
   padding: 10px;
 }

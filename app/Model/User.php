@@ -51,7 +51,6 @@ class User extends AppModel{
 	public function afterValidate(){
 		unset($this->data[$this->alias]['passwordOld']);
 		unset($this->data[$this->alias]['password2']);
-		debug($this->data);
 	}
 
 } ?>
