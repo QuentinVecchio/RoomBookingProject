@@ -1,6 +1,41 @@
 <?php 
 class UsersController extends AppController{
 	
+	/**
+	*	Connexion de l'utilisateur
+	*	Redirige après connexion:
+	*			1) Gestion des départements pour les administrateurs
+	*			2) Liste des salles du département pour les manageurs
+	*			3) Le profil pour les utilisateurs simples
+	*/
+	public function login(){
+		$this->set('title_for_layout', 'Connexion');
+		if(!empty($this->request->data)){
+			if($this->Auth->login()){
+				if($this->Auth->user('Role.name') == 'administrators'){
+					$this->redirect(array('controller' => 'departments', 'action' => 'index', 'admin' => true));
+				}else if($this->Auth->user('Role.name') == 'managers'){
+					$this->redirect(array('controller' => 'departments', 'action' => 'index', 'manager' => true));
+				}else{
+					$this->redirect(array('controller' => 'users', 'action' => 'index'));
+				}
+			}
+		}
+	}
+
+	/**
+	*	Déconnexion de l'utilisateur
+	*	Redirection vers la page de connexion
+	*/
+	public function logout(){
+		$this->Auth->logout();
+		$this->redirect(array('controller' => 'users', 'action' => 'login'));
+	}
+
+
+	/**
+	*	Visualisation du profil de l'utilisateur
+	*/
 	public function index(){		
 		$this->set('title_for_layout', 'Votre profil');
 		$user = $this->User->findById($this->Auth->user('id'));
@@ -8,6 +43,9 @@ class UsersController extends AppController{
 	}
 
 
+	/**
+	*	Mise à jour des données personnels de l'utilisateur
+	*/
 	public function edit(){
 		if(!empty($this->request->data)){
 			$this->User->id = $this->Auth->user('id');
@@ -30,18 +68,20 @@ class UsersController extends AppController{
 		
 	}
 
+	/**
+	*	Changement de mot de passes pour l'utilisateur
+	*/
 	public function password(){
 		$this->User->id = AuthComponent::user('id');
 
 		if (!empty($this->data)) {
 	        if ($this->User->save($this->data, false)) {
-	            $this->Session->setFlash('Password has been changed.');
+	            $this->Session->setFlash('Mot de passe mis à jour');
 	            $this->redirect(array('controller' => 'Users', 'action' => 'index'));
 	        } else {
-	            $this->Session->setFlash('Password could not be changed.');
+	            $this->Session->setFlash('Erreur lors de la mise à jour du mot de passe');
 	        }
 	    }
-
 
 		if($this->request->is('Ajax')){
 			$this->layout = null;
@@ -50,10 +90,16 @@ class UsersController extends AppController{
 		}
 	}
 
+	/**
+	*	Page de gestion des utilisateurs pour les administrateurs (affichages de la side_bar des options)
+	*/
 	public function admin_index() {
 		$this->set('title_for_layout', 'Gestion des utilisateurs');
 	}
 
+	/**
+	*	Page d'importation des utilisateurs a partir d'un fichier
+	*/
 	public function admin_add() {
 		$this->set('title_for_layout', 'Importer');
 		if(!empty($this->request->data)){
@@ -72,6 +118,9 @@ class UsersController extends AppController{
 		}
 	}
 
+	/**
+	*	Edition d'un utilisateur par l'administrateur
+	*/
 	public function admin_edit($id) {
 		if($this->request->is('Ajax')){
 			$this->layout = null;
@@ -88,18 +137,27 @@ class UsersController extends AppController{
 		}
 	}
 
+	/**
+	*	Visualisation de l'ensemble des utilisateurs par l'administrateur
+	*/
 	public function admin_view(){	
 		$this->set('title_for_layout', 'Liste des utilisateurs');
 		$listUtil = $this->User->find('all', array('order' => 'User.firstname'));
 		$this->set('listUtil',$listUtil);
 	}
 
+	/**
+	*	Suppression d'un utilisateur particulier
+	*/
 	public function admin_delete($id){
 		$this->User->delete($id);
 		$this->Session->setFlash('Supression effectuée', 'flash_message', array('type'=>'secondary'));
 		$this->redirect(array('controller'=>'users', 'action' =>'view'));			
 	}
 
+	/**
+	*	Ajouter un utilisateur via le formulaire (si ajout ponctuel)
+	*/
 	public function admin_addUser(){
 		$this->set('title_for_layout', 'Ajouter un utilisateur');
 		if(!empty($this->request->data)){
@@ -110,26 +168,5 @@ class UsersController extends AppController{
 		}
 		$this->set('list', $this->User->Department->find('list'));
 		$this->set('listRole', $this->User->Role->find('list'));
-	}
-
-
-	public function login(){
-		$this->set('title_for_layout', 'Connexion');
-		if(!empty($this->request->data)){
-			if($this->Auth->login()){
-				if($this->Auth->user('Role.name') == 'administrators'){
-					$this->redirect(array('controller' => 'departments', 'action' => 'index', 'admin' => true));
-				}else if($this->Auth->user('Role.name') == 'managers'){
-					$this->redirect(array('controller' => 'departments', 'action' => 'index', 'manager' => true));
-				}else{
-					$this->redirect('/');
-				}
-			}
-		}
-	}
-
-	public function logout(){
-		$this->Auth->logout();
-		$this->redirect(array('controller' => 'users', 'action' => 'login'));
 	}
 } ?>
