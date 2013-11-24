@@ -114,11 +114,17 @@ class UsersController extends AppController{
 				$listDpt = $this->User->Department->find('list');
 
 				$res = $ImportUtil->initUtil($newName, $listDpt);
-
+				$this->User->create();
+				if($this->User->saveAll($res, array('atomic' => false))){
+					$this->Session->setFlash('L\'importation réussie', 'flash_message', array('type'=>'success'));
+				}else{
+					$this->Session->setFlash('L\'importation a échouée', 'flash_message', array('type'=>'alert'));
+				}
 				$this->set('list', $res);
 				unlink($newName);
+
 			} catch (Exception $e) {
-				$this->Session->setFlash('Erreur interne, veuillez retenter votre chance !'.$e->getMessage(), 'flash_message', array('type'=>'error'));
+				$this->Session->setFlash('Erreur interne, veuillez retenter votre chance !</br>'.$e->getMessage(), 'flash_message', array('type'=>'alert'));
 			}
 		}
 	}

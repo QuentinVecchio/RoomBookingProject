@@ -105,9 +105,11 @@
 	    $pdf = new HTML2PDF('P','A4','fr');
 	    $pdf->pdf->SetDisplayMode('fullpage');
 	    $pdf->writeHTML($content);
-		$pdf->Output(WWW_ROOT.DS.'files'.DS.'listeUtilisateur.pdf', 'F');
+		$pdf->Output(WWW_ROOT.'files'.DS.'listeUtilisateur.pdf', 'F');
 
  	?>
+		<a href="/CakePHP/projet-web/app/webroot/files/listeUtilisateur.pdf" target="_blank" class="button">Télécharger</a>
+
 	 <?php endif; ?>
  	
  </section>
