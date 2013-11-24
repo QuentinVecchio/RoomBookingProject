@@ -6,12 +6,11 @@
 <section ng-controller="FormCtrl"  ng-app="gestionDemande">
 	<h1>Demande de réservation:</h1>
 	<p>Vous avez choisi la salle <strong><?php echo $room['Room']['name']; ?></strong> du département <strong><?php echo $room['Department']['name']; ?></strong></p>
-	<p>
-		<ul>
-			<li><?php echo $projecteur ?></li>
-			<li><?php echo $pc ?></li>
-		</ul>	
-	</p>
+	<ul class="liste-p">
+		<li><?php echo $projecteur ?></li>
+		<li><?php echo $pc ?></li>
+	</ul>	
+
 <?php 	echo $this->Form->create('loan'); ?>
 
 <p>Le nombre de semaine:<input type="number" ng-model="number"></p>

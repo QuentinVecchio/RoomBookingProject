@@ -19,13 +19,14 @@
 		// Lecture du fichier. Si on ignore le format du fichier, utiliser PHPExcel_IOFactory 
 			$objPHPExcel = PHPExcel_IOFactory::load($lien);
 		//Nombres de lignes
-		//	$nbLigne = $objReader->sheets[0]['numRows'];
+			//$nbLigne = $objPHPExcel->sheets[0]['numRows'];
 		//On part du principe que la colonne 1 est le nom la 2 le prénom et la 3 l'email
 
 			$res = array();
-			for($i=1;$i<4;$i++)
+			for($i=1;$i < 8;$i++)
 			{
 				$prenom = $objPHPExcel->getActiveSheet()->getCellByColumnAndRow(1,$i)->getValue();
+				if($prenom == NULL) return $res;
 				$nom = $objPHPExcel->getActiveSheet()->getCellByColumnAndRow(0,$i)->getValue();
 				$email = $objPHPExcel->getActiveSheet()->getCellByColumnAndRow(2,$i)->getValue();
 				$departement = $objPHPExcel->getActiveSheet()->getCellByColumnAndRow(3,$i)->getValue();
