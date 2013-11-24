@@ -44,3 +44,122 @@ Stack Trace:
 #10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
 #12 {main}
+2013-11-24 16:29:50 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'validate' at line 1
+Request URL: /CakePHP/projet-web/index.php/users/password
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('validate', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('validate', Array, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('validate', Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(799): DboSource->query('validate', Array, Object(User))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(79): Model->__call('validate', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(79): User->validate(Array)
+#7 [internal function]: UsersController->password()
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#13 {main}
+2013-11-24 16:30:18 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'validate' at line 1
+Request URL: /CakePHP/projet-web/index.php/users/password
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('validate', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('validate', Array, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('validate', Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(799): DboSource->query('validate', Array, Object(User))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(79): Model->__call('validate', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(79): User->validate(Array)
+#7 [internal function]: UsersController->password()
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#13 {main}
+2013-11-24 16:30:46 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'validate' at line 1
+Request URL: /CakePHP/projet-web/index.php/users/password
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('validate', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('validate', Array, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('validate', Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(799): DboSource->query('validate', Array, Object(User))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(79): Model->__call('validate', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(79): User->validate(Array)
+#7 [internal function]: UsersController->password()
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#13 {main}
+2013-11-24 16:31:17 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'validate' at line 1
+Request URL: /CakePHP/projet-web/index.php/users/password
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('validate', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('validate', Array, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('validate', Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(799): DboSource->query('validate', Array, Object(User))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(79): Model->__call('validate', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(79): User->validate(Array)
+#7 [internal function]: UsersController->password()
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#13 {main}
+2013-11-24 16:33:38 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'updateField' at line 1
+Request URL: /CakePHP/projet-web/index.php/users/password
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('updateField', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('updateField', Array, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('updateField', Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(799): DboSource->query('updateField', Array, Object(User))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(87): Model->__call('updateField', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(87): User->updateField('password', Array)
+#7 [internal function]: UsersController->password()
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#13 {main}
+2013-11-24 16:34:10 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Request URL: /CakePHP/projet-web/index.php/users/password
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('update', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('update', Array, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('update', Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(799): DboSource->query('update', Array, Object(User))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(87): Model->__call('update', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(87): User->update('password', Array)
+#7 [internal function]: UsersController->password()
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#13 {main}
+2013-11-24 16:34:28 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Request URL: /CakePHP/projet-web/index.php/users/password
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('update', Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('update', Array, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('update', Array, Array)
+#4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Model\Model.php(799): DboSource->query('update', Array, Object(User))
+#5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(87): Model->__call('update', Array)
+#6 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\Controller\UsersController.php(87): User->update(Array)
+#7 [internal function]: UsersController->password()
+#8 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#13 {main}

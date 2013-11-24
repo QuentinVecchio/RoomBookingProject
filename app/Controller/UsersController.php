@@ -75,12 +75,16 @@ class UsersController extends AppController{
 		$this->User->id = AuthComponent::user('id');
 
 		if (!empty($this->data)) {
-	        if ($this->User->save($this->data, false)) {
-	            $this->Session->setFlash('Mot de passe mis à jour');
-	            $this->redirect(array('controller' => 'Users', 'action' => 'index'));
-	        } else {
-	            $this->Session->setFlash('Erreur lors de la mise à jour du mot de passe');
-	        }
+			$this->User->set($this->request->data);
+			if($this->User->validates(array('fieldList' => array('password', 'password2', 'passwordOld')))){
+		       if ($this->User->saveField('password', current(current($this->User->data)))) {
+		            $this->Session->setFlash('Mot de passe mis à jour');
+		            $this->redirect(array('controller' => 'Users', 'action' => 'index'));
+
+		        } else {
+		            $this->Session->setFlash('Erreur lors de la mise à jour du mot de passe');
+		        }
+			}
 	    }
 
 		if($this->request->is('Ajax')){
