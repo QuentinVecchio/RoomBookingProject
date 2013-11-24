@@ -104,17 +104,22 @@ class UsersController extends AppController{
 		$this->set('title_for_layout', 'Importer');
 		if(!empty($this->request->data)){
 
-			App::import('Vendor', 'ImportUtil');
-			$ImportUtil = new ImportUtil();
-			$newName = str_replace('.tmp', '.xlsx', $this->request->data['User']['fichier']['tmp_name']);
-			rename($this->request->data['User']['fichier']['tmp_name'], $newName);;
+			try {
+				App::import('Vendor', 'ImportUtil');
+				$ImportUtil = new ImportUtil();
+				$newName = str_replace('.tmp', '.'.pathinfo ($this->request->data['User']['fichier']['name'],PATHINFO_EXTENSION),
+												$this->request->data['User']['fichier']['tmp_name']);
+				rename($this->request->data['User']['fichier']['tmp_name'], $newName);;
 
-			$listDpt = $this->User->Department->find('list');
+				$listDpt = $this->User->Department->find('list');
 
-			$res = $ImportUtil->initUtil($newName, $listDpt);
+				$res = $ImportUtil->initUtil($newName, $listDpt);
 
-			$this->set('list', $res);
-			unlink($newName);
+				$this->set('list', $res);
+				unlink($newName);
+			} catch (Exception $e) {
+				$this->Session->setFlash('Erreur interne, veuillez retenter votre chance !'.$e->getMessage(), 'flash_message', array('type'=>'error'));
+			}
 		}
 	}
 

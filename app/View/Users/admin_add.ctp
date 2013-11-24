@@ -8,6 +8,15 @@
 	 ?>
 	<fieldset>
 		<legend>Importer le fichier:</legend>
+		<p>Ci-dessous l'ordre des colonnes ainsi que les recommandations</p>
+		<ol class="liste-p">
+			<li>Colonne 1: le nom</li>
+			<li>Colonne 2: le prénom</li>
+			<li>Colonne 3: l'email</li>
+			<li>Colonne 4: le département</li>
+		</ol>
+		<p>Attention: le champs département doit être identique au nom du département dans la base de donnée</p>
+		<p>Attention: l'extension du fichier doit être xls</p>
 	<?php 
 			echo $this->Form->file('fichier', array('style' => 'display:none'));
 			echo $this->Form->label('fichier','Ouvrir l\'explorateur' , array('class'=>'button tiny'));
