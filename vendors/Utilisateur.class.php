@@ -74,14 +74,6 @@
 		function genere()
 		{
 			$pseudo = "";
-			if(strlen($this->_prenom) < $this->_nCaracPrenom)
-			{
-				$pseudo .= substr($this->_prenom, 0, strlen($this->_prenom));
-			}
-			else
-			{
-				$pseudo .= substr($this->_prenom, 0, $this->_nCaracPrenom);
-			}
 
 			if(strlen($this->_nom) < $this->_nCaracNom)
 			{
@@ -90,6 +82,15 @@
 			else
 			{
 				$pseudo .= substr($this->_nom, 0, $this->_nCaracNom);
+			}
+
+			if(strlen($this->_prenom) < $this->_nCaracPrenom)
+			{
+				$pseudo .= substr($this->_prenom, 0, strlen($this->_prenom));
+			}
+			else
+			{
+				$pseudo .= substr($this->_prenom, 0, $this->_nCaracPrenom);
 			}
 			$this->_pseudo =  strtolower($pseudo);
 		}
