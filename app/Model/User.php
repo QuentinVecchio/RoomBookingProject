@@ -26,7 +26,7 @@ class User extends AppModel{
 		'password2' => array(
 				'rule' => 'checkEqualPassWord',
 				'message' => 'Les deux mots de passe sont différents'
-			)		
+			)
 		);
 	
 	public function checkEqualPassWord($check) {

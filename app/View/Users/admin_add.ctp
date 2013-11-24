@@ -17,6 +17,7 @@
 		</ol>
 		<p>Attention: le champs département doit être identique au nom du département dans la base de donnée</p>
 		<p>Attention: l'extension du fichier doit être xls</p>
+		<p>Les utilisateurs seront ajouter en tant qu'utilisateur simple</p>
 	<?php 
 			echo $this->Form->file('fichier', array('style' => 'display:none'));
 			echo $this->Form->label('fichier','Ouvrir l\'explorateur' , array('class'=>'button tiny'));
