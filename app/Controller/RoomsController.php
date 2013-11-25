@@ -8,14 +8,21 @@ class RoomsController extends AppController{
 			)
 		);
 
+	/**
+	*	Liste des départments pour la gestion des salles
+	*/
 	public function admin_index(){
 		$this->set('title_for_layout', 'Gestion des salles');
 
 		$this->set('side_department',$this->Room->Department->find('all', array(
+				'fields' => array('Department.id','Department.name'),
 				'order' =>'Department.name',
 				'recursive' => '-1')));
 	}
 
+	/**
+	*	Gestions des salles d'un départmement
+	*/
 	public function admin_view($index = null){		
 		if(!isset($index) || empty($index) || !is_numeric($index)){
 			$this->redirect(array('controller' =>'departments', 'action' =>'index','admin' => true));
@@ -38,10 +45,14 @@ class RoomsController extends AppController{
 		$this->set('name_department', $name_department);
 		$this->set('id', $index);
 		$this->set('side_department',$this->Room->Department->find('all', array(
+				'fields' => array('Department.id','Department.name'),
 				'order' =>'Department.name',
 				'recursive' => '-1')));
 	}
 
+	/**
+	*	Modification d'une salle particulière
+	*/
 	public function admin_edit($index = null){
 		if($this->request->is('Ajax')){
 			$this->set('index', $index);
@@ -61,7 +72,9 @@ class RoomsController extends AppController{
 		}
 	}
 
-
+	/**
+	*	Permet d'ajouter une salle
+	*/
 	public function admin_add(){
 		if(!empty($this->request->data)){
 			$this->Room->save($this->request->data);
@@ -79,6 +92,9 @@ class RoomsController extends AppController{
 		$this->set('list', $list);
 	}
 
+	/**
+	*	Permet la suppression d'une salle
+	*/
 	public function admin_delete($index = null){
 		if(!isset($index) || !is_numeric($index)){
 			$this->redirect(array('controller' => 'departments', 'action' => 'index'));

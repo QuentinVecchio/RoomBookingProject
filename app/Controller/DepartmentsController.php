@@ -4,7 +4,7 @@ class DepartmentsController  extends AppController{
 	public $helper = array('Room');
 
 	/**
-	*	Affiche un menu listant les départents
+	*	Affiche un menu listant les départements
 	*/
 	public function admin_index(){
 		$this->set('title_for_layout', 'Gestion des départements:');
@@ -21,6 +21,9 @@ class DepartmentsController  extends AppController{
 		$this->set(compact($departments));
 	}
 
+	/**
+	*	Permet la mise à jour du nom d'un département
+	*/
 	public function admin_edit($index = null){
 
 		if(!isset($index) || !is_numeric($index)){
@@ -33,7 +36,6 @@ class DepartmentsController  extends AppController{
 			$this->Session->setFlash('Mise à jour du département <strong>'.$this->request->data['Department']['name'].'</strong>', 'flash_message', array('type'=>'success'));
 			$this->redirect(array('controller' => 'departments', 'action' => 'index'));
 		}
-
 
 		if($this->request->is('Ajax')){
 			$this->layout = null;
@@ -49,6 +51,9 @@ class DepartmentsController  extends AppController{
 
 	}
 
+	/**
+	*	Permet d'ajouter un département dans la BdD
+	*/
 	public function admin_add(){
 		if($this->request->is('Ajax')){
 			$this->layout = null;
@@ -65,6 +70,9 @@ class DepartmentsController  extends AppController{
 		}
 	}
 
+	/**
+	*	Permet la suppression d'un département
+	*/
 	public function admin_delete($index = null){
 		if(!isset($index) || !is_numeric($index)){
 			$this->redirect(array('controller' => 'departments', 'action' => 'index'));
@@ -90,12 +98,6 @@ class DepartmentsController  extends AppController{
 
 		$this->set('rooms', $rooms);		
 	}
-
-
-	public function admin_management(){
-
-	}
-
 
 	/**
 	*	Permet de gérer les salles d'un département précis.
