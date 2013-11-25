@@ -5,7 +5,7 @@
 						array($side_department));
  ?>
 <section>
-	<table class="grille-gestion">
+	<table class="grille-gestion large">
 	<thead>
 		<tr>
 			<th>Département</th>

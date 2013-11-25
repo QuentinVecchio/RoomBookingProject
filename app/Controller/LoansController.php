@@ -34,6 +34,9 @@ class LoansController extends AppController{
 		$this->set('list', $list);
 	}
 
+	/**
+	*	Permet de visionner sur un seul calendrier les demandes et les prêts
+	*/
 	public function manager_viewAll() {
 		$this->set('title_for_layout', 'Visionner');
 		$res = $this->Loan->find('all', array('fields'=>array('date'),'conditions' => array('OR' => array('Room.department_id' =>$this->Auth->User('department_id'),

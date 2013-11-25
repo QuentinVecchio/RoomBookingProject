@@ -49,6 +49,9 @@ class AppController extends Controller {
 			'authorize' => array('Controller'))
 		);
 
+	/**
+	*	Fonction d'autorisation par accès croissant selon le prefix
+	*/
 	public function isAuthorized($user = null){
 		$res = true;
 		if(isset($this->request->params['prefix'])){
@@ -66,6 +69,9 @@ class AppController extends Controller {
 	}
 
 
+	/**
+	*	Compilation des fichiers less en mode débug uniquement
+	*/
 	public function beforeRender()
 	{
 
