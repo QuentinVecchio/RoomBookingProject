@@ -258,3 +258,13 @@ Stack Trace:
 #4 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
 #6 {main}
+2013-11-25 21:18:38 Error: Fatal Error (1): Class 'Calendrier' not found in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Loans\manager_answer.ctp, line 6]
+2013-11-25 21:18:38 Error: [FatalErrorException] Class 'Calendrier' not found
+Request URL: /CakePHP/projet-web/index.php/manager/loans/answer
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'Calendri...', 'E:\Matthieu\My ...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Calendri...', 'E:\Matthieu\My ...', 6, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Calendri...', 'E:\Matthieu\My ...', 6, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

@@ -39,7 +39,7 @@
 
 	 <?php else: ?>
 
-		<table class="grille-gestion">
+		<table class="grille-gestion large">
 			<thead>
 				<tr>
 					<th>Nom</th>
