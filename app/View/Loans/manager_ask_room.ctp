@@ -4,7 +4,7 @@
  ?>
 <section class="centre">
 	
-	<h1>Les disponibilités de la salle</h1>
+	<h1>Les disponibilités de la salle:</h1>
 	<section id="calendrier">
 		<?php 
 				App::import('Vendor', 'Calendrier');

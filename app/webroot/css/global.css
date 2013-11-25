@@ -96,3 +96,6 @@ section.centre {
   display: table;
   margin: 0 auto;
 }
+.copyright {
+  text-align: center;
+}

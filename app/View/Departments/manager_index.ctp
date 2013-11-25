@@ -1,6 +1,6 @@
 <section class="centre">
 <h1>Consulter la liste de vos salles:</h1>
-	<table class="grille-gestion">
+	<table class="grille-gestion large">
 	<thead>
 		<tr>
 			<th>Département</th>

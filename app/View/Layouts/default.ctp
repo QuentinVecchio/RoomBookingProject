@@ -32,6 +32,10 @@
 
 	<footer>
 		<?php echo $this->element('sql_dump'); ?>
+		<p class="copyright">Créateurs: 
+				<a href="mailto:vecchioquentin@gmail.com">Quentin Vecchio</a> et 
+				<a href="mailto:matthieu.clin@wanadoo.fr">Matthieu Clin</a>
+		</p>
 	</footer>
 	<?php 
 		echo $this->Html->script('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js');

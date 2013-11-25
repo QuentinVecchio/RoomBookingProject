@@ -9,9 +9,12 @@
   background-color: #5B605F;
   color: #FFFFFA;
 }
+.grille-gestion.large thead tr th,
+.grille-gestion.large tbody tr td {
+  width: 150px;
+}
 .grille-gestion thead tr th,
 .grille-gestion tbody tr td {
-  width: 150px;
   height: 50px;
   text-align: center;
 }
