@@ -1,5 +1,5 @@
+<section class="centre">
 <h1>Consulter la liste de vos salles:</h1>
-<section>
 	<table class="grille-gestion">
 	<thead>
 		<tr>

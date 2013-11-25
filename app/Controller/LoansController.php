@@ -127,6 +127,10 @@ class LoansController extends AppController{
 
 		}
 
+		$res = $this->Loan->find('all', array('fields'=>array('date'),'conditions' => array('Loan.room_id' => $id)));
+		$this->set('occupationSalle', $res);
+
+
 		$idEnAttente = current($this->Loan->Status->findByName('En attente'))['id'];
 		$this->set('idEnAttente', $idEnAttente);
 
@@ -134,6 +138,17 @@ class LoansController extends AppController{
 		$this->set('room', $room);
 		$this->set('department_id', $this->Auth->User('department_id'));
 	}
+
+	/**
+	*	Voir disponibilité d'une salle
+	*/
+	public function manager_viewAvailable($id, $date){
+		$this->layout = null;
+		$dispo = $this->Loan->find('all', array('conditions' => array('room_id' => $id, 'date' => $date)));
+		$this->set('dispo', $dispo);
+	}
+
+
 
 	/**
 	*	Répondre à une demande d'emprunt (mise à jour du statut)

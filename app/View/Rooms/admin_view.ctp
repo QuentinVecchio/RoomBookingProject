@@ -1,4 +1,5 @@
 <h1>Gestion des salles du département <?php echo $name_department; ?></h1>
+
 <?php 
 	echo $this->Element('side_bar_department',
 						array($side_department));

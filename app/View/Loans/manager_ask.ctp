@@ -1,5 +1,5 @@
- <h1>Rechercher une salle:</h1>
-<section>
+<section class="centre">
+<h1>Rechercher une salle:</h1>
 		<?php 
 			echo $this->Form->create('Room', array('type'=>'get', 'url' =>array('controller' => 'loans', 'action' => 'ask')));
 			?>
