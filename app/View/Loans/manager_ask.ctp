@@ -41,7 +41,7 @@
 	<?php echo $this->Form->end(); ?>
 
 
-	<table class="grille-gestion">
+	<table class="grille-gestion large">
 	<thead>
 		<tr>
 			<th>Département</th>
