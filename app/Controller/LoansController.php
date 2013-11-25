@@ -7,6 +7,9 @@ class LoansController extends AppController{
 	    'limit' => 10
 	);
 
+	/**
+	*	Calendrier des demandes d'une salle du département
+	*/
 	public function manager_answer() {
 		$this->set('title_for_layout', 'Les demandes');
 
@@ -16,6 +19,9 @@ class LoansController extends AppController{
 
 	}
 
+	/**
+	*	Les demandes d'emprunt d'une salle
+	*/
 	public function manager_view($date) {
 		if($this->request->is('Ajax')){
 			$this->layout = null;
@@ -36,6 +42,9 @@ class LoansController extends AppController{
 
 	}
 
+	/**
+	*	Permet de voir nos demandes et les demandes des autres départements pour une salle
+	*/
 	public function manager_viewAllByDay($date) {
 		if($this->request->is('Ajax')){
 			$this->layout = null;
@@ -53,6 +62,9 @@ class LoansController extends AppController{
 
 
 
+	/**
+	*	Recherche d'une salle avec des fonctions de filtre
+	*/
 	public function manager_ask(){
 		$this->set('title_for_layout', 'Demander une salle');
 		$this->Paginator->settings = $this->paginate;
@@ -91,6 +103,9 @@ class LoansController extends AppController{
 
 	}
 
+	/**
+	*	Pour annuler une demande
+	*/
 	public function manager_delete($id = null){
 		$this->Loan->delete($id);
 		$this->Session->setFlash('Demande supprimée', 'flash_message', array('type'=>'secondary'));
@@ -99,6 +114,9 @@ class LoansController extends AppController{
 
 
 
+	/**
+	*	Demander une salle sur un ensemble de plage horaire et de date
+	*/
 	public function manager_askRoom($id = null){
 		$this->set('title_for_layout', 'Demander une salle');
 		if(!empty($this->request->data)){
@@ -117,6 +135,9 @@ class LoansController extends AppController{
 		$this->set('department_id', $this->Auth->User('department_id'));
 	}
 
+	/**
+	*	Répondre à une demande d'emprunt (mise à jour du statut)
+	*/
 	public function manager_answerRoom($id = null) {
 		$this->layout= null;
 		$res =$this->Loan->id =$id;
