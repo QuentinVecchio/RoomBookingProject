@@ -38,7 +38,7 @@
 	 ?>
 
 	 <?php else: ?>
-
+	<section>
 		<table class="grille-gestion large">
 			<thead>
 				<tr>
@@ -59,6 +59,12 @@
 				<?php endforeach; ?>
 			</tbody>
 		</table>
+		
+	 	<ul class="button-group">
+	 		<li><a href="/CakePHP/projet-web/app/webroot/files/listeUtilisateur.pdf" target="_blank" class="button">Télécharger</a></li>
+	 	</ul>		
+		
+	</section>
 
 
 		<?php ob_start(); ?>
@@ -110,8 +116,7 @@
 		$pdf->Output(WWW_ROOT.'files'.DS.'listeUtilisateur.pdf', 'F');
 
  	?>
-		<a href="/CakePHP/projet-web/app/webroot/files/listeUtilisateur.pdf" target="_blank" class="button">Télécharger</a>
-
+	
 	 <?php endif; ?>
  	
  </section>
