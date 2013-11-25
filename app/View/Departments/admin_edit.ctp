@@ -3,9 +3,8 @@
 ?>
 	<fieldset>
 		<legend>Modification:</legend>
-<?php
-		echo $this->Form->input('name', array('label' => 'Nom', 'div' => array('class' => 'small')));
-
+		<?php
+			echo $this->Form->input('name', array('label' => 'Nom', 'div' => array('class' => 'small')));
 		?>
 
 	<ul class="button-group options">

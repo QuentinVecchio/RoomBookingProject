@@ -109,7 +109,7 @@ class UsersController extends AppController{
 		if(!empty($this->request->data)){
 
 			try {
-				App::import('Vendor', 'ImportUtil');
+				App::import('Vendor', 'ImportUsers/ImportUtil');
 				$ImportUtil = new ImportUtil();
 				$newName = str_replace('.tmp', '.'.pathinfo ($this->request->data['User']['fichier']['name'],PATHINFO_EXTENSION),
 												$this->request->data['User']['fichier']['tmp_name']);

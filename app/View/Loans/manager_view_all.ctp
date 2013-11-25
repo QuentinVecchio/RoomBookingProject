@@ -1,10 +1,9 @@
  <h1>Visionner les demandes et les prêts:</h1>
 <section id="calendrier">
 	<?php 
-			App::import('Vendor', 'Calendrier');
+			App::import('Vendor', 'Calendrier/Calendrier');
 			$calendrier = new Calendrier(true,'test');
-			$test = $calendrier->getCalendrier($res,null,'viewAllByDay');
-			echo $test;
+			echo $calendrier->getCalendrier($res,null,'viewAllByDay');
 	 ?>
 </section>
 <section id="gestion">

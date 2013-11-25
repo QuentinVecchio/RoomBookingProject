@@ -1,11 +1,10 @@
  <h1>Demandes des autres départements:</h1>
 <section id="calendrier">
 	<?php 
-			App::import('Vendor', 'Calendrier');
+			App::import('Vendor', 'Calendrier/Calendrier');
 
 			$calendrier = new Calendrier(true,'test');
-			$test = $calendrier->getCalendrier($res,null,'view');
-			echo $test;
+			echo $calendrier->getCalendrier($res,null,'view');
 	 ?>
 </section>
 <section id="gestion">

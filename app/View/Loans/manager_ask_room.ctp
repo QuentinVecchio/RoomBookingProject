@@ -7,11 +7,10 @@
 	<h1>Les disponibilités de la salle:</h1>
 	<section id="calendrier">
 		<?php 
-				App::import('Vendor', 'Calendrier');
+				App::import('Vendor', 'Calendrier/Calendrier');
 
 				$calendrier = new Calendrier(true,'test');
-				$test = $calendrier->getCalendrier($occupationSalle,null,'../../loans/viewAvailable/'.$room['Room']['id']);
-				echo $test;
+				echo $calendrier->getCalendrier($occupationSalle,null,'../../loans/viewAvailable/'.$room['Room']['id']);
 		 ?>
 	</section>
 	<section id="gestion">
