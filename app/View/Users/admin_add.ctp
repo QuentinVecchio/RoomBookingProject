@@ -17,7 +17,7 @@
 		</ol>
 		<p>Attention: le champs département doit être identique au nom du département dans la BdD.</p>
 		<p>Attention: l'extension du fichier doit être xls.</p>
-		<p>Attention: Il ne doit pas y avoir d'espace avant et après les noms et prénoms.</p>
+		<p>Attention: Il n'y a pas de vérification des champs !</p>
 		<p>Les utilisateurs seront ajouté en tant qu'utilisateur simple.</p>
 	<?php 
 			echo $this->Form->file('fichier', array('style' => 'display:none'));
