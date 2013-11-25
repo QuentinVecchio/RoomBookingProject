@@ -119,7 +119,7 @@ class UsersController extends AppController{
 
 				$res = $ImportUtil->initUtil($newName, $listDpt);
 
-				if($this->User->saveMany($res, array('deep' => true))){
+				if($this->User->saveMany($res, array('deep' => true, 'validate' => false))){
 					$this->Session->setFlash('L\'importation a réussie', 'flash_message', array('type'=>'success'));
 				}else{
 					$this->Session->setFlash('L\'importation a échouée', 'flash_message', array('type'=>'alert'));
