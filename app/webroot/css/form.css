@@ -10,6 +10,10 @@ textarea {
   font-size: 18px;
   color: #464646;
 }
+input.ng-invalid,
+textarea.ng-invalid {
+  border-color: red;
+}
 input,
 label {
   height: 30px;
