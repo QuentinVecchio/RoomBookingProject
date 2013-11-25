@@ -124,10 +124,13 @@ class LoansController extends AppController{
 		$this->set('title_for_layout', 'Demander une salle');
 		if(!empty($this->request->data)){
 
-			$this->Loan->saveMany(current($this->request->data));
-			$this->Session->setFlash('Vos demandes sont bien prises en compte', 'flash_message', array('type'=>'success'));
-			$this->redirect(array('controller' => 'loans', 'action' => 'askRoom',$id, 'manager' => true));
+			if($this->Loan->saveMany(current($this->request->data))){
+				$this->Session->setFlash('Vos demandes sont bien prises en compte', 'flash_message', array('type'=>'success'));
+			}else{
+				$this->Session->setFlash('Problèmes lors de l\'ajout', 'flash_message', array('type' => 'alert'));
+			}
 
+			$this->redirect(array('controller' => 'loans', 'action' => 'askRoom',$id, 'manager' => true));
 		}
 
 		$res = $this->Loan->find('all', array('fields'=>array('date'),'conditions' => array('Loan.room_id' => $id)));
