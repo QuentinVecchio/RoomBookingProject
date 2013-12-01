@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Lun 18 Novembre 2013 à 22:17
+-- Généré le: Dim 01 Décembre 2013 à 14:00
 -- Version du serveur: 5.6.12-log
 -- Version de PHP: 5.4.16
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `departments` (
   `name` varchar(255) NOT NULL,
   `created` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Contenu de la table `departments`
@@ -64,22 +64,17 @@ CREATE TABLE IF NOT EXISTS `loans` (
   KEY `room_id` (`room_id`),
   KEY `department_id` (`department_id`),
   KEY `status_id` (`status_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=26 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=29 ;
 
 --
 -- Contenu de la table `loans`
 --
 
 INSERT INTO `loans` (`id`, `room_id`, `department_id`, `date`, `start_time`, `end_time`, `remark`, `status_id`) VALUES
-(1, 1, 3, '2013-10-16', '08:00:00', '10:00:00', 'test', 1),
 (16, 1, 2, '2013-11-18', '08:00:00', '12:00:00', 'Partiel', 1),
-(17, 1, 2, '2013-11-25', '08:00:00', '11:00:00', 'Contrôle', 4),
+(17, 1, 2, '2013-11-25', '08:00:00', '11:00:00', 'Contrôle', 3),
 (18, 1, 2, '2013-12-02', '09:00:00', '12:00:00', 'Cours', 4),
-(19, 1, 2, '2013-12-10', '08:00:00', '12:00:00', 'Partiel', 4),
-(21, 1, 2, '2013-11-19', '08:00:00', '10:00:00', 'test', 3),
-(22, 1, 2, '2013-11-19', '15:00:00', '19:00:00', 'test', 1),
-(23, 10, 1, '2013-11-19', '08:00:00', '10:00:00', 'test', 4),
-(25, 1, 2, '2013-11-19', '08:00:00', '10:00:00', 'coucou', 4);
+(19, 1, 2, '2013-12-10', '08:00:00', '12:00:00', 'Partiel', 4);
 
 -- --------------------------------------------------------
 
@@ -117,7 +112,7 @@ CREATE TABLE IF NOT EXISTS `rooms` (
   `department_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `id_dept` (`department_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=27 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=28 ;
 
 --
 -- Contenu de la table `rooms`
@@ -125,7 +120,6 @@ CREATE TABLE IF NOT EXISTS `rooms` (
 
 INSERT INTO `rooms` (`id`, `name`, `projector`, `has_PC`, `capacity`, `department_id`) VALUES
 (1, 'F39', 1, 1, 30, 1),
-(2, 'E33', 1, 0, 50, 1),
 (3, 'E32', 1, 1, 42, 1),
 (4, 'A1', 1, 0, 125, 2),
 (5, 'A321', 0, 1, 20, 2),
@@ -148,7 +142,8 @@ INSERT INTO `rooms` (`id`, `name`, `projector`, `has_PC`, `capacity`, `departmen
 (23, 'E10', 1, 0, 24, 4),
 (24, 'E12', 0, 0, 34, 4),
 (25, 'A05', 0, 0, 44, 3),
-(26, 'E33', 1, 1, 550, 3);
+(26, 'E33', 1, 0, 30, 1),
+(27, 'B00', 0, 1, 10, 2);
 
 -- --------------------------------------------------------
 
@@ -199,8 +194,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`id`, `username`, `firstname`, `lastname`, `email`, `password`, `role_id`, `department_id`) VALUES
 (2, 'laropier', 'Pierre', 'Laroche', 'pierre.laroche@wanadoo.fr', 'a25198027db5eb8939e7e9c3840f475f7931cf24', 3, 1),
-(3, 'spenanne', 'Anne', ' Spengler', 'anne.spengler@wanadoo.fr', '78f86c7e06a7dce5444fcf7dba0b638cb7e9b64f', 2, 1),
-(4, 'lyndzert', 'Lynda', ' Zertal', 'lynda.zertal@wanadoo.fr', '0989046dc079b2f78f99aa9df1f535df60fec307', 2, 2);
+(3, 'spenanne', 'Anne', ' Spengler', 'anne.spengler@wanadoo.fr', '78f86c7e06a7dce5444fcf7dba0b638cb7e9b64f', 2, 1);
 
 --
 -- Contraintes pour les tables exportées
