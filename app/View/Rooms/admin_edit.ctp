@@ -1,4 +1,4 @@
-
+<?php if(!$this->request->is('Ajax')){ $this->extend('admin_view');} ?>
 <tr>
 	<?php echo $this->Form->create('Room', array('style'=>'display:none;', 'name'=>'form')); ?>
 	<td><?php echo $this->Form->select('department_id', $list, array('value' => $id_dept)); ?></td>

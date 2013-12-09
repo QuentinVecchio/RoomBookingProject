@@ -1,5 +1,6 @@
 <?php 
 	echo $this->Form->create('Department');
+	if(!$this->request->is('Ajax')){ $this->extend('admin_index');}
 ?>
 	<fieldset>
 		<legend>Ajouter un département</legend>
