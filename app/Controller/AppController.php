@@ -34,6 +34,7 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
 
 	public $components = array(
+		'RequestHandler',
 		'Session',
 		'Auth' => array(
 				'loginAction' => array('controller' => 'users',
