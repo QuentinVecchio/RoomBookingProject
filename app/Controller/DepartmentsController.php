@@ -7,6 +7,19 @@ class DepartmentsController  extends AppController{
 	*	Affiche un menu listant les départements
 	*/
 	public function admin_index(){
+
+		/*if(isset($this->request->params['ext']) && $this->request->params['ext'] == 'json'){
+			$this->autoRender = false;
+			$l = $this->Department->find('all');
+
+			$t = array();
+			$t[] = array("nom" => "toto");
+			$t[] = array("nom" => "tata");
+			echo json_encode($l);
+
+			return;
+
+		}*/
 		$this->set('title_for_layout', 'Gestion des départements:');
 
 		$departments = $this->Department->find('all',array(
@@ -32,15 +45,26 @@ class DepartmentsController  extends AppController{
 
 		if(!empty($this->request->data)){
 			$this->Department->id = $index;
-			$this->Department->save($this->request->data);
-			$this->Session->setFlash('Mise à jour du département <strong>'.$this->request->data['Department']['name'].'</strong>', 'flash_message', array('type'=>'success'));
-			$this->redirect(array('controller' => 'departments', 'action' => 'index'));
+			if($this->Department->save($this->request->data)){
+				$this->Session->setFlash('Mise à jour du département <strong>'.$this->request->data['Department']['name'].'</strong>', 'flash_message', array('type'=>'success'));
+				$this->redirect(array('controller' => 'departments', 'action' => 'index'));
+			}
 		}
 
 		if($this->request->is('Ajax')){
 			$this->layout = null;
 		}else{
 			$this->set('title_for_layout', 'Modification:');
+			$departments = $this->Department->find('all',array(
+				'recursive' => -1));
+
+			foreach ($departments as $k => $v) {
+				$departments[$k]['Department']['link_edit'] = array('controller' => 'departments',
+											   'action' => 'edit', $v['Department']['id']);
+			}
+
+
+			$this->set(compact($departments));				
 		}
 
 		$this->Department->recursive = -1;
@@ -58,15 +82,25 @@ class DepartmentsController  extends AppController{
 		if($this->request->is('Ajax')){
 			$this->layout = null;
 		}else{
-			$this->set('title_for_layout', 'Ajout d\' département:');
+			$this->set('title_for_layout', 'Ajout d\'un département:');
+			$departments = $this->Department->find('all',array(
+				'recursive' => -1));
+
+			foreach ($departments as $k => $v) {
+				$departments[$k]['Department']['link_edit'] = array('controller' => 'departments',
+											   'action' => 'edit', $v['Department']['id']);
+			}
+
+
+			$this->set(compact($departments));			
 		}
 		
 		if(!empty($this->request->data)){
 			$this->Department->create();
-			$this->Department->save($this->request->data);
-			$this->Session->setFlash('Département <strong>'.$this->request->data['Department']['name'].'</strong> ajouté avec succès !', 'flash_message', array('type'=>'success'));
-
-			$this->redirect(array('controller' => 'departments', 'action' => 'index'));
+			if($this->Department->save($this->request->data)){
+				$this->Session->setFlash('Département <strong>'.$this->request->data['Department']['name'].'</strong> ajouté avec succès !', 'flash_message', array('type'=>'success'));
+				$this->redirect(array('controller' => 'departments', 'action' => 'index'));
+			}	
 		}
 	}
 
