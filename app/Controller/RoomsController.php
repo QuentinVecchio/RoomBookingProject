@@ -14,10 +14,7 @@ class RoomsController extends AppController{
 	public function admin_index(){
 		$this->set('title_for_layout', 'Gestion des salles');
 
-		$this->set('side_department',$this->Room->Department->find('all', array(
-				'fields' => array('Department.id','Department.name'),
-				'order' =>'Department.name',
-				'recursive' => '-1')));
+		$this->getElt();
 	}
 
 	/**
@@ -29,45 +26,43 @@ class RoomsController extends AppController{
 		}
 		$this->set('title_for_layout', 'Gestion:');
 
-		$departments = $this->Room->Department->find('list', array('order' =>'Department.name',
-																   'recursive' => '-1'));
+		$this->getNameDepartment($index);
+		$this->getListDepartment();
 
-		$rooms = $this->Room->find('all', array('conditions' => array('department_id' => $index)));
-
-		$name_department = $this->Room->Department->find('first',array(
-			'fields' => array('name'),
-			'conditions' => array('id' => $index)
-			));
-		$name_department = $name_department['Department']['name'];
-
-		$this->set('departments', $departments);
-		$this->set('rooms', $rooms);
-		$this->set('name_department', $name_department);
+		$this->set('rooms', $this->Room->find('all', array('conditions' => array('department_id' => $index))));
 		$this->set('id', $index);
-		$this->set('side_department',$this->Room->Department->find('all', array(
-				'fields' => array('Department.id','Department.name'),
-				'order' =>'Department.name',
-				'recursive' => '-1')));
+		$this->getElt();
 	}
 
 	/**
 	*	Modification d'une salle particulière
 	*/
 	public function admin_edit($index = null){
-		if($this->request->is('Ajax')){
-			$this->set('index', $index);
+			$this->set('title_for_layout', 'Gestion:');
 			$room = $this->Room->findById($index);
-			$this->request->data = $room;
-			$this->set('id_dept',$room['Room']['department_id']);
-			$this->layout = null;
 			$list = $this->Room->Department->find('list', array('recursive' => -1));
 			$this->set('list', $list);		
+			$this->set('id_dept',$room['Room']['department_id']);
+		if($this->request->is('Ajax')){
+			$this->set('index', $index);
+			$this->request->data = $room;
+			$this->layout = null;
 		}else{
 			if(!empty($this->request->data)){
 				$this->Room->id = $index;
-				$this->Room->save($this->request->data);
-				$this->Session->setFlash('Mise à jour des informations de la salle <strong>'.$this->request->data['Room']['name'].'</strong>', 'flash_message', array('type'=>'success'));
-				$this->redirect(array('controller' =>'rooms', 'action' => 'view', $this->request->data['Room']['department_id'], 'admin' => true));
+				if($this->Room->save($this->request->data)){
+					$this->Session->setFlash('Mise à jour des informations de la salle <strong>'.$this->request->data['Room']['name'].'</strong>', 'flash_message', array('type'=>'success'));
+					$this->redirect(array('controller' =>'rooms', 'action' => 'view', $this->request->data['Room']['department_id'], 'admin' => true));
+				}else{
+
+					$this->getNameDepartment($this->request->data['Room']['department_id']);
+					$this->getElt();
+					$this->getListDepartment();
+
+					$this->set('rooms', $this->Room->find('all', array('conditions' => array('department_id' => $this->request->data['Room']['department_id'],
+																					'Room.id <>' => $room['Room']['id']))));
+					$this->set('id', $this->request->data['Room']['department_id']);
+				}
 			}
 		}
 	}
@@ -76,10 +71,22 @@ class RoomsController extends AppController{
 	*	Permet d'ajouter une salle
 	*/
 	public function admin_add(){
+		$this->set('title_for_layout', 'Ajout:');
 		if(!empty($this->request->data)){
-			$this->Room->save($this->request->data);
+			if($this->Room->save($this->request->data)){
 				$this->Session->setFlash('Ajout de la salle <strong>'.$this->request->data['Room']['name'].'</strong>', 'flash_message', array('type'=>'success'));
 				$this->redirect(array('controller' =>'rooms', 'action' => 'view', $this->request->data['Room']['department_id'], 'admin' => true));
+			}else{
+
+				$this->getNameDepartment($this->request->data['Room']['department_id']);
+				$this->getListDepartment();
+				$this->getElt();
+
+				$this->set('rooms', $this->Room->find('all',
+										 array('conditions' => array('department_id' => $this->request->data['Room']['department_id']))));
+
+				$this->set('id', $this->request->data['Room']['department_id']);
+			}
 		}
 
 		if($this->request->is('Ajax')){
@@ -100,12 +107,35 @@ class RoomsController extends AppController{
 			$this->redirect(array('controller' => 'departments', 'action' => 'index'));
 		}
 
-		$this->Room->delete($index);
-		$this->Session->setFlash('Salle supprimée de la liste', 'flash_message', array('type'=>'secondary'));
-			
-		$this->redirect(array('controller' => 'rooms', 'action' => 'index'));
-
+		if($this->Room->delete($index)){
+			$this->Session->setFlash('Salle supprimée de la liste', 'flash_message', array('type'=>'secondary'));
+			$this->redirect(array('controller' => 'rooms', 'action' => 'index'));
+		}
 	}	
+
+	/**
+	*	Requetes communes a différentes vues
+	*/
+	private function getElt(){
+		$this->set('side_department',$this->Room->Department->find('all', array(
+				'fields' => array('Department.id','Department.name'),
+				'order' =>'Department.name',
+				'recursive' => '-1')));
+	}
+
+	private function getNameDepartment($idDepartment){
+		$this->Room->Department->recursive = -1;
+		$name_department = $this->Room->Department->findById($idDepartment,array('name'));
+
+		$name_department = $name_department['Department']['name'];
+		$this->set('name_department', $name_department);
+
+	}
+
+	private function getListDepartment(){
+		$departments = $this->Room->Department->find('list', array('order' =>'Department.name','recursive' => '-1'));
+		$this->set('departments', $departments);		
+	}
 }
 
  ?>
