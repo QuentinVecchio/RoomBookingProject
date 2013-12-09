@@ -24,7 +24,13 @@
 				}
 			}
 
-			echo $this->Room->getEdit($departments, $id);
+			$t = $this->fetch('content');
+			if($t != null){
+				echo $t;
+			}else{
+				echo $this->Room->getEdit($departments, $id);
+			}
+
 		 ?>
 
 

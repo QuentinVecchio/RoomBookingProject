@@ -74,7 +74,7 @@ class RoomHelper extends AppHelper{
 		<tr>
 			<?php echo $this->Form->create('Room', array('controller' => 'rooms', 'action' => 'add', 'style'=>'display:none;'));  ?>
 			<td><?php   
-						echo $this->Form->select('department_id', $listDepartment, array('value' => $department_id)); ?></td>
+						echo $this->Form->select('department_id', $listDepartment, array('value' => $department_id, 'empty' => false)); ?></td>
 			<td><?php echo $this->Form->input('name', array('label'=>'', 'type'=>'text', 'label'=> array('style'=> 'display:none;'))) ?></td>
 			<td><?php echo $this->Form->checkbox('projector').  $this->Form->label('projector',''); ?></td>
 			<td><?php echo $this->Form->checkbox('has_PC'). $this->Form->label('has_PC',''); ?></td>
