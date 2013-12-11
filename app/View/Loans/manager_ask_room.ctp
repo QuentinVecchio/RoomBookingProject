@@ -53,17 +53,20 @@
 																					'style'=> array('display:none;'), 'type' => 'text',
 																					'value' => $department_id));
 
-									echo $this->Form->input('loan.0.date',array('label' => array('style'=>'display:none;'),
-																			  'ng-model'=>"date",'type' => 'text',
-																			  'ng-pattern' => '/^([0-9]{2}-){2}[0-9]{4}$/')); ?></td>
+									echo $this->Form->input('loan.0.date',array('placeholder'=> 'jj-mm-aaaa', 
+																				'label' => array('style'=>'display:none;'),
+																				'ng-model'=>"date",'type' => 'text',
+																				'ng-pattern' => '/^([0-9]{2}-){2}[0-9]{4}$/')); ?></td>
 
-						<td><?php 	echo $this->Form->input('loan.0.start_time',array('label' => array('style'=>'display:none;'),
-																				'ng-model' => 'startTime', 'type' => 'text',
-																			 	'ng-pattern' => '/^([0-9]{2}:[0-9]{2}$/')); ?></td>
+						<td><?php 	echo $this->Form->input('loan.0.start_time',array('placeholder'=> 'hh:mm',
+																					'label' => array('style'=>'display:none;'),
+																					'ng-model' => 'startTime', 'type' => 'text',
+																			 		'ng-pattern' => '/^([0-9]{2}:[0-9]{2}$/')); ?></td>
 
-						<td><?php 	echo $this->Form->input('loan.0.end_time',array('label'  => array('style'=>'display:none;'),
-																				'ng-model' => 'endTime', 'type' => 'text',
-																			 	'ng-pattern' => '/^([0-9]{2}:[0-9]{2}$/')); ?></td>
+						<td><?php 	echo $this->Form->input('loan.0.end_time',array('placeholder'=> 'hh:mm',
+																					'label'  => array('style'=>'display:none;'),
+																					'ng-model' => 'endTime', 'type' => 'text',
+																			 		'ng-pattern' => '/^([0-9]{2}:[0-9]{2}$/')); ?></td>
 
 						<td><?php 	echo $this->Form->textarea('loan.0.remark', array('ng-model' => 'remark')); ?></td>
 						<td>
@@ -86,17 +89,20 @@
 									echo $this->Form->input('loan.{{id}}.department_id', array('label' => array('style' => 'display:none;'),
 																					'style'=> array('display:none;'), 'type' => 'text',
 																					'value' => $department_id));
-									echo $this->Form->input('loan.{{id}}.date',array('label' => array('style'=>'display:none;'),
-																				'value'=>"{{getDate(id,date)}}",'type' => 'text',
-																			 	'ng-pattern' => '/^([0-9]{2}-){2}[0-9]{4}$/')); ?></td>
+									echo $this->Form->input('loan.{{id}}.date',array('placeholder'=> 'jj-mm-aaaa', 
+																					'label' => array('style'=>'display:none;'),
+																					'value'=>"{{getDate(id,date)}}",'type' => 'text',
+																			 		'ng-pattern' => '/^([0-9]{2}-){2}[0-9]{4}$/')); ?></td>
 
-						<td><?php 	echo $this->Form->input('loan.{{id}}.start_time',array('label' => array('style'=>'display:none;'),
-																				'value' => '{{startTime}}', 'type' => 'text',
-																			 	'ng-pattern' => '/^([0-9]{2}:[0-9]{2}$/')); ?></td>
+						<td><?php 	echo $this->Form->input('loan.{{id}}.start_time',array('placeholder'=> 'hh:mm',
+																							'label' => array('style'=>'display:none;'),
+																							'value' => '{{startTime}}', 'type' => 'text',
+																			 				'ng-pattern' => '/^([0-9]{2}:[0-9]{2}$/')); ?></td>
 
-						<td><?php 	echo $this->Form->input('loan.{{id}}.end_time',array('label'  => array('style'=>'display:none;'),
-																				'value' => '{{endTime}}', 'type' => 'text',
-																			 	'ng-pattern' => '/^([0-9]{2}:[0-9]{2}$/')); ?></td>
+						<td><?php 	echo $this->Form->input('loan.{{id}}.end_time',array('placeholder'=> 'hh:mm',
+																							'label'  => array('style'=>'display:none;'),
+																							'value' => '{{endTime}}', 'type' => 'text',
+																			 				'ng-pattern' => '/^([0-9]{2}:[0-9]{2}$/')); ?></td>
 
 						<td><?php 	echo $this->Form->textarea('loan.{{id}}.remark', array('value' => '{{remark}}')); ?></td>
 						<td>
