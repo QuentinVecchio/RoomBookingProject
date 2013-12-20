@@ -17,7 +17,7 @@
 
 	</section>
 
-	<section ng-controller="FormCtrl"  ng-app="gestionDemande">
+	<section ng-controller="tableauController"  ng-app="gestionTableau">
 		<h1>Demande de réservation:</h1>
 		<p>Vous avez choisi la salle <strong><?php echo $room['Room']['name']; ?></strong> du département <strong><?php echo $room['Department']['name']; ?></strong></p>
 		<ul class="liste-p">
@@ -26,9 +26,7 @@
 		</ul>	
 
 	<?php 	echo $this->Form->create('loan', array('name' =>"form")); ?>
-
-	<p>Le nombre de semaine:<input type="number" ng-model="number"></p>
-	<table class="gestion-demande-salle  grille-gestion">
+	<table class="gestion-demande-salle  grille-gestion" ng-init="loans=<?php echo htmlentities(json_encode($this->data)); ?>">
 			<thead>
 				<tr>
 					<th>Date</th>
@@ -39,97 +37,40 @@
 				</tr>
 			</thead>
 			<tbody>
-					<tr>
-						<td><?php 
-									echo $this->Form->input('loan.0.room_id', array('label' => array('style' => 'display:none;'),
-																					'style'=> array('display:none;'), 'type' => 'text',
-																					'value' => $room['Room']['id']));
+				<tr ng-repeat="i in loans.loan" class="ng-scope">
+					<td>
+						<input type="text" ng-model="loans.loan[$index].room_id"  name="loan[{{$index}}][room_id]" required style="display:none;">
+						<input type="text" ng-model="loans.loan[$index].status_id"  name="loan[{{$index}}][status_id]" required style="display:none;">
+						<input type="text" ng-model="loans.loan[$index].department_id"  name="loan[{{$index}}][department_id]" required style="display:none;">
 
-									echo $this->Form->input('loan.0.status_id', array('label' => array('style' => 'display:none;'),
-																					'style'=> array('display:none;'), 'type' => 'text',
-																					'value' => $idEnAttente));
+						<input type="text" ng-model="loans.loan[$index].date"  name="loan[{{$index}}][date]" required ng-pattern="/^((0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-(20[0-9][0-9]))$/" placeholder="jj-mm-aaaa">
+					</td>
+					<td><input type="text" ng-model="loans.loan[$index].start_time" placeholder="hh:mm" name="loan[{{$index}}][start_time]"required ng-pattern="/^(0[7-9]|1[0-9]):([03]0|[14]5)$/"></td>
+					<td><input type="text" ng-model="loans.loan[$index].end_time" placeholder="hh:mm" name="loan[{{$index}}][end_time]"required ng-pattern="/^(0[7-9]|1[0-9]):([03]0|[14]5)$/" date-after="loan.start_time"></td>
+					<td><textarea type="text" name="loan[{{$index}}][remark]" ng-model="loans.loan[$index].remark"></textarea></td>
+					<td>
+						
+						<ul class="button-group options">
+							<li><span ng-click="removeLine($index)" class="button tiny alert">Supprimer</span></li>
+							<li><span ng-click="duplicateLine($index)" class="button tiny">Duppliquer</span></li>
+						</ul>
 
-									echo $this->Form->input('loan.0.department_id', array('label' => array('style' => 'display:none;'),
-																					'style'=> array('display:none;'), 'type' => 'text',
-																					'value' => $department_id));
-
-									echo $this->Form->input('loan.0.date',array('placeholder'=> 'jj-mm-aaaa', 
-																				'label' => array('style'=>'display:none;'),
-																				'ng-model'=>"date",'type' => 'text',
-																				'ng-pattern' => '/^([0-9]{2}-){2}[0-9]{4}$/')); ?></td>
-
-						<td><?php 	echo $this->Form->input('loan.0.start_time',array('placeholder'=> 'hh:mm',
-																					'label' => array('style'=>'display:none;'),
-																					'ng-model' => 'startTime', 'type' => 'text',
-																			 		'ng-pattern' => '/^([0-9]{2}:[0-9]{2}$/')); ?></td>
-
-						<td><?php 	echo $this->Form->input('loan.0.end_time',array('placeholder'=> 'hh:mm',
-																					'label'  => array('style'=>'display:none;'),
-																					'ng-model' => 'endTime', 'type' => 'text',
-																			 		'ng-pattern' => '/^([0-9]{2}:[0-9]{2}$/')); ?></td>
-
-						<td><?php 	echo $this->Form->textarea('loan.0.remark', array('ng-model' => 'remark')); ?></td>
-						<td>
-							<ul class="button-group">
-								<li><a href="#" class="button tiny icon-cancel" onClick="";></a></li>
-							</ul>
-
-						</td>
-					</tr>
-					<tr  ng-repeat="id in getNumber(number)">
-
-						<td><?php	echo $this->Form->input('loan.{{id}}.room_id', array('label' => array('style' => 'display:none;'),
-																					'style'=> array('display:none;'), 'type' => 'text',
-																					 'value' => $room['Room']['id']));
-
-									echo $this->Form->input('loan.{{id}}.status_id', array('label' => array('style' => 'display:none;'),
-																					'style'=> array('display:none;'), 'type' => 'text',
-																					'value' => $idEnAttente));
-
-									echo $this->Form->input('loan.{{id}}.department_id', array('label' => array('style' => 'display:none;'),
-																					'style'=> array('display:none;'), 'type' => 'text',
-																					'value' => $department_id));
-									echo $this->Form->input('loan.{{id}}.date',array('placeholder'=> 'jj-mm-aaaa', 
-																					'label' => array('style'=>'display:none;'),
-																					'value'=>"{{getDate(id,date)}}",'type' => 'text',
-																			 		'ng-pattern' => '/^([0-9]{2}-){2}[0-9]{4}$/')); ?></td>
-
-						<td><?php 	echo $this->Form->input('loan.{{id}}.start_time',array('placeholder'=> 'hh:mm',
-																							'label' => array('style'=>'display:none;'),
-																							'value' => '{{startTime}}', 'type' => 'text',
-																			 				'ng-pattern' => '/^([0-9]{2}:[0-9]{2}$/')); ?></td>
-
-						<td><?php 	echo $this->Form->input('loan.{{id}}.end_time',array('placeholder'=> 'hh:mm',
-																							'label'  => array('style'=>'display:none;'),
-																							'value' => '{{endTime}}', 'type' => 'text',
-																			 				'ng-pattern' => '/^([0-9]{2}:[0-9]{2}$/')); ?></td>
-
-						<td><?php 	echo $this->Form->textarea('loan.{{id}}.remark', array('value' => '{{remark}}')); ?></td>
-						<td>
-							<ul class="button-group">
-								<li><a href="#" class="button tiny icon-cancel" onClick="removeLine(this)";></a></li>
-							</ul>
-
-						</td>
-					</tr>
-
+					</td>
+				</tr>
 
 			</tbody>
-		</table>
-		<ul class="button-group">
-			<li><?php  echo $this->Form->button('Soumettre',array('ng-disabled' => 'form.$invalid')); ?></li>
-		</ul>
 
-		<?php 
-			echo $this->Form->end();
-		 ?>
+		</table>
+			<ul class="button-group">
+				<li><input type="submit" value="Soumettre" ng-disabled="form.$invalid" class="button tiny">	</li>
+			</ul>
+			<?php echo $this->Form->end(); ?>
 	</section>
 
 	<?php 
 	$this->start('script');
 		echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular.min.js');
 		echo $this->Html->script('gestion_demande_salle');
-		echo $this->Html->script('controllers');
 		echo $this->Html->script('scriptCalendrier');
 	$this->end(); 
 	$this->start('css');

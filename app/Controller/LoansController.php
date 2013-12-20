@@ -123,26 +123,34 @@ class LoansController extends AppController{
 	public function manager_askRoom($id = null){
 		$this->set('title_for_layout', 'Demander une salle');
 		if(!empty($this->request->data)){
-
+			debug($this->data);
 			if($this->Loan->saveMany(current($this->request->data))){
 				$this->Session->setFlash('Vos demandes sont bien prises en compte', 'flash_message', array('type'=>'success'));
+				$this->redirect(array('controller' => 'loans', 'action' => 'askRoom',$id, 'manager' => true));
 			}else{
-				$this->Session->setFlash('Problèmes lors de l\'ajout', 'flash_message', array('type' => 'alert'));
+					$this->Session->setFlash('Problèmes lors de l\'ajout', 'flash_message', array('type' => 'alert'));
+					debug($this->Loan->validationErrors);
 			}
-
-			$this->redirect(array('controller' => 'loans', 'action' => 'askRoom',$id, 'manager' => true));
+			
+		}else{
+			$idEnAttente = current($this->Loan->Status->findByName('En attente'));
+			$idEnAttente = $idEnAttente['id'];
+			$departmentID = $this->Auth->User('department_id');
+			$this->request->data = array('loan' =>array(
+										array(	'room_id' => $id,
+								 				'department_id' =>  $departmentID,
+				 								'status_id' => $idEnAttente,
+												'date' =>'', 'end_time' => '','start_time' => '',
+												'remark' => ''
+											)
+										));
 		}
 
 		$res = $this->Loan->find('all', array('fields'=>array('date'),'conditions' => array('Loan.room_id' => $id)));
 		$this->set('occupationSalle', $res);
 
-
-		$idEnAttente = current($this->Loan->Status->findByName('En attente'))['id'];
-		$this->set('idEnAttente', $idEnAttente);
-
 		$room = $this->Loan->Room->findById($id);
 		$this->set('room', $room);
-		$this->set('department_id', $this->Auth->User('department_id'));
 	}
 
 	/**
