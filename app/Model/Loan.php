@@ -11,15 +11,15 @@ class Loan extends AppModel{
 			'required' => true
 		),
 		'start_time' => array(
-			'rule' =>'alphaNumeric',
-			'required' => true
+			'rule' =>'/^(0[7-9]|1[0-9]):([03]0|[14]5)$/',
+			'required' => true,
 		),
 		'end_time' => array(
-			'rule' =>'alphaNumeric',
+			'rule' =>'/^(0[7-9]|1[0-9]):([03]0|[14]5)$/',
 			'required' => true
 		),
 		'date' => array(
-			'rule' =>'alphaNumeric',
+			'rule' =>'/^((0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-(20[0-9][0-9]))$/',
 			'required' => true
 		));
 
