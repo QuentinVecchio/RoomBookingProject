@@ -123,13 +123,17 @@ class LoansController extends AppController{
 	public function manager_askRoom($id = null){
 		$this->set('title_for_layout', 'Demander une salle');
 		if(!empty($this->request->data)){
-			debug($this->data);
 			if($this->Loan->saveMany(current($this->request->data))){
 				$this->Session->setFlash('Vos demandes sont bien prises en compte', 'flash_message', array('type'=>'success'));
 				$this->redirect(array('controller' => 'loans', 'action' => 'askRoom',$id, 'manager' => true));
 			}else{
 					$this->Session->setFlash('Problèmes lors de l\'ajout', 'flash_message', array('type' => 'alert'));
-					debug($this->Loan->validationErrors);
+					$t = $this->Loan->validationErrors;
+					foreach ($t as $k => $v) {
+						if(isset($v['room_id'])){
+							$this->request->data['loan'][$k]['error'] = $v['room_id'][0];
+						}
+					}
 			}
 			
 		}else{
@@ -146,7 +150,7 @@ class LoansController extends AppController{
 										));
 		}
 
-		$res = $this->Loan->find('all', array('fields'=>array('date'),'conditions' => array('Loan.room_id' => $id)));
+		$res = $this->Loan->find('all', array('fields'=>array('DISTINCT (date)'),'conditions' => array('Loan.room_id' => $id)));
 		$this->set('occupationSalle', $res);
 
 		$room = $this->Loan->Room->findById($id);

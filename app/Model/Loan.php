@@ -21,7 +21,26 @@ class Loan extends AppModel{
 		'date' => array(
 			'rule' =>'/^((0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-(20[0-9][0-9]))$/',
 			'required' => true
-		));
+		),
+		'room_id'=> array(
+			'on' => 'create',
+			'rule' => 'isOnlyOne',
+			'message' => 'Ce créneau est déjà pris !'
+			)
+		);
+
+	public function isOnlyOne($options = array()){
+		$tmp = $this->find('count', array('conditions' => array('AND' => array('room_id' => $this->data[$this->alias]['room_id'],
+															  				 'date' => $this->dateFormatBeforeSave($this->data[$this->alias]['date'])
+															  				 ),
+															  'OR' => array(array('? BETWEEN  start_time AND end_time' => array($this->data[$this->alias]['start_time'].':00')),
+															  		  		array('? BETWEEN  start_time AND end_time' => array($this->data[$this->alias]['end_time'].':00')),
+															  		  		array('AND' => array('start_time >' => $this->data[$this->alias]['start_time'].':00',
+															  		  							 'end_time <' => $this->data[$this->alias]['end_time'].':00')))
+															  ),
+										'recursive' => -1));
+		return !$tmp;
+	}
 
 
 	public function beforeSave($options = array()) {
