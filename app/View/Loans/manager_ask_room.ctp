@@ -46,9 +46,10 @@
 						<input type="text" ng-model="loans.loan[$index].date"  name="loan[{{$index}}][date]" required ng-pattern="/^((0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-(20[0-9][0-9]))$/" placeholder="jj-mm-aaaa">
 					</td>
 					<td><input type="text" ng-model="loans.loan[$index].start_time" placeholder="hh:mm" name="loan[{{$index}}][start_time]"required ng-pattern="/^(0[7-9]|1[0-9]):([03]0|[14]5)$/"></td>
-					<td><input type="text" ng-model="loans.loan[$index].end_time" placeholder="hh:mm" name="loan[{{$index}}][end_time]"required ng-pattern="/^(0[7-9]|1[0-9]):([03]0|[14]5)$/" date-after="loan.start_time"></td>
+					<td><input type="text" ng-model="loans.loan[$index].end_time" placeholder="hh:mm" name="loan[{{$index}}][end_time]"required ng-pattern="/^(0[7-9]|1[0-9]):([03]0|[14]5)$/" date-after="loans.loan[$index].start_time"></td>
 					<td><textarea type="text" name="loan[{{$index}}][remark]" ng-model="loans.loan[$index].remark"></textarea></td>
 					<td>
+						<p class="error-message">{{loans.loan[$index].error}}</p>
 						
 						<ul class="button-group options">
 							<li><span ng-click="removeLine($index)" class="button tiny alert">Supprimer</span></li>
