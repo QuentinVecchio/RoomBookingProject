@@ -30,15 +30,27 @@ class Loan extends AppModel{
 		);
 
 	public function isOnlyOne($options = array()){
-		$tmp = $this->find('count', array('conditions' => array('AND' => array('room_id' => $this->data[$this->alias]['room_id'],
-															  				 'date' => $this->dateFormatBeforeSave($this->data[$this->alias]['date'])
-															  				 ),
-															  'OR' => array(array('? BETWEEN  start_time AND end_time' => array($this->data[$this->alias]['start_time'].':00')),
-															  		  		array('? BETWEEN  start_time AND end_time' => array($this->data[$this->alias]['end_time'].':00')),
-															  		  		array('AND' => array('start_time >' => $this->data[$this->alias]['start_time'].':00',
-															  		  							 'end_time <' => $this->data[$this->alias]['end_time'].':00')))
-															  ),
-										'recursive' => -1));
+		$tmp = $this->find('count', array('conditions' => array(
+														'date' => $this->dateFormatBeforeSave($this->data[$this->alias]['date']),
+														'room_id' => $this->data[$this->alias]['room_id'],
+														'OR'=> array(
+																	array('start_time <=' => $this->data[$this->alias]['start_time'],
+																	 'end_time >' => $this->data[$this->alias]['start_time']
+																	 ),
+																	array(
+																		'start_time <' => $this->data[$this->alias]['end_time'],
+																		'end_time >=' => $this->data[$this->alias]['end_time']
+																		),
+																	array(
+																		'start_time >' => $this->data[$this->alias]['start_time'],
+																		'end_time <' => $this->data[$this->alias]['end_time']
+																		)
+																)
+														
+													)
+										)
+						  );
+
 		return !$tmp;
 	}
 

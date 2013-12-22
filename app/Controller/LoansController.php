@@ -28,7 +28,8 @@ class LoansController extends AppController{
 		}
 		$res = $this->Loan->find('all', array('conditions' => array('Room.department_id' =>$this->Auth->User('department_id'),
 																	'Loan.date' => $date,
-																	'Status.name NOT LIKE' => 'Oui')));
+																	'Status.name NOT LIKE' => 'Oui'),
+											  'order' => array('Loan.start_time')));
 		$this->set('res', $res);
 		$list = $this->Loan->Status->find('list');
 		$this->set('list', $list);
@@ -39,10 +40,14 @@ class LoansController extends AppController{
 	*/
 	public function manager_viewAll() {
 		$this->set('title_for_layout', 'Visionner');
-		$res = $this->Loan->find('all', array('fields'=>array('date'),'conditions' => array('OR' => array('Room.department_id' =>$this->Auth->User('department_id'),
-																							'Loan.department_id' => $this->Auth->User('department_id')))));
+		$res = $this->Loan->find('all', array('fields'=>array('DISTINCT(date)'),
+											  'conditions' => array('OR' => array('Room.department_id' =>$this->Auth->User('department_id'),
+											    								  'Loan.department_id' => $this->Auth->User('department_id')
+											    								  )
+											  						)
+											  )
+								);
 		$this->set('res', $res);
-
 	}
 
 	/**
@@ -53,10 +58,12 @@ class LoansController extends AppController{
 			$this->layout = null;
 		}
 		$demande = $this->Loan->find('all', array('conditions' => array('Loan.department_id' =>$this->Auth->User('department_id'),
-																		'Loan.date' => $date)));
+																		'Loan.date' => $date),
+											  		'order' => array('Loan.start_time')));
 
 		$emprunt = $this->Loan->find('all', array('conditions' => array('Room.department_id' => $this->Auth->User('department_id'),
-																		'Loan.date' => $date)));
+																		'Loan.date' => $date),
+											 	'order' => array('Loan.start_time')));
 
 		$this->set('demande', $demande);
 		$this->set('emprunt', $emprunt);
@@ -150,9 +157,8 @@ class LoansController extends AppController{
 										));
 		}
 
-		$res = $this->Loan->find('all', array('fields'=>array('DISTINCT (date)'),'conditions' => array('Loan.room_id' => $id)));
+		$res = $this->Loan->find('all', array('fields'=>array('date'),'conditions' => array('Loan.room_id' => $id)));
 		$this->set('occupationSalle', $res);
-
 		$room = $this->Loan->Room->findById($id);
 		$this->set('room', $room);
 	}
@@ -162,7 +168,8 @@ class LoansController extends AppController{
 	*/
 	public function manager_viewAvailable($id, $date){
 		$this->layout = null;
-		$dispo = $this->Loan->find('all', array('conditions' => array('room_id' => $id, 'date' => $date)));
+		$dispo = $this->Loan->find('all', array('conditions' => array('Loan.room_id' => $id, 'date' => $date),
+												'order' => array('Loan.start_time')));
 		$this->set('dispo', $dispo);
 	}
 
