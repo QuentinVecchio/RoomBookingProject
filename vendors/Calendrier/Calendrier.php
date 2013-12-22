@@ -236,7 +236,7 @@ class Calendrier extends AppHelper
 													}
 													
 
-													$dateTraite = $this->_date1->Annee() . '-' . (($m1 < 10)? '0'.$m1: $m1) . '-' . (($d1 < 10)? '0'.$d1: $d1);
+													$dateTraite = $this->_date1->Annee()+1 . '-' . (($m1 < 10)? '0'.$m1: $m1) . '-' . (($d1 < 10)? '0'.$d1: $d1);
 													$nbEvent = $this->evenement($dateTraite,$event);
 													if($nbEvent != 0)
 													{
