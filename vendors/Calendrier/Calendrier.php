@@ -167,7 +167,8 @@ class Calendrier extends AppHelper
 														<td colspan="<?php echo $w-1;?>" class="padding"></td>
 													<?php
 													}
-													$dateTraite = $this->_date1->Annee() . '-' . $m . '-' . (($d < 10)? '0'.$d: $d);
+
+													$dateTraite = $this->_date1->Annee() . '-' . (($m < 10)? '0'.$m: $m) . '-' . (($d < 10)? '0'.$d: $d);
 													$nbEvent = $this->evenement($dateTraite,$event);
 													if($nbEvent != 0)
 													{
@@ -233,9 +234,22 @@ class Calendrier extends AppHelper
 														<td colspan="<?php echo $w1-1;?>" class="padding"></td>
 													<?php
 													}
+													
+
+													$dateTraite = $this->_date1->Annee() . '-' . (($m1 < 10)? '0'.$m1: $m1) . '-' . (($d1 < 10)? '0'.$d1: $d1);
+													$nbEvent = $this->evenement($dateTraite,$event);
+													if($nbEvent != 0)
+													{
 													?>
-													<td  class="days" id="days<?php echo $d1;?>"><?php echo $d1;?></td>
+													<td class="evenement" info="<?php echo $w;?>" id="days<?php echo $d1;?>"><a href="<?php echo $lien.'/'.$dateTraite ?>" class="ajax"><?php echo $d1; ?></a></td>
 													<?php
+													}
+													else
+													{?>
+														<td class="days" info="<?php echo $w;?>" id="days<?php echo $d1;?>"><a href="#"><?php echo $d1;?></a></td>
+													<?php
+													}
+													
 													
 													if($w1 == 7)
 													{
