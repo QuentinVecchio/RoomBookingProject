@@ -37,8 +37,46 @@ $(function(){
 		}
 		for(i=0;i<dif;i++)
 		{
- 			setTimeout(change, i*1000);
+ 			//Recupere le mois courant
+				moisCourant = $('#titreMois').attr('val');
+				nbMois = parseInt(moisCourant);
+				nbMoisAv = nbMois;
+			//On recupère l'année courante
+				annneeCourant = $('#titreAnnee').attr('val');
+				nbAnnee = parseInt(annneeCourant);
+			if(!(nbMois == 8 && nbAnnee == annee+1))
+			{	
+				//Si on peux descendre alors
+					//On modifie l'attribut val de mois, et l'attribut d'annee si il change
+					if(nbMois == 12)
+					{
+						nbMois = 1;
+						nbAnnee += 1;
+						$('#titreAnnee').attr('val',nbAnnee);
+						$('#anneeBouge').animate({ marginTop: '-='+63}, 0);
+					}
+					else
+					{
+						nbMois+=1;
+					}
+				$('#titreMois').attr('val',nbMois);
+			//On met a jour le mois dans la vue
+				$('#moisBouge').animate({ marginTop: '-='+30}, 0);
+
+			//Gestion de l'affichage du calendrier	
+				$('#month' + nbMois).addClass('affiche');
+				spanNbLigne = $('#nbLigne'+nbMoisAv).html();
+				nbLigne = parseInt(spanNbLigne);
+				nbLigne += 1;
+				nbLigne *= 60;
+				nbLigne -=4;
+				$('#month9').animate({ marginTop: '-='+nbLigne}, 0, function(){
+					$('#month' + nbMoisAv).removeClass('affiche');		
+				});	
+			//Gestion du bas de calendrier	
+			}
 		}
+		gereBasCalendrier(nbMois);
 		if(a == annee)
 		{
 			$('#month' + m +' #days'+j).addClass('focus');
