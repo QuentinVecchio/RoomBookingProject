@@ -78,11 +78,11 @@ class UsersController extends AppController{
 			$this->User->set($this->request->data);
 			if($this->User->validates(array('fieldList' => array('password', 'password2', 'passwordOld')))){
 		       if ($this->User->saveField('password', current(current($this->User->data)))) {
-		            $this->Session->setFlash('Mot de passe mis à jour');
+		            $this->Session->setFlash('Mot de passe mis à jour','flash_message', array('type'=>'success'));
 		            $this->redirect(array('controller' => 'Users', 'action' => 'index'));
 
 		        } else {
-		            $this->Session->setFlash('Erreur lors de la mise à jour du mot de passe');
+		            $this->Session->setFlash('Erreur lors de la mise à jour du mot de passe','flash_message', array('type'=>'alert'));
 		        }
 			}
 	    }
