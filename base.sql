@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Dim 01 Décembre 2013 à 14:00
+-- Généré le: Mer 25 Décembre 2013 à 16:05
 -- Version du serveur: 5.6.12-log
 -- Version de PHP: 5.4.16
 
@@ -48,6 +48,35 @@ INSERT INTO `departments` (`id`, `name`, `created`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `formations`
+--
+
+CREATE TABLE IF NOT EXISTS `formations` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `department_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `department_id` (`department_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=39 ;
+
+--
+-- Contenu de la table `formations`
+--
+
+INSERT INTO `formations` (`id`, `name`, `department_id`) VALUES
+(2, 'AS', 1),
+(24, 'F1', 2),
+(25, 'F2', 2),
+(26, 'F5', 4),
+(28, 'F1', 3),
+(29, 'F2', 3),
+(30, 'F3', 3),
+(35, 'DUT', 1),
+(36, 'LP', 1);
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `loans`
 --
 
@@ -64,7 +93,7 @@ CREATE TABLE IF NOT EXISTS `loans` (
   KEY `room_id` (`room_id`),
   KEY `department_id` (`department_id`),
   KEY `status_id` (`status_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=29 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=54 ;
 
 --
 -- Contenu de la table `loans`
@@ -74,7 +103,12 @@ INSERT INTO `loans` (`id`, `room_id`, `department_id`, `date`, `start_time`, `en
 (16, 1, 2, '2013-11-18', '08:00:00', '12:00:00', 'Partiel', 1),
 (17, 1, 2, '2013-11-25', '08:00:00', '11:00:00', 'Contrôle', 3),
 (18, 1, 2, '2013-12-02', '09:00:00', '12:00:00', 'Cours', 4),
-(19, 1, 2, '2013-12-10', '08:00:00', '12:00:00', 'Partiel', 4);
+(19, 1, 2, '2013-12-10', '08:00:00', '12:00:00', 'Partiel', 4),
+(39, 1, 2, '2014-01-01', '10:00:00', '12:00:00', '', 4),
+(48, 1, 2, '2014-01-01', '08:00:00', '10:00:00', '', 4),
+(50, 1, 2, '2014-01-01', '07:00:00', '08:00:00', '', 4),
+(52, 1, 2, '2014-01-01', '14:00:00', '16:00:00', '', 4),
+(53, 1, 2, '2014-01-01', '15:00:00', '16:00:00', '', 4);
 
 -- --------------------------------------------------------
 
@@ -112,7 +146,7 @@ CREATE TABLE IF NOT EXISTS `rooms` (
   `department_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `id_dept` (`department_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=28 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=29 ;
 
 --
 -- Contenu de la table `rooms`
@@ -124,7 +158,7 @@ INSERT INTO `rooms` (`id`, `name`, `projector`, `has_PC`, `capacity`, `departmen
 (4, 'A1', 1, 0, 125, 2),
 (5, 'A321', 0, 1, 20, 2),
 (6, 'A21', 1, 1, 50, 2),
-(8, 'A2', 0, 1, 35, 3),
+(8, 'A55', 0, 1, 150, 3),
 (9, 'A3', 1, 1, 41, 3),
 (10, 'A5', 1, 0, 20, 3),
 (11, 'A5', 0, 1, 27, 3),
@@ -143,7 +177,8 @@ INSERT INTO `rooms` (`id`, `name`, `projector`, `has_PC`, `capacity`, `departmen
 (24, 'E12', 0, 0, 34, 4),
 (25, 'A05', 0, 0, 44, 3),
 (26, 'E33', 1, 0, 30, 1),
-(27, 'B00', 0, 1, 10, 2);
+(27, 'B00', 0, 1, 10, 2),
+(28, 'E13', 0, 0, 66, 4);
 
 -- --------------------------------------------------------
 
@@ -194,11 +229,18 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`id`, `username`, `firstname`, `lastname`, `email`, `password`, `role_id`, `department_id`) VALUES
 (2, 'laropier', 'Pierre', 'Laroche', 'pierre.laroche@wanadoo.fr', 'a25198027db5eb8939e7e9c3840f475f7931cf24', 3, 1),
-(3, 'spenanne', 'Anne', ' Spengler', 'anne.spengler@wanadoo.fr', '78f86c7e06a7dce5444fcf7dba0b638cb7e9b64f', 2, 1);
+(3, 'spenanne', 'Anne', ' Spengler', 'anne.spengler@wanadoo.fr', '78f86c7e06a7dce5444fcf7dba0b638cb7e9b64f', 2, 1),
+(4, 'matthieu', 'Matthieu', 'Clin', 'matthieu.clin@wanadoo.fr', 'a25198027db5eb8939e7e9c3840f475f7931cf24', 2, 2);
 
 --
 -- Contraintes pour les tables exportées
 --
+
+--
+-- Contraintes pour la table `formations`
+--
+ALTER TABLE `formations`
+  ADD CONSTRAINT `formations_ibfk_1` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`) ON DELETE CASCADE;
 
 --
 -- Contraintes pour la table `loans`
