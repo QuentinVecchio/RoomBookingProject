@@ -14,7 +14,9 @@
 				<tr ng-repeat="i in formations">
 					<td>
 						<span ng-show="!i.Formation.editMode">{{i.Formation.name}}</span>
-						<input type="text" ng-show='i.Formation.editMode' ng-model='i.Formation.name'>
+						<form ng-submit="valid($index)">
+							<input type="text" ng-show='i.Formation.editMode' ng-model='i.Formation.name'>
+						</form>
 					</td>
 					<td>
 						<ul class="button-group options" ng-show="!i.Formation.editMode">
@@ -30,7 +32,11 @@
 				</tr>
 				<tr>
 					<td>
-						<input type="text" ng-model="nouvelleFormation">
+						<form ng-submit="add()">
+						
+							<input type="text" ng-model="nouvelleFormation">
+							
+						</form>
 					</td>
 					<td>
 						<ul class="button-group options">
