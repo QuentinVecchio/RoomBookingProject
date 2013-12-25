@@ -25,6 +25,8 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 					alert('Erreur lors de l\'ajout');
 				}
 		    });			
+		}else{
+			alert('Le champs est nul!');
 		}
 	}
 
