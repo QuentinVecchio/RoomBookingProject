@@ -1,0 +1,50 @@
+2013-12-23 16:11:35 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2013-12-23 16:11:35 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2013-12-23 17:10:55 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2013-12-27 19:00:03 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2013-12-27 19:00:03 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
