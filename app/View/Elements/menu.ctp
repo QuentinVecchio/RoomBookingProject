@@ -45,6 +45,7 @@
 				<li><?php echo $this->Html->Link('Visionner', array('controller'=> 'loans','action' => 'viewAll', 'manager'=>true)) ?></li>		
 			</ul>
 		</li>
+		<li><?php echo $this->Html->Link('Gestionnaire', array('controller' => 'constraints', 'action' => 'index', 'manager' => true)) ?></li>
 		<?php endif; ?>
 		<?php if($connecte): ?>
 			<li class="sous-menu <?php if($Profil) echo 'active';?>">
