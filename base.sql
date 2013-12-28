@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Sam 28 Décembre 2013 à 09:50
+-- Généré le: Sam 28 Décembre 2013 à 21:23
 -- Version du serveur: 5.6.12-log
 -- Version de PHP: 5.4.16
 
@@ -21,6 +21,58 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE IF NOT EXISTS `projet_web` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `projet_web`;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `constraints`
+--
+
+CREATE TABLE IF NOT EXISTS `constraints` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date` date NOT NULL,
+  `start_time` time NOT NULL,
+  `end_time` time NOT NULL,
+  `deal` int(11) NOT NULL,
+  `formation_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `formation_id` (`formation_id`,`user_id`),
+  KEY `user_id` (`user_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=42 ;
+
+--
+-- Contenu de la table `constraints`
+--
+
+INSERT INTO `constraints` (`id`, `date`, `start_time`, `end_time`, `deal`, `formation_id`, `user_id`) VALUES
+(1, '2014-01-06', '08:00:00', '12:00:00', 1, 35, 2),
+(2, '2014-01-07', '16:00:00', '18:00:00', 0, 35, 2),
+(3, '2014-01-06', '14:00:00', '16:00:00', 1, 35, 2),
+(4, '2014-01-06', '08:00:00', '10:00:00', 0, 2, 3),
+(8, '2014-01-06', '16:00:00', '18:00:00', 1, 2, 2),
+(9, '2014-01-07', '15:00:00', '16:00:00', 0, 2, 3),
+(10, '2014-01-08', '15:00:00', '16:00:00', 0, 2, 3),
+(12, '2014-01-07', '07:00:00', '19:00:00', 0, 2, 2),
+(13, '2014-01-08', '07:00:00', '19:00:00', 0, 2, 2),
+(14, '2014-01-09', '07:00:00', '19:00:00', 1, 2, 2),
+(15, '2014-01-10', '07:00:00', '19:00:00', 1, 2, 2),
+(16, '2014-01-11', '07:00:00', '19:00:00', 0, 2, 2),
+(17, '2014-01-06', '07:00:00', '19:00:00', 1, 2, 2),
+(19, '2014-01-08', '07:00:00', '19:00:00', 0, 2, 2),
+(23, '2014-01-13', '08:00:00', '10:00:00', 0, 35, 4),
+(24, '2014-01-13', '15:00:00', '17:00:00', 0, 35, 4),
+(25, '2014-01-14', '08:00:00', '15:00:00', 0, 35, 4),
+(26, '2014-01-15', '15:00:00', '17:00:00', 0, 35, 4),
+(27, '2014-01-16', '07:00:00', '19:00:00', 0, 35, 4),
+(28, '2014-01-17', '07:00:00', '19:00:00', 0, 35, 4),
+(29, '2014-01-18', '07:00:00', '19:00:00', 0, 35, 4),
+(30, '2014-01-13', '07:00:00', '19:00:00', 1, 2, 2),
+(31, '2014-01-14', '07:00:00', '19:00:00', 1, 2, 2),
+(32, '2014-01-15', '07:00:00', '19:00:00', 1, 2, 2),
+(33, '2014-01-16', '07:00:00', '19:00:00', 0, 2, 2),
+(34, '2014-01-17', '07:00:00', '19:00:00', 0, 2, 2),
+(35, '2014-01-18', '07:00:00', '19:00:00', 0, 2, 2);
 
 -- --------------------------------------------------------
 
@@ -224,7 +276,9 @@ CREATE TABLE IF NOT EXISTS `teaches` (
 --
 
 INSERT INTO `teaches` (`formation_id`, `user_id`) VALUES
-(2, 2);
+(2, 2),
+(35, 2),
+(2, 3);
 
 -- --------------------------------------------------------
 
@@ -258,6 +312,13 @@ INSERT INTO `users` (`id`, `username`, `firstname`, `lastname`, `email`, `passwo
 --
 -- Contraintes pour les tables exportées
 --
+
+--
+-- Contraintes pour la table `constraints`
+--
+ALTER TABLE `constraints`
+  ADD CONSTRAINT `constraints_ibfk_1` FOREIGN KEY (`formation_id`) REFERENCES `formations` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `constraints_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 
 --
 -- Contraintes pour la table `formations`
