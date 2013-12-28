@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Mer 25 Décembre 2013 à 16:05
+-- Généré le: Sam 28 Décembre 2013 à 09:50
 -- Version du serveur: 5.6.12-log
 -- Version de PHP: 5.4.16
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `departments` (
   `name` varchar(255) NOT NULL,
   `created` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Contenu de la table `departments`
@@ -57,7 +57,7 @@ CREATE TABLE IF NOT EXISTS `formations` (
   `department_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `department_id` (`department_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=39 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=48 ;
 
 --
 -- Contenu de la table `formations`
@@ -67,12 +67,15 @@ INSERT INTO `formations` (`id`, `name`, `department_id`) VALUES
 (2, 'AS', 1),
 (24, 'F1', 2),
 (25, 'F2', 2),
-(26, 'F5', 4),
-(28, 'F1', 3),
-(29, 'F2', 3),
-(30, 'F3', 3),
+(28, 'F4', 3),
+(29, 'F5', 3),
+(30, 'F6', 3),
 (35, 'DUT', 1),
-(36, 'LP', 1);
+(36, 'LP', 1),
+(44, 'F7', 4),
+(45, 'F8', 4),
+(46, 'F9', 4),
+(47, 'F10', 4);
 
 -- --------------------------------------------------------
 
@@ -206,6 +209,26 @@ INSERT INTO `status` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `teaches`
+--
+
+CREATE TABLE IF NOT EXISTS `teaches` (
+  `formation_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  PRIMARY KEY (`formation_id`,`user_id`),
+  KEY `user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `teaches`
+--
+
+INSERT INTO `teaches` (`formation_id`, `user_id`) VALUES
+(2, 2);
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `users`
 --
 
@@ -255,6 +278,13 @@ ALTER TABLE `loans`
 --
 ALTER TABLE `rooms`
   ADD CONSTRAINT `rooms_ibfk_1` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`);
+
+--
+-- Contraintes pour la table `teaches`
+--
+ALTER TABLE `teaches`
+  ADD CONSTRAINT `teaches_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `teaches_ibfk_1` FOREIGN KEY (`formation_id`) REFERENCES `formations` (`id`) ON DELETE CASCADE;
 
 --
 -- Contraintes pour la table `users`

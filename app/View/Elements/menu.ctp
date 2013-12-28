@@ -15,8 +15,7 @@
 		$PretSalle =(in_array($controller, array('loans', 'departments')) && in_array($action, array('manager_index', 'manager_ask',
 																									 'manager_answer','manager_askRoom',
 																									 'manager_viewAll')));
-
-
+		$Profil = (in_array($controller, array('users', 'teaches')) && in_array($action, array('index','edit', 'password')));
 
  ?>
 
@@ -48,7 +47,13 @@
 		</li>
 		<?php endif; ?>
 		<?php if($connecte): ?>
-			<li><?php echo $this->Html->Link('Profil', array('controller'=> 'users','action' => 'index', 'manager' => false, 'admin' => false)) ?></li>	
+			<li class="sous-menu <?php if($Profil) echo 'active';?>">
+				<?php echo $this->Html->Link('Profil', array('controller'=> 'users','action' => 'index', 'manager' => false, 'admin' => false)) ?>
+				<ul>
+					<li><?php echo $this->Html->Link('Votre profil', array('controller'=> 'users','action' => 'index', 'manager' => false, 'admin' => false)) ?></li>
+					<li><?php echo $this->Html->Link('Enseignement', array('controller'=> 'teaches','action' => 'index', 'manager' => false, 'admin' => false)) ?></li>
+				</ul>
+			</li>	
 		<?php endif; ?>
 		<li><?php echo $co ?></li>
 	</ul>
