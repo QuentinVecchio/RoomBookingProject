@@ -8,26 +8,6 @@ class DepartmentsController  extends AppController{
 	*/
 	public function admin_index(){
 
-		/*if(isset($this->request->params['ext']) && $this->request->params['ext'] == 'json'){
-			$this->autoRender = false;
-			$l = $this->Department->find('all');
-
-			$t = array();
-			$t[] = array("nom" => "toto");
-			$t[] = array("nom" => "tata");
-			echo json_encode($l);
-
-			return;
-
-		}*/
-
- 		$this->Department->unbindModel(
-        		array('hasMany' => array('Room'))
-    		);
-
-		debug($this->Department->find('all'));
-
-
 		$this->set('title_for_layout', 'Gestion des départements:');
 
 		$departments = $this->Department->find('all',array(
