@@ -5,7 +5,6 @@ class TeachesController  extends AppController{
  		$this->Teach->unbindModel(
         		array('belongsTo' => array('User'))
     		);
-
 		$this->set('tmp', $this->Teach->find('all', array('conditions' => array('user_id' => $this->Auth->User('id')))));
 
 
