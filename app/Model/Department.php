@@ -1,6 +1,6 @@
 <?php 
 class Department extends AppModel{
-	public $hasMany = array('Room' =>array('order'=>'name'));
+	public $hasMany = array('Room' =>array('order'=>'name'),'Formation');
 
 	public $validate = array(
 			'name' => array(

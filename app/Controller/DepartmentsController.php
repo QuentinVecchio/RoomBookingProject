@@ -20,6 +20,14 @@ class DepartmentsController  extends AppController{
 			return;
 
 		}*/
+
+ 		$this->Department->unbindModel(
+        		array('hasMany' => array('Room'))
+    		);
+
+		debug($this->Department->find('all'));
+
+
 		$this->set('title_for_layout', 'Gestion des départements:');
 
 		$departments = $this->Department->find('all',array(
