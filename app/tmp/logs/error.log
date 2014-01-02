@@ -48,3 +48,25 @@ Stack Trace:
 #0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
 #2 {main}
+2014-01-02 18:04:59 Error: [MissingControllerException] Controller class CakePHPController could not be found.
+Exception Attributes: array (
+  'class' => 'CakePHPController',
+  'plugin' => NULL,
+)
+Request URL: /CakePHP/projet-web/index.php/CakePHP/projet-web/
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#2 {main}
+2014-01-02 18:05:39 Error: [MissingActionException] Action ConstraintsController::manager_2014-01-01() could not be found.
+Exception Attributes: array (
+  'controller' => 'ConstraintsController',
+  'action' => 'manager_2014-01-01',
+)
+Request URL: /CakePHP/projet-web/index.php/manager/constraints/2014-01-01
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(ConstraintsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
+#4 {main}

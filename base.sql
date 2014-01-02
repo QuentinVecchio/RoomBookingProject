@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Sam 28 Décembre 2013 à 21:23
+-- Généré le: Jeu 02 Janvier 2014 à 18:16
 -- Version du serveur: 5.6.12-log
 -- Version de PHP: 5.4.16
 
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `constraints` (
   PRIMARY KEY (`id`),
   KEY `formation_id` (`formation_id`,`user_id`),
   KEY `user_id` (`user_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=42 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=36 ;
 
 --
 -- Contenu de la table `constraints`
@@ -344,8 +344,8 @@ ALTER TABLE `rooms`
 -- Contraintes pour la table `teaches`
 --
 ALTER TABLE `teaches`
-  ADD CONSTRAINT `teaches_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `teaches_ibfk_1` FOREIGN KEY (`formation_id`) REFERENCES `formations` (`id`) ON DELETE CASCADE;
+  ADD CONSTRAINT `teaches_ibfk_1` FOREIGN KEY (`formation_id`) REFERENCES `formations` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `teaches_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 
 --
 -- Contraintes pour la table `users`
