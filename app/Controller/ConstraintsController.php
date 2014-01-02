@@ -2,6 +2,7 @@
 class ConstraintsController extends AppController {
 
 	public function manager_index($date) {
+		$this->set('title_for_layout', 'Gestionnaire');
 		$this->set('date', $date);
 
 		$this->Cookie->write('date_for_gestionnaire', $date);

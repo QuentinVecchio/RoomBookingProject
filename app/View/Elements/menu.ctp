@@ -16,6 +16,7 @@
 																									 'manager_answer','manager_askRoom',
 																									 'manager_viewAll')));
 		$Profil = (in_array($controller, array('users', 'teaches')) && in_array($action, array('index','edit', 'password')));
+		$Gestionnaire = (in_array($controller, array('constraints')) && in_array($action, array('manager_index')));
 
  ?>
 
@@ -45,7 +46,30 @@
 				<li><?php echo $this->Html->Link('Visionner', array('controller'=> 'loans','action' => 'viewAll', 'manager'=>true)) ?></li>		
 			</ul>
 		</li>
-		<li><?php echo $this->Html->Link('Gestionnaire', array('controller' => 'constraints', 'action' => 'index', 'manager' => true, $date_for_gestionnaire)) ?></li>
+		<li class="sous-menu <?php if($Gestionnaire) echo 'active';?>"><?php echo $this->Html->Link('Gestionnaire',
+										 array('controller' => 'constraints', 'action' => 'index', 'manager' => true, $date_for_gestionnaire)) ?>
+
+			<ul>
+				<?php 
+					$time_start = date('Y-m-d', strtotime( date('Y-m-d', time()).'-'.((date('w', strtotime(time()))-1).' day')));
+					for($i = -2; $i <= 2; $i++): ?>
+					<li>
+						<?php 
+								$current_date = date('Y-m-d', strtotime( date('Y-m-d', strtotime($time_start)).$i.' week'));
+								$start_day = date('d', strtotime( date('Y-m-d', strtotime($time_start)).$i.' week'));
+								$end_day = date('d', strtotime($current_date.' +6 day'));
+								echo $this->Html->Link( $start_day .' au '.$end_day ,array('controller' => 'constraints',
+																		  'action' => 'index', 'manager' => true,
+																		  $current_date));
+						?>
+
+					</li>
+					<?php
+					endfor;
+					 ?>	
+			</ul>				 
+
+		</li>
 		<?php endif; ?>
 		<?php if($connecte): ?>
 			<li class="sous-menu <?php if($Profil) echo 'active';?>">
