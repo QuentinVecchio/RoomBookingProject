@@ -43,11 +43,11 @@
 
 </div>
 <div>
+</div>
+	<?php echo $this->Form->create('Constraint', array('name' => 'form', 'class' => 'bloc')) ?>
 		<select ng-model="choixUser" ng-options="value.User.name for value in listUser track by value.User.id" style="width:200px;"></select>
 		<select ng-model="choixForma" ng-options="value.Formation.name for value in listFormation track by value.Formation.id" style="width:200px;"></select>
-</div>
-<div class="clear">
-	<?php echo $this->Form->create('Constraint', array('name' => 'form', 'class' => 'bloc')) ?>
+<div class="clear tableau">
 			<div class="colonne" ng-repeat="i in [0,1,2,3,4,5]">
 				<input type="checkBox" class="center" ng-model="allDay" ng-init="allDay=false">
 				<div ng-switch on="allDay">
@@ -100,9 +100,6 @@
 													required ng-model="courant.Contraintes.start_time"
 												    ng-init="courant.Contraintes.start_time='07:00'" style="display:none">
 
-								<label style="display:none">à</label>
-
-
 								<input name="constraint[{{i*100+$index}}][end_time]" type="text" 
 										ng-model="courant.Contraintes.end_time" ng-init="courant.Contraintes.end_time='19:00'" style="display:none">
 								<p>Absent toute la journée</p>
@@ -111,10 +108,10 @@
 					</div>
 				</div>
 			</div>
-						<?php echo $this->Form->button('Soumettre', array('class' => 'btn btn-success', 'style' => 'border-radius: 0px;',
-																		'ng-disabled' => 'form.$invalid')); ?>
 	</form>
 </div>
+						<?php echo $this->Form->button('Ajouter', array('class' => 'btn btn-success', 'style' => 'border-radius: 0px;',
+																		'ng-disabled' => 'form.$invalid')); ?>
 </section>
 <?php 
 $this->start('script');
