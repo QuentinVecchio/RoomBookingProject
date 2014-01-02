@@ -70,3 +70,123 @@ Stack Trace:
 #2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\index.php(43): require('E:\Matthieu\My ...')
 #4 {main}
+2014-01-02 18:46:00 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\menu.ctp, line 57]
+2014-01-02 18:46:00 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /CakePHP/projet-web/index.php/manager/constraints/index/2014-01-13
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 57, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 57, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-02 18:46:12 Error: Fatal Error (4): syntax error, unexpected 'endforeach' (T_ENDFOREACH) in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\menu.ctp, line 62]
+2014-01-02 18:46:12 Error: [FatalErrorException] syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+Request URL: /CakePHP/projet-web/index.php/manager/constraints/index/2014-01-13
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 62, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 62, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-02 18:46:23 Error: Fatal Error (4): syntax error, unexpected 'endforeach' (T_ENDFOREACH) in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\menu.ctp, line 62]
+2014-01-02 18:46:23 Error: [FatalErrorException] syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+Request URL: /CakePHP/projet-web/index.php/manager/constraints/index/2014-01-13
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 62, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 62, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-02 18:48:08 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\menu.ctp, line 57]
+2014-01-02 18:48:08 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /CakePHP/projet-web/index.php/manager/constraints/index/2014-01-13
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 57, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 57, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-02 18:51:57 Error: Fatal Error (4): syntax error, unexpected ')' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\menu.ctp, line 56]
+2014-01-02 18:51:57 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /CakePHP/projet-web/index.php/manager/constraints/index/2014-01-13
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 56)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 56, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 56, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-02 18:52:11 Error: Fatal Error (4): syntax error, unexpected ')' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\menu.ctp, line 56]
+2014-01-02 18:52:11 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /CakePHP/projet-web/index.php/manager/constraints/index/2014-01-13
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 56)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 56, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 56, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-02 18:52:26 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\menu.ctp, line 60]
+2014-01-02 18:52:26 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /CakePHP/projet-web/index.php/manager/constraints/index/2014-01-13
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 60)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 60, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 60, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-02 18:54:34 Error: Fatal Error (4): syntax error, unexpected ')' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\menu.ctp, line 57]
+2014-01-02 18:54:34 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /CakePHP/projet-web/index.php/manager/constraints/index/2014-01-13
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 57, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 57, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-02 19:44:28 Error: Fatal Error (4): syntax error, unexpected ')' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\menu.ctp, line 56]
+2014-01-02 19:44:28 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /CakePHP/projet-web/index.php/manager/constraints/index/2014-01-13
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 56)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 56, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 56, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-02 19:49:43 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\menu.ctp, line 53]
+2014-01-02 19:49:43 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /CakePHP/projet-web/index.php/manager/constraints/index/2013-12-19
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 53)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 53, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 53, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-02 19:52:47 Error: Fatal Error (4): syntax error, unexpected '' day'' (T_CONSTANT_ENCAPSED_STRING) in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\menu.ctp, line 53]
+2014-01-02 19:52:47 Error: [FatalErrorException] syntax error, unexpected '' day'' (T_CONSTANT_ENCAPSED_STRING)
+Request URL: /CakePHP/projet-web/index.php/manager/constraints/index/2013-12-15
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 53)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 53, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 53, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-02 19:53:15 Error: Fatal Error (4): syntax error, unexpected '' day'' (T_CONSTANT_ENCAPSED_STRING) in [E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\app\View\Elements\menu.ctp, line 53]
+2014-01-02 19:53:15 Error: [FatalErrorException] syntax error, unexpected '' day'' (T_CONSTANT_ENCAPSED_STRING)
+Request URL: /CakePHP/projet-web/index.php/manager/constraints/index/2013-12-15
+Stack Trace:
+#0 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 53)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\Matthieu\My ...', 53, Array)
+#2 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\Matthieu\My ...', 53, Array)
+#3 E:\Matthieu\My Documents\Projects\Web\www\CakePHP\projet-web\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
