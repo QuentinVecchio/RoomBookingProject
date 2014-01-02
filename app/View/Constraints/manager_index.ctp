@@ -57,15 +57,15 @@
 							<li ng-repeat="courant in semaine[i]">
 									<input type="text" name="constraint[{{i*100+$index}}][date]" 
 														value="{{listId[i].date}}"
-														style="display:none;" required>
+														class="invisible" required>
 
 									<input type="text" name="constraint[{{i*100+$index}}][formation_id]" 
 														ng-model="choixForma.Formation.id"
-														style="display:none;" required>
+														class="invisible" required>
 
 									<input type="text" ng-model="choixUser.User.id" 
 													   name="constraint[{{i*100+$index}}][user_id]" 
-													   style="display:none" required>
+													   class="invisible" required>
 
 									<input name="constraint[{{i*100+$index}}][start_time]" type="text" 
 											required ng-model="courant.Contraintes.start_time">
@@ -81,27 +81,27 @@
 						</ul>
 					</div>
 					<div ng-switch-when="true">
-						<ul class="horaires">
+						<ul class="horaires invisible">
 							<li>
 									<input type="text" name="constraint[{{i*100+$index}}][date]" 
 														value="{{listId[i].date}}"
-														style="display:none" required>
+														 required>
 														
 									<input type="text" name="constraint[{{i*100+$index}}][formation_id]" 
 														ng-model="choixForma.Formation.id"
-														style="display:none" required>
+														 required>
 
 									<input type="text" ng-model="choixUser.User.id" 
 													   name="constraint[{{i*100+$index}}][user_id]" 
-													   style="display:none" required>
+													    required>
 
 
 								<input name="constraint[{{i*100+$index}}][start_time]" type="text" 
 													required ng-model="courant.Contraintes.start_time"
-												    ng-init="courant.Contraintes.start_time='07:00'" style="display:none">
+												    ng-init="courant.Contraintes.start_time='07:00'" >
 
 								<input name="constraint[{{i*100+$index}}][end_time]" type="text" 
-										ng-model="courant.Contraintes.end_time" ng-init="courant.Contraintes.end_time='19:00'" style="display:none">
+										ng-model="courant.Contraintes.end_time" ng-init="courant.Contraintes.end_time='19:00'" >
 								<p>Absent toute la journée</p>
 							</li>
 						</ul>
@@ -110,7 +110,7 @@
 			</div>
 	</form>
 </div>
-						<?php echo $this->Form->button('Ajouter', array('class' => 'btn btn-success', 'style' => 'border-radius: 0px;',
+						<?php echo $this->Form->button('Ajouter', array('class' => 'btn btn-success center',
 																		'ng-disabled' => 'form.$invalid')); ?>
 </section>
 <?php 
