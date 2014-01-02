@@ -34,6 +34,7 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
 
 	public $components = array(
+		'Cookie',
 		'RequestHandler',
 		'Session',
 		'Auth' => array(
@@ -98,6 +99,13 @@ class AppController extends Controller {
 	        	}
 	        }
 	    }
+
+		// Cookie pour le gestionnaire, permet d'avoir le dernier "tableau" consulté
+		$tmp = $this->Cookie->read('date_for_gestionnaire');
+		if(!$tmp){
+			$tmp = date('Y-m-d', time());
+		}
+	    $this->set('date_for_gestionnaire', $tmp);
 	    parent::beforeRender();
 	}
 }
