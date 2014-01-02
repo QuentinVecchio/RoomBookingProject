@@ -4,6 +4,9 @@ class ConstraintsController extends AppController {
 	public function manager_index($date) {
 		$this->set('date', $date);
 
+		$this->Cookie->write('date_for_gestionnaire', $date);
+
+
 		if(!empty($this->data)){
 			if($this->Constraint->saveMany(current($this->request->data))){
 				$this->Session->setFlash('Ajout des contraintes avec succès !', 'flash_message', array('type'=>'success'));

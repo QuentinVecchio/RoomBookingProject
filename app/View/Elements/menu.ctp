@@ -45,7 +45,7 @@
 				<li><?php echo $this->Html->Link('Visionner', array('controller'=> 'loans','action' => 'viewAll', 'manager'=>true)) ?></li>		
 			</ul>
 		</li>
-		<li><?php echo $this->Html->Link('Gestionnaire', array('controller' => 'constraints', 'action' => 'index', 'manager' => true, '2014-01-06')) ?></li>
+		<li><?php echo $this->Html->Link('Gestionnaire', array('controller' => 'constraints', 'action' => 'index', 'manager' => true, $date_for_gestionnaire)) ?></li>
 		<?php endif; ?>
 		<?php if($connecte): ?>
 			<li class="sous-menu <?php if($Profil) echo 'active';?>">
