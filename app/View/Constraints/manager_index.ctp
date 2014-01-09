@@ -1,13 +1,13 @@
 <h1>Outils de gestion des contraintes:</h1>
 <ul class="button-group">
 	<li><?php echo $this->Html->link('<< Semaine précédente', array('controller' => 'constraints', 'action' => 'index',
-													 date('Y-m-d', strtotime($date . ' - 7 day'))), array('class' => 'button')) ?></li>
+													 date('Y-m-d', strtotime($date . ' - 7 day')), $formation_id), array('class' => 'button')) ?></li>
 	<li><?php echo $this->Html->link('< Jour précédent', array('controller' => 'constraints', 'action' => 'index',
-													 date('Y-m-d', strtotime($date . ' - 1 day'))), array('class' => 'button')) ?></li>
+													 date('Y-m-d', strtotime($date . ' - 1 day')), $formation_id), array('class' => 'button')) ?></li>
 	<li><?php echo $this->Html->link('Jour suivant >', array('controller' => 'constraints', 'action' => 'index',
-													 date('Y-m-d', strtotime($date . ' + 1 day'))), array('class' => 'button')) ?></li>
+													 date('Y-m-d', strtotime($date . ' + 1 day')), $formation_id), array('class' => 'button')) ?></li>
 	<li><?php echo $this->Html->link('Semaine suivante >>', array('controller' => 'constraints', 'action' => 'index',
-													 date('Y-m-d', strtotime($date . ' + 7 day'))), array('class' => 'button')) ?>	</li>
+													 date('Y-m-d', strtotime($date . ' + 7 day')), $formation_id), array('class' => 'button')) ?>	</li>
 
 </ul>
 
@@ -24,7 +24,8 @@
 				listUser=<?php echo htmlentities(json_encode($listUser));?>;
 				listFormation=<?php echo htmlentities(json_encode($listFormation));?>;
 				urlChangeC='<?php echo $this->Html->url(array('controller' => 'constraints', 'action' => 'check', 'manager' => true)) ?>';
-				urlDeleteC='<?php echo $this->Html->url(array('controller' => 'constraints', 'action' => 'delete', 'manager' => true)) ?>';"
+				urlDeleteC='<?php echo $this->Html->url(array('controller' => 'constraints', 'action' => 'delete', 'manager' => true)) ?>';
+				formation_id=<?php echo $formation_id ?>"
 				 class="clear tableau">
 	<div class="colonne" ng-repeat="i in listId">
 		<h4 class="titre">{{i.jour}}</h4>
@@ -46,7 +47,6 @@
 </div>
 	<?php echo $this->Form->create('Constraint', array('name' => 'form', 'class' => 'bloc')) ?>
 		<select ng-model="choixUser" ng-options="value.User.name for value in listUser track by value.User.id" style="width:200px;"></select>
-		<select ng-model="choixForma" ng-options="value.Formation.name for value in listFormation track by value.Formation.id" style="width:200px;"></select>
 	<div>
 <div class="clear tableau">
 		
@@ -62,7 +62,7 @@
 														class="invisible" required>
 
 									<input type="text" name="constraint[{{i*100+$index}}][formation_id]" 
-														ng-model="choixForma.Formation.id"
+														ng-model="formation_id"
 														class="invisible" required>
 
 									<input type="text" ng-model="choixUser.User.id" 
@@ -90,7 +90,7 @@
 														 required>
 														
 									<input type="text" name="constraint[{{i*100+$index}}][formation_id]" 
-														ng-model="choixForma.Formation.id"
+														ng-model="formation_id"
 														 required>
 
 									<input type="text" ng-model="choixUser.User.id" 

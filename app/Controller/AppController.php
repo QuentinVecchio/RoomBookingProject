@@ -106,6 +106,11 @@ class AppController extends Controller {
 			$tmp = date('Y-m-d', time());
 		}
 	    $this->set('date_for_gestionnaire', $tmp);
+
+	    $this->loadModel('Formation');
+	    $this->Formation->recursive = -1;
+	    $this->set('list_edt_for_menu', $this->Formation->findAllByUserId($this->Auth->user('id')));
+
 	    parent::beforeRender();
 	}
 }
