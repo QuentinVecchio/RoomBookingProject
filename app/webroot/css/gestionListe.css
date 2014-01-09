@@ -1,0 +1,31 @@
+#gestion table {
+  margin-left: 10px;
+  color: #6A737B;
+  border: 1px solid #A8B3C5;
+  border-collapse: collapse;
+}
+#gestion thead {
+  width: 540px;
+}
+#gestion tbody {
+  background: #E4E6ED;
+  width: 540px;
+  z-index: 1000;
+}
+#gestion thead td {
+  background: #E4E6ED;
+}
+#gestion tbody td {
+  background: white;
+}
+#gestion td,
+#gestion th {
+  border: 1px solid #A8B3C5;
+  text-align: center;
+}
+.button {
+  margin-top: 5px;
+}
+.formStatus {
+  margin-top: -8px;
+}

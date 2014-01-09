@@ -1,0 +1,49 @@
+@import url('config.less');
+
+.side-bar{
+	width: 350px;
+	border: 1px solid @color_neutral_3;
+	float:left;
+	margin-right: 15px;
+}
+
+	.side-bar nav{
+		overflow: auto;
+		padding: 0;
+		margin: 0;
+	}
+
+		.side-bar nav ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.side-bar nav ul li{
+			@height: 80px;
+			width: 100%;
+			height: @height;
+			line-height: @height;
+		}
+
+		.side-bar nav ul li:hover a {
+			background-color: @color_impact;
+		}
+		.side-bar nav ul li:hover a{
+			color: @color_neutral_1;
+		}
+
+			.side-bar nav ul li a{
+				display: block;
+				text-decoration: none;
+				color: @color_neutral_4;
+				font-weight: bold;
+				text-align: center;				
+			}
+
+.side-bar .titre{
+	padding-left: 10px;
+	font-size: 1.8em;
+	color: @color_neutral_1;
+	background-color: @color_neutral_4;
+}
