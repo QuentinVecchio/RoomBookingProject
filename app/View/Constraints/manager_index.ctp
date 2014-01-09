@@ -47,7 +47,9 @@
 	<?php echo $this->Form->create('Constraint', array('name' => 'form', 'class' => 'bloc')) ?>
 		<select ng-model="choixUser" ng-options="value.User.name for value in listUser track by value.User.id" style="width:200px;"></select>
 		<select ng-model="choixForma" ng-options="value.Formation.name for value in listFormation track by value.Formation.id" style="width:200px;"></select>
+	<div>
 <div class="clear tableau">
+		
 			<div class="colonne" ng-repeat="i in [0,1,2,3,4,5]">
 				<input type="checkBox" class="center" ng-model="allDay" ng-init="allDay=false">
 				<div ng-switch on="allDay">
@@ -108,10 +110,11 @@
 					</div>
 				</div>
 			</div>
-	</form>
+	</div>
+	<?php echo $this->Form->button('Ajouter', array('class' => 'btn btn-success center',
+													'ng-disabled' => 'form.$invalid')); ?>
+	<?php echo $this->Form->end() ?>
 </div>
-						<?php echo $this->Form->button('Ajouter', array('class' => 'btn btn-success center',
-																		'ng-disabled' => 'form.$invalid')); ?>
 </section>
 <?php 
 $this->start('script');
