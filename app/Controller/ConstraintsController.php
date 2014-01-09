@@ -1,9 +1,10 @@
 <?php
 class ConstraintsController extends AppController {
 
-	public function manager_index($date) {
+	public function manager_index($date, $formation_id) {
 		$this->set('title_for_layout', 'Gestionnaire');
 		$this->set('date', $date);
+		$this->set('formation_id', $formation_id);
 
 		$this->Cookie->write('date_for_gestionnaire', $date);
 
@@ -32,8 +33,9 @@ class ConstraintsController extends AppController {
 																			  'DATE_FORMAT(end_time, \'%H:%i\') as end_time',
 																			  'Constraint.id', 'date', 'user_id','formation_id',
 																			  'User.id', 'User.firstname', 'User.lastname'),
-															'conditions' => array('date BETWEEN ? AND ?' => array($date, date('Y-m-d', strtotime($date . ' + 5 day'))))));
-
+															'conditions' => array('date BETWEEN ? AND ?' => array($date, date('Y-m-d', strtotime($date . ' + 5 day'))),
+																					'formation_id' => $formation_id
+																					)));
 		$listid = array();
 		$jour = array('Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi');
 		for($i=0; $i < 6; $i++){
@@ -41,7 +43,7 @@ class ConstraintsController extends AppController {
 			$j = date('w', strtotime($date . ' + '.$i.' day'));
 			$listid[]= array('date' =>$tmp,
 							 'jour' => $jour[$j],
-							 'id' => $this->Constraint->find('all', array('fields' => array('user_id', 'deal'), 'group' => array('user_id'), 'conditions'=> array('date' => $tmp))));
+							 'id' => $this->Constraint->find('all', array('fields' => array('user_id', 'deal'), 'group' => array('user_id'), 'conditions'=> array('date' => $tmp,'formation_id' => $formation_id))));
 		}
 
 		$this->set('listId', $listid);

@@ -51,7 +51,14 @@
 
 			<ul>
 				<?php 
-					$time_start = date('Y-m-d', strtotime( date('Y-m-d', time()).'-'.((date('w', strtotime(time()))-1).' day')));
+					foreach ($list_edt_for_menu as $key => $value): ?>
+						<li><?php echo $this->Html->Link($value['Formation']['name'],array('controller' => 'constraints', 
+																					'action' => 'index','manager' => true,
+																					 (date('Y-m-d', time())),
+																					 $value['Formation']['id'])) ?>
+																				</li>
+				<?php endforeach; 
+					/*$time_start = date('Y-m-d', strtotime( date('Y-m-d', time()).'-'.((date('w', strtotime(time()))-1).' day')));
 					for($i = -2; $i <= 2; $i++): ?>
 					<li>
 						<?php 
@@ -65,7 +72,7 @@
 
 					</li>
 					<?php
-					endfor;
+					endfor;*/
 					 ?>	
 			</ul>				 
 
