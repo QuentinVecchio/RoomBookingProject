@@ -1,7 +1,7 @@
 <?php 
 class Formation extends AppModel{
 	public $actsAs = array('Containable');
-	public $belongsTo = array('Department');
+	public $belongsTo = array('Department', 'User');
 
 	public $hasMany = array('Teach');
 

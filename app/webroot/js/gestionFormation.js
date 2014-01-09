@@ -16,15 +16,16 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 	}
 
 	$scope.add = function(){
-		if($scope.nouvelleFormation != null){
-			$http.get($scope.urlAdd+'/'+$scope.departmentId+'/'+$scope.nouvelleFormation).success(function(response) {
+		if($scope.nouvelleFormation != null && $scope.responsable != null){
+			$http.get($scope.urlAdd+'/'+$scope.departmentId+'/'+$scope.nouvelleFormation+'/'+$scope.responsable.User.id).success(function(response) {
 				if(response != 0){
+					console.log(response);
 					$scope.formations.push(response);
 					$scope.nouvelleFormation = '';
 				}else{
 					alert('Erreur lors de l\'ajout');
 				}
-		    });			
+		    });	
 		}else{
 			alert('Le champs est nul!');
 		}
@@ -32,15 +33,16 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 
 	$scope.isEditing = false;
 	$scope.editValue = '';
+	$scope.editRes = new Array();
 	$scope.edit = function(index){
 		if(!$scope.isEditing){
 			$scope.formations[index].Formation.editMode = true;
 			$scope.editValue = $scope.formations[index].Formation.name;
+			$scope.editRes['User'] = $scope.formations[index].User;
 			$scope.isEditing = true;
 		}else{
 			alert('Vous éditez déjà une ligne');
 		}
-
 	}
 
 	$scope.cancel = function(index){
@@ -49,20 +51,30 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 		$scope.formations[index].Formation.name = $scope.editValue;
 	}
 	$scope.valid = function(index){
-		if($scope.formations[index].Formation.name.length > 0){
-			$http.get($scope.urlUpdate+'/'+$scope.formations[index].Formation.id+'/'+$scope.formations[index].Formation.name+'/'+$scope.departmentId).success(function(response) {
+		console.log($scope);
+		console.log($scope.editRes);
+		/*if($scope.formations[index].Formation.name.length > 0){
+			$http.get($scope.urlUpdate+'/'+$scope.formations[index].Formation.id+'/'+
+											$scope.formations[index].Formation.name+'/'+
+											$scope.departmentId+'/'+$scope.editRes.User.id).success(function(response) {
 				if(response != 0){
+					console.log('splice');
+					console.log(response);
+					
+					console.log($scope.formations);
 					$scope.formations.splice(index,1,response);
+					console.log($scope.formations);
+					$scope.formations[index].Formation.editMode = false;
+					$scope.isEditing = false;
 				}else{
 					alert('Erreur lors de l\'ajout');
+					$scope.formations[index].Formation.name = $scope.editValue;
 				}
 		    });	
 
-			$scope.formations[index].Formation.editMode = false;
-			$scope.isEditing = false;
 		}else{
 			alert('Le champs est vide');
-		}
+		}*/
 
 	}
 

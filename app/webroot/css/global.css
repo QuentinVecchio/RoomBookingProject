@@ -101,3 +101,8 @@ section.centre {
 .invisible {
   display: none;
 }
+
+
+form.center{
+  margin: 0 auto;
+}
