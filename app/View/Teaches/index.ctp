@@ -3,8 +3,23 @@
 
 	<p><span>Url d'ajout: </span><?php echo $this->Html->url(array('controller' => 'teaches', 'action' => 'add')) ?></p>
 	<p><span>Url de suppression: </span><?php echo $this->Html->url(array('controller' => 'teaches', 'action' => 'delete')) ?></p>
-	<?php debug($tmp); ?>
-	<?php debug($listFormation); ?>
+	<?php //debug($tmp); ?>
+	<?php //debug($listFormation); ?>
+
+	<section ng-app="gestionFormation" ng-Controller="gestionCtrl" ng-init="listDpt=<?php echo htmlentities(json_encode($listDpt))?>;
+																			formation=<?php echo htmlentities(json_encode($formation)) ?>">
+
+
+		<ul>
+			<li ng-repeat="i in listDpt">{{i}}
+
+				<ul>
+					<li ng-repeat="j in formation | filter:{Formation.department_id: i.Department.id}">{{j}}</li>
+				</ul>
+			</li>
+		</ul>
+
+	</section>
 
 	<?php 
 	$this->start('script');

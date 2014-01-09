@@ -2,7 +2,7 @@
 class TeachesController  extends AppController{
 
 	public function index(){
- 		$this->Teach->unbindModel(
+ 		/*$this->Teach->unbindModel(
         		array('belongsTo' => array('User'))
     		);
 		$this->set('tmp', $this->Teach->find('all', array('conditions' => array('user_id' => $this->Auth->User('id')))));
@@ -11,7 +11,15 @@ class TeachesController  extends AppController{
  		$this->Teach->Formation->Department->unbindModel(
         		array('hasMany' => array('Room'))
     		);
-		$this->set('listFormation', $this->Teach->Formation->Department->find('all'));
+		$this->set('listFormation', $this->Teach->Formation->Department->find('all'));*/
+ 		$this->Teach->Formation->Department->unbindModel(
+        		array('hasMany' => array('Room'))
+    		);
+		$this->set('formation', $this->Teach->Formation->find('all',array('recursive' => 2,
+				 'contain' => array('Teach' => array('conditions' => array('Teach.user_id' => $this->Auth->User('id')))) )));
+
+		$this->set('listDpt', $this->Teach->Formation->Department->find('all',array('recursive' => -1)));
+		//die();
 	}
 
 	public function add($idFormation){
