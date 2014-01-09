@@ -4,9 +4,11 @@
 			<thead ng-init="urlUpdate='<?php echo $this->Html->url(array('controller' => 'formations', 'action' => 'update')) ?>';
 							urlDelete='<?php echo $this->Html->url(array('controller' => 'formations', 'action' => 'delete')) ?>';
 							urlAdd='<?php echo $this->Html->url(array('controller' => 'formations', 'action' => 'add')) ?>';
-							departmentId=<?php echo $department_id ?>">
+							departmentId=<?php echo $department_id ?>;
+							managers=<?php echo htmlentities(json_encode($listManager)) ?>">
 				<tr>
 					<th style="width:200px;">Nom</th>
+					<th style="width:200px;">Responsable</th>
 					<th class="colonne-options"><span class="icon-cog"></span></th>
 				</tr>
 			</thead>
@@ -14,9 +16,11 @@
 				<tr ng-repeat="i in formations">
 					<td>
 						<span ng-show="!i.Formation.editMode">{{i.Formation.name}}</span>
-						<form ng-submit="valid($index)">
-							<input type="text" ng-show='i.Formation.editMode' ng-model='i.Formation.name'>
-						</form>
+						<input type="text" ng-show='i.Formation.editMode' ng-model='i.Formation.name'>
+					</td>
+					<td>
+						<span ng-show="!i.Formation.editMode">{{i.User.firstname}} {{i.User.lastname}}</span>
+						<select ng-model="t" ng-show='i.Formation.editMode' ng-options="value.User.lastname for value in managers track by value.User.id"></select>
 					</td>
 					<td>
 						<ul class="button-group options" ng-show="!i.Formation.editMode">
@@ -32,11 +36,12 @@
 				</tr>
 				<tr>
 					<td>
-						<form ng-submit="add()">
-						
+						<form ng-submit="add()" class="center">
 							<input type="text" ng-model="nouvelleFormation">
-							
 						</form>
+					</td>
+					<td>
+						<select ng-model="responsable"  ng-options="value.User.lastname for value in managers track by value.User.id"></select>
 					</td>
 					<td>
 						<ul class="button-group options">
