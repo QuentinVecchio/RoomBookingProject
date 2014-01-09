@@ -19,7 +19,6 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 		if($scope.nouvelleFormation != null && $scope.responsable != null){
 			$http.get($scope.urlAdd+'/'+$scope.departmentId+'/'+$scope.nouvelleFormation+'/'+$scope.responsable.User.id).success(function(response) {
 				if(response != 0){
-					console.log(response);
 					$scope.formations.push(response);
 					$scope.nouvelleFormation = '';
 				}else{
@@ -32,13 +31,12 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 	}
 
 	$scope.isEditing = false;
-	$scope.editValue = '';
-	$scope.editRes = new Array();
 	$scope.edit = function(index){
 		if(!$scope.isEditing){
 			$scope.formations[index].Formation.editMode = true;
 			$scope.editValue = $scope.formations[index].Formation.name;
-			$scope.editRes['User'] = $scope.formations[index].User;
+			$scope.formations[index].Formation.editRes = new Array();
+			$scope.formations[index].Formation.editRes['User'] = $scope.formations[index].User;
 			$scope.isEditing = true;
 		}else{
 			alert('Vous éditez déjà une ligne');
@@ -51,19 +49,13 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 		$scope.formations[index].Formation.name = $scope.editValue;
 	}
 	$scope.valid = function(index){
-		console.log($scope);
-		console.log($scope.editRes);
-		/*if($scope.formations[index].Formation.name.length > 0){
+		if($scope.formations[index].Formation.name.length > 0){
 			$http.get($scope.urlUpdate+'/'+$scope.formations[index].Formation.id+'/'+
 											$scope.formations[index].Formation.name+'/'+
-											$scope.departmentId+'/'+$scope.editRes.User.id).success(function(response) {
+											$scope.departmentId+'/'+$scope.formations[index].Formation.editRes.User.id).success(function(response) {
 				if(response != 0){
-					console.log('splice');
-					console.log(response);
-					
-					console.log($scope.formations);
 					$scope.formations.splice(index,1,response);
-					console.log($scope.formations);
+
 					$scope.formations[index].Formation.editMode = false;
 					$scope.isEditing = false;
 				}else{
@@ -74,7 +66,7 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 
 		}else{
 			alert('Le champs est vide');
-		}*/
+		}
 
 	}
 
