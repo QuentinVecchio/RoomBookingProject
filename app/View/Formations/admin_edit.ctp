@@ -20,7 +20,7 @@
 					</td>
 					<td>
 						<span ng-show="!i.Formation.editMode">{{i.User.firstname}} {{i.User.lastname}}</span>
-						<select ng-model="t" ng-show='i.Formation.editMode' ng-options="value.User.lastname for value in managers track by value.User.id"></select>
+						<select ng-model="i.Formation.editRes" ng-show='i.Formation.editMode' ng-options="value.User.lastname for value in managers track by value.User.id"></select>
 					</td>
 					<td>
 						<ul class="button-group options" ng-show="!i.Formation.editMode">
