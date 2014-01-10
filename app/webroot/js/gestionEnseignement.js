@@ -24,11 +24,9 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 					alert('Ok');
 				}
 		});
-		//alert("case cochée");
 	}
 
 	$scope.delete = function(idFormation){
-		//alert($scope.urlDelete+'/'+idFormation)
 		$http.get($scope.urlDelete+'/'+idFormation).success(function(response) {
 				if(response == 0)
 				{
@@ -39,6 +37,5 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 					alert('Ok');
 				}
 		});
-		//alert("case décochée");
 	}
 });

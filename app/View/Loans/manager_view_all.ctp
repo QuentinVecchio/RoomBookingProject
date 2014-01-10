@@ -2,7 +2,7 @@
 <section id="calendrier">
 	<?php 
 			App::import('Vendor', 'Calendrier/Calendrier');
-			$calendrier = new Calendrier(true,'test');
+			$calendrier = new Calendrier(true,'test',2014);
 			echo $calendrier->getCalendrier($res,null,'viewAllByDay');
 	 ?>
 </section>

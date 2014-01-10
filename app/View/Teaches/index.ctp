@@ -1,12 +1,5 @@
 <section >
 	<h1>Gestion de vos enseignements:</h1>
-
-	<p><span>Url d'ajout: </span><?php echo $this->Html->url(array('controller' => 'teaches', 'action' => 'add')) ?></p>
-	<p><span>Url de suppression: </span><?php echo $this->Html->url(array('controller' => 'teaches', 'action' => 'delete')) ?></p>
-
-	<?php //debug($listDpt); ?>
-	<?php //debug($formation); ?>
-
 	<section ng-app="gestionFormation" ng-Controller="gestionCtrl" ng-init="listDpt=<?php echo htmlentities(json_encode($listDpt))?>;
 																			formation=<?php echo htmlentities(json_encode($formation)) ?>;
 																			urlAdd='<?php echo $this->Html->url(array('controller' => 'teaches', 'action' => 'add')) ?>';

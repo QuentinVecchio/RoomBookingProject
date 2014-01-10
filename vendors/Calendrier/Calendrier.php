@@ -15,19 +15,19 @@ class Calendrier extends AppHelper
 		private $_cibleAjax;
 	//Methodes
 		//Constructeur
-			function __construct($ajax = false, $cible = null)
+			function __construct($ajax = false, $cible = null, $anneeDepart)
 			{
 				$this->_date1 = new Date();//Par défaut on prend la date courante
 				$this->_date2 = new Date();//Par défaut on prend la date courante
-				$this->setAnnee($this->_date1->Annee());
+				$this->setAnnee($anneeDepart);
 				$this->setAjax($ajax);
 				$this->setCibleAjax($cible);
 			}
 		//Setter
 			public function setAnnee($annee)
 			{
-				$this->_date1->setAnnee($annee);
-				$this->_date2->setAnnee($annee+1);
+				$this->_date1->setAnnee($annee-1);
+				$this->_date2->setAnnee($annee);
 			}
 			public function setAjax($ajax)
 			{
