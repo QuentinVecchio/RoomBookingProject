@@ -13,10 +13,11 @@
 
 
 <section ng-app="gestionContrainte" ng-controller="gestionCtrl">
-	<input ng-model="filtreTraite" value="tous" type="radio">Tous
-	<input ng-model="filtreTraite" ng-value="true" type="radio">traité
-	<input ng-model="filtreTraite" ng-value="false" type="radio">Non traité
-
+	<div id="choixFiltre">
+		<input ng-model="filtreTraite" value="tous" type="radio" style="vertical-align:middle;"> Tous
+		<input ng-model="filtreTraite" ng-value="true" type="radio" style="vertical-align:middle;"> Traité
+		<input ng-model="filtreTraite" ng-value="false" type="radio" style="vertical-align:middle;"> Non traité
+	</div>
 
 
 <div  ng-init="constraints=<?php echo htmlentities(json_encode($constraints));?>;

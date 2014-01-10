@@ -113,11 +113,13 @@ li {
   border: 1px solid black;
   width: 100px;
   padding: 5px;
+  background: #5B605F;
+  color: #FFFFFA;
   text-align: center;
 }
 .listeFormation {
   border: 1px solid black;
   padding: 5px;
   height: 200px;
-  text-align: center;
+  text-align: left;
 }

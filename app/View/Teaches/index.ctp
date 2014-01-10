@@ -1,13 +1,16 @@
 <section >
 	<h1>Gestion de vos enseignements:</h1>
-	<section ng-app="gestionFormation" ng-Controller="gestionCtrl" ng-init="listDpt=<?php echo htmlentities(json_encode($listDpt))?>;
+	<?php //debug($listDpt); ?>
+	<?php //debug($formation); ?>
+
+	<section style="margin: auto;" ng-app="gestionFormation" ng-Controller="gestionCtrl" ng-init="listDpt=<?php echo htmlentities(json_encode($listDpt))?>;
 																			formation=<?php echo htmlentities(json_encode($formation)) ?>;
 																			urlAdd='<?php echo $this->Html->url(array('controller' => 'teaches', 'action' => 'add')) ?>';
 																			urlDelete='<?php echo $this->Html->url(array('controller' => 'teaches', 'action' => 'delete')) ?>'">
 		<ul class="listeDepartement" ng-repeat="i in listDpt">
 			<li class="titreDepartement">{{i['Department']['name']}}</li>
 			<ul class="listeFormation">
-				<li ng-repeat="j in formation | filter:{Formation.department_id: i.Department.id}"><input ng-model="valeur" type="checkbox" ng-change="changement(j['Formation']['id'],valeur)" value="{{j['Formation']['name']}}" ng-checked="j['Teach'].length != 0"> {{j['Formation']['name']}}</li>
+				<li ng-repeat="j in formation | filter:{Formation.department_id: i.Department.id}"><input style="vertical-align:middle;" ng-model="valeur" type="checkbox" ng-change="changement(j['Formation']['id'],valeur)" value="{{j['Formation']['name']}}" ng-checked="j['Teach'].length != 0"> {{j['Formation']['name']}}</li>
 			</ul>
 		<ul>
 	</section>
@@ -18,3 +21,8 @@
 	$this->end();
 	 ?>
 </section>
+<?php
+$this->start('css');
+	echo $this->Html->css('table');
+$this->end();
+?>
