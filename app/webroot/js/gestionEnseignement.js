@@ -2,9 +2,8 @@ var gestionFormation = angular.module('gestionFormation', []);
  
 gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 
-	$scope.changement = function(idFormation){
-		alert('test');
-		if($scope.valeur[id] == true)
+	$scope.changement = function(idFormation,valeur){
+		if(valeur == true)
 		{
 			$scope.add(idFormation);
 		}
@@ -15,22 +14,31 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 	}
 
 	$scope.add = function(idFormation){
-		/*$http.get($scope.urlAdd+'/'+idFormation).success(function(response) {
+		$http.get($scope.urlAdd+'/'+idFormation).success(function(response) {
 				if(response == 0)
 				{
 					alert('Erreur lors de l\'ajout');
 				}
-		});	*/
-		alert("case cochée");
+				else
+				{
+					alert('Ok');
+				}
+		});
+		//alert("case cochée");
 	}
 
 	$scope.delete = function(idFormation){
-		/*$http.get($scope.urlDelete+'/'+idFormation).success(function(response) {
+		//alert($scope.urlDelete+'/'+idFormation)
+		$http.get($scope.urlDelete+'/'+idFormation).success(function(response) {
 				if(response == 0)
 				{
 					alert('Erreur lors de l\'ajout');
 				}
-		});*/	
-		alert("case décochée");
+				else
+				{
+					alert('Ok');
+				}
+		});
+		//alert("case décochée");
 	}
 });

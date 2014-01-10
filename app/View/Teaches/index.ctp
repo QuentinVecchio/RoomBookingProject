@@ -14,7 +14,7 @@
 		<ul class="listeDepartement" ng-repeat="i in listDpt">
 			<li class="titreDepartement">{{i['Department']['name']}}</li>
 			<ul class="listeFormation">
-				<li ng-repeat="j in formation | filter:{Formation.department_id: i.Department.id}"><input type="checkbox" ng-change="changement(j['Formation']['id'])" value="{{j['Formation']['name']}}" ng-checked="j['Teach'].length != 0"> {{j['Formation']['name']}}</li>
+				<li ng-repeat="j in formation | filter:{Formation.department_id: i.Department.id}"><input ng-model="valeur" type="checkbox" ng-change="changement(j['Formation']['id'],valeur)" value="{{j['Formation']['name']}}" ng-checked="j['Teach'].length != 0"> {{j['Formation']['name']}}</li>
 			</ul>
 		<ul>
 	</section>

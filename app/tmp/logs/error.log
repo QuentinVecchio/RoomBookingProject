@@ -384,3 +384,502 @@ Stack Trace:
 #0 /Users/quentin.vecchio/Desktop/Projet web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 /Users/quentin.vecchio/Desktop/Projet web/index.php(43): require('/Users/quentin....')
 #2 {main}
+2014-01-10 11:14:23 Error: [MissingControllerException] Controller class Project-WebController could not be found.
+Exception Attributes: array (
+  'class' => 'Project-WebController',
+  'plugin' => NULL,
+)
+Request URL: /Project-Web/index.php/Project-Web/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2014-01-10 11:14:34 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /Project-Web/index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2014-01-10 11:16:09 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2014-01-10 11:16:09 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2014-01-10 11:16:09 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2014-01-10 11:16:12 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2014-01-10 11:16:12 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2014-01-10 11:16:24 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2014-01-10 11:16:24 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2014-01-10 11:16:24 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2014-01-10 11:16:25 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2014-01-10 11:16:25 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2014-01-10 11:16:26 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Formation.user_id' in 'where clause'
+Request URL: /index.php/users/login
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Formati...', Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Formati...', Array, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Formati...', false)
+#4 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2750): DboSource->read(Object(Formation), Array)
+#5 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(594): Model->find('all', Array)
+#7 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(799): DboSource->query('findAllByUserId', Array, Object(Formation))
+#8 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/AppController.php(112): Model->__call('findAllByUserId', Array)
+#9 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/AppController.php(112): Formation->findAllByUserId(NULL)
+#10 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#11 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#12 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#14 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#17 {main}
+2014-01-10 11:16:34 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2014-01-10 11:16:34 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2014-01-10 11:17:12 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2014-01-10 11:17:28 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2014-01-10 11:17:28 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2014-01-10 11:20:55 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Formation.user_id' in 'where clause'
+Request URL: /index.php/users/login
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Formati...', Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Formati...', Array, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Formati...', false)
+#4 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2750): DboSource->read(Object(Formation), Array)
+#5 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(594): Model->find('all', Array)
+#7 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(799): DboSource->query('findAllByUserId', Array, Object(Formation))
+#8 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/AppController.php(112): Model->__call('findAllByUserId', Array)
+#9 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/AppController.php(112): Formation->findAllByUserId(NULL)
+#10 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#11 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#12 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#14 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#17 {main}
+2014-01-10 11:21:07 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Formation.user_id' in 'where clause'
+Request URL: /index.php/users/login
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Formati...', Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Formati...', Array, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Formati...', false)
+#4 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2750): DboSource->read(Object(Formation), Array)
+#5 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(594): Model->find('all', Array)
+#7 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(799): DboSource->query('findAllByUserId', Array, Object(Formation))
+#8 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/AppController.php(112): Model->__call('findAllByUserId', Array)
+#9 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/AppController.php(112): Formation->findAllByUserId(NULL)
+#10 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#11 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#12 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#14 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#17 {main}
+2014-01-10 11:21:07 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Formation.user_id' in 'where clause'
+Request URL: /index.php/users/login
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Formati...', Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Formati...', Array, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Formati...', false)
+#4 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2750): DboSource->read(Object(Formation), Array)
+#5 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(594): Model->find('all', Array)
+#7 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(799): DboSource->query('findAllByUserId', Array, Object(Formation))
+#8 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/AppController.php(112): Model->__call('findAllByUserId', Array)
+#9 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/AppController.php(112): Formation->findAllByUserId(NULL)
+#10 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#11 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#12 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#14 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#17 {main}
+2014-01-10 11:21:08 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Formation.user_id' in 'where clause'
+Request URL: /index.php/users/login
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Formati...', Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Formati...', Array, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Formati...', false)
+#4 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2750): DboSource->read(Object(Formation), Array)
+#5 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(594): Model->find('all', Array)
+#7 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(799): DboSource->query('findAllByUserId', Array, Object(Formation))
+#8 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/AppController.php(112): Model->__call('findAllByUserId', Array)
+#9 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/AppController.php(112): Formation->findAllByUserId(NULL)
+#10 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#11 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#12 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#14 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#17 {main}
+2014-01-10 11:21:08 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Formation.user_id' in 'where clause'
+Request URL: /index.php/users/login
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Formati...', Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Formati...', Array, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Formati...', false)
+#4 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2750): DboSource->read(Object(Formation), Array)
+#5 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(594): Model->find('all', Array)
+#7 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(799): DboSource->query('findAllByUserId', Array, Object(Formation))
+#8 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/AppController.php(112): Model->__call('findAllByUserId', Array)
+#9 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/AppController.php(112): Formation->findAllByUserId(NULL)
+#10 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#11 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#12 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#14 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#17 {main}
+2014-01-10 11:21:49 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Formation.user_id' in 'where clause'
+Request URL: /index.php/users/login
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Formati...', Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Formati...', Array, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Formati...', false)
+#4 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2750): DboSource->read(Object(Formation), Array)
+#5 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(594): Model->find('all', Array)
+#7 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(799): DboSource->query('findAllByUserId', Array, Object(Formation))
+#8 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/AppController.php(112): Model->__call('findAllByUserId', Array)
+#9 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/AppController.php(112): Formation->findAllByUserId(NULL)
+#10 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#11 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#12 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#14 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#17 {main}
+2014-01-10 11:21:49 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Formation.user_id' in 'where clause'
+Request URL: /index.php/users/login
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Formati...', Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Formati...', Array, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Formati...', false)
+#4 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2750): DboSource->read(Object(Formation), Array)
+#5 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(594): Model->find('all', Array)
+#7 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(799): DboSource->query('findAllByUserId', Array, Object(Formation))
+#8 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/AppController.php(112): Model->__call('findAllByUserId', Array)
+#9 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/AppController.php(112): Formation->findAllByUserId(NULL)
+#10 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#11 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#12 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#14 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#17 {main}
+2014-01-10 11:21:50 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Formation.user_id' in 'where clause'
+Request URL: /index.php/users/login
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Formati...', Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Formati...', Array, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Formati...', false)
+#4 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2750): DboSource->read(Object(Formation), Array)
+#5 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(594): Model->find('all', Array)
+#7 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(799): DboSource->query('findAllByUserId', Array, Object(Formation))
+#8 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/AppController.php(112): Model->__call('findAllByUserId', Array)
+#9 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/AppController.php(112): Formation->findAllByUserId(NULL)
+#10 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#11 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#12 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#14 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#17 {main}
+2014-01-10 11:21:51 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /index.php/users/add
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#4 {main}
+2014-01-10 11:29:42 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2014-01-10 11:30:26 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2014-01-10 11:30:27 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#2 {main}
+2014-01-10 11:35:16 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'user_id' in where clause is ambiguous
+Request URL: /index.php/teaches/add/36
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2750): DboSource->read(Object(Teach), Array)
+#5 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2722): Model->_readDataSource('count', Array)
+#6 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/TeachesController.php(27): Model->find('count', Array)
+#7 [internal function]: TeachesController->add('36')
+#8 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachesController), Array)
+#9 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TeachesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#13 {main}
+2014-01-10 11:36:22 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'user_id' in where clause is ambiguous
+Request URL: /index.php/teaches/add/35
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2750): DboSource->read(Object(Teach), Array)
+#5 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2722): Model->_readDataSource('count', Array)
+#6 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/TeachesController.php(27): Model->find('count', Array)
+#7 [internal function]: TeachesController->add('35')
+#8 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachesController), Array)
+#9 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TeachesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#13 {main}
+2014-01-10 11:41:13 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'user_id' in where clause is ambiguous
+Request URL: /index.php/teaches/add/61
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2750): DboSource->read(Object(Teach), Array)
+#5 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2722): Model->_readDataSource('count', Array)
+#6 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/TeachesController.php(27): Model->find('count', Array)
+#7 [internal function]: TeachesController->add('61')
+#8 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachesController), Array)
+#9 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TeachesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#13 {main}
+2014-01-10 11:41:16 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'user_id' in where clause is ambiguous
+Request URL: /index.php/teaches/delete/61
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('DELETE `Teach` ...', Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/Database/Mysql.php(442): DboSource->execute('DELETE `Teach` ...')
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2558): Mysql->delete(Object(Teach), Array)
+#4 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/TeachesController.php(40): Model->deleteAll(Array, false)
+#5 [internal function]: TeachesController->delete('61')
+#6 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachesController), Array)
+#7 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TeachesController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#11 {main}
+2014-01-10 11:41:17 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'user_id' in where clause is ambiguous
+Request URL: /index.php/teaches/add/62
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2750): DboSource->read(Object(Teach), Array)
+#5 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2722): Model->_readDataSource('count', Array)
+#6 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/TeachesController.php(27): Model->find('count', Array)
+#7 [internal function]: TeachesController->add('62')
+#8 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachesController), Array)
+#9 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TeachesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#13 {main}
+2014-01-10 11:41:17 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'user_id' in where clause is ambiguous
+Request URL: /index.php/teaches/delete/62
+Stack Trace:
+#0 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('DELETE `Teach` ...', Array)
+#2 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Datasource/Database/Mysql.php(442): DboSource->execute('DELETE `Teach` ...')
+#3 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Model/Model.php(2558): Mysql->delete(Object(Teach), Array)
+#4 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/Controller/TeachesController.php(40): Model->deleteAll(Array, false)
+#5 [internal function]: TeachesController->delete('62')
+#6 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachesController), Array)
+#7 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TeachesController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 /Users/quentin.vecchio/Desktop/Programmation Web/Project-Web/index.php(43): require('/Users/quentin....')
+#11 {main}
