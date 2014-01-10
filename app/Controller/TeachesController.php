@@ -24,7 +24,7 @@ class TeachesController  extends AppController{
 
 	public function add($idFormation){
 		$this->autoRender = false;
-		if(!$this->Teach->find('count', array('conditions' => array('formation_id' => $idFormation, 'user_id' => $this->Auth->User('id'))))){
+		if(!$this->Teach->find('count', array('conditions' => array('formation_id' => $idFormation, 'Teach.user_id' => $this->Auth->User('id'))))){
 			if($this->Teach->save(array('formation_id' => $idFormation, 'user_id' => $this->Auth->User('id')))){
 				echo 1;
 			}else{
@@ -37,7 +37,7 @@ class TeachesController  extends AppController{
 
 	public function delete($idFormation){
 		$this->autoRender = false;
-		if($this->Teach->deleteAll(array('formation_id' => $idFormation, 'user_id' => $this->Auth->User('id')), false)){
+		if($this->Teach->deleteAll(array('formation_id' => $idFormation, 'Teach.user_id' => $this->Auth->User('id')), false)){
 			echo 1;
 		}else{
 			echo 0;
