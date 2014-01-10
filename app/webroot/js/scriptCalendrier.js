@@ -33,7 +33,7 @@ $(function(){
 		var n = 9 + dif;
 		if(dif < 0)
 		{
-			dif = 9 - m;
+			dif = 3 + m;
 		}
 		for(i=0;i<dif;i++)
 		{
