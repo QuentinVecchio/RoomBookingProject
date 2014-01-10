@@ -1,0 +1,123 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #464646;
+}
+html {
+  padding: 0;
+}
+body {
+  margin: 0;
+  background-color: #A1A194;
+}
+header,
+footer {
+  margin: 0 auto;
+  margin-top: 1.5em;
+  width: 1200px;
+  background-color: #FFFFFA;
+}
+header {
+  margin-bottom: 55px;
+}
+#container {
+  width: 1200px;
+  padding: 1.5em;
+  margin: 0 auto;
+  overflow: auto;
+  background-color: #FFFFFA;
+}
+#formLog,
+ul.button-group {
+  display: table;
+  margin: 0 auto;
+}
+.profils {
+  padding: 0 1.5em;
+}
+.list-info {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding: 1.5em;
+}
+.list-info li {
+  font-size: 18px;
+  height: 36px;
+  line-height: 36px;
+  color: #464646;
+}
+.message {
+  position: relative;
+  display: block;
+  width: 90%;
+  height: 40px;
+  padding-left: 20px;
+  padding-top: 12px;
+  margin: 5px 0;
+  border-radius: 7px;
+  color: #FFFFFA;
+}
+.message p {
+  margin: 0;
+  line-height: 40px;
+}
+.message.secondary {
+  background-color: #464646;
+  border-color: #464646;
+}
+.message.success {
+  background-color: #23A136;
+  border-color: #007812;
+}
+.message.alert {
+  background-color: #CE2C2C;
+  border-color: #BB0000;
+}
+.message .close {
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  line-height: 50px;
+}
+td .button-group a,
+td .button-group button {
+  margin: 0;
+}
+.liste-p {
+  margin-left: 1.5em;
+}
+section.centre {
+  display: table;
+  margin: 0 auto;
+}
+.copyright {
+  text-align: center;
+}
+.invisible {
+  display: none;
+}
+.listeDepartement {
+  display: inline-block;
+  vertical-align: top;
+}
+.listeDepartement,
+li {
+  list-style-type: none;
+}
+.titreDepartement {
+  border: 1px solid black;
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+}
+.listeFormation {
+  border: 1px solid black;
+  padding: 5px;
+  height: 200px;
+  text-align: center;
+}

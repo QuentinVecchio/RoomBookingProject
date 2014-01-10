@@ -1,0 +1,82 @@
+.colonne {
+  width: 16%;
+  height: 100%;
+  border-right: 1px solid black;
+  background-color: blue;
+  float: left;
+}
+.colonne .titre {
+  text-align: center;
+}
+.colonne .bloc-contraintes {
+  background-color: yellow;
+  margin-bottom: 10px;
+}
+.colonne .bloc-contraintes ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.colonne .bloc-contraintes li {
+  margin: 0;
+  padding: 0;
+}
+.colonne .bloc-titre {
+  display: block;
+  text-align: center;
+}
+.colonne .bloc-contraintes span {
+  line-height: 30px;
+}
+.tableau {
+  background-color: blue;
+}
+.colonne .bloc-contraintes .align {
+  display: inline-block;
+  vertical-align: middle;
+}
+.clear:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.ng-invalid {
+  border-color: red;
+}
+.colonne a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.center {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.horaires {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.horaires li {
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+  font-style: 30px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.horaires input {
+  width: 60px;
+  float: left;
+}
+.horaires label {
+  float: left;
+  text-align: right;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: auto;
+}
+.bloc {
+  display: block;
+}

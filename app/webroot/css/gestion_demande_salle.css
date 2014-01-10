@@ -1,0 +1,8 @@
+.gestion-demande-salle input,
+.gestion-demande-salle .input {
+  margin: 0 auto;
+  width: 100px;
+}
+.gestion-demande-salle thead tr td {
+  text-align: center;
+}
