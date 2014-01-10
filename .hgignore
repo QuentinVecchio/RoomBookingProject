@@ -1,4 +1,4 @@
-^test.md$
 ^app/tmp/cache/.*$
+^app/tmp/logs/.*$
 
 ^app/Config/database.php$
