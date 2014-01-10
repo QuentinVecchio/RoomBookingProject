@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Jeu 02 Janvier 2014 à 18:16
+-- Généré le: Ven 10 Janvier 2014 à 10:22
 -- Version du serveur: 5.6.12-log
 -- Version de PHP: 5.4.16
 
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `constraints` (
   PRIMARY KEY (`id`),
   KEY `formation_id` (`formation_id`,`user_id`),
   KEY `user_id` (`user_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=36 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=50 ;
 
 --
 -- Contenu de la table `constraints`
@@ -47,19 +47,17 @@ CREATE TABLE IF NOT EXISTS `constraints` (
 
 INSERT INTO `constraints` (`id`, `date`, `start_time`, `end_time`, `deal`, `formation_id`, `user_id`) VALUES
 (1, '2014-01-06', '08:00:00', '12:00:00', 1, 35, 2),
-(2, '2014-01-07', '16:00:00', '18:00:00', 0, 35, 2),
+(2, '2014-01-07', '16:00:00', '18:00:00', 1, 35, 2),
 (3, '2014-01-06', '14:00:00', '16:00:00', 1, 35, 2),
 (4, '2014-01-06', '08:00:00', '10:00:00', 0, 2, 3),
 (8, '2014-01-06', '16:00:00', '18:00:00', 1, 2, 2),
-(9, '2014-01-07', '15:00:00', '16:00:00', 0, 2, 3),
 (10, '2014-01-08', '15:00:00', '16:00:00', 0, 2, 3),
-(12, '2014-01-07', '07:00:00', '19:00:00', 0, 2, 2),
-(13, '2014-01-08', '07:00:00', '19:00:00', 0, 2, 2),
-(14, '2014-01-09', '07:00:00', '19:00:00', 1, 2, 2),
+(13, '2014-01-08', '07:00:00', '19:00:00', 1, 2, 2),
+(14, '2014-01-09', '07:00:00', '19:00:00', 0, 2, 2),
 (15, '2014-01-10', '07:00:00', '19:00:00', 1, 2, 2),
 (16, '2014-01-11', '07:00:00', '19:00:00', 0, 2, 2),
 (17, '2014-01-06', '07:00:00', '19:00:00', 1, 2, 2),
-(19, '2014-01-08', '07:00:00', '19:00:00', 0, 2, 2),
+(19, '2014-01-08', '07:00:00', '19:00:00', 1, 2, 2),
 (23, '2014-01-13', '08:00:00', '10:00:00', 0, 35, 4),
 (24, '2014-01-13', '15:00:00', '17:00:00', 0, 35, 4),
 (25, '2014-01-14', '08:00:00', '15:00:00', 0, 35, 4),
@@ -72,7 +70,19 @@ INSERT INTO `constraints` (`id`, `date`, `start_time`, `end_time`, `deal`, `form
 (32, '2014-01-15', '07:00:00', '19:00:00', 1, 2, 2),
 (33, '2014-01-16', '07:00:00', '19:00:00', 0, 2, 2),
 (34, '2014-01-17', '07:00:00', '19:00:00', 0, 2, 2),
-(35, '2014-01-18', '07:00:00', '19:00:00', 0, 2, 2);
+(35, '2014-01-18', '07:00:00', '19:00:00', 0, 2, 2),
+(38, '2014-01-08', '07:00:00', '19:00:00', 0, 2, 2),
+(39, '2014-01-09', '07:00:00', '19:00:00', 0, 2, 2),
+(40, '2014-01-10', '07:00:00', '19:00:00', 0, 2, 2),
+(41, '2014-01-11', '08:00:00', '12:00:00', 0, 2, 2),
+(42, '2014-01-09', '07:00:00', '19:00:00', 0, 36, 4),
+(43, '2014-01-10', '07:00:00', '19:00:00', 0, 36, 4),
+(44, '2014-01-11', '07:00:00', '19:00:00', 0, 36, 4),
+(45, '2014-01-12', '07:00:00', '19:00:00', 0, 36, 4),
+(46, '2014-01-13', '07:00:00', '19:00:00', 0, 36, 4),
+(47, '2014-01-14', '07:00:00', '19:00:00', 0, 36, 4),
+(48, '2014-01-10', '07:00:00', '19:00:00', 0, 36, 2),
+(49, '2014-01-11', '08:00:00', '12:00:00', 0, 36, 2);
 
 -- --------------------------------------------------------
 
@@ -107,27 +117,21 @@ CREATE TABLE IF NOT EXISTS `formations` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `department_id` int(11) NOT NULL,
+  `user_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `department_id` (`department_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=48 ;
+  KEY `department_id` (`department_id`),
+  KEY `user_id` (`user_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=61 ;
 
 --
 -- Contenu de la table `formations`
 --
 
-INSERT INTO `formations` (`id`, `name`, `department_id`) VALUES
-(2, 'AS', 1),
-(24, 'F1', 2),
-(25, 'F2', 2),
-(28, 'F4', 3),
-(29, 'F5', 3),
-(30, 'F6', 3),
-(35, 'DUT', 1),
-(36, 'LP', 1),
-(44, 'F7', 4),
-(45, 'F8', 4),
-(46, 'F9', 4),
-(47, 'F10', 4);
+INSERT INTO `formations` (`id`, `name`, `department_id`, `user_id`) VALUES
+(2, 'AS', 1, 2),
+(35, 'DUT', 1, 4),
+(36, 'LP', 1, 2),
+(60, 'Trrgrtt', 1, 2);
 
 -- --------------------------------------------------------
 
@@ -324,7 +328,8 @@ ALTER TABLE `constraints`
 -- Contraintes pour la table `formations`
 --
 ALTER TABLE `formations`
-  ADD CONSTRAINT `formations_ibfk_1` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`) ON DELETE CASCADE;
+  ADD CONSTRAINT `formations_ibfk_1` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `formations_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `constraints` (`user_id`) ON DELETE SET NULL;
 
 --
 -- Contraintes pour la table `loans`
