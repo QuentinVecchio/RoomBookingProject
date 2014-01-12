@@ -19,7 +19,15 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 
 	$scope.add = function(){
 		if($scope.nouvelleFormation != null && $scope.responsable != null){
-			$http.get($scope.urlAdd+'/'+$scope.departmentId+'/'+$scope.nouvelleFormation+'/'+$scope.responsable.User.id).success(function(response) {
+
+			$ligne = {
+					department_id: $scope.departmentId,
+					name: $scope.nouvelleFormation,
+					user_id: $scope.responsable.User.id
+
+				}
+
+			$http.post($scope.urlAdd, $ligne).success(function(response){
 				console.log('Reponse:');
 				console.log(response);
 				if(response.errors.length == 0){
@@ -28,7 +36,8 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 				}else{
 					writeErrors(response.errors);	
 				}
-		    });	
+			});
+
 		}else{
 			alert('Le champs est nul!');
 		}
@@ -52,22 +61,30 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 		$scope.isEditing = false;
 		$scope.formations[index].Formation.name = $scope.editValue;
 	}
+
+
 	$scope.valid = function(index){
 		if($scope.formations[index].Formation.name.length > 0){
-			$http.get($scope.urlUpdate+'/'+$scope.formations[index].Formation.id+'/'+
-											$scope.formations[index].Formation.name+'/'+
-											$scope.departmentId+'/'+$scope.formations[index].Formation.editRes.User.id).success(function(response) {
+			$ligne = {
+					id: $scope.formations[index].Formation.id,
+					department_id: $scope.departmentId,
+					name: $scope.formations[index].Formation.name,
+					user_id: $scope.formations[index].Formation.editRes.User.id,
+					department_id: $scope.departmentId
+
+				}
+
+			$http.post($scope.urlAdd, $ligne).success(function(response){
 				if(response.errors.length == 0){
 					$scope.formations.splice(index,1,response.value);
 
 					$scope.formations[index].Formation.editMode = false;
 					$scope.isEditing = false;
 				}else{
-					alert('Erreur lors de l\'ajout');
 					$scope.formations[index].Formation.name = $scope.editValue;
 					writeErrors(response.errors);				
 				}
-		    });	
+			});
 
 		}else{
 			alert('Le champs est vide');
