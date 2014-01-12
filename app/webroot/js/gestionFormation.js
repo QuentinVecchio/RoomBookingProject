@@ -2,8 +2,16 @@ var gestionFormation = angular.module('gestionFormation', []);
  
 gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 
+	/**
+	*	Contient toutes les erreurs lors des appels serveurs
+	*/
 	$scope.errors = [];
 
+	/**
+	*	Permet de supprimer une formation
+	*	Fait un appel serveur pour supprimer l'entrée de la base de donnée, si il n'y a pas eu d'erreur, suppression de la ligne
+	*	@params index, l'index de la formation dans le tableau
+	*/
 	$scope.removeLine = function(index){
 		var res = confirm('Etes-vous sûr de vouloir supprimer la formation?');
 		if(res){
@@ -17,6 +25,11 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 		}
 	}
 
+
+	/**
+	*	Permet d'ajouter une formation au département
+	*	Fait un appel serveur pour poster la nouvelle formation, si il n'y a pas d'erreur, on ajout la ligne renvoyé par le serveur
+	*/
 	$scope.add = function(){
 		if($scope.nouvelleFormation != null && $scope.responsable != null){
 
@@ -43,7 +56,15 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 		}
 	}
 
+	/**
+	*	Permet de bloquer l'édition à une ligne à la fois
+	*/
 	$scope.isEditing = false;
+
+	/**
+	*	Passage en mode d'édition d'une formation
+	*	Bloque l'édition à une seule ligne
+	*/
 	$scope.edit = function(index){
 		if(!$scope.isEditing){
 			$scope.formations[index].Formation.editMode = true;
@@ -56,6 +77,10 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 		}
 	}
 
+	/**
+	*	Passage du mode d'édition au mode de visualisation
+	*	Remet les valeurs avant modification
+	*/
 	$scope.cancel = function(index){
 		$scope.formations[index].Formation.editMode = false;
 		$scope.isEditing = false;
@@ -63,6 +88,10 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 	}
 
 
+	/**
+	*	Validation de l'édition d'une ligne
+	*	Post les valeurs pour mettre a jour la base de donnée, si il n'y a pas eu d'erreur remplace la ligne
+	*/
 	$scope.valid = function(index){
 		if($scope.formations[index].Formation.name.length > 0){
 			$ligne = {
@@ -92,6 +121,9 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 
 	}
 
+	/**
+	*	Affiche les erreurs du serveur dans la console et les ajoutes dans $scope.errors
+	*/
 	function writeErrors(errors){
 		console.log('Erreur:');
 		for(i in errors){
@@ -102,6 +134,9 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 		console.log(errors);
 	}
 
+	/**
+	*	Supression d'une erreur lors du clic
+	*/
 	$scope.removeError = function(index){
 		$scope.errors.splice(index,1);
 	}
