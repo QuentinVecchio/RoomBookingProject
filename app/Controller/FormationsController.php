@@ -29,17 +29,22 @@ class FormationsController extends AppController{
 		echo json_encode($res);
 	}
 
-	public function admin_add($id, $name, $responsable){
+	public function admin_add(){
 		$this->autoRender = false;
-		$tmp = array('Formation' => array('name' => $name, 'department_id' => $id, 'user_id' => $responsable));
+
 		$value = array();
 		$errors = array();
-		if($this->Formation->save($tmp)){
-			$this->Formation->unbindModel(array('belongsTo' => array('Department'), 'hasMany' => array('Teach')));
-			$value = current($this->Formation->find('all', array('conditions' => array('Formation.id' => $this->Formation->id))));
+		if(!empty($this->data)){
+			if($this->Formation->save($this->data)){
+				$this->Formation->unbindModel(array('belongsTo' => array('Department'), 'hasMany' => array('Teach')));
+				$value = current($this->Formation->find('all', array('conditions' => array('Formation.id' => $this->Formation->id))));
+			}else{
+				$errors[] = array('type' => 'Erreur lors de l\'ajout en base de donnée',
+								  'message' => 'Le nom de formation est déjà utilisé pour ce département');
+			}
 		}else{
-			$errors[] = array('type' => 'Erreur lors de l\'ajout en base de donnée',
-							  'message' => 'Le nom de formation est déjà utilisé pour ce département');
+			$errors[] = array('type' => 'Formulaire vide',
+							  'message' => 'Pas de valeur');
 		}
 
 		$res = array('value' => $value, 'errors' => $errors);
@@ -47,21 +52,25 @@ class FormationsController extends AppController{
 
 	}
 
-	public function admin_update($id, $name, $department_id, $user_id){
+	public function admin_update(){
 		$this->autoRender = false;
-		$this->Formation->id = $id;
-		$tmp = array('Formation' => array('name' => $name, 'department_id' => $department_id, 'user_id' => $user_id));
-
 		$value = array();
-		$errors = array();		
-		if($this->Formation->save($tmp)){
-			$this->Formation->unbindModel(array('belongsTo' => array('Department'), 'hasMany' => array('Teach')));
-			$value = current($this->Formation->find('all', array('conditions' => array('Formation.id' => $this->Formation->id))));
+		$errors = array();	
+
+		if(!empty($this->data)){
+			if($this->Formation->save($this->data)){
+				$this->Formation->unbindModel(array('belongsTo' => array('Department'), 'hasMany' => array('Teach')));
+				$value = current($this->Formation->find('all', array('conditions' => array('Formation.id' => $this->Formation->id))));
+			}else{
+				$errors[] = array('type' => 'Erreur lors de l\'ajout en base de donnée',
+								  'message' => 'Le nom de formation est déjà utilisé pour ce département');
+			}
+			$res = array('value' => $value, 'errors' => $errors);
 		}else{
-			$errors[] = array('type' => 'Erreur lors de l\'ajout en base de donnée',
-							  'message' => 'Le nom de formation est déjà utilisé pour ce département');
+			$errors[] = array('type' => 'Formulaire vide',
+							  'message' => 'Pas de valeur');
 		}
-		$res = array('value' => $value, 'errors' => $errors);
+
 		echo json_encode($res);		
 	}
 
