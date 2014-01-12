@@ -1,7 +1,6 @@
 var gestionFormation = angular.module('gestionContrainte', []);
  
 gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http, filterFilter) {
-
 	$scope.semaine = new Array([],[],[],[],[],[]);
 
 	$scope.filtreTraite = "tous";
@@ -25,8 +24,10 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http, f
 
 	$scope.initCheck = function(i){
 		if(i==1){
+			$scope.codeCouleur = {background:'#1D702D'};
 			return true;
 		}else{
+			$scope.codeCouleur = {background:'#C9001A'};
 			return false;
 		}
 	}
@@ -69,7 +70,9 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http, f
 		var r;
 		if(t){
 			r = 1;
+			$scope.codeCouleur = {background:'#1D702D'};
 		}else{
+			$scope.codeCouleur = {background:'#C9001A'};
 			r = 0;
 		}
 		$http.get($scope.urlChangeC+'/'+user_id+'/'+date+'/'+r).success(function(response) {
