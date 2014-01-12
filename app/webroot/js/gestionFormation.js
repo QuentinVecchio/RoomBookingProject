@@ -2,6 +2,8 @@ var gestionFormation = angular.module('gestionFormation', []);
  
 gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 
+	$scope.errors = [];
+
 	$scope.removeLine = function(index){
 		var res = confirm('Etes-vous sûr de vouloir supprimer la formation?');
 		if(res){
@@ -78,7 +80,13 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 		for(i in errors){
 			console.log('type: '+errors[i].type);
 			console.log('message: '+errors[i].message);
-		}	
+		}
+		$scope.errors.push(errors);
+		console.log(errors);
+	}
+
+	$scope.removeError = function(index){
+		$scope.errors.splice(index,1);
 	}
 
 

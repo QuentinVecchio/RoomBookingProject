@@ -123,3 +123,25 @@ li {
   height: 200px;
   text-align: left;
 }
+.errors {
+  float: left;
+}
+.errors li {
+  position: relative;
+  background-color: #A1A194;
+  border: 1px solid #FF7A00;
+  padding: 5px;
+  padding-right: 80px;
+  height: 70px;
+}
+.errors .errors-message {
+  padding: 0px;
+}
+.errors .errors-close {
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  line-height: 70px;
+  color: #FF7A00;
+}
