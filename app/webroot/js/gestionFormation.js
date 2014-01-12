@@ -6,10 +6,10 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 		var res = confirm('Etes-vous sûr de vouloir supprimer la formation?');
 		if(res){
 			$http.get($scope.urlDelete+'/'+$scope.formations[index].Formation.id).success(function(response) {
-						if(response == 1){
+						if(response.errors.length == 0){
 							$scope.formations.splice(index,1);
 						}else{
-							alert('Erreur lors de la suppression');
+							writeErrors(response.errors);
 						}
 				    });		
 		}
@@ -18,11 +18,13 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 	$scope.add = function(){
 		if($scope.nouvelleFormation != null && $scope.responsable != null){
 			$http.get($scope.urlAdd+'/'+$scope.departmentId+'/'+$scope.nouvelleFormation+'/'+$scope.responsable.User.id).success(function(response) {
-				if(response != 0){
-					$scope.formations.push(response);
+				console.log('Reponse:');
+				console.log(response);
+				if(response.errors.length == 0){
+					$scope.formations.push(response.value);
 					$scope.nouvelleFormation = '';
 				}else{
-					alert('Erreur lors de l\'ajout');
+					writeErrors(response.errors);	
 				}
 		    });	
 		}else{
@@ -53,14 +55,15 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 			$http.get($scope.urlUpdate+'/'+$scope.formations[index].Formation.id+'/'+
 											$scope.formations[index].Formation.name+'/'+
 											$scope.departmentId+'/'+$scope.formations[index].Formation.editRes.User.id).success(function(response) {
-				if(response != 0){
-					$scope.formations.splice(index,1,response);
+				if(response.errors.length == 0){
+					$scope.formations.splice(index,1,response.value);
 
 					$scope.formations[index].Formation.editMode = false;
 					$scope.isEditing = false;
 				}else{
 					alert('Erreur lors de l\'ajout');
 					$scope.formations[index].Formation.name = $scope.editValue;
+					writeErrors(response.errors);				
 				}
 		    });	
 
@@ -68,6 +71,14 @@ gestionFormation.controller('gestionCtrl', function gestionCtrl($scope, $http) {
 			alert('Le champs est vide');
 		}
 
+	}
+
+	function writeErrors(errors){
+		console.log('Erreur:');
+		for(i in errors){
+			console.log('type: '+errors[i].type);
+			console.log('message: '+errors[i].message);
+		}	
 	}
 
 
