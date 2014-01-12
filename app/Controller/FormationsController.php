@@ -1,10 +1,17 @@
 <?php 
 class FormationsController extends AppController{
+
+	/**
+	*	Affiche l'ensemble des départements enregistré dans la BdD
+	*/
 	public function admin_index(){
 		$listDept = $this->Formation->Department->find('all', array('recursive' => -1));
 		$this->set('listDept', $listDept);
 	}
 
+	/**
+	*	Visualisation de l'interface de gestion des filières pour une formation donnée
+	*/
 	public function admin_edit($id){
 		$listDept = $this->Formation->Department->find('all', array('recursive' => -1));
 		$this->set('listDept', $listDept);
