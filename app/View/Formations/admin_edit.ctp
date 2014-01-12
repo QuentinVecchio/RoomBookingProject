@@ -53,6 +53,16 @@
 			</tbody>
 
 	</table>
+	<div class="errors">
+		<ul>
+			<li ng-repeat="current in errors">
+				<strong class="errors-title">{{current[0].type}}</strong>
+				<p class="errors-message">{{current[0].message}}</p>
+				<a href="" class="icon-cancel errors-close" ng-click="removeError($index)"></a>
+			</li>
+		</ul>
+
+	</div>
 
 <?php 
 $this->start('script');
