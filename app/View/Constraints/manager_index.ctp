@@ -30,7 +30,7 @@
 				 class="clear tableau">
 	<div class="colonne" ng-repeat="i in listId">
 		<h4 class="titre">{{i.jour}}</h4>
-			<div ng-repeat="d in i.id" class="bloc-contraintes" ng-show="filtreTraite == d.Constraint.deal || filtreTraite == 'tous'">
+			<div ng-repeat="d in i.id" class="bloc-contraintes" ng-show="filtreTraite == d.Constraint.deal || filtreTraite == 'tous'" ng-style="codeCouleur">
 				<div class="align"><input type="checkBox" ng-model="d.Constraint.deal" ng-init="d.Constraint.deal =initCheck(d.Constraint.deal)" ng-change="changeC(d.Constraint.user_id, i.date, d.Constraint.deal)"></div>
 				<div class="align">
 				<ul>
@@ -46,12 +46,13 @@
 </div>
 <div>
 </div>
+	<h3>Ajout d'une contrainte : </h3>
 	<?php echo $this->Form->create('Constraint', array('name' => 'form', 'class' => 'bloc')) ?>
 		<select ng-model="choixUser" ng-options="value.User.name for value in listUser track by value.User.id" style="width:200px;"></select>
 	<div>
 <div class="clear tableau">
 		
-			<div class="colonne" ng-repeat="i in [0,1,2,3,4,5]">
+			<div style="color: black;" class="colonne" ng-repeat="i in [0,1,2,3,4,5]">
 				<input type="checkBox" class="center" ng-model="allDay" ng-init="allDay=false">
 				<div ng-switch on="allDay">
 					<div ng-switch-when="false">
