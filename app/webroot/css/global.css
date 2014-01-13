@@ -109,7 +109,7 @@ li {
 }
 .titreDepartement {
   border: 1px solid black;
-  width: 100px;
+  min-width: 100px;
   padding: 5px;
   background: #5B605F;
   color: #FFFFFA;
@@ -120,6 +120,12 @@ li {
   padding: 5px;
   height: 200px;
   text-align: left;
+}
+.listeFormation li input {
+  border: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
 }
 .errors {
   float: left;

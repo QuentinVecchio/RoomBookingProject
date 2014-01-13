@@ -20,9 +20,16 @@ class ConstraintsController extends AppController {
 		$listFormation= $this->Constraint->Formation->find('all', array('fields' => array('id', 'name'), 'recursive' => -1));
 
 		$this->set('listFormation', $listFormation);
-		$listUser= $this->Constraint->User->find('all', array('fields' => array('id', 'firstname','lastname'), 'recursive' => -1));
+		$this->Constraint->User->bindModel(array('hasMany' => array('Teach')));
+		$this->Constraint->User->Behaviors->attach('Containable');
+		$listUser= $this->Constraint->User->find('all', array('contain' => array(
+												'Teach' => array('conditions' => array('formation_id' => $formation_id)))));
 		foreach ($listUser as $key => $value) {
-			$listUser[$key]['User']['name'] = $value['User']['firstname'] .' '. $value['User']['lastname'];
+			if(!empty($value['Teach'])){
+				$listUser[$key]['User']['name'] = $value['User']['firstname'] .' '. $value['User']['lastname'];
+			}else{
+				unset($listUser[$key]);
+			}
 		}
 		$this->set('listUser', $listUser);
 
@@ -53,7 +60,7 @@ class ConstraintsController extends AppController {
 
 	public function manager_check($user_id, $date, $etat){
 		$this->autoRender = false;
-		if($this->Constraint->updateAll(array('deal' => $etat), array('date' => $date, 'user_id' => $user_id))){
+		if($this->Constraint->updateAll(array('deal' => $etat), array('date' => $date, 'Constraint.user_id' => $user_id))){
 			echo 1;
 		}else{
 			echo 0;
