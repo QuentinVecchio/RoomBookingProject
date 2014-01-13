@@ -57,6 +57,10 @@ class DepartmentsController  extends AppController{
 
 		$this->Department->recursive = -1;
 		$department = $this->Department->findById($index);
+		
+		if(empty($department)){
+			$this->redirect(array('controller' => 'departments', 'action' => 'index'));
+		}
 		$this->request->data = $department;
 
 		$this->set('id', $index);
