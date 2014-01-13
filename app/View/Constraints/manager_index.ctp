@@ -13,11 +13,17 @@
 
 
 <section ng-app="gestionContrainte" ng-controller="gestionCtrl">
-	<div id="choixFiltre">
-		<input ng-model="filtreTraite" value="tous" type="radio" style="vertical-align:middle;"> Tous
-		<input ng-model="filtreTraite" ng-value="true" type="radio" style="vertical-align:middle;"> Traité
-		<input ng-model="filtreTraite" ng-value="false" type="radio" style="vertical-align:middle;"> Non traité
-	</div>
+	<ul id="choixFiltre" class="clearFix">
+		<li>
+			<input id="choixFiltre-tous" ng-model="filtreTraite" value="tous" type="radio" style="vertical-align:middle;"><label for="choixFiltre-tous">Tous</label>
+		</li>
+		<li>
+			<input id="choixFiltre-traite" ng-model="filtreTraite" ng-value="true" type="radio" style="vertical-align:middle;"><label for="choixFiltre-traite">Traité</label>
+		</li>
+		<li>
+			<input id="choixFiltre-nonTraite" ng-model="filtreTraite" ng-value="false" type="radio" style="vertical-align:middle;"><label for="choixFiltre-nonTraite">Non traité</label>
+		</li>
+	</ul>
 
 
 <div  ng-init="constraints=<?php echo htmlentities(json_encode($constraints));?>;
@@ -27,11 +33,13 @@
 				urlChangeC='<?php echo $this->Html->url(array('controller' => 'constraints', 'action' => 'check', 'manager' => true)) ?>';
 				urlDeleteC='<?php echo $this->Html->url(array('controller' => 'constraints', 'action' => 'delete', 'manager' => true)) ?>';
 				formation_id=<?php echo $formation_id ?>"
-				 class="clear tableau">
-	<div class="colonne" ng-repeat="i in listId">
+				 class="clear tableau tableau-contraintes">
+	<div class="colonne " ng-repeat="i in listId">
 		<h4 class="titre">{{i.jour}}</h4>
-			<div ng-repeat="d in i.id" class="bloc-contraintes" ng-show="filtreTraite == d.Constraint.deal || filtreTraite == 'tous'" ng-style="codeCouleur">
-				<div class="align"><input type="checkBox" ng-model="d.Constraint.deal" ng-init="d.Constraint.deal =initCheck(d.Constraint.deal)" ng-change="changeC(d.Constraint.user_id, i.date, d.Constraint.deal)"></div>
+			<div ng-repeat="d in i.id" class="bloc-contraintes" ng-animate="'animate'" ng-show="filtreTraite == d.Constraint.deal || filtreTraite == 'tous'" ng-class="{traite : d.Constraint.deal}">
+				<div class="align">
+					<input type="checkBox" ng-model="d.Constraint.deal" ng-init="d.Constraint.deal =initCheck(d.Constraint.deal)" ng-change="changeC(d.Constraint.user_id, i.date, d.Constraint.deal)">
+				</div>
 				<div class="align">
 				<ul>
 					<li ng-repeat="c in constraints| filter:{ Constraint.date: i.date, User.id: d.Constraint.user_id}" ng-switch on="$first">
@@ -106,9 +114,9 @@
 
 								<input name="constraint[{{i*100+$index}}][end_time]" type="text" 
 										ng-model="courant.Contraintes.end_time" ng-init="courant.Contraintes.end_time='19:00'" >
-								<p>Absent toute la journée</p>
 							</li>
 						</ul>
+						<p>Absent toute la journée</p>
 					</div>
 				</div>
 			</div>
